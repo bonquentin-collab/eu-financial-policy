@@ -184,3 +184,145 @@ Aucune des 13 propositions n'est assortie d'une estimation quantifiée de coût 
 ## Confirmation
 
 Le fichier `/home/user/Claude/eu-financial-policy-claude-code/policy/impact-debate.md` a été créé avec cette première entrée « Round 1 — impact-assessment-auditor ».
+
+---
+
+## Round 2 — policy-innovator (réponse)
+
+**Date de production : 4 août 2026**
+**Mandat** : réponse point par point au Round 1 de `impact-assessment-auditor` ci-dessus. Pour chaque proposition, ce Round 2 fait l'un des trois choix suivants : (i) intègre la modification demandée par l'auditeur lorsqu'elle est fondée ; (ii) propose une modification alternative motivée lorsqu'une autre solution paraît préférable à celle suggérée ; (iii) pour P5 et P7 (seules propositions en ÉCHEC), abandonne explicitement le mécanisme central contesté et le remplace par une version substantiellement révisée qui répond directement à l'objection soulevée, plutôt que de répéter la proposition initiale. Une vérification web complémentaire a été effectuée le 4 août 2026 pour trancher un point factuel décisif pour P7 (calendrier CRR) ; elle est signalée explicitement à l'endroit où elle intervient.
+
+### Réponse aux deux observations transversales du Round 1
+
+**Absence de chiffrage du coût de conformité et du bénéfice attendu.** L'auditeur a raison d'étendre ce constat à l'ensemble des 13 propositions plutôt qu'aux seules P1, P5 et P9 mentionnées en `proposals.md` §F. Ce Round 2 n'introduit pas de chiffrage a posteriori que le pipeline n'a pas produit — ce serait fabriquer une fausse précision. Il complète en revanche, proposition par proposition ci-dessous, la liste des paramètres à traiter comme non calibrés avant le stade de rédaction (nouveaux ajouts : la fenêtre de 24 mois de P6, le ticket à 500 000 € et le seuil de 750 salariés de P5 révisé, le relèvement de capitalisation boursière de P13 révisé), pour que cette liste couvre effectivement l'ensemble du paquet et pas seulement trois items.
+
+**Distinction entre « ce que la révision EuVECA peut délivrer elle-même » et « recommandation adressée à un autre dossier ».** Ce Round 2 applique cette distinction explicitement à quatre propositions : P3 (le véhicule juridique correct est un amendement du règlement-cadre MISP, pas du seul règlement EuVECA), P7 (rétrogradée en recommandation d'accompagnement hors texte opérationnel — voir révision substantielle ci-dessous), P9 et P10 (recommandations d'action immédiate à la Commission/EIOPA, explicitement découplées du calendrier législatif EuVECA T3 2026, plutôt que présentées comme des effets de la révision elle-même). Dans ces quatre cas, le corps du règlement EuVECA révisé se limite désormais à ce qu'il peut effectivement délivrer par lui-même.
+
+---
+
+### A. Architecture du seuil AIFMD et du statut de gestionnaire
+
+#### P1 — Seuil AIFMD progressif à paliers — modification intégrée
+
+Les trois demandes de l'auditeur sont acceptées.
+
+1. **Reformulation de la portée du mécanisme.** Le « Palier 2 » n'est plus présenté comme le produit d'un simple ajustement du renvoi de l'article 2 EuVECA vers l'article 3, §2, point b), de l'AIFMD, mais comme la création, dans un nouveau chapitre du règlement EuVECA, d'un statut de gestionnaire de plein droit (« gestionnaire de croissance EuVECA ») avec ses propres règles de dépositaire, de gestion des risques et de reporting. Le renvoi vers l'AIFMD ne fixe plus que la borne d'entrée dans ce statut, pas son contenu.
+2. **Mandat de convergence ESMA ajouté.** La proposition intègre désormais un mandat explicite à l'ESMA pour produire des orientations (guidelines) de convergence de supervision applicables au Palier 2 — sur le modèle des orientations déjà produites pour l'enregistrement EuVECA I — précisément pour éviter que les divergences nationales déjà documentées sur le régime actuel plus simple (`current-regulation.md` §4 : dépositaire, fonds propres, délais d'enregistrement) ne se reproduisent, amplifiées, sur un régime intermédiaire plus complexe.
+3. **Bornes non calibrées.** Les seuils exacts (2,5 Md€, seuil endetté à 500 M€) restent des points de départ pour discussion, comme `proposals.md` §F le reconnaissait déjà — aucun changement nécessaire sur ce point, l'auditeur confirme simplement qu'il faut le maintenir.
+
+#### P2 — Passerelle fondée sur la stratégie — modification intégrée (clarification retenue plutôt que fusion)
+
+L'auditeur propose deux options : clarifier la différenciation de traitement entre Palier 2 générique (P1) et Palier 2 qualifié par la stratégie (P2), ou fusionner les deux mécanismes. Ce Round 2 retient la clarification, pas la fusion : les deux logiques restent méthodologiquement distinctes (taille pure vs comportement du fonds) et fusionner ferait perdre la distinction empruntée au modèle américain que P2 cherche précisément à importer (`benchmarking.md`, ligne de fracture n°1).
+
+**Clarification apportée.** Un gérant qui satisfait le test de stratégie renforcé de P2 (≥80 % d'actifs éligibles, effet de levier plafonné, aucun droit de rachat, verrouillage ≥8 ans) reste soumis, dans toute la fourchette 500 M€–2,5 Md€, au régime du **Palier 1** (régime EuVECA actuel inchangé) plutôt qu'au régime de Palier 2 « générique » de P1 (dépositaire à séparation fonctionnelle, reporting AIFMD allégé). Un gérant de la même fourchette de taille qui ne satisfait pas ce test reste soumis au Palier 2 générique. Le test renforcé cesse ainsi d'être un coût de conformité sans contrepartie identifiable (l'objection de l'auditeur) : il devient la condition d'accès à un régime strictement plus léger que le Palier 2 générique, en échange d'un test de composition d'actifs plus exigeant et de contraintes comportementales que le Palier 2 générique n'impose pas.
+
+#### P3 — Passeport de gestion via le renvoi ESMA du MISP — modification intégrée
+
+Acceptée intégralement. Le mécanisme n'est plus présenté comme une extension « via le règlement EuVECA », mais comme une recommandation d'amendement ciblé du **règlement-cadre MISP lui-même** — le texte qui définit et calibre le pouvoir de renvoi ESMA — assorti d'un simple renvoi croisé depuis le règlement EuVECA révisé vers ce mécanisme une fois amendé. Une coordination explicite avec l'unité DG FISMA pilotant le dossier MISP est ajoutée comme préalable, avant toute présentation de P3 comme acquis de la révision EuVECA — reconnaissant explicitement que la consultation 2026 invite à ne pas rouvrir les sujets déjà traités par le MISP (`current-regulation.md` §6). Sur le risque résiduel de réactiver la résistance irlando-luxembourgeoise (`stakeholder-map.md` §3.3) : ce risque est reconnu comme réel, mais d'intensité nettement moindre qu'un transfert de supervision directe ; il doit être documenté dans l'exposé des motifs plutôt que passé sous silence.
+
+#### P4 — Seuils de capital indexés — modification intégrée
+
+Acceptée. L'indexation quinquennale bascule d'un « acte d'exécution simple » (article 291 TFUE) vers un **acte délégué** (article 290 TFUE), strictement borné : formule d'indexation fixe et non discrétionnaire sur l'IPCH, périodicité quinquennale impérative, publication automatique au JOUE dans un délai fixe suivant la publication de l'indice de référence, sans possibilité de report discrétionnaire par la Commission. Ce choix respecte la frontière 290/291 (ajuster un montant de capital réglementaire relève de « compléter un élément non essentiel de l'acte », pas d'« assurer des conditions d'exécution uniformes ») tout en conservant l'objectif premier de P4 — éviter que le véhicule juridique choisi ne soit lui-même contesté en comitologie, ce qui reproduirait sous une autre forme le délai 2018-2022 que P4 cherche à corriger.
+
+---
+
+### B. Test d'actifs éligibles et mécanique du portefeuille
+
+#### P5 — Double piste Standard / Pro — révision substantielle (le test des 70 % est réintroduit dans la piste Pro)
+
+**Le point disqualifiant de l'auditeur est accepté sans réserve.** La suppression totale du test des 70 % pour la piste Pro va au-delà de ce que même Invest Europe et EFAMA réclament (élargissement du périmètre d'actifs, pas suppression du test — `stakeholder-map.md` §8.7), ouvre une échappatoire de nomenclature permettant à un fonds de porter le label EuVECA sans financer une seule entreprise éligible, et menace la validité de P9 (LTEI Solvency II) et P12 (éligibilité automatique InvestEU), qui présument tous deux un profil de fonds authentiquement orienté capital-risque. Ce mécanisme est abandonné.
+
+**Ce qui est conservé.** La segmentation par ticket d'entrée (Standard/Pro) pour désamorcer la friction retail documentée en `stakeholder-map.md` §8.2 est maintenue — c'est la partie du mécanisme que l'auditeur qualifie lui-même de « récupérable et bien conçue ».
+
+**Révision.** « EuVECA Pro » (clients professionnels au sens strict + semi-professionnels avec ticket ≥ 500 000 €) conserve un test de composition d'actifs au même seuil que le régime Standard (**70 %**), au lieu de le supprimer. La flexibilité additionnelle offerte à cette piste ne passe plus par la suppression du test mais par un **élargissement ciblé, réservé à la seule piste Pro**, de ce qui compte dans le calcul des 70 % :
+- seuil d'effectif de l'entreprise de portefeuille éligible relevé de 499 à 750 salariés pour cette piste (aligné sur le seuil sectoriel bonifié de P13 révisé — voir la note de cohérence en section E) ;
+- suppression du sous-plafonnement de la part de dette dans l'enveloppe des 70 % (`micro-analysis.md` §2.2), ouvrant un espace réel pour des stratégies mezzanine/venture debt à plus grande échelle sans toucher au niveau global du test ;
+- suppression du sous-plafond sur l'investissement secondaire (parts d'autres fonds EuVECA).
+Les garde-fous de gouvernance de la version initiale (fonds fermé, verrouillage ≥5 ans, absence de droits de rachat, plafond d'effet de levier, ticket minimal à 500 000 €) sont inchangés.
+
+**Pourquoi cette version répond aux trois objections du Round 1.** (i) *Cohérence avec l'acquis* : un fonds Pro reste, par construction, majoritairement investi dans des entreprises réellement éligibles — la présomption de profil VC sur laquelle s'appuient P9 et P12 est préservée sans qu'aucune clause d'exclusion spéciale ne soit plus nécessaire. (ii) *Subsidiarité/proportionnalité* : la valeur ajoutée par rapport à un FIA AIFMD classique commercialisé à la même clientèle redevient identifiable — un fonds EuVECA Pro continue de bénéficier du régime de capital et de gouvernance allégé d'EuVECA (Palier 1 ou 2 selon sa taille) plutôt que du régime complet AIFMD ; c'est ce différentiel de coût de conformité, pas l'absence de test d'actifs, qui justifie le régime allégé — exactement comme pour le régime Standard. (iii) *Effet en cascade* : le test des 70 % subsistant, le risque d'arbitrage par label vide de substance identifié pour P9/P12/P13 disparaît.
+
+**Paramètres ajoutés à la liste des points non calibrés** (`proposals.md` §F) : le relèvement à 750 salariés et la suppression des deux sous-plafonds (dette, secondaire) pour la seule piste Pro, au même titre que le ticket à 500 000 €.
+
+#### P6 — Marge de sortie post-IPO — modification intégrée
+
+Les deux points de l'auditeur sont acceptés. La fenêtre de 24 mois est ajoutée à la liste des paramètres non calibrés de `proposals.md` §F. Le maintien intégral et binaire de l'éligibilité est remplacé par une **dégressivité** : éligibilité pleine (100 % de la valeur de la participation comptée dans le quota des 70 %) pendant les 12 premiers mois suivant l'IPO, puis 50 % aux mois 13-18, 25 % aux mois 19-24, 0 % au-delà — plutôt qu'un maintien à 100 % jusqu'au mois 24 suivi d'une sortie brutale du quota. Ce mécanisme limite l'incitation à immobiliser des positions post-IPO relevée par l'auditeur, tout en conservant l'objectif principal : donner une fenêtre de visibilité juridique suffisante pour accompagner une IPO sans céder prématurément l'entreprise.
+
+#### P7 — Extension du facteur CRR art. 501 — révision substantielle (rétrogradée en recommandation d'accompagnement ancrée sur un mandat déjà existant)
+
+**Le point disqualifiant de l'auditeur est confirmé, pas seulement plausible.** Une vérification web complémentaire effectuée pour ce Round 2 (4 août 2026) confirme qu'aucune révision d'ensemble du CRR n'est actuellement au calendrier : les textes CRR III/CRD VI issus du paquet bancaire de 2021 sont déjà pleinement applicables (CRR III depuis le 1er janvier 2025, sous réserve du seul report d'un an, au 1er janvier 2026, du volet risque de marché/FRTB) ; la seule initiative CRR ouverte en 2026 est une consultation ciblée de la Commission sur les exigences de risque de marché (22 avril 2026), sans lien avec l'article 501 ni le facteur soutenant les PME [Commission européenne, *Commission seeks views on market risk prudential requirements for EU banks*, 22 avril 2026]. Contrairement à P3 (mécanisme MISP déjà agréé) et P9 (révision Solvency II déjà engagée, entrée en vigueur datée au 30 janvier 2027), il n'existe donc, à cette date, aucun train législatif CRR auquel accrocher un mandat ABE. Le mécanisme initial (« proposer un mandat à l'ABE dans le cadre de la prochaine révision du CRR ») est abandonné tel quel.
+
+**Révision substantielle — un véhicule différent, déjà existant, pour la même vérification factuelle.** Le décalage définitionnel CRR/EuVECA vérifié en Round 1 (test de chiffre d'affaires CRR vs test d'effectif EuVECA, entreprises de 250 à 499 salariés non couvertes) reste valide et récupérable, comme l'auditeur le reconnaît lui-même. Vérification complémentaire effectuée pour ce Round 2 : l'article 501, **paragraphe 5**, du CRR donne déjà à l'ABE un mandat permanent d'analyse de l'évolution des prêts aux PME, de leur risque effectif sur cycle économique complet, et de la cohérence des exigences de fonds propres associées au facteur soutenant les PME — mandat sur la base duquel l'ABE a déjà publié un rapport concluant qu'en l'état, le facteur « n'a pas conduit à une augmentation des prêts » et recommandant un suivi régulier de ses effets [European Banking Authority, *Report on SMEs and the SME Supporting Factor*, mandat de l'article 501 CRR].
+
+La proposition révisée n'est donc plus un texte opérationnel de la révision EuVECA ni un mandat hypothétique dans une future révision du CRR : c'est une **recommandation d'accompagnement**, adressée à l'ABE dans le cadre de son mandat périodique déjà existant au titre de l'article 501 §5, demandant que le prochain cycle de suivi de l'ABE sur le facteur soutenant les PME (i) intègre à son périmètre d'analyse le cofinancement bancaire consenti en parallèle (pari passu) d'un investissement en fonds propres d'un fonds labellisé EuVECA, et (ii) chiffre le volume actuel de ce cofinancement ainsi que le nombre d'entreprises de portefeuille éligibles EuVECA (250-499 salariés) aujourd'hui exclues du bénéfice du facteur du seul fait du test de chiffre d'affaires CRR — précisément la donnée manquante que l'auditeur identifie comme condition de toute reprise future du mécanisme. Ce chiffrage, une fois produit par l'ABE, fournirait la base de preuve nécessaire pour proposer aux colégislateurs, le jour où un véhicule législatif CRR s'ouvrira effectivement, la substitution ponctuelle du test d'effectif EuVECA au test de chiffre d'affaires CRR envisagée en Round 1 — sans dépendre du calendrier ni du texte de la révision EuVECA elle-même.
+
+Cette recommandation est explicitement sortie du texte opérationnel de la révision EuVECA : elle ne figure dans aucun article proposé du règlement révisé, seulement dans l'exposé des motifs comme point d'attention à transmettre à l'ABE — cohérent avec l'observation transversale n°2 du Round 1.
+
+---
+
+### C. Repositionnement vis-à-vis d'ELTIF 2.0
+
+#### P8 — Passerelle de reconnaissance mutuelle EuVECA ↔ ELTIF 2.0 — modification intégrée
+
+Acceptée. Une clause de vérification préalable est ajoutée : la faisabilité juridique de l'architecture maître-nourricier (fonds nourricier ELTIF détenant des parts d'un fonds maître EuVECA sous-jacent) au regard de l'article 11 et des dispositions de structuration du règlement ELTIF (UE) 2015/760/2023/606 doit être confirmée par le service juridique de la Commission — ou, à défaut, par une consultation ciblée de l'ESMA — **avant** toute présentation de P8 comme acquis de la révision EuVECA. Si cette architecture n'est pas directement permise par le texte ELTIF actuel, P8 devra être reformulé comme une proposition d'amendement conjoint EuVECA/ELTIF (touchant les deux règlements simultanément) plutôt qu'un mécanisme de reconnaissance mutuelle porté par le seul texte EuVECA — la même logique de « bon véhicule juridique » que celle appliquée à P3 et P7 ci-dessus. Sous cette réserve, la proposition reste, comme le note l'auditeur, l'une des mieux calibrées du paquet et n'est pas modifiée sur le fond.
+
+---
+
+### D. Mobilisation du capital institutionnel
+
+#### P9 — Traitement Solvency II LTEI — modification intégrée
+
+Acceptée. La proposition est reformulée en deux volets temporellement découplés : (i) une **recommandation d'action immédiate et parallèle**, non conditionnée à l'adoption du règlement EuVECA révisé, auprès des services de la Commission pilotant la révision en cours du règlement délégué (UE) 2015/35, pour faire désigner explicitement EuVECA avant l'entrée en vigueur prévue de cette révision (30 janvier 2027) ; (ii) une fois le règlement EuVECA révisé adopté, un simple renvoi de cohérence confirmant que la désignation reste alignée sur les garde-fous structurels du label tels que révisés. La condition d'exclusion de toute piste EuVECA sans composition de portefeuille réellement orientée capital-risque est maintenue par prudence rédactionnelle, bien qu'elle devienne largement théorique compte tenu de la révision de P5 ci-dessus (qui conserve le test des 70 % y compris pour la piste Pro).
+
+#### P10 — Sauf-conduit IORP II — modification intégrée
+
+Acceptée. La proposition est reformulée comme **recommandation d'action EIOPA immédiate**, non conditionnée à l'adoption du règlement EuVECA révisé — l'EIOPA peut agir dès aujourd'hui sur la base de l'article 19 IORP II existant et du label EuVECA tel qu'il existe. Un dispositif de suivi est ajouté : un bilan annuel EIOPA de l'allocation réelle des régimes DC vers les véhicules EuVECA (et, le cas échéant, vers la structure nourricière ELTIF de P8), pour permettre une évaluation d'ici 2028-2029 de l'opportunité de renforcer l'approche si le sous-financement documenté par le comparateur britannique (Mansion House Compact, 0,6 % réalisé contre 5 % ciblé pour 2030) se reproduit à l'identique côté UE.
+
+#### P11 — Alignement GBER art. 21 + clause fiscale — modification intégrée
+
+Acceptée, avec traitement différencié des deux volets confirmé par l'auditeur lui-même. Le **volet 2** (clause habilitante fiscale nationale) reste inchangé, prêt pour rédaction. Le **volet 1** (alignement du seuil GBER art. 21 sur les 499 salariés d'EuVECA) reçoit une étape de validation explicite avant rédaction : saisine de la DG COMP pour une évaluation spécifique du risque de distorsion de concurrence lié à l'élargissement de l'exemption de notification à des bénéficiaires potentiellement plus grands, fondée sur les critères habituels du contrôle des aides d'État (effet incitatif, proportionnalité, risque d'éviction du financement privé) plutôt que sur la seule cohérence définitionnelle avec EuVECA. Option de repli signalée si cette évaluation est défavorable : relever le plafond de notification de 15 M€ de l'article 21 plutôt que le seuil d'effectif des bénéficiaires — répond au même besoin sans élargir la catégorie de bénéficiaires éligibles elle-même.
+
+#### P12 — Fenêtre de garantie InvestEU — modification intégrée
+
+Acceptée, périmètre de l'automaticité restreint comme demandé. L'enregistrement EuVECA (article 14 du règlement 345/2013) dispense désormais le FEI de revérifier **uniquement** les faits déjà établis par l'autorité nationale compétente lors de l'enregistrement : statut de gestionnaire, forme juridique, capital minimal, composition d'actifs déclarée. Il ne dispense en aucun cas le FEI de son appréciation propre sur le mérite de l'investissement, le profil et le track record de l'équipe de gestion, et la viabilité de la stratégie — critères que l'enregistrement EuVECA ne vérifie pas et n'a jamais été conçu pour vérifier. La sous-fenêtre de garantie réduit ainsi le délai et le coût de la phase de vérification documentaire du FEI, pas l'intégralité de sa diligence.
+
+---
+
+### E. Ciblage sectoriel
+
+#### P13 — Bonus sectoriel STEP/CRMA/EDIP — modification intégrée
+
+Les trois points de l'auditeur sont acceptés.
+
+1. **Cohérence interne du paquet.** Plutôt que d'aligner le seuil bonifié de 750 salariés sur les 499 de P7/P11 (ce qui viderait le bonus sectoriel de son sens), la cohérence est rétablie dans l'autre sens : le seuil de 750 salariés devient le seuil de référence commun, pour ce sous-ensemble précis d'entreprises, à travers les trois cadres connectés. La recommandation ABE révisée de P7 et la clause GBER de P11 (volet 1) doivent l'une comme l'autre prévoir explicitement que, pour une entreprise détenant le Sovereignty Seal (STEP) ou le statut de projet stratégique (CRMA), le seuil pertinent est porté à 750 salariés plutôt que plafonné à 499. L'incohérence relevée par l'auditeur devient ainsi une architecture à deux niveaux assumée et documentée (seuil général de croissance à 499 salariés ; seuil sectoriel stratégique à 750 salariés pour les entreprises STEP/CRMA), plutôt qu'un défaut de coordination interne au paquet.
+2. **Plafond de capitalisation boursière.** La suppression totale du plafond de 200 M€ pour les entreprises cotées labellisées STEP/CRMA est abandonnée et remplacée par un relèvement borné — point de départ pour discussion : 500 M€, ajouté à la liste des paramètres non calibrés — en l'absence de tout constat documenté d'un déficit de financement spécifique aux grandes capitalisations sectorielles au-delà du stade croissance/scale-up (`macro-analysis.md` §2.1-2.2).
+3. **Fiabilité des sources.** La réserve de vérification de source primaire déjà apposée au volet EDIP dans `proposals.md` est étendue explicitement au volet CRMA — les deux volets sont désormais logés au même niveau de confiance (« à confirmer avant usage législatif »).
+
+---
+
+### Tableau récapitulatif des décisions Round 2
+
+| # | Verdict Round 1 | Décision policy-innovator |
+|---|---|---|
+| P1 | PASSES AVEC MODIFICATION | Modifiée : reformulée en création d'un statut de gestionnaire de plein droit (pas un simple renvoi) + mandat de convergence ESMA ajouté. |
+| P2 | PASSES AVEC MODIFICATION | Modifiée : traitement différencié clarifié — un gérant qualifié par le test de stratégie reste au régime du Palier 1, pas au Palier 2 générique. |
+| P3 | PASSES AVEC MODIFICATION | Modifiée : véhicule juridique corrigé (amendement du règlement-cadre MISP, coordination DG FISMA), pas un mécanisme porté par le seul EuVECA. |
+| P4 | PASSES AVEC MODIFICATION | Modifiée : acte délégué (art. 290 TFUE) strictement borné, au lieu d'un acte d'exécution (art. 291 TFUE). |
+| P5 | ÉCHEC | Révisée en profondeur : le test des 70 % est réintroduit pour la piste Pro (identique au régime Standard) ; la flexibilité passe par un élargissement ciblé du périmètre d'actifs éligibles, pas par la suppression du test. |
+| P6 | PASSES AVEC MODIFICATION | Modifiée : fenêtre de 24 mois ajoutée aux paramètres non calibrés ; éligibilité rendue dégressive plutôt que binaire. |
+| P7 | ÉCHEC | Révisée en profondeur et rétrogradée : abandon du mandat CRR hypothétique (aucun calendrier confirmé) ; remplacée par une recommandation d'accompagnement ancrée sur le mandat périodique déjà existant de l'ABE (art. 501 §5 CRR). |
+| P8 | PASSES AVEC MODIFICATION | Modifiée : clause de vérification juridique préalable (faisabilité maître-nourricier sous ELTIF) ajoutée avant rédaction ; fond inchangé. |
+| P9 | PASSES AVEC MODIFICATION | Modifiée : découplée du calendrier législatif EuVECA, reformulée en recommandation d'action immédiate avant le 30 janvier 2027. |
+| P10 | PASSES AVEC MODIFICATION | Modifiée : découplée du calendrier EuVECA (action EIOPA immédiate) ; dispositif de suivi annuel ajouté. |
+| P11 | PASSES AVEC MODIFICATION | Modifiée : volet fiscal inchangé ; volet GBER soumis à validation DG COMP préalable, avec option de repli identifiée. |
+| P12 | PASSES AVEC MODIFICATION | Modifiée : automaticité restreinte aux faits déjà vérifiés par l'autorité nationale ; appréciation de mérite FEI explicitement préservée. |
+| P13 | PASSES AVEC MODIFICATION | Modifiée : seuil de 750 salariés aligné à travers P7/P11/P13 plutôt que source d'incohérence ; plafond de capitalisation boursière borné (500 M€) au lieu de supprimé ; réserve de source primaire étendue au CRMA. |
+
+### Sources vérifiées pour ce Round 2
+
+- Calendrier CRR III/CRD VI et absence de révision CRR programmée en 2026 au-delà du volet risque de marché — Commission européenne, [*Commission seeks views on market risk prudential requirements for EU banks*](https://finance.ec.europa.eu/news/commission-seeks-views-market-risk-prudential-requirements-eu-banks-2026-04-22_en), 22 avril 2026 ; recoupé avec DLA Piper, *The Revised Capital Requirements Directive (CRD6): Key considerations ahead of its application*, novembre 2025.
+- Mandat permanent de l'ABE au titre de l'article 501, §5, CRR sur le suivi du facteur soutenant les PME — European Banking Authority, *Report on SMEs and the SME Supporting Factor* ; CMS, *EBA: Preliminary analysis and call for evidence for the EBA report on SMEs and SME supporting factor in accordance with the EBA mandate in Article 501 CRR*.
+
+## Confirmation Round 2
+
+Le fichier `/home/user/Claude/eu-financial-policy-claude-code/policy/impact-debate.md` a été mis à jour avec l'ajout de la section « Round 2 — policy-innovator (réponse) » à la suite du Round 1, sans modification de ce dernier.
