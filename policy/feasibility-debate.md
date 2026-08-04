@@ -196,3 +196,127 @@ Il faut noter d'emblée un fait structurant pour cette évaluation : les Rounds 
 ## Confirmation
 
 Le fichier `/home/user/Claude/eu-financial-policy-claude-code/policy/feasibility-debate.md` a été créé avec cette première entrée « Round 1 — stakeholder-mapper (évaluation de faisabilité) », portant sur les 13 propositions dans leur version finale confirmée en Round 3 de `impact-debate.md`.
+
+---
+
+## Round 2 — policy-innovator (réponse à la faisabilité)
+
+**Date de production : 4 août 2026**
+**Mandat** : réponse point par point au Round 1 de `stakeholder-mapper` ci-dessus. Pour chaque proposition signalée « viable avec ajustement » ou « à risque élevé de blocage », ce Round 2 fait l'un des deux choix suivants : (i) intègre l'ajustement suggéré, éventuellement recalibré, lorsqu'il traite l'objection sans vider la proposition de sa substance ; (ii) propose un mécanisme alternatif motivé lorsque l'ajustement suggéré neutraliserait l'objectif recherché ou ne fait que le différer. Pour P3 — le risque le plus sérieux du round — ce Round 2 n'adopte pas la clause de rendez-vous suggérée par `stakeholder-mapper` comme réponse principale : elle est conservée comme filet de sécurité résiduel, mais la réponse principale est un mécanisme alternatif qui délivre l'objectif de fond (passeport de gestion transfrontière) sans rouvrir le texte-cadre MISP. Les 9 propositions jugées viables telles quelles ne sont pas rouvertes ; elles sont confirmées en fin de section pour mémoire. Une vérification web complémentaire a été effectuée le 4 août 2026 pour ancrer précisément le mécanisme alternatif de P3 dans l'architecture existante du règlement 345/2013 — signalée à l'endroit où elle intervient.
+
+### Réponse à l'observation transversale (résidu de friction 8.3)
+
+`stakeholder-mapper` note en section F que P1 (mandat de convergence ESMA, niveau 3, non contraignant) et P3 (extension du pouvoir de renvoi ESMA du MISP) pourraient, lus ensemble par un négociateur irlandais ou luxembourgeois, produire un effet cumulatif — deux extensions du rôle de l'ESMA dans le même paquet, même modestes prises séparément. Le mécanisme alternatif retenu ci-dessous pour P3 supprime entièrement la composante ESMA de cette proposition (aucun pouvoir de renvoi, aucune saisine, aucune nouvelle compétence de médiation n'est plus demandée). Le résidu cumulatif signalé par `stakeholder-mapper` se réduit donc, de fait, à la seule composante P1 — déjà qualifiée d'intensité faible par ce même Round 1 (mandat non contraignant, interne au seul texte EuVECA). Ce n'est pas un ajustement rédactionnel séparé : c'est un effet de bord direct de la révision de P3 ci-dessous, qu'il convient de signaler explicitement dans l'exposé des motifs pour que la lecture cumulative ne soit plus fondée.
+
+---
+
+### A. Architecture du seuil AIFMD et du statut de gestionnaire
+
+#### P1 — Statut de gestionnaire Palier 2 : ticket semi-professionnel indexé au palier (ajustement intégré)
+
+**Objection retenue telle quelle.** L'objection de Finance Watch documentée en `stakeholder-map.md` §8.1 est réelle et précisément ciblée : ni la version initiale de P1 ni ses révisions en Round 2/3 d'`impact-debate.md` ne touchent au ticket minimal semi-professionnel, qui reste fixé à 100 000 € indépendamment de la taille du gestionnaire. Un fonds de 2,4 Md€ relevant du Palier 2 resterait commercialisable à un investisseur semi-professionnel au même ticket d'entrée qu'un fonds de 50 M€ relevant du Palier 1 — c'est exactement l'écart que `stakeholder-map.md` §8.1 identifie comme non transigeable si le ticket reste inchangé face à un seuil relevé.
+
+**Ajustement retenu.** Le ticket minimal semi-professionnel est différencié par palier plutôt que resté uniforme sur l'ensemble du spectre 0-2,5 Md€ :
+- **Palier 1** (< 500 M€ non endetté / < 100 M€ endetté) : ticket inchangé à 100 000 €.
+- **Palier 2** (500 M€ – 2,5 Md€ non endetté / 100-500 M€ endetté) : ticket relevé à 200 000 €.
+
+Ce n'est pas un patch isolé : le paquet dispose déjà, depuis la révision P5 confirmée en Round 3 d'`impact-debate.md`, d'une logique de ticket croissant avec le risque/la taille (100 000 € pour le régime Standard, 500 000 € pour la piste Pro). Introduire un palier intermédiaire à 200 000 € pour le Palier 2 générique complète cette échelle plutôt que d'en introduire une nouvelle — le paquet, pris comme un tout, raconte désormais une histoire cohérente : plus le véhicule est gros ou flexible, plus le ticket d'accès protège l'investisseur semi-professionnel.
+
+**Effet de synergie avec P2, non recherché à l'origine mais direct.** La révision Round 2/3 de P2 (confirmée) fait qu'un gérant satisfaisant le test de stratégie renforcé (≥80 % d'actifs éligibles, pas de rachat, verrouillage ≥8 ans) reste soumis, dans toute la fourchette 500 M€–2,5 Md€, au régime du **Palier 1** — pas au Palier 2 générique. En appliquant le ticket de Palier 1 (100 000 €) de façon strictement cohérente à ce même régime, ce gérant conserve mécaniquement l'accès au ticket bas. Le test de stratégie de P2 devient ainsi une double contrepartie (dépositaire/reporting allégés **et** ticket semi-professionnel inchangé) contre un profil de risque réellement démontré — un renforcement de la cohérence interne du paquet, pas une modification séparée.
+
+**Pourquoi cet ajustement ne compromet pas l'objectif de P1.** L'objectif de P1 est de supprimer l'effet de seuil binaire qui décourage les gestionnaires de croître au-delà de 500 M€ (`current-regulation.md` §6 ; `macro-analysis.md` §2.1-2.2). Un ticket semi-professionnel relevé pour le seul Palier 2 ne restreint en rien la capacité du gérant à lever du capital auprès de sa base réelle à cette taille de fonds — professionnels au sens strict de MiFID II, investisseurs institutionnels, family offices structurés — qui n'est pas concernée par un seuil de ticket semi-professionnel. Seule la frange d'investisseurs semi-professionnels au ticket le plus bas est concernée, ce qui est précisément le public que Finance Watch documente comme insuffisamment protégé face à des véhicules « de taille bien supérieure à ce qui existait en 2013 ».
+
+**Paramètre ajouté à la liste des points non calibrés** (`proposals.md` §F, déjà étendue par `impact-debate.md` Round 2) : le ticket de 200 000 € pour le Palier 2 est un point de départ pour discussion, cohérent avec l'écart déjà accepté entre le ticket Standard (100 000 €) et le ticket Pro (500 000 €), pas un calibrage validé.
+
+#### P3 — Passeport de gestion : abandon de l'amendement du MISP, remplacé par un passeport d'établissement propre au règlement EuVECA (mécanisme alternatif)
+
+**Le diagnostic de risque de `stakeholder-mapper` est accepté sans réserve.** Les deux éléments aggravants qu'il documente sont réels et plus sérieux que ce que Round 2/3 d'`impact-debate.md` avait anticipé : (i) le paquet MISP est un compromis politique encore frais (position commune E6 obtenue seulement en mai 2026, `stakeholder-map.md` §3.2), et le pouvoir de renvoi ESMA qui y figure est précisément l'objet sur lequel l'Irlande et le Luxembourg négocient pied à pied (§3.3) — le rouvrir, même pour un cas d'usage étroit, consomme du capital politique sur un équilibre qui n'a pas eu le temps de se stabiliser ; (ii) la consultation de janvier 2026 demande explicitement de ne pas rouvrir ce texte (`current-regulation.md` §6), ce qui fait de l'amendement MISP un choix de véhicule législatif à contre-courant du mandat même de cette réforme. Le mécanisme confirmé en Round 3 d'`impact-debate.md` (amendement ciblé du règlement-cadre MISP) est **abandonné**, pas seulement reformulé.
+
+**La clause de rendez-vous suggérée par `stakeholder-mapper` est examinée et écartée comme réponse principale.** Elle a un mérite réel — elle ne consomme aucun capital politique immédiatement — mais elle ne délivre pas l'objectif de fond : `current-regulation.md` §2 et §4 documentent un écart réel et actuel (absence de passeport de gestion pour les petits gérants sous-seuil, contraints aux régimes nationaux d'enregistrement pour s'établir ailleurs), pas un écart hypothétique à surveiller. Une clause de rendez-vous transformerait ce problème documenté en un vœu adressé au calendrier de réexamen du MISP — un calendrier qu'EuVECA ne maîtrise pas, exactement le type de dépendance que Round 1 d'`impact-debate.md` avait déjà écarté pour P7 et P9 au nom du réalisme de mise en œuvre. Elle est conservée ci-dessous comme **filet de sécurité résiduel**, pas comme la réponse principale.
+
+**Mécanisme alternatif proposé — un passeport d'établissement interne au règlement EuVECA, sur le modèle de son propre passeport de commercialisation.**
+
+*Vérification effectuée pour ce Round 2.* Le règlement 345/2013 dispose déjà, depuis 2013, d'une architecture de passeport à contrôle par l'État membre d'origine pour la commercialisation transfrontière : l'article 14 organise l'enregistrement auprès de l'autorité compétente d'origine (enregistrement valable dans toute l'Union) ; l'article 15 impose au gérant une simple notification à son autorité d'origine lorsqu'il souhaite commercialiser transfrontière ; l'article 16 organise la transmission par l'autorité d'origine aux autorités d'accueil et à l'ESMA, sans autorisation distincte requise côté accueil — mécanisme renforcé en 2017 par l'interdiction des frais d'accueil [texte consolidé, legislation.gov.uk, Regulation (EU) No 345/2013]. C'est un mécanisme à contrôle exclusivement national (autorité d'origine ↔ autorité d'accueil, sans arbitrage centralisé), en service sans friction documentée depuis treize ans, y compris lors de son renforcement de 2017.
+
+*Proposition.* Étendre cette même architecture — pas celle, plus lourde, du chapitre III de l'AIFMD, et pas celle, politiquement fragile, du pouvoir de renvoi ESMA du MISP — à l'établissement du gérant lui-même, par un nouvel article inséré dans le seul règlement EuVECA (base juridique inchangée, article 114 TFUE) :
+- Un gérant enregistré au titre de l'article 14 dans son État membre d'origine et souhaitant établir une succursale, ou fournir directement des services de gestion/administration pour ses fonds EuVECA, dans un autre État membre notifie son autorité d'origine, selon la même procédure et le même format que la notification de commercialisation de l'article 15.
+- L'autorité d'origine transmet cette notification à l'autorité d'accueil et à l'ESMA dans un délai bref et fixe, sur le modèle exact de l'article 16.
+- L'autorité d'accueil ne peut imposer, pour cette seule activité, ni enregistrement séparé, ni autorisation distincte, ni exigence supplémentaire de capital ou de gouvernance — elle conserve uniquement ses pouvoirs ordinaires de supervision locale de conduite des affaires et de lutte contre le blanchiment, déjà exercés sur tout acteur de marché actif sur son territoire.
+
+**Pourquoi ce mécanisme répond à l'objectif sans rouvrir le MISP.** Le point structurel est le suivant : le mécanisme initial de P3 avait besoin d'un pouvoir de renvoi ESMA précisément parce qu'il laissait subsister la discrétion de l'autorité d'accueil d'imposer une exigence supplémentaire, puis arbitrait les conflits nés de cette discrétion. Le mécanisme alternatif supprime la discrétion à la source — l'autorité d'accueil n'a plus la base légale pour exiger un enregistrement séparé — ce qui fait disparaître l'objet même du litige qu'un arbitrage ESMA aurait eu à trancher. Aucune compétence nouvelle n'est créée pour l'ESMA (rôle de simple destinataire d'information, comme il l'est déjà pour la commercialisation à l'article 16) ; le texte-cadre MISP n'est pas touché ; le chapitre III de l'AIFMD, dont l'extension aurait ravivé le même risque politique par un autre chemin (c'est l'objection déjà documentée dans `proposals.md` §P3 problème), n'est pas non plus sollicité.
+
+**Lecture politique attendue — plus favorable, pas seulement neutre, pour l'Irlande et le Luxembourg.** Le point central de la friction 8.3 (`stakeholder-map.md` §3.3) est la préférence irlandaise et luxembourgeoise pour un modèle de supervision par « autorités nationales réactives et compétitives » plutôt que par une centralisation à Paris/ESMA. Un passeport à contrôle exclusivement national — le même mécanisme, sans modification de logique, que celui déjà en service depuis 2013 pour la commercialisation — ne s'oppose pas à cette préférence, il la prolonge. Ce n'est pas le même registre de friction que l'extension du pouvoir de renvoi ESMA : c'est structurellement l'inverse.
+
+**Résidu honnête à ne pas dissimuler.** Ce mécanisme retire malgré tout une prérogative aujourd'hui détenue par les 27 autorités nationales (celle d'exiger un enregistrement local pour tout gérant souhaitant s'établir), pas seulement par l'Irlande et le Luxembourg — une résistance plus diffuse, de moindre intensité individuelle, mais potentiellement plus large en nombre d'autorités concernées, pourrait émerger de certains États membres qui utilisent aujourd'hui cet enregistrement comme outil de protection locale des investisseurs plutôt que comme obstacle concurrentiel. C'est cependant très exactement le type de résistance que le passeport de commercialisation de 2013 a déjà surmonté une fois pour un usage voisin, et la population concernée (gérants EuVECA sous-seuil, par définition < 500 M€ d'AUM, majoritairement de petite taille selon `micro-analysis.md`) est marginale au regard des 91 % d'actifs de fonds transfrontières que l'Irlande et le Luxembourg concentrent aujourd'hui (`stakeholder-map.md` §3.3) — l'enjeu économique direct pour ces deux places reste faible, ce qui distingue structurellement ce résidu de la résistance frontale que l'amendement MISP aurait déclenchée.
+
+**Préalable de vérification juridique, sur le modèle déjà appliqué à P8.** Avant présentation comme acquis de la révision EuVECA, faire confirmer par le service juridique de la Commission que l'insertion d'un mécanisme d'établissement transfrontière dans le seul règlement EuVECA (fondé sur l'article 114 TFUE) n'empiète pas sur le champ d'application matériel de l'AIFMD pour les gérants sous-seuil qui en sont aujourd'hui exclus par construction (article 3, §2, point b), AIFMD) — même logique de prudence que celle déjà retenue pour la structure maître-nourricier ELTIF de P8.
+
+**Filet de sécurité conservé.** Si, malgré cette analyse, la résistance des autorités nationales d'accueil s'avère plus forte qu'anticipé en trilogue, la clause de rendez-vous suggérée par `stakeholder-mapper` (rapport de la Commission, dans le cadre de la prochaine clause de réexamen du MISP, sur l'opportunité d'étendre le pouvoir de renvoi ESMA) reste disponible comme repli — mais uniquement comme repli, pas comme point de départ, puisqu'elle ne délivre par construction qu'une promesse de réexamen plutôt que le passeport documenté comme manquant.
+
+---
+
+### D. Mobilisation du capital institutionnel
+
+#### P11 — Volet GBER art. 21 : ajustement déjà intégré, confirmé sans modification supplémentaire
+
+`stakeholder-mapper` ne demande aucun ajustement politique nouveau pour P11 : le volet 2 (clause fiscale habilitante) est jugé viable sans réserve, et le volet 1 (alignement du seuil GBER) est jugé « viable avec ajustement déjà intégré » — le repli identifié en Round 2/3 d'`impact-debate.md` (relever le plafond de notification de 15 M€ plutôt que le seuil d'effectif des bénéficiaires, si la validation DG COMP est défavorable) constituant déjà l'ajustement nécessaire, sans qu'aucun acteur cartographié en `stakeholder-map.md` ne se soit prononcé sur ce point précis de politique de concurrence.
+
+Ce Round 2 confirme ce diagnostic et formalise la séquence de décision pour éviter toute ambiguïté au stade de la rédaction : (i) la saisine de la DG COMP (critères d'effet incitatif, de proportionnalité et de risque d'éviction du financement privé) reste un préalable obligatoire à toute rédaction du volet 1, comme déjà exigé par `impact-debate.md` Round 2/3 ; (ii) si cette évaluation est défavorable, le repli vers le relèvement du plafond de notification s'applique par défaut, sans nouveau round de négociation politique, précisément parce qu'aucune ligne de fracture entre parties prenantes cartographiées ne porte sur ce point ; (iii) ce point reste une dépendance institutionnelle à suivre (calendrier DG COMP), pas un obstacle de faisabilité politique — même nature de dépendance procédurale que celle déjà signalée pour P9 (calendrier Solvency II) et P10 (action EIOPA), sans qu'un couplage au calendrier législatif T3 2026 d'EuVECA soit nécessaire pour le volet 2, qui peut avancer indépendamment.
+
+---
+
+### E. Ciblage sectoriel
+
+#### P13 — Bonus sectoriel STEP/CRMA/EDIP : clause de reporting sectoriel intégrée, substance du volet défense défendue sans dilution
+
+**Ajustement intégré — clause de reporting.** L'ajustement suggéré par `stakeholder-mapper` est retenu : le texte d'habilitation du bonus sectoriel de l'article 3 EuVECA révisé inclut désormais une clause de reporting annuel, par la Commission (ou par délégation à l'ESMA), détaillant l'usage réel du bonus **par label pris séparément** (STEP / CRMA / défense une fois ce dernier activé) — nombre d'entreprises de portefeuille concernées et volume d'actifs sous gestion correspondant — transmis au Parlement européen (commissions ECON et ITRE). C'est un mécanisme de transparence à faible coût de mise en œuvre (les données existent déjà côté gestionnaires et autorités d'enregistrement) qui répond par anticipation à la préoccupation de contrôle parlementaire déjà documentée pour les Verts/ALE sur l'EDIP lui-même (`feasibility-debate.md` Round 1, §E) — réduisant la probabilité qu'ils s'opposent au volet défense par prudence procédurale plutôt que sur le fond.
+
+**Garantie procédurale supplémentaire pour l'activation future du volet défense.** Une fois le mécanisme de labellisation de projet de l'EDIP opérationnel et le volet défense de P13 mûr pour rédaction (non le cas aujourd'hui, comme `proposals.md` et `impact-debate.md` le signalent déjà), son activation doit passer par la procédure législative ordinaire (colégislation Parlement-Conseil) plutôt que par un acte délégué ou d'exécution de la Commission seule — garantissant que le Parlement, y compris sa composante la plus critique sur le financement de l'industrie de défense, conserve un vote de fond et pas seulement un droit de regard sur un rapport de transparence.
+
+**Résistance de La Gauche — reconnue et non traitée par dilution de substance (défense argumentée).** `stakeholder-mapper` documente un engagement plus distancié et critique de La Gauche sur le financement de l'industrie de défense européenne, distinct de la vigilance procédurale des Verts/ALE — une position de principe, pas une objection technique corrigible par une clause de reporting. Ce Round 2 ne cherche pas à neutraliser cette objection par un ajustement de fond (par exemple en retirant le volet défense du périmètre du bonus sectoriel, ou en le diluant à un statut purement consultatif), pour trois raisons : (i) `stakeholder-mapper` qualifie lui-même cette résistance de « ciblée » et « non bloquante », pas d'un motif de blocage au sens où P3 l'était pour le MISP ; (ii) le ciblage sectoriel défense s'inscrit dans un mandat explicite de la consultation 2026 elle-même (`current-regulation.md` §6, qui nomme la défense parmi les secteurs prioritaires interrogés) — vider ce volet de sa substance pour une minorité politique reviendrait à contredire le mandat de consultation que la proposition cherche justement à honorer ; (iii) le volet défense est de toute façon déjà différé (non mûr pour rédaction, EDIP trop récent) — le bon niveau de réponse à ce stade est procédural (garantir un vote parlementaire de fond au moment de l'activation, ci-dessus), pas substantiel. La position de La Gauche reste donc documentée comme risque à suivre, pas comme un motif d'ajustement du contenu.
+
+**Volets STEP/CRMA.** Aucun ajustement supplémentaire n'est nécessaire : `stakeholder-mapper` confirme que le plafonnement à 500 M€ (au lieu de la suppression totale critiquée en Round 1 d'`impact-debate.md`) désamorce déjà l'essentiel de la friction 8.7 pour ces deux volets, Finance Watch n'ayant pas de position documentée s'opposant spécifiquement à un bonus sectoriel borné.
+
+---
+
+### Les 9 propositions confirmées viables telles quelles — aucune modification apportée
+
+`stakeholder-mapper` ne signale aucune objection de faisabilité nécessitant un ajustement pour les propositions suivantes ; elles ne sont pas rouvertes par ce Round 2, conformément au mandat :
+
+- **P2** (passerelle stratégie → maintien au Palier 1) — résistance jugée faible, contrepartie désormais explicite.
+- **P4** (seuils de capital indexés en niveau 1) — aucun point de friction identifié, mesure procédurale sans perdant.
+- **P5** (double piste Standard/Pro, test des 70 % maintenu) — ligne rouge Finance Watch respectée par le ticket à 500 000 € et le maintien du test ; résidu friction 8.4 jugé d'intensité faible.
+- **P6** (marge de sortie post-IPO dégressive) — aucune partie prenante cartographiée n'a d'intérêt à s'y opposer.
+- **P7** (recommandation d'accompagnement ABE, art. 501 §5 CRR) — retirée du texte opérationnel, donc hors du terrain de friction 8.6 par construction.
+- **P8** (passerelle EuVECA ↔ ELTIF 2.0, retail via structure nourricière) — jugée la mieux calibrée politiquement du paquet ; seule réserve, déjà traitée en Round 2/3 d'`impact-debate.md`, de nature juridique et non politique (faisabilité du montage maître-nourricier sous l'article 11 ELTIF).
+- **P9** (désignation LTEI Solvency II) — aucun perdant identifiable parmi les parties prenantes cartographiées.
+- **P10** (sauf-conduit IORP II volontaire, EIOPA) — compromis délibéré déjà assumé par `proposals.md` §F ; vigilance ETUC diffuse mais non bloquante, prise en compte par le dispositif de suivi 2028-2029 déjà intégré en Round 2 d'`impact-debate.md`.
+- **P12** (fenêtre de garantie InvestEU, automaticité restreinte) — risque déjà neutralisé par la restriction du périmètre de l'automaticité intégrée en Round 2/3 d'`impact-debate.md`.
+
+---
+
+### Tableau récapitulatif des décisions de ce Round 2 (faisabilité)
+
+| # | Verdict de faisabilité (Round 1) | Décision policy-innovator (Round 2) |
+|---|---|---|
+| P1 | Viable avec ajustement (ticket semi-professionnel) | Ajustement intégré : ticket relevé à 200 000 € pour le seul Palier 2 ; synergie explicite avec P2 (ticket à 100 000 € maintenu pour les gérants qualifiés par la stratégie). |
+| P2 | Viable | Non rouverte. |
+| P3 | À risque élevé de blocage | Mécanisme alternatif substantiel : abandon de l'amendement MISP, remplacé par un passeport d'établissement interne au règlement EuVECA sur le modèle de son propre passeport de commercialisation (art. 14-16) ; clause de rendez-vous conservée comme seul filet de sécurité résiduel. |
+| P4 | Viable | Non rouverte. |
+| P5 | Viable | Non rouverte. |
+| P6 | Viable | Non rouverte. |
+| P7 | Viable | Non rouverte. |
+| P8 | Viable | Non rouverte. |
+| P9 | Viable | Non rouverte. |
+| P10 | Viable | Non rouverte. |
+| P11 | Viable (volet 2) / viable avec ajustement déjà intégré (volet 1) | Confirmé ; séquence de décision DG COMP formalisée, aucun ajustement politique supplémentaire nécessaire. |
+| P12 | Viable | Non rouverte. |
+| P13 | Viable avec ajustement (reporting sectoriel) | Ajustement intégré : clause de reporting annuel par label (STEP/CRMA/défense) transmise au Parlement ; activation future du volet défense soumise à procédure législative ordinaire ; substance du volet défense non diluée face à l'objection de La Gauche (contre-argument : mandat explicite de la consultation, résistance non bloquante). |
+
+### Source vérifiée pour ce Round 2
+
+- Architecture des articles 14 à 16 du règlement (UE) n° 345/2013 (enregistrement, notification de commercialisation transfrontière, transmission autorité d'origine → autorité(s) d'accueil et ESMA, sans autorisation distincte côté accueil) — texte consolidé, [legislation.gov.uk, Regulation (EU) No 345/2013](https://www.legislation.gov.uk/eur/2013/345/contents).
+
+## Confirmation Round 2 (faisabilité)
+
+Le fichier `/home/user/Claude/eu-financial-policy-claude-code/policy/feasibility-debate.md` a été mis à jour avec l'ajout de la section « Round 2 — policy-innovator (réponse à la faisabilité) » à la suite du Round 1, sans modification de ce dernier. Les quatre propositions signalées par `stakeholder-mapper` (P1, P3, P11, P13) ont reçu une réponse individuelle ; les 9 autres sont confirmées viables sans modification.
