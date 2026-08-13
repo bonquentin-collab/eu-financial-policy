@@ -1,6 +1,6 @@
 <!doctype html>
-<title>La feuille de route — 20 réformes faisables</title>
-<meta name="description" content="Séquencement, calendrier réel, base juridique et impact des 20 réformes confirmées faisables par les deux vérifications indépendantes.">
+<title>La feuille de route — 20 réformes expliquées en détail</title>
+<meta name="description" content="Chaque réforme faisable, expliquée de bout en bout : le problème, le mécanisme, la base juridique, ce qu'il faut rédiger, le calendrier réel, les acteurs, l'impact honnête et les risques.">
 <style>
   :root{
     --bg:#EEF1F0; --surface:#FFFFFF; --surface-2:#E3E9E7; --surface-3:#DCE3E1;
@@ -50,89 +50,92 @@
     --p3:#D8AE6C; --p3-soft:#3A2F1B;
   }
   *{box-sizing:border-box;}
-  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16.5px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased;}
   a{color:var(--accent-ink);}
   a:focus-visible, summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
   @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
-  .wrap{max-width:1120px; margin:0 auto; padding:0 24px 40px;}
-  .narrow{max-width:760px;}
+  .wrap{max-width:800px; margin:0 auto; padding:0 24px 40px;}
+  .wide{max-width:1080px;}
 
   header.masthead{border-bottom:1px solid var(--line); padding:52px 24px 36px; background:var(--surface);}
-  .masthead-inner{max-width:1120px; margin:0 auto;}
+  .masthead-inner{max-width:800px; margin:0 auto;}
   .eyebrow{font-family:var(--mono); font-size:12.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent-ink); display:flex; align-items:center; gap:10px; margin-bottom:16px;}
   .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--accent);}
-  h1{font-family:var(--serif); font-weight:600; font-size:clamp(28px,4.4vw,42px); line-height:1.1; margin:0 0 14px; text-wrap:balance; letter-spacing:-.01em;}
-  .subtitle{font-size:17px; color:var(--ink-soft); max-width:70ch; margin:0; text-wrap:pretty;}
+  h1{font-family:var(--serif); font-weight:600; font-size:clamp(26px,4.2vw,40px); line-height:1.12; margin:0 0 14px; text-wrap:balance; letter-spacing:-.01em;}
+  .subtitle{font-size:16.5px; color:var(--ink-soft); max-width:72ch; margin:0; text-wrap:pretty;}
 
   nav.toc{background:var(--surface-2); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; backdrop-filter:blur(6px);}
-  .toc-inner{max-width:1120px; margin:0 auto; padding:0 24px; display:flex; gap:20px; overflow-x:auto; scrollbar-width:none;}
+  .toc-inner{max-width:1080px; margin:0 auto; padding:0 24px; display:flex; gap:18px; overflow-x:auto; scrollbar-width:none;}
   .toc-inner::-webkit-scrollbar{display:none;}
-  nav.toc a{font-size:12.5px; color:var(--ink-soft); text-decoration:none; padding:11px 0; white-space:nowrap; border-bottom:2px solid transparent; font-weight:600;}
+  nav.toc a{font-size:12px; color:var(--ink-soft); text-decoration:none; padding:11px 0; white-space:nowrap; border-bottom:2px solid transparent; font-weight:600;}
   nav.toc a:hover{color:var(--accent-ink); border-bottom-color:var(--accent);}
 
   section{padding:44px 0; border-bottom:1px solid var(--line-soft);}
   section:last-of-type{border-bottom:none;}
   .kicker{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); margin:0 0 8px;}
-  h2{font-family:var(--serif); font-size:clamp(23px,3vw,30px); font-weight:600; margin:0 0 14px; text-wrap:balance;}
+  h2{font-family:var(--serif); font-size:clamp(22px,3vw,29px); font-weight:600; margin:0 0 14px; text-wrap:balance;}
   h3{font-family:var(--serif); font-size:19px; font-weight:600; margin:26px 0 8px;}
-  p{margin:0 0 15px; max-width:78ch;}
-  .lede{font-size:17px; color:var(--ink-soft); max-width:74ch;}
-  code{font-family:var(--mono); font-size:.9em; background:var(--surface-2); padding:1px 5px; border-radius:4px;}
+  h4{font-family:var(--sans); font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.02em; color:var(--accent-ink); margin:20px 0 7px;}
+  p{margin:0 0 14px; max-width:76ch;}
+  .lede{font-size:16.5px; color:var(--ink-soft); max-width:72ch;}
+  ul,ol{margin:0 0 14px; padding-left:22px;}
+  li{margin-bottom:6px; max-width:72ch;}
+  code{font-family:var(--mono); font-size:.88em; background:var(--surface-2); padding:1px 5px; border-radius:4px;}
+  em.term{font-style:normal; font-weight:700; color:var(--accent-ink); border-bottom:1px dotted var(--accent);}
 
   .stat-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:24px 0;}
   .stat{background:var(--surface); padding:18px 16px;}
-  .stat .n{font-family:var(--serif); font-size:28px; font-weight:600; line-height:1; color:var(--ink); font-variant-numeric:tabular-nums;}
+  .stat .n{font-family:var(--serif); font-size:26px; font-weight:600; line-height:1; color:var(--ink); font-variant-numeric:tabular-nums;}
   .stat .l{font-size:12px; color:var(--ink-faint); margin-top:6px;}
 
-  /* phase timeline */
-  .phase{margin:28px 0; border-radius:12px; overflow:hidden; border:1px solid var(--line);}
-  .phase-head{padding:16px 22px; display:flex; align-items:baseline; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .glossary{display:grid; grid-template-columns:1fr; gap:2px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:20px 0;}
+  .term{background:var(--surface); padding:14px 18px;}
+  .term dt{font-family:var(--serif); font-weight:700; font-size:15px; color:var(--accent-ink); margin-bottom:3px;}
+  .term dd{margin:0; font-size:14px; color:var(--ink-soft);}
+
+  .phase{margin:24px 0; border-radius:12px; overflow:hidden; border:1px solid var(--line);}
+  .phase-head{padding:14px 20px; display:flex; align-items:baseline; justify-content:space-between; gap:14px; flex-wrap:wrap;}
   .phase-head h3{margin:0; font-family:var(--serif);}
   .phase.p1 .phase-head{background:var(--p1-soft); border-bottom:1px solid var(--line);}
   .phase.p2 .phase-head{background:var(--p2-soft); border-bottom:1px solid var(--line);}
   .phase.p3 .phase-head{background:var(--p3-soft); border-bottom:1px solid var(--line);}
   .phase-when{font-family:var(--mono); font-size:12px; color:var(--ink-faint);}
-  .phase-body{background:var(--surface); padding:18px 22px;}
-  .reform-chip-row{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:6px;}
-  .reform-chip{
-    font-family:var(--mono); font-size:12.5px; font-weight:700; padding:5px 11px; border-radius:20px;
-    border:1px solid var(--line); background:var(--surface-2); color:var(--ink);
-  }
+  .phase-body{background:var(--surface); padding:16px 20px;}
+  .reform-chip-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .reform-chip{font-family:var(--mono); font-size:12px; font-weight:700; padding:4px 10px; border-radius:20px; border:1px solid var(--line); background:var(--surface-2);}
   .phase.p1 .reform-chip{border-color:var(--p1); color:var(--p1);}
   .phase.p2 .reform-chip{border-color:var(--p2); color:var(--p2);}
   .phase.p3 .reform-chip{border-color:var(--p3); color:var(--p3);}
 
-  /* reform cards */
-  .axis-head{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin:36px 0 16px; border-bottom:1px solid var(--line); padding-bottom:10px;}
-  .axis-head h3{margin:0; font-size:22px;}
-  .card-grid{display:grid; grid-template-columns:1fr; gap:12px;}
-  .card{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:18px 20px;}
-  .card-top{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; margin-bottom:8px; flex-wrap:wrap;}
-  .card-id{font-family:var(--mono); font-size:12px; color:var(--accent-ink); font-weight:700;}
-  .card-title{font-weight:700; font-size:15.5px; margin:2px 0 0;}
-  .card-badges{display:flex; gap:6px; flex-shrink:0; flex-wrap:wrap;}
-  .pill{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; font-weight:700; padding:3px 9px; border-radius:20px; white-space:nowrap;}
+  .axis-head{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin:0 0 6px;}
+  .axis-head h2{margin:0;}
+  .axis-intro{font-size:15.5px; color:var(--ink-soft); background:var(--surface-3); border-radius:10px; padding:16px 20px; margin:14px 0 30px;}
+
+  .reform{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:26px 28px; margin:0 0 24px;}
+  .reform-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:6px;}
+  .reform-id{font-family:var(--mono); font-size:13px; color:var(--accent-ink); font-weight:700;}
+  .reform-title{font-family:var(--serif); font-weight:700; font-size:21px; margin:3px 0 0; text-wrap:balance;}
+  .pill{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; font-weight:700; padding:4px 10px; border-radius:20px; white-space:nowrap;}
   .pill.p1{background:var(--p1-soft); color:var(--p1);}
   .pill.p2{background:var(--p2-soft); color:var(--p2);}
   .pill.p3{background:var(--p3-soft); color:var(--p3);}
-  dl.spec{display:grid; grid-template-columns:120px 1fr; gap:6px 14px; margin:10px 0 0; font-size:14px;}
-  dl.spec dt{font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-faint); padding-top:2px;}
-  dl.spec dd{margin:0; color:var(--ink-soft);}
+  .pill.star{background:var(--gold-soft); color:var(--gold);}
 
-  table{border-collapse:collapse; width:100%; margin:16px 0; font-size:13.5px;}
-  th,td{text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
-  th{font-family:var(--mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-faint); font-weight:600;}
-  .table-wrap{overflow-x:auto; margin:16px 0;}
-  .table-wrap table{margin:0;}
-
-  .callout{background:var(--accent-soft); border-radius:10px; padding:20px 22px; margin:22px 0;}
+  .callout{background:var(--accent-soft); border-radius:10px; padding:16px 20px; margin:16px 0;}
   .callout.gold{background:var(--gold-soft);}
+  .callout.bad{background:var(--bad-soft);}
   .callout p:last-child{margin-bottom:0;}
-  .callout h4{margin:0 0 8px; font-family:var(--serif); font-size:16px;}
+  .callout p{font-size:14.5px;}
+
+  table{border-collapse:collapse; width:100%; margin:14px 0; font-size:13.5px;}
+  th,td{text-align:left; padding:7px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{font-family:var(--mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-faint); font-weight:600;}
+  .table-wrap{overflow-x:auto; margin:14px 0;}
+  .table-wrap table{margin:0;}
 
   footer{padding:44px 24px 60px; background:var(--surface-2); border-top:1px solid var(--line);}
   footer .wrap{padding-bottom:0;}
-  footer h4{font-family:var(--serif); font-size:16px; margin:0 0 10px;}
+  footer h4{font-family:var(--serif); font-size:16px; margin:0 0 10px; color:var(--ink); text-transform:none; letter-spacing:0;}
   footer p{font-size:13.5px; color:var(--ink-soft);}
   .filelist{list-style:none; margin:0; padding:0; font-family:var(--mono); font-size:12.5px; color:var(--ink-soft); display:grid; gap:6px;}
   .filelist li::before{content:"› "; color:var(--accent-ink);}
@@ -140,41 +143,70 @@
 
 <header class="masthead">
   <div class="masthead-inner">
-    <div class="eyebrow"><span class="dot"></span>Phase 10 — feuille de route de mise en œuvre</div>
-    <h1>La feuille de route : 20 réformes, dans l'ordre, avec le calendrier réel</h1>
-    <p class="subtitle">Pour chacune des propositions confirmées légalement solides <em>et</em> politiquement praticables par les deux vérifications indépendantes, ce document donne la base juridique précise, ce qu'il faut rédiger, qui doit agir, à quelle échéance réaliste, et l'impact attendu — chiffré uniquement quand une donnée existe vraiment. Chaque réforme reprise ici part de sa <strong>version corrigée</strong>, pas de son texte d'origine parfois défaillant.</p>
+    <div class="eyebrow"><span class="dot"></span>Phase 10 — édition détaillée</div>
+    <h1>La feuille de route, en détail : 20 réformes, expliquées de bout en bout</h1>
+    <p class="subtitle">Version longue, sans raccourci. Pour chaque réforme confirmée faisable : le problème en langage courant, ce que le texte ferait exactement, pourquoi cette base juridique précise et pas une autre, ce qu'il faut concrètement écrire, pourquoi le calendrier est celui-là et pas un autre, qui doit agir et pourquoi ça résiste, l'impact honnêtement chiffré — et ce qui reste incertain. Le glossaire ci-dessous couvre tous les termes techniques qui reviennent ; rien n'est supposé connu à l'avance.</p>
   </div>
 </header>
 
 <nav class="toc">
   <div class="toc-inner">
-    <a href="#calendrier">Le calendrier</a>
+    <a href="#glossaire">Glossaire</a>
+    <a href="#calendrier">Les trois vitesses</a>
     <a href="#financement-reg">Financement — réglementaire</a>
     <a href="#financement-fec">Financement — FEC</a>
     <a href="#rentabilite">Rentabilité</a>
     <a href="#demande">Demande</a>
-    <a href="#transversal">Risques transversaux</a>
+    <a href="#bilan">Bilan et prochaines étapes</a>
   </div>
 </nav>
 
 <main>
 
+<section id="glossaire" class="wrap">
+  <p class="kicker">Avant de commencer</p>
+  <h2>Le vocabulaire qui revient dans toutes les fiches</h2>
+  <p class="lede">Vingt réformes, un même petit stock de notions juridiques et institutionnelles. Elles sont expliquées ici une fois, en langage courant, pour ne pas alourdir chaque fiche — un lien y renvoie chaque fois que c'est utile.</p>
+
+  <dl class="glossary">
+    <div class="term"><dt>Article 114 TFUE</dt><dd>La base légale la plus utilisée pour « harmoniser le marché intérieur » : un texte adopté à la <em>majorité qualifiée</em> (voir plus bas), pas besoin de l'accord unanime des 27. Mais son paragraphe 2 exclut expressément deux domaines : la fiscalité, et « les droits et intérêts des travailleurs salariés ». Un texte qui y touche ne peut pas s'appuyer sur cet article, quel que soit son habillage.</dd></div>
+    <div class="term"><dt>Article 115 TFUE</dt><dd>La base pour harmoniser la fiscalité directe. Elle exige l'<em>unanimité</em> des 27 — un seul refus bloque tout. C'est le mur le plus dur de tout ce dossier ; c'est pour l'éviter que plusieurs réformes ci-dessous passent par des chemins de traverse (article 173, article 114 dépouillé de tout effet fiscal).</dd></div>
+    <div class="term"><dt>Article 173 TFUE</dt><dd>La base pour la politique industrielle — majorité qualifiée, pas d'unanimité. Son paragraphe 3 exclut, lui aussi, toute mesure « contenant des dispositions fiscales ». Une réforme peut s'appuyer sur cet article pour produire un effet économique proche d'un avantage fiscal <em>sans en être un</em> juridiquement — à condition que son montant dépende d'une grandeur neutre (le capital souscrit, par exemple) et jamais d'une grandeur fiscale (un impôt payé). C'est un exercice d'équilibriste qui réussit pour une réforme de ce dossier (R3) et échoue pour une autre qui avait cru pouvoir le copier (N1, écartée).</dd></div>
+    <div class="term"><dt>Aide d'État (article 107 TFUE)</dt><dd>Interdiction, en principe, des aides publiques qui faussent la concurrence — mais elle ne s'applique qu'aux aides financées par des « ressources d'État » (un gouvernement national). Un versement fait <em>directement</em> par le budget de l'Union, géré par la Commission elle-même, n'est pas une « ressource d'État » — donc hors du champ de cette interdiction.</dd></div>
+    <div class="term"><dt>Majorité qualifiée</dt><dd>Le mode de vote normal du Conseil : au moins 55 % des États membres (soit 15 sur 27), représentant au moins 65 % de la population de l'Union. Beaucoup plus facile à atteindre que l'unanimité, où un seul pays peut tout bloquer.</dd></div>
+    <div class="term"><dt>Procédure législative ordinaire</dt><dd>Le circuit normal d'adoption d'un texte européen : la Commission propose, le Parlement et le Conseil négocient et doivent se mettre d'accord sur un texte identique (avec, si besoin, une phase de « trilogue » — des réunions informelles à trois pour accélérer l'accord), puis le texte est publié. C'est la procédure de la plupart des réformes de ce dossier.</dd></div>
+    <div class="term"><dt>Acte délégué</dt><dd>Un texte technique que la Commission peut adopter seule, sur la base d'une autorisation (« habilitation ») déjà votée dans un texte de niveau supérieur, pour préciser des paramètres sans rouvrir tout le débat politique. Le Parlement et le Conseil gardent un droit de veto global (« non-objection ») dans un délai fixé (souvent trois mois), mais ne peuvent pas l'amender — ils l'acceptent ou le rejettent en bloc. C'est plus rapide qu'une loi, mais tout-ou-rien : un acte délégué mal calibré se fait rejeter entièrement.</dd></div>
+    <div class="term"><dt>Acte d'exécution / décision d'exécution</dt><dd>Un acte pris par la Commission pour appliquer techniquement une règle déjà votée — il ne peut pas créer de nouvelles obligations de fond ni, surtout, engager par avance des crédits budgétaires d'exercices futurs. C'est une limite importante : plusieurs mécanismes de ce dossier ont dû être redessinés parce qu'ils demandaient à un acte d'exécution de faire ce que seuls le Parlement et le Conseil, ensemble, ont le pouvoir de faire.</dd></div>
+    <div class="term"><dt>Coopération renforcée</dt><dd>Un mécanisme qui permet à un sous-groupe d'au moins 9 États membres d'avancer ensemble quand l'unanimité à 27 est hors d'atteinte. Elle permet de créer de <em>nouvelles</em> règles entre volontaires ; elle ne permet <em>pas</em> d'écarter, pour ce sous-groupe, des règles déjà applicables aux 27 (comme les règles des marchés financiers).</dd></div>
+    <div class="term"><dt>Le comité d'examen de la réglementation</dt><dd>Un organe interne à la Commission qui vérifie la qualité de chaque étude d'impact avant qu'une proposition de loi puisse avancer. Un avis défavorable bloque le texte en pratique — l'Acte européen sur l'innovation en a déjà fait l'expérience, reporté deux fois après deux avis négatifs.</dd></div>
+    <div class="term"><dt>Accord interinstitutionnel</dt><dd>Un engagement que la Commission, le Parlement et le Conseil se donnent mutuellement sur la façon dont ils travaillent ensemble (par exemple, les règles de rédaction d'une étude d'impact). Il engage les trois institutions moralement et politiquement, mais sa méconnaissance n'annule pas, en droit, un texte adopté en le violant — c'est un outil plus faible qu'une loi, mais plus rapide à faire évoluer.</dd></div>
+    <div class="term"><dt>Solvabilité II et le SCR</dt><dd>Le cadre prudentiel des assureurs européens. Le <em>SCR</em> (Solvency Capital Requirement) est le montant de fonds propres qu'un assureur doit mettre de côté pour chaque actif détenu, selon son risque. Détenir des actions non cotées coûte, par défaut, 49 % de leur valeur en capital de réserve — sauf régime spécial LTEI (22 %, pour une détention très longue sans intention de revente forcée).</dd></div>
+    <div class="term"><dt>EIOPA, ESMA, ABE, CERS</dt><dd>Les autorités européennes de supervision financière : EIOPA pour les assurances et les retraites professionnelles, ESMA pour les marchés financiers, l'ABE pour les banques, et le CERS (Comité européen du risque systémique) pour la stabilité financière d'ensemble. Le « comité mixte » réunit les trois premières pour les sujets transversaux.</dd></div>
+    <div class="term"><dt>AIFMD et le seuil des 500 M€</dt><dd>La directive-cadre qui régit les gestionnaires de fonds d'investissement « alternatifs » (dont le capital-risque) au-delà d'un certain seuil : dépositaire obligatoire, fonds propres réglementaires, reporting détaillé. En dessous de 500 millions d'euros d'actifs, un gérant peut choisir le régime allégé EuVECA à la place — mais au franchissement du seuil, toutes les obligations lourdes s'appliquent d'un coup, un « effet de falaise » que la Commission reconnaît elle-même.</dd></div>
+    <div class="term"><dt>MiFID II et les MTF</dt><dd>La directive-cadre des marchés financiers européens. Elle impose (article 1, paragraphe 7) que tout système mettant en relation plusieurs acheteurs et vendeurs fonctionne selon l'une de trois catégories prévues : marché réglementé, MTF (système multilatéral de négociation) ou OTF. On ne peut pas inventer une quatrième catégorie sur le côté — toute nouvelle plateforme doit se rattacher à l'une des trois, généralement au régime allégé de MTF déjà prévu pour les petits marchés de croissance (article 33).</dd></div>
+    <div class="term"><dt>AMP/GPA (Accord sur les marchés publics de l'OMC)</dt><dd>Un traité international qui oblige ses signataires (dont l'Union et les États-Unis) à ouvrir une partie de leur commande publique aux entreprises des autres signataires, sauf exceptions inscrites à l'avance. Les États-Unis ont inscrit une exclusion pour les marchés réservés aux petites entreprises ; <em>l'Union ne l'a jamais fait</em> — ce qui rend leur modèle « SBIR » légal chez eux et fragile chez nous.</dd></div>
+    <div class="term"><dt>Critères de sélection vs critères d'attribution</dt><dd>Dans un marché public, les critères qui choisissent <em>qui a le droit de candidater</em> (taille, ancienneté de l'entreprise) doivent rester séparés des critères qui notent <em>quelle offre est la meilleure</em>. On ne peut pas, en principe, donner des points dans la note finale au simple fait que le candidat soit jeune ou petit — ce sont des qualités du candidat, pas de l'offre proposée.</dd></div>
+    <div class="term"><dt>Rétention du risque, tranches, titrisation</dt><dd>Une titrisation transforme un portefeuille de prêts ou de garanties en un produit financier découpé en « tranches » de risque croissant : la <em>première perte</em> (la plus risquée, absorbe les premières pertes), la <em>mezzanine</em> (risque intermédiaire) et la <em>senior</em> (la plus sûre). La loi européenne oblige celui qui structure l'opération à garder une part du risque (« rétention »训), pour rester incité à bien sélectionner les prêts — mais les formes de rétention autorisées sont limitées, ce qui contraint les montages possibles.</dd></div>
+    <div class="term"><dt>Perte attendue vs perte inattendue</dt><dd>Deux notions différentes de risque financier. La <em>perte attendue</em> est celle qu'on anticipe statistiquement en moyenne — elle doit être provisionnée. La <em>perte inattendue</em> est celle des scénarios extrêmes, plus rare mais plus grave — c'est elle que le capital de réserve (le SCR, par exemple) est censé couvrir. Confondre les deux est l'erreur qui a fait tomber deux mécanismes de ce dossier.</dd></div>
+  </dl>
+</section>
+
 <section id="calendrier" class="wrap">
   <p class="kicker">Vue d'ensemble</p>
-  <h2>Trois vitesses, pas une seule</h2>
-  <p class="lede">Les 20 réformes ne partagent pas un calendrier unique — certaines peuvent avancer dès maintenant sur des textes déjà en négociation, d'autres ne peuvent exister qu'une fois le règlement EU Inc. adopté, d'autres encore sont entièrement suspendues à l'issue de la négociation du CFP dans son ensemble. Les confondre dans un seul agenda produirait un calendrier irréaliste.</p>
+  <h2>Pourquoi il n'y a pas un calendrier, mais trois</h2>
+  <p class="lede">Chaque réforme s'accroche à un texte différent, et ces textes n'avancent pas au même rythme. Certains sont déjà en négociation avec une date connue ; d'autres n'existent que par rapport à un règlement — le futur statut de société européen « EU Inc. » — qui n'est pas encore adopté ; d'autres enfin sont des articles à écrire à l'intérieur du grand règlement budgétaire encore en négociation. Vouloir les faire avancer tous ensemble, au même rythme, produirait un calendrier qui n'existe nulle part dans la réalité institutionnelle.</p>
 
   <div class="stat-grid">
     <div class="stat"><div class="n">20</div><div class="l">réformes en feuille de route</div></div>
-    <div class="stat"><div class="n">11</div><div class="l">indépendantes du CFP — piste réglementaire propre</div></div>
-    <div class="stat"><div class="n">2</div><div class="l">rattachées au règlement EU Inc.</div></div>
-    <div class="stat"><div class="n">7</div><div class="l">suspendues à l'accord CFP/FEC (visé fin 2026, entrée en vigueur 2028)</div></div>
+    <div class="stat"><div class="n">11</div><div class="l">sur une piste réglementaire déjà ouverte, indépendante du budget européen</div></div>
+    <div class="stat"><div class="n">2</div><div class="l">qui n'existent que comme chapitres du futur règlement EU Inc.</div></div>
+    <div class="stat"><div class="n">7</div><div class="l">qui n'existent que comme articles du futur budget européen (le FEC)</div></div>
   </div>
 
   <div class="phase p1">
-    <div class="phase-head"><h3>Piste 1 — Réglementaire, indépendante du CFP</h3><span class="phase-when">Textes déjà en négociation · 2026-2028</span></div>
+    <div class="phase-head"><h3>Piste 1 — Des textes déjà en négociation, sans lien avec le budget européen</h3><span class="phase-when">2026-2032 selon le texte</span></div>
     <div class="phase-body">
-      <p>Ces réformes s'accrochent à des révisions déjà engagées ou déjà calendrier (EuVECA T3 2026, révision marchés publics 9 septembre 2026, trilogue titrisation fin 2026, LTEI Solvabilité II 30 janvier 2027) ou à des textes à déposer sans lien avec l'issue du CFP. Elles peuvent, en théorie, avancer même si la négociation budgétaire prend du retard.</p>
+      <p>Chacune de ces réformes se greffe sur une négociation déjà ouverte — la révision du régime des fonds de capital-risque européens, la révision des règles prudentielles des assureurs, le grand paquet de simplification des marchés financiers, la révision des règles de marchés publics — ou sur un texte à déposer, mais sans dépendre de l'issue du budget européen. Elles peuvent avancer même si la négociation budgétaire prend du retard.</p>
       <div class="reform-chip-row">
         <span class="reform-chip">F1 — EuVGF</span>
         <span class="reform-chip">F5 — Solvabilité II</span>
@@ -189,14 +221,14 @@
         <span class="reform-chip">D3 — Centrale d'achat*</span>
         <span class="reform-chip">D5 — Normes</span>
       </div>
-      <p style="font-size:13px;color:var(--ink-faint);margin-top:10px;">* hors volet garantie, qui relève de la piste 3.</p>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:10px;">* hors le volet garantie de D3, qui appartient à la piste 3.</p>
     </div>
   </div>
 
   <div class="phase p2">
-    <div class="phase-head"><h3>Piste 2 — Rattachée au règlement EU Inc. (28e régime)</h3><span class="phase-when">Trilogue visé fin 2026 · application 2028</span></div>
+    <div class="phase-head"><h3>Piste 2 — Ce qui n'existe que comme chapitre du règlement EU Inc.</h3><span class="phase-when">Accord de trilogue visé fin 2026 · application réaliste 2028</span></div>
     <div class="phase-body">
-      <p>Ces réformes n'ont de sens qu'intégrées au règlement créant le statut de société européen optionnel — leur calendrier suit donc exactement celui de ce texte, y compris son incertitude propre (l'annonce officielle mentionne à la fois « premières immatriculations début 2027 » et « application 12 mois après l'entrée en vigueur », deux échéances qui ne se concilient pas sans une date d'application différenciée — la feuille de route retient 2028 par prudence).</p>
+      <p>Le futur statut européen de société optionnel doit encore être négocié entre le Parlement et le Conseil. Deux réformes de cette feuille de route sont des chapitres à insérer directement dans ce texte — elles n'ont donc, au sens le plus strict, aucune existence indépendante de lui. Leur calendrier suit le sien à la lettre, y compris son incertitude propre : la communication officielle promet à la fois des « premières immatriculations début 2027 » et une application « douze mois après l'entrée en vigueur », deux échéances qui ne se concilient pas sauf à prévoir une date d'application différenciée pour certaines dispositions. Cette feuille de route retient prudemment 2028 pour l'application effective.</p>
       <div class="reform-chip-row">
         <span class="reform-chip">R1 — EU-ESOP (volet non fiscal)</span>
         <span class="reform-chip">R4 — Bande de capital + ICE</span>
@@ -205,9 +237,9 @@
   </div>
 
   <div class="phase p3">
-    <div class="phase-head"><h3>Piste 3 — Suspendue à l'accord CFP / règlement FEC</h3><span class="phase-when">Accord visé fin 2026 · entrée en vigueur 1ᵉʳ janvier 2028</span></div>
+    <div class="phase-head"><h3>Piste 3 — Ce qui n'existe que comme article du futur Fonds européen pour la compétitivité</h3><span class="phase-when">Accord CFP visé fin 2026 · entrée en vigueur 1ᵉʳ janvier 2028</span></div>
     <div class="phase-body">
-      <p>Ces réformes sont des articles du futur règlement établissant le Fonds européen pour la compétitivité, ou dépendent de son compartiment budgétaire (~11 Md€ sur sept ans) pour leur financement. Elles n'ont, à la lettre, aucune existence avant l'accord politique sur le CFP dans son ensemble — le risque documenté que ce compartiment serve de variable d'ajustement en cas de coupe budgétaire s'applique à toutes en bloc.</p>
+      <p>Le Fonds européen pour la compétitivité (FEC) est le grand instrument budgétaire qui financerait, entre autres, l'accès au capital des startups européennes. Il n'existera qu'avec l'accord global sur le budget européen 2028-2034 — un accord qui, à ce jour, n'est pas acquis : le Conseil européen de juin 2026 n'a pas conclu, et trois points restent ouverts (montant total, architecture des fonds régionaux, nouvelles ressources propres). Sept réformes de cette feuille de route sont des articles à écrire dans ce même texte, ou dépendent de son compartiment budgétaire (de l'ordre de 11 milliards d'euros sur sept ans — un chiffre à retenir, il revient souvent).</p>
       <div class="reform-chip-row">
         <span class="reform-chip">F3 — Guichet miroir</span>
         <span class="reform-chip">F4 — Option de rachat</span>
@@ -222,220 +254,512 @@
   </div>
 
   <div class="callout gold">
-    <h4>Un arbitrage de séquencement qui contredit l'intuition</h4>
-    <p>N5 (le collège de suivi macroprudentiel) ne produit aucun financement — mais il doit être négocié <strong>avant</strong> F5 et F9, pas après, parce que sa fonction est d'acheter la recevabilité macroprudentielle des deux textes qui, eux, produisent un effet de financement réel. C'est le seul cas de toute la feuille de route où l'ordre logique n'est pas l'ordre d'impact attendu.</p>
+    <h4 style="text-transform:none;letter-spacing:0;margin-top:0;">Une décision de séquencement qui va à contre-intuition</h4>
+    <p>Une des vingt réformes ne finance rien du tout : N5, le collège chargé de surveiller les risques accumulés par l'ensemble du dispositif. Et pourtant, elle doit être négociée <strong>en premier</strong>, avant même les réformes qui, elles, produisent un effet de financement direct (F5 et F9). La raison : les régulateurs de la stabilité financière (la BCE, le CERS) sont ceux qui opposeront le plus fort argument contre F5 et F9 — le risque que ces réformes créent des poches de fragilité mal surveillées. Si N5 existe déjà quand F5 et F9 arrivent sur la table, cet argument tombe de lui-même. C'est le seul cas de toute la feuille de route où l'ordre de négociation n'est pas l'ordre d'importance économique.</p>
   </div>
 </section>
 
-<section id="financement-reg" class="wrap">
-  <div class="axis-head"><h3>Axe financement — piste réglementaire</h3></div>
+<section id="financement-reg" class="wrap wide">
+  <div class="axis-head"><h2>Axe financement — la piste réglementaire</h2></div>
+  <p class="axis-intro">Huit réformes qui ne dépendent d'aucun accord budgétaire — elles avancent, ou n'avancent pas, sur leur propre mérite et leur propre calendrier institutionnel. C'est la partie la plus avancée de toute la feuille de route : plusieurs de ces textes sont déjà en cours de négociation, et il s'agit d'y insérer, au bon moment, la version corrigée du mécanisme.</p>
 
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F1</div><div class="card-title">Régime EuVGF proportionné (paliers jusqu'à 2 Md€, passeport de gestion)</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Modification explicite de l'article 3 de l'AIFMD (directive 2011/61/UE) + nouveau règlement EuVGF — procédure ordinaire, majorité qualifiée.</dd>
-        <dt>Véhicule</dt><dd>Proposition législative EuVECA/EuSEF attendue T3 2026.</dd>
-        <dt>Acteurs</dt><dd>DG FISMA, ESMA (collège de superviseurs à créer), résistance anticipée de l'Irlande et du Luxembourg sur le passeport de gestion.</dd>
-        <dt>Impact</dt><dd>Condition de faisabilité des fonds de 300 M€-1 Md€ que l'ETCI 2.0 vise à financer — sans donnée chiffrée sur l'ampleur propre de F1.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F5</div><div class="card-title">Escalier de charge Solvabilité II selon la durée de détention</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Acte délégué (article 111, directive 2009/138/CE) pour l'escalier ; le sous-module dédié à 17 % excède probablement cette habilitation et nécessiterait un acte de niveau 1 — à trancher avant dépôt.</dd>
-        <dt>Véhicule</dt><dd>Articulé avec l'entrée en application du régime LTEI le 30 janvier 2027 ; paliers intermédiaires à calibrer par étude EIOPA, pas fixés a priori.</dd>
-        <dt>Acteurs</dt><dd>EIOPA, Commission (DG FISMA) ; N5 doit exister avant l'entrée en vigueur pour la recevabilité macroprudentielle.</dd>
-        <dt>Impact</dt><dd>Le mouvement 49→22 % est déjà en droit en vigueur — le 45-50 Md€ de stock cité pour 0,5 pt de réallocation assurance (macro §3.2a) n'est donc <em>pas</em> attribuable à F5 seule.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F7</div><div class="card-title">Label « Épargne Productive Européenne »</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Article 114 TFUE (précédents : ELTIF, EuVECA, PEPP, obligations vertes européennes).</dd>
-        <dt>Véhicule</dt><dd>Règlement autonome, pas de fenêtre législative imposée — à déposer.</dd>
-        <dt>Acteurs</dt><dd>Fédérations de fonds de pension allemande et italienne — résistance résiduelle anticipée même sans obligation légale.</dd>
-        <dt>Impact</dt><dd>Taux de recours au label non estimable a priori.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F9</div><div class="card-title">Plateformes de liquidité pré-IPO — sous-régime de MTF</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Modification de MiFID II (2014/65/UE), sous-catégorie de MTF sur le modèle de l'article 33 (marchés de croissance PME) — pas une 4ᵉ catégorie autonome, interdite par l'article 1§7.</dd>
-        <dt>Véhicule</dt><dd>Paquet intégration des marchés et supervision, en trilogue.</dd>
-        <dt>Acteurs</dt><dd>ESMA ; régime LCB-FT à ajouter explicitement (entité assujettie de plein droit dans la reconstruction en MTF).</dd>
-        <dt>Impact</dt><dd>Volumes secondaires non estimables a priori.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F12</div><div class="card-title">Recyclage du bilan de garantie — tranchage inversé</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Titrisation synthétique de bilan STS (articles 26bis-26sexies, règlement 2017/2402) — catégorie déjà existante, pas de nouvelle catégorie « position résiliente ».</dd>
-        <dt>Véhicule</dt><dd>Trilogue titrisation/CRR déjà engagé, conclusion visée fin 2026.</dd>
-        <dt>Correction</dt><dd>Céder la première perte (ou une tranche mezzanine), retenir une part senior ou verticale — l'inverse du montage initial. Note : l'article 6 du règlement 2017/2402 pourrait ne pas admettre la rétention d'une senior seule, réduisant l'option praticable à la part verticale (sous réserve du texte issu du trilogue).</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F14</div><div class="card-title">Guichet unique — volet concentrations seul</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Modification du règlement 139/2004 ; base précise (art. 103 TFUE probable, unanimité) à confirmer avant dépôt — seule réforme de la piste 1 à exiger l'unanimité du Conseil.</dd>
-        <dt>Véhicule</dt><dd>Aucune fenêtre identifiée — initiative à déposer, répond au vide révélé par l'arrêt <em>Illumina/Grail</em> (C-611/22 P).</dd>
-        <dt>Acteurs</dt><dd>DG COMP ; le volet filtrage IDE est réduit à un simple portail commun, décisions restant nationales (art. 4§2 TUE).</dd>
-        <dt>Impact</dt><dd>43 % des investisseurs citent l'absence de sorties M&A comme premier frein (micro §1.6) — effet spécifique de ce guichet non isolable.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">N3</div><div class="card-title">Utilité européenne de valorisation des actifs privés</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Logée dans le comité mixte des autorités européennes de surveillance déjà existant — pas de nouvel organisme.</dd>
-        <dt>Correction</dt><dd>Présomption sur le respect de la méthode, jamais sur l'exactitude du résultat ; publier des fourchettes, pas des valeurs ponctuelles (risque de monoculture de valorisation sinon).</dd>
-        <dt>Calendrier</dt><dd>Rédigé en deux phases de sources de données pour ne pas hériter du calendrier de F9 — gain d'environ 4 ans.</dd>
-        <dt>Impact</dt><dd>Seule proposition de tout l'exercice qui traite la cause déclarée d'une opposition politique documentée (coût de diligence des fonds de pension) plutôt que de la contourner.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">N5</div><div class="card-title">Collège de stabilité financière de l'innovation</div></div><div class="card-badges"><span class="pill p1">Piste 1 — à séquencer en premier</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Sous-structure du Conseil général du CERS (règlement (UE) n°1092/2010, art. 3) — pas de nouvel organisme.</dd>
-        <dt>La vraie nouveauté</dt><dd>Obligation légale de déclaration pour le Groupe BEI et les banques nationales de promotion (entités déclarantes, pas membres du collège) — aujourd'hui inexistante.</dd>
-        <dt>Séquencement</dt><dd>À négocier avant F5 et F9, dont il conditionne la recevabilité macroprudentielle.</dd>
-      </dl>
-    </div>
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F1</div><div class="reform-title">Remplacer le seuil couperet de 500 M€ par un régime progressif, avec passeport de gestion</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Un fonds de capital-risque européen dispose aujourd'hui d'un choix binaire. En dessous de 500 millions d'euros d'actifs sous gestion, il peut utiliser un régime allégé appelé « EuVECA » : formalités réduites, passeport de commercialisation dans toute l'Union. Au-dessus de ce seuil, il bascule d'un coup dans le régime complet et lourd de l'AIFMD (voir le glossaire) : dépositaire obligatoire, fonds propres réglementaires, reporting détaillé. La Commission européenne elle-même qualifie ce saut d'« effet de falaise ». Résultat documenté et logique : un gérant dont le fonds approche 500 millions préfère souvent le plafonner artificiellement, ou le scinder en deux fonds jumeaux pour rester sous le seuil, plutôt que de basculer. Or c'est précisément la taille de fonds entre 500 millions et un milliard d'euros qui manque le plus en Europe pour financer les tours de série B et C — la zone où les startups européennes décrochent face à leurs homologues américaines.
+
+    Deuxième problème, distinct : même un gérant en dessous du seuil ne peut aujourd'hui commercialiser ses parts dans toute l'Union (il a un « passeport de commercialisation ») sans pouvoir pour autant <em>gérer</em> un fonds établi dans un autre pays sans s'y implanter physiquement. Cette contrainte d'implantation locale freine la constitution de fonds véritablement paneuropéens.</p>
+
+    <h4>Ce que le texte ferait concrètement</h4>
+    <p>Au lieu d'un seuil unique, trois paliers progressifs jusqu'à 2 milliards d'euros (et non 5 milliards, comme la première version l'envisageait — ce chiffre n'était appuyé par aucune donnée ; la base factuelle du dossier suggérait plutôt une fourchette de 500 millions à 2 milliards). À chaque palier, un peu plus d'obligations s'ajoutent, jamais toutes d'un coup : d'abord un dépositaire allégé et des fonds propres calculés plus simplement, puis un reporting complet et une fonction de gestion des risques permanente, et seulement au-delà de 2 milliards le régime complet de l'AIFMD. Chaque franchissement de palier ouvre une période de transition de 36 mois pour s'adapter — la falaise devient une pente. Le texte ajoute aussi un vrai passeport de <em>gestion</em>, pas seulement de commercialisation : un gérant agréé dans un pays pourrait gérer un fonds établi ailleurs sans nouvelle implantation ni nouvel agrément.</p>
+
+    <h4>Pourquoi cette base juridique, et ce qu'il faut vraiment écrire</h4>
+    <p>Le nouveau régime lui-même (un règlement, donc directement applicable partout sans transposition nationale) s'appuie sur l'article 114 du traité — la même base que le régime actuel qu'il remplace. Mais il y a un piège juridique que la première version du texte n'avait pas vu : un règlement ne peut pas simplement <em>ignorer</em> des obligations posées par une directive existante — ici, l'AIFMD. Il faut donc modifier l'AIFMD elle-même <em>en même temps</em>, par une directive séparée mais adoptée dans le même paquet, avec la même date d'entrée en application. Sans cette précaution, on se retrouverait avec un texte qui semble adopté mais qui ne produit, en réalité, aucun effet juridique — parce que l'ancienne directive continuerait techniquement à s'imposer.
+
+    Une autre correction technique : la première version du texte prévoyait d'« exempter » les nouveaux fonds de certaines obligations de gestion du risque de liquidité. En réalité, cette exemption existe déjà dans le droit actuel pour ce type de fonds fermés — l'ajouter à nouveau n'aurait fait qu'affaiblir, par contraste, le droit en vigueur pour tout le monde. Elle a donc été retirée du texte.
+
+    Le passeport de gestion, lui, doit être présenté non pas comme une nouveauté radicale, mais comme l'extension d'un mécanisme qui existe déjà — celui utilisé par les fonds classiques (OPCVM) — à une catégorie de fonds qui en est aujourd'hui exclue. C'est une nuance de rédaction qui change beaucoup la façon dont l'argument sera reçu en négociation.</p>
+
+    <h4>Le calendrier, et pourquoi c'est celui-là</h4>
+    <p>La Commission a déjà annoncé une proposition de révision des règlements EuVECA et EuSEF pour le troisième trimestre 2026, après une consultation publique close le 12 mars 2026. C'est la fenêtre à ne pas manquer : ce type de révision n'intervient historiquement que tous les quatre à cinq ans (2013, 2017, puis 2026). Si les paliers progressifs et le passeport de gestion ne figurent pas dans le texte initial de la Commission, il faudra les obtenir par amendement parlementaire — un chemin possible, mais nettement plus fragile pour une réforme qui doit aussi modifier une directive tierce en même temps.
+
+    En tenant compte du temps de négociation habituel pour un dossier de cette taille (18 à 30 mois entre la proposition et la publication), et de la nécessité d'éviter le ralentissement politique qui précède toujours les élections européennes de 2029, la publication réaliste se situe fin 2028 - début 2029, pour une application effective vers 2030-2031 (le temps que la directive corrélative soit transposée dans chaque pays).</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>Le texte serait rédigé par les services de la Commission en charge de la gestion d'actifs, examiné par la commission des affaires économiques du Parlement européen, et négocié au Conseil par le groupe des services financiers. Le régulateur européen des marchés (l'ESMA) recevrait un rôle de coordination — notamment via un nouveau « collège de superviseurs » qui réunirait l'autorité du pays d'origine du fonds et les autorités des pays où il commercialise ses parts, précisément pour rassurer sur le passeport de gestion.
+
+    Le point de friction documenté est prévisible : le passeport de gestion touche directement au modèle économique de deux pays, l'Irlande et le Luxembourg, dont l'attractivité comme lieu d'implantation de fonds repose en partie sur l'obligation actuelle d'y avoir une présence physique. Mais ces deux pays ne disposent d'aucun droit de veto sur ce dossier (il se décide à la majorité qualifiée) et representent, ensemble, une part de la population européenne largement insuffisante pour bloquer un vote — face à eux, six grands pays (Allemagne, France, Italie, Espagne, Pays-Bas, Pologne) poussent déjà, sur d'autres dossiers, dans le sens d'une supervision plus centralisée. La bonne tactique de négociation, documentée dans la feuille de route détaillée, est de scinder le sujet en deux : faire adopter d'abord les paliers progressifs, sur lesquels il n'y a pas d'opposition connue, puis traiter le passeport de gestion séparément, avec le collège de superviseurs comme contrepartie offerte à l'Irlande et au Luxembourg.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Le chiffre le plus solide dont on dispose est un chiffre de diagnostic, pas de résultat : seuls 29 % des 704 fonds de capital-risque européens recensés utilisent aujourd'hui le régime EuVECA (et à peine 2 % pour son équivalent dans l'entrepreneuriat social), avec un usage particulièrement faible en France et en Espagne. C'est ce taux d'adoption raté que la réforme cherche à corriger — pas un montant de financement supplémentaire qu'on pourrait chiffrer à l'avance. Il n'existe, dans aucune des données rassemblées pour ce dossier, d'estimation du nombre de gestionnaires qui changeraient effectivement de comportement grâce à cette réforme, ni du capital que cela débloquerait. La formulation honnête est que F1 est une <em>condition</em> pour que d'autres instruments (notamment le programme européen ETCI, qui vise justement à financer des fonds de 300 millions à un milliard d'euros) puissent fonctionner — pas un levier dont on peut chiffrer l'effet propre.</p>
+
+    <h4>Ce qui peut encore mal tourner</h4>
+    <p>Le risque principal est procédural : si, en cours de négociation, le règlement et sa directive corrélative se retrouvent séparés — une tentation réelle, le Conseil préférant souvent traiter les textes un par un — le dispositif entier devient juridiquement inopérant tout en semblant adopté. C'est le point à surveiller en priorité pendant tout le trilogue. Le plafond de 2 milliards d'euros, ensuite, restera un chiffre négocié plutôt que démontré : l'industrie du capital-risque poussera pour le relever, les superviseurs pour le baisser.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F5</div><div class="reform-title">Remplacer le couperet prudentiel par une charge progressive selon la durée de détention</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Quand un assureur européen investit dans des actions non cotées (typiquement, des parts de fonds de capital-risque), il doit mettre de côté, en réserve de capital, jusqu'à 49 % de la valeur de cet investissement — un vrai frein, qui explique en grande partie pourquoi les assureurs européens n'allouent qu'environ 1 à 2 % de leurs actifs au capital-investissement. Un régime spécial existe, appelé LTEI, qui ramène cette charge à 22 % — mais seulement si l'assureur remplit des conditions strictes de détention très longue et sans intention de revente forcée. Le problème, c'est que ce régime fonctionne en tout-ou-rien : soit toutes les conditions sont remplies et la charge tombe à 22 %, soit une seule manque et elle reste à 49 %, sans aucune gradation entre les deux. Cela pousse, paradoxalement, à monter des dossiers qui <em>documentent</em> une intention de détention longue plutôt qu'à réellement détenir longtemps.</p>
+
+    <h4>Ce que le texte ferait concrètement — et une correction factuelle importante</h4>
+    <p>Remplacer ce tout-ou-rien par un barème progressif à quatre paliers selon la durée <em>réelle</em> de détention : moins de 2 ans, la charge de 49 % reste inchangée ; entre 2 et 3 ans, un palier intermédiaire réduit ; entre 3 et 5 ans, un second palier intermédiaire, plus favorable ; à partir de 5 ans, sous les critères actuels du régime LTEI, la charge reste à 22 %. Les deux paliers intermédiaires ne sont volontairement <strong>pas fixés</strong> dans le texte lui-même : ils sont renvoyés à une étude de calibration technique confiée au régulateur des assurances (EIOPA), menée sur des données réelles.
+
+    Une précision importante corrige une erreur de la version initiale du dossier : celle-ci affirmait que les actions <em>cotées</em> en bourse subissaient, elles aussi, une charge de 49 %. C'est inexact — sous le droit actuel, les actions cotées sur un marché réglementé européen ou de l'OCDE relèvent déjà d'une charge de 39 %, pas 49 %. L'écart entre coté et non coté existe bien (39 % contre 22 %), mais il est deux fois moins large que ce qui avait été présenté au départ.
+
+    La réforme prévoyait aussi, dans sa version d'origine, une nouvelle catégorie à 17 % réservée aux « actions d'innovation européennes ». Ce point-là ne peut malheureusement pas suivre la voie rapide (voir ci-dessous) — il devra attendre un texte plus lourd, plus tard.</p>
+
+    <h4>Pourquoi cette procédure, et sa limite</h4>
+    <p>La voie retenue est celle de l'« acte délégué » (voir le glossaire) : la Commission peut modifier elle-même les paramètres techniques du régime prudentiel, sur la base d'une habilitation déjà votée, sans repasser par tout le processus législatif — plus rapide, mais avec une contrainte réelle : le Parlement et le Conseil ne peuvent qu'accepter ou rejeter le texte dans son ensemble, sans pouvoir l'amender. C'est pour cela que la qualité de l'avis technique préalable du régulateur des assurances est absolument déterminante : un acte délégué dont la calibration ne s'appuie pas sur un avis technique solide sera tout simplement rejeté en bloc.
+
+    C'est précisément cette voie rapide qui exclut la catégorie à 17 % pour l'innovation : les règles qui encadrent ce que la Commission peut faire par acte délégué imposent que toute charge de capital reste cohérente avec une méthode de calcul du risque bien précise (une mesure de perte extrême à 99,5 % de probabilité sur un an). Un taux de 17 % pour des actions non cotées de sociétés très jeunes ne pourrait vraisemblablement pas satisfaire cette contrainte technique — il faudrait alors un texte de niveau supérieur, une vraie modification législative, pas un simple acte délégué.</p>
+
+    <h4>Le calendrier, et une contrainte à ne surtout pas bousculer</h4>
+    <p>Un nouveau règlement, déjà adopté, fait entrer en application le régime LTEI actuel (charge à 22 %) le <strong>30 janvier 2027</strong>. Cette date ne doit surtout pas être perturbée par une nouvelle réforme trop précoce : la présente réforme doit être calibrée sur au moins une année complète de données réelles d'application de ce régime, ce qui repousse mécaniquement son ouverture à 2028 au plus tôt. Ce n'est pas une contrainte à subir, c'est un argument de recevabilité à assumer : présenter cette réforme comme la <em>suite logique</em> de celle qui vient d'entrer en vigueur, pas comme sa correction précipitée. Calendrier réaliste : demande d'avis technique fin 2027, avis rendu en 2028, acte délégué adopté début 2029, entrée en application effective 2029-2030.
+
+    La catégorie à 17 % pour l'innovation, elle, devra attendre la prochaine grande révision de niveau législatif de ce cadre — un horizon réaliste de 2031 à 2033, c'est-à-dire probablement <strong>après</strong> la fin du cycle budgétaire 2028-2034 pour l'essentiel de ses effets. C'est un point à dire clairement plutôt que de laisser croire qu'il arrivera avec le reste.</p>
+
+    <h4>Qui doit agir, et pourquoi ce n'est pas un dossier politique classique</h4>
+    <p>Contrairement à beaucoup d'autres réformes de ce dossier, celle-ci n'oppose pas des coalitions d'intérêts documentées les unes aux autres — aucune opposition n'est identifiée dans la cartographie des parties prenantes, et une fédération d'assureurs européens soutient même explicitement ce type de réforme, à condition qu'elle reste un allègement et non une nouvelle obligation. L'obstacle est ailleurs, de nature technique et institutionnelle : le régulateur des assurances et les gardiens de la stabilité financière (la BCE, le CERS) feront valoir que le régime actuel échange déjà un amortisseur en cas de choc de marché (l'« ajustement symétrique ») contre une incitation à détenir des actifs illiquides — et qu'ajouter une gradation supplémentaire pourrait accentuer ce compromis. La réponse à préparer, à écrire dans le texte et non à garder pour la réunion, est double : l'existence préalable d'un dispositif de suivi macroprudentiel dédié (voir N5 ci-dessous) et le fait que l'amortisseur reste pleinement en place sur les paliers intermédiaires.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Le chiffre de cadrage le plus solide : sur une base d'actifs des assureurs européens de l'ordre de 9 000 à 10 000 milliards d'euros, chaque réallocation de 0,1 point de pourcentage vers les actions de long terme représente 9 à 10 milliards d'euros de stock supplémentaire investi. Une réallocation de 0,5 point représenterait 45 à 50 milliards — soit plus de quatre fois toute la composante « garanties » du futur budget européen dédié à la compétitivité sur sept ans. Mais il faut être précis sur ce que cette réforme y contribue réellement : <strong>le mouvement le plus puissant (de 49 % à 22 %) est déjà acquis en droit</strong>, indépendamment de cette réforme. La contribution propre de cette réforme porte sur la tranche intermédiaire (2 à 5 ans de détention), une fraction non chiffrée de ce total. Attribuer les 45 à 50 milliards d'euros à cette seule réforme serait trompeur.</p>
+
+    <h4>Ce qui peut encore mal tourner</h4>
+    <p>Le risque principal est que l'étude technique du régulateur conclue qu'il n'existe pas assez de données fiables pour calibrer les paliers intermédiaires de façon défendable — un risque réel, précisément parce que la relation entre durée de détention et risque extrême est ce que ce cadre prudentiel mesure historiquement mal. Il faut concevoir le dossier pour survivre à cette issue.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F7</div><div class="reform-title">Un label « Épargne Productive Européenne », sans aucune obligation d'y souscrire</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Les fonds de pension européens n'allouent en moyenne que 0,01 % de leurs actifs au capital-risque — dix fois moins que les fonds de pension américains, déjà jugés en retard par rapport au reste du monde. Le problème n'est pas seulement réglementaire : c'est aussi un problème de <em>volonté</em>, et toute tentative d'imposer une allocation minimale se heurte à une résistance déjà démontrée. Les fédérations de fonds de pension allemande et italienne ont explicitement rejeté un seuil pourtant <em>non contraignant</em> de 2 %, proposé par un député européen, au nom de la prudence et de la diversification.</p>
+
+    <h4>Ce que le texte ferait concrètement</h4>
+    <p>Ne surtout pas imposer d'allocation. À la place, créer un label volontaire « Épargne Productive Européenne » : un produit d'épargne (compte d'épargne, retraite complémentaire, unité de compte d'assurance-vie) peut obtenir ce label s'il investit au moins 10 % de ses encours dans des actifs productifs européens de long terme. Aucun produit n'est obligé de le demander. Le label ouvre droit à deux avantages, et seulement deux : le droit d'utiliser une dénomination commerciale faisant référence à l'Europe, et un accès simplifié à la distribution transfrontalière dans le cadre de la stratégie européenne sur l'épargne. Le respect du seuil est vérifié périodiquement par un auditeur indépendant.
+
+    Un point important a été retiré du dispositif d'origine : l'idée que les États membres soient <em>recommandés</em> de réserver leurs avantages fiscaux nationaux aux produits labellisés. Une simple recommandation ne contraint personne — et rendue contraignante, elle basculerait dans le champ de la fiscalité, qui exige l'unanimité des 27. Ce volet fiscal portait pourtant l'essentiel de l'attrait commercial du label ; son retrait doit être présenté comme un vrai renoncement, pas un simple nettoyage de rédaction.</p>
+
+    <h4>Pourquoi cette base juridique tient, malgré les apparences</h4>
+    <p>L'article 114 du traité (majorité qualifiée, pas d'unanimité) est solide ici, appuyé par quatre précédents comparables déjà adoptés sur cette même base : les labels ELTIF, EuVECA, PEPP et les « obligations vertes européennes ». Ce dernier précédent est le plus proche par sa structure — dénomination protégée, seuil quantitatif, vérification par un auditeur indépendant enregistré. Un risque juridique théorique existe (la Cour de justice a déjà sanctionné des avantages <em>fiscaux nationaux</em> réservés à l'investissement domestique), mais il est largement désamorcé par le retrait du volet fiscal : un label purement réglementaire, sans avantage fiscal attaché, est d'une autre nature.</p>
+
+    <h4>Ce qu'il faut vraiment écrire</h4>
+    <p>Le texte doit contenir un considérant qui anticipe explicitement — et c'est la partie la plus délicate de toute la rédaction — la lecture en « pression déguisée » que les fédérations de pension pourraient faire de ce label. Il doit rappeler noir sur blanc qu'aucune conséquence de supervision ne peut découler du fait de ne pas atteindre le seuil de 10 %, et que le principe classique de prudence qui gouverne la gestion des fonds de pension reste la seule norme de conduite applicable. Un second considérant doit répondre à l'objection inverse, venue des associations de défense des épargnants : que ce label n'oriente pas l'épargne des ménages vers des actifs trop illiquides sans garde-fou.</p>
+
+    <h4>Le calendrier</h4>
+    <p>La fenêtre naturelle est la revue à mi-parcours de la grande stratégie européenne sur l'épargne et l'investissement, prévue au deuxième trimestre 2027. Compte tenu du temps de négociation habituel, une adoption réaliste se situe fin 2028, pour une application vers 2030 (le temps de mettre en place le registre des produits labellisés et des vérificateurs indépendants) — et les tout premiers produits effectivement labellisés n'arriveraient pas avant 2030-2031.</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>Deux fronts de résistance documentés, dont aucun n'est à lui seul rédhibitoire — mais leur addition l'est peut-être. D'un côté, les fédérations de fonds de pension déjà mentionnées. De l'autre, les associations de défense des consommateurs et des investisseurs, qui s'inquiètent de l'orientation de l'épargne populaire vers des actifs peu liquides. À l'inverse, les assureurs et les gestionnaires d'actifs soutiennent ce type de mobilisation de l'épargne — <em>à la condition explicite</em> qu'aucune obligation d'allocation n'y soit attachée, ce que ce texte respecte par construction.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Le potentiel global est le plus important identifié dans tout le dossier : un alignement complet des fonds de pension européens sur le niveau américain représenterait environ 210 milliards de dollars supplémentaires sur dix ans (avec une réserve de méthode : ce chiffre n'est pas totalement réconcilié avec une autre estimation de la même source, qui évoque une part bien plus élevée). Mais il n'existe <strong>aucune estimation du taux de recours effectif à ce label</strong> — et c'est précisément la variable qui détermine tout l'effet. Un label dont l'avantage se limite à une dénomination et à une facilité de distribution peut connaître un succès commercial réel ou rester lettre morte, selon la valeur que le marché lui accorde — une valeur difficile à anticiper depuis que le volet fiscal a été retiré.</p>
+
+    <h4>Ce qui peut encore mal tourner</h4>
+    <p>Le retrait du volet fiscal, nécessaire juridiquement, prive le label de l'essentiel de son pouvoir d'attraction commerciale — le risque principal n'est donc plus juridique mais économique : un texte adopté mais largement ignoré par le marché.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F9</div><div class="reform-title">Créer, enfin, un marché secondaire pour les titres de startups non cotées</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Aux États-Unis, un marché organisé de plus de 120 milliards de dollars par an permet aux salariés et aux investisseurs historiques d'une startup de revendre leurs parts avant l'introduction en bourse. Rien d'équivalent n'existe en Europe. Conséquence concrète : un salarié européen ne peut quasiment jamais monétiser ses stock-options avant une sortie complète de l'entreprise, ce qui rend ces instruments moins attractifs, pousse les employeurs à payer davantage en argent comptant plutôt qu'en actions (ce qui pèse sur leur trésorerie), et prive les fonds de capital-risque d'un moyen de rendre de l'argent à leurs propres investisseurs avant la fin de vie du fonds.</p>
+
+    <h4>Ce que le texte ferait — et pourquoi le projet initial devait être entièrement reconstruit</h4>
+    <p>L'idée d'origine envisageait de créer une catégorie entièrement nouvelle d'infrastructure de marché pour ce type d'échanges. C'était juridiquement impossible : une règle centrale du droit européen des marchés financiers (la directive MiFID II) impose que <em>tout</em> système mettant en relation plusieurs acheteurs et plusieurs vendeurs fonctionne selon l'une des trois catégories déjà prévues par la loi — impossible d'en inventer une quatrième. Cette règle a été insérée précisément pour empêcher ce genre de contournement.
+
+    Le dispositif corrigé devient donc un sous-régime allégé de la catégorie qui existe déjà pour les petits marchés de croissance des PME (une catégorie de « MTF », voir le glossaire) : une plateforme, exploitée par un opérateur agréé, fonctionnant par enchères périodiques — trimestrielles au maximum, jamais en continu, pour limiter l'effet de signal sur la valorisation privée de l'entreprise. Un dossier d'information standardisé (comptes audités, table de capitalisation, valorisation du dernier tour) est mis à disposition des seuls participants quinze jours avant chaque fenêtre. Les participants éligibles incluent explicitement les investisseurs professionnels, les nouveaux fonds européens de capital-risque, les assureurs, les fonds de pension — et, élément essentiel à préserver dans toute négociation, les salariés et anciens salariés de l'entreprise.
+
+    Deux restrictions supplémentaires, imposées par la correction juridique : le régime ne peut, au départ, fonctionner que pour les entreprises dont les titres sont librement cessibles et existent sous forme dématérialisée — en clair, essentiellement les futures « EU Inc. » — parce que le règlement européen sur les titres dématérialisés ne règle pas les formalités nationales de transfert de parts sociales (l'acte notarié exigé, par exemple, pour transférer des parts d'une société allemande classique). Et l'obligation initiale, pour toute grande entreprise « EU Inc. », d'ouvrir une fenêtre de liquidité si les salariés le demandaient, est devenue une simple présomption favorable de bonne gouvernance — l'entreprise en discute et motive sa décision, sans y être obligée.</p>
+
+    <h4>Pourquoi une directive, et pas un règlement</h4>
+    <p>Le régime des plateformes de négociation est, par construction du droit européen, établi par directive — c'est le cas du modèle dont ce nouveau dispositif s'inspire directement. Créer un régime concurrent par simple règlement reproduirait exactement l'erreur déjà corrigée pour F1 (voir plus haut). Le prix à payer est un délai de transposition dans chaque pays de 18 à 24 mois, ce qui explique en grande partie pourquoi cette réforme est la plus tardive de toute la piste réglementaire.</p>
+
+    <h4>Le calendrier — un dossier à préparer maintenant pour la prochaine législature</h4>
+    <p>La dépendance la plus contraignante n'est pas juridique mais pratique : ce dispositif n'a de sens que pour des entreprises sous statut « EU Inc. », qui n'existera pas avant, au mieux, 2028. Tant que le stock d'entreprises sous ce statut reste faible, le périmètre utile de la réforme est quasiment vide. En tenant compte de ce délai et du temps de négociation d'un dossier de marchés financiers, le calendrier réaliste s'étale jusqu'à 2030-2032 — c'est-à-dire un dossier de la <strong>législature européenne suivante</strong> (2029-2034), dont les travaux préparatoires devraient néanmoins commencer dès maintenant.</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>Le rattachement de cette réforme au 28e régime l'expose, par ricochet, à l'opposition syndicale déjà bien documentée contre ce régime en général — même si l'objet de cette réforme précise (la liquidité) n'a rien à voir avec le droit du travail que ces organisations défendent. La conversion de l'obligation en simple présomption favorable réduit sensiblement cette exposition, puisqu'elle supprime toute contrainte imposée à l'employeur. Un second obstacle, plus technique, viendra des autorités nationales de supervision des marchés, sensibles à tout ce qui pourrait sembler échapper au cadre européen commun — un argument que la reconstruction en sous-régime de MTF prive justement de son objet, et qu'il faut donc mettre en avant dès les premiers échanges techniques.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Il n'existe, dans aucune des données rassemblées, d'estimation du volume de transactions secondaires qui émergerait en Europe sous ce régime — ni le nombre d'entreprises susceptibles d'ouvrir une fenêtre, ni le volume par fenêtre. Le seul chiffre disponible (les 120 milliards de dollars du marché américain) décrit un écart, il ne prédit rien pour l'Europe. Ce qui est en revanche bien documenté, qualitativement : l'absence de marché secondaire est un vrai coût opérationnel, pas seulement un manque de confort, et cette réforme est la seule de tout le dossier à traiter un problème qu'aucun autre texte en discussion ne couvre.</p>
+
+    <h4>Ce qui peut encore mal tourner</h4>
+    <p>Le dispositif pourrait être adopté puis rester quasiment inutilisé pendant plusieurs années, simplement parce que le stock d'entreprises éligibles (les EU Inc.) mettra du temps à se constituer — ce n'est pas un défaut de conception, c'est une dépendance à un texte tiers hors de contrôle.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F12</div><div class="reform-title">Recycler la garantie budgétaire européenne — mais dans le bon sens</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Le Fonds européen d'investissement accorde des garanties publiques à des portefeuilles de prêts aux entreprises innovantes. Chaque euro de garantie accordé « immobilise » une provision correspondante dans le budget européen — de l'argent mis de côté au cas où la garantie serait appelée. L'idée : transformer ces garanties déjà accordées en un produit financier qu'on pourrait revendre à des investisseurs privés, ce qui libérerait de la provision pour accorder de nouvelles garanties, sans dépense budgétaire supplémentaire.</p>
+
+    <h4>L'erreur de la première version, et pourquoi elle change tout</h4>
+    <p>La version initiale prévoyait que l'Union garde pour elle la tranche la plus risquée du portefeuille (les huit premiers pourcents de pertes) et revende le reste, moins risqué, à des investisseurs. C'est exactement l'inverse de ce qu'il fallait faire. Le montant qu'on doit provisionner pour une garantie dépend de la <em>perte attendue</em> (voir glossaire) — c'est-à-dire de ce qui arrive le plus probablement, en moyenne. Or cette perte attendue se concentre presque toujours dans la tranche la plus risquée. En la gardant et en revendant le reste, l'Union garde donc l'essentiel de ce qui détermine sa provision — et ne libère quasiment rien. L'affirmation initiale, selon laquelle « un euro provisionné pourrait soutenir trois générations successives de garantie », ne tenait tout simplement pas debout d'un point de vue comptable.
+
+    Le bon montage fait l'inverse : céder la tranche la plus risquée (ou une tranche intermédiaire), et garder une part proportionnelle de chaque niveau de risque (une « part verticale ») ou une tranche plus sûre. Une subtilité technique s'ajoute : la réglementation européenne sur ce type d'opération n'autorise, parmi les formes de rétention de risque acceptées, ni de garder une tranche « senior » seule — ce qui réduit, en pratique, l'option viable à la seule part verticale (un point à confirmer sur le texte final d'une réforme en cours de la réglementation sur la titrisation).</p>
+
+    <h4>Pourquoi ce n'est pas un nouveau régime, mais un raccordement à deux textes déjà en cours</h4>
+    <p>Rien de nouveau à créer : une catégorie de titrisation adaptée à ce type de portefeuille (les titrisations « synthétiques de bilan », dans le jargon technique) existe déjà et accueille précisément les portefeuilles de PME garantis par le Fonds européen d'investissement. Deux textes seulement doivent être modifiés, chacun déjà en cours de discussion : d'une part, la grande réforme européenne de la titrisation, dont la position du Parlement a été adoptée en mai 2026 et dont les négociations finales sont attendues au second semestre 2026 ; d'autre part, le futur règlement établissant le grand budget de la compétitivité (le FEC), qui doit contenir un article disposant explicitement que le transfert effectif de risque réduit d'autant le taux de provisionnement — sans cet article, l'effet de recyclage financier n'existe tout simplement pas juridiquement, même si le montage lui-même est correct.</p>
+
+    <h4>Le calendrier — le plus rapide de tout le dossier, et le plus urgent</h4>
+    <p>C'est la seule réforme entièrement autonome de toute la piste réglementaire, sans dépendance sur aucune autre. Mais c'est aussi celle dont la fenêtre se referme le plus vite : les négociations finales sur la réforme de la titrisation ont lieu au second semestre 2026. Si les amendements nécessaires n'y sont pas intégrés maintenant, la prochaine occasion n'arrivera pas avant la révision suivante de ce texte — un horizon de plusieurs années. C'est, dans toute la feuille de route, le seul dossier dont l'échéance utile se compte en semaines et non en trimestres.</p>
+
+    <h4>Qui doit agir, et un argument à exploiter</h4>
+    <p>Aucune opposition n'est documentée sur ce mécanisme — au contraire, la fédération bancaire européenne soutient, en général, une complémentarité accrue entre financement bancaire et marchés de capitaux. L'objection anticipée par la première version du texte (l'Union garderait le risque tout en cédant le rendement) disparaît précisément grâce à la correction du montage — un argument de communication à mettre en avant activement : la version corrigée est plus facile à défendre que la version d'origine. L'objection résiduelle viendra des gardiens de la stabilité financière, sur le risque que cette technique amplifie les cycles de marché ; elle est traitée par une calibration prudente sur cycle complet plutôt que sur les performances récentes.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>L'affirmation initiale sur « trois générations de garantie » doit être définitivement abandonnée. Ce qu'on peut dire avec le montage corrigé, c'est une relation logique simple et toujours vraie, quel que soit le portefeuille : céder X % de la perte attendue libère X % de la provision correspondante. Mais convertir cette relation en un chiffre précis suppose de connaître la perte attendue réelle du portefeuille de garanties du Fonds européen d'investissement par type de portefeuille — une donnée qui n'est aujourd'hui pas publique. C'est le premier document à demander avant d'aller plus loin. Il faut aussi rappeler une limite honnête, déjà présente dans le diagnostic d'origine : cette réforme ne finance pas directement les fonds propres des startups — son effet passe par la libération de bilan bancaire, un effet réel mais de second ordre pour le sujet central de ce dossier.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F14</div><div class="reform-title">Un dépôt unique pour les rachats d'entreprises transfrontaliers, limité au contrôle des concentrations</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>43 % des investisseurs en capital-risque citent l'absence de rachats (fusions-acquisitions) comme leur premier frein de financement. Une partie de ce blocage est très concrète : un acquéreur qui rachète une entreprise présente dans huit pays européens peut devoir déposer jusqu'à huit dossiers de notification distincts (contrôle de la concurrence, filtrage des investissements étrangers pour raison de sécurité), avec des délais et des critères différents dans chaque pays. Pour une opération de taille moyenne, ce coût fixe est disproportionné — et un fonds qui anticipe une sortie compliquée paie mécaniquement moins cher dès le premier tour de financement.</p>
+
+    <h4>Ce que le texte ferait — et pourquoi une partie du projet initial n'était tout simplement pas possible</h4>
+    <p>Le contrôle des concentrations (empêcher qu'un rachat ne crée une position dominante abusive) est une compétence exclusive de l'Union européenne — ici, un guichet unique de dépôt auprès de la Commission, pour toute acquisition d'une entreprise de moins de 100 millions d'euros de chiffre d'affaires mondial, avec un délai ferme de décision de 45 jours et une voie accélérée à 20 jours pour les acquéreurs déjà établis dans l'Union, est juridiquement solide. Ce guichet répond même à un vrai vide révélé par une décision récente de la Cour de justice de l'Union, qui a fermé une voie de recours que certaines petites opérations utilisaient auparavant.
+
+    En revanche, le volet qui prévoyait d'unifier aussi le <em>filtrage des investissements étrangers</em> (le contrôle exercé pour raison de sécurité nationale) n'est pas possible : les traités européens réservent explicitement cette compétence aux États membres. Pire, la première version du texte prévoyait qu'une absence de réponse de l'administration dans les délais vaille autorisation automatique — un mécanisme qu'aucun pays n'acceptera jamais pour une question de sécurité nationale, et qu'il serait d'ailleurs imprudent de proposer. Ce volet est donc réduit à un simple portail administratif commun pour le dépôt initial des dossiers, chaque pays conservant l'intégralité de son pouvoir de décision en parallèle.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Contrairement à la plupart des autres réformes, celle-ci ne s'accroche à aucun texte déjà en négociation — c'est une initiative à déposer. Elle doit en outre, selon toute vraisemblance, être adoptée à l'<strong>unanimité</strong> du Conseil (la base juridique précise reste à confirmer, mais elle s'écarte probablement de la majorité qualifiée utilisée pour la plupart des autres réformes de ce dossier) — ce qui rapproche sa difficulté politique de celle des dossiers fiscaux, malgré un objet qui n'a rien de fiscal. Un calendrier prudent situe une adoption possible vers 2028-2029.</p>
+
+    <h4>Qui doit agir</h4>
+    <p>Les services de la Commission en charge de la concurrence porteraient le texte. Le principal point de vigilance concerne la voie accélérée réservée aux acquéreurs déjà établis dans l'Union : sa compatibilité avec les engagements internationaux de l'Union en matière d'investissement (traitement égal des investisseurs étrangers partenaires commerciaux) devra être vérifiée avant tout dépôt.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Le chiffre des 43 % documente l'ampleur générale du problème, mais aucune donnée ne permet d'isoler l'effet spécifique attendu de ce seul guichet procédural sur le volume ou la valeur des sorties d'entreprise en Europe.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">N3</div><div class="reform-title">Un outil public de méthode de valorisation pour les actifs privés</div></div><span class="pill p1 star">Piste 1 — la mieux notée politiquement de tout le dossier</span></div>
+
+    <h4>D'où vient cette idée, et pourquoi elle est différente de toutes les autres</h4>
+    <p>Cette réforme n'était pas dans le jeu de propositions initial — elle est née d'une observation faite en relisant tout le débat contradictoire qui a précédé cette feuille de route. Les fédérations de fonds de pension justifient leur opposition à investir dans le capital-risque par « la prudence et la diversification ». Mais en creusant, la donnée montre que le vrai coût derrière ce discours est souvent très concret : évaluer la valeur d'un actif non coté (une part de fonds de capital-risque, par exemple), qui n'a pas de prix de marché quotidien, demande le même travail à un fonds de pension que d'évaluer un gérant obligataire classique — pour une mise vingt fois plus petite. C'est la seule réforme de tout le dossier qui s'attaque directement à cette cause précise plutôt que de la contourner par un mécanisme juridique.</p>
+
+    <h4>Ce que le texte ferait concrètement</h4>
+    <p>Aucun nouvel organisme n'est créé. Le « comité mixte » qui réunit déjà les trois régulateurs européens de supervision financière (banques, assurances, marchés) reçoit une nouvelle mission : produire et publier, tous les trimestres, des méthodologies de référence pour valoriser les actifs privés non cotés — par catégorie d'actif, par année de création du fonds, par stade de développement des entreprises concernées.
+
+    Deux garde-fous, essentiels et non accessoires. D'abord, la protection offerte par cette méthodologie ne porte que sur le fait d'avoir <em>correctement appliqué la méthode</em> — jamais sur l'exactitude du résultat final. La responsabilité de la valorisation reste entièrement celle du gestionnaire du fonds, comme aujourd'hui. Sans cette précision, on créerait un abri juridique qui viderait de son sens le contrôle normal exercé par les commissaires aux comptes. Ensuite — et c'est un risque que personne n'avait identifié avant la relecture finale du dossier — la méthodologie doit être publiée sous forme de <em>fourchettes et de dispersions</em>, jamais de valeurs uniques précises. Si tous les investisseurs institutionnels d'Europe utilisaient exactement la même méthode unique pour valoriser les mêmes actifs, leurs erreurs de valorisation deviendraient corrélées entre elles : en cas de choc de marché, tout le monde se tromperait dans le même sens, au même moment — l'inverse de ce qu'on cherche en matière de stabilité financière.</p>
+
+    <h4>Le calendrier — une astuce importante pour éviter d'hériter d'un retard qui n'est pas le sien</h4>
+    <p>Cette réforme peut se greffer sur un grand paquet déjà en négociation sur l'intégration des marchés financiers européens et leur supervision, proposé en décembre 2025. Point de conception déterminant : les données de transaction les plus riches pour construire ces méthodologies viendraient, à terme, des plateformes de liquidité pré-IPO (F9, ci-dessus) — mais F9 n'entrera pas en application avant 2031-2032. Pour ne pas hériter de ce retard, le texte est conçu en deux phases : une première phase, dès maintenant, fondée sur les données déjà disponibles (déclarations existantes des gestionnaires de fonds, données déjà détenues par les régulateurs) ; une seconde phase, ultérieure, qui intégrera les données de F9 quand elles existeront. Ce découplage permet une première publication dès 2029, au lieu d'attendre 2032 et plus.</p>
+
+    <h4>Qui doit agir, et pourquoi c'est le dossier le moins contesté de tout l'exercice</h4>
+    <p>Aucune opposition, ni identifiée ni même probable, n'a été trouvée dans toute la cartographie des parties prenantes de ce dossier. C'est la seule réforme de l'ensemble des vingt qui traite la cause déclarée d'une opposition politique majeure plutôt que de la contourner — un vrai changement de nature par rapport au reste du dossier. Une réserve honnête à garder : une fédération professionnelle qui a construit toute sa position publique sur « la prudence l'exige » peut être réticente à admettre que l'obstacle réel était plus pratique que doctrinal — la résistance attendue est donc plus faible que sur les autres réformes, sans être totalement nulle.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Aucun chiffre d'impact direct n'est disponible, et il faut le dire d'emblée : le frein est documenté qualitativement, jamais chiffré dans les données rassemblées. Le seul repère de cadrage disponible est le plafond de tout le canal auquel cette réforme contribue (porter la part des actifs alternatifs dans les fonds de pension européens de 4 % à 10 % représenterait de l'ordre de 6 à 12 milliards d'euros supplémentaires vers le capital-risque et la croissance) — mais cette réforme ne traite qu'une des frictions qui bloquent ce canal, et sa part propre n'est pas isolable.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">N5</div><div class="reform-title">Un collège de suivi des risques accumulés par tout le dispositif</div></div><span class="pill p1">Piste 1 — à négocier en premier</span></div>
+
+    <h4>D'où vient cette idée</h4>
+    <p>En cours de débat, l'agent chargé de vérifier la rigueur juridique de l'ensemble du dossier a posé une exigence transversale : les données rassemblées montrent que le financement de l'innovation en Europe accumule six sources de risque différentes qui se recoupent entre elles — la concentration extrême sur l'intelligence artificielle (déjà plus de 60 % de la valeur des transactions de capital-risque européennes), la concentration des sorties sur un tout petit nombre d'opérations géantes, le rôle de pivot central que joue une seule institution publique dans tout le réseau d'investisseurs transfrontalier. Aucune des dix-neuf autres réformes de ce dossier ne comportait de limite de concentration ni de suivi consolidé de ces risques — chacune, prise isolément, semblait raisonnable, mais leur somme augmente une exposition que personne ne surveille dans son ensemble.</p>
+
+    <h4>Ce que le texte ferait concrètement</h4>
+    <p>Encore une fois, aucun organe nouveau n'est créé : le Comité européen du risque systémique dispose déjà d'un mandat de surveillance de l'ensemble du système financier européen, d'un conseil général et d'un pouvoir d'alerte publique. Il s'agit simplement d'y loger une sous-structure dédiée à ce sujet précis, qui lui rendrait compte.
+
+    La seule vraie nouveauté juridique nécessaire, et c'est le cœur du texte : une obligation légale de déclaration de données, imposée à la Banque européenne d'investissement, au Fonds européen d'investissement, et aux banques nationales de développement (comme la banque publique allemande KfW ou la banque publique française Bpifrance) — des institutions qui ne sont aujourd'hui soumises à <em>aucune</em> obligation de reporting prudentiel européen sur ce sujet. Point de conception important : ces institutions sont des <em>fournisseuses de données</em>, pas des <em>membres</em> du collège qui les examine — un organe ne peut pas surveiller ses propres expositions sans conflit d'intérêt.</p>
+
+    <h4>Pourquoi c'est le seul texte de tout le dossier sans aucun véhicule législatif tout trouvé</h4>
+    <p>À la différence de toutes les autres réformes de cette piste, aucun texte en cours de négociation ne se prête naturellement à accueillir cette réforme. Trois options existent : un amendement au grand paquet sur l'intégration des marchés déjà en négociation (le plus rapide, mais le lien thématique est indirect, ce paquet portant sur la supervision des marchés et non sur le risque systémique) ; un texte autonome modifiant directement le règlement fondateur du Comité européen du risque systémique (le plus propre juridiquement, mais aussi le plus lent) ; ou un futur paquet macroprudentiel plus large, si la Commission en ouvre un — la voie la plus naturelle, mais dont l'existence n'est pas garantie. La recommandation est d'ouvrir dès maintenant une consultation avec le Comité, la Banque centrale européenne et le Groupe BEI, précisément pour faire émerger cette troisième option : une demande portée par le Comité lui-même, qui exécuterait sa propre recommandation déjà publiée en février 2026, est un chemin plus court qu'une initiative venue de la Commission seule.</p>
+
+    <h4>Qui doit agir, et où se joue vraiment le texte</h4>
+    <p>Aucune résistance n'est documentée dans la cartographie des parties prenantes — c'est un organe de coordination sans effet direct sur aucun intérêt économique identifié. Mais l'obstacle réel, prévisible bien qu'absent de la cartographie officielle, viendra des institutions elles-mêmes qui devront transmettre leurs données : la Banque européenne d'investissement et les banques nationales de développement n'ont jamais été soumises à un reporting prudentiel européen, et leur résistance portera sur la charge administrative et sur leur statut institutionnel particulier — pas sur le principe même du dispositif. C'est pourquoi la consultation de ces institutions doit précéder le dépôt du texte, pas le suivre.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Cette réforme ne finance rien, et il faut le dire en toute première ligne de toute présentation : sa fonction n'est pas de produire un effet économique direct, mais de <em>protéger la solidité de tout ce que les autres réformes construisent</em>. C'est, de tout le dossier, le seul élément dont la nécessité est qualifiée d'« élevée » avec le plus haut niveau de confiance dans la base factuelle — précisément parce qu'aucun des grands instruments européens existants (le programme ETCI, le futur FEC, le régime LTEI, la titrisation) ne comporte aujourd'hui de limite de concentration ni d'obligation de reporting consolidé.</p>
   </div>
 </section>
 
-<section id="financement-fec" class="wrap">
-  <div class="axis-head"><h3>Axe financement — piste FEC</h3></div>
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F3</div><div class="card-title">Guichet miroir : co-investissement automatique accéléré</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Nouvel article du règlement FEC (compartiment financier) — procédure ordinaire.</dd>
-        <dt>Correction</dt><dd>Vérification documentaire à délai garanti de 10 jours (pas de silence valant accord — exigé par le règlement financier (UE, Euratom) 2024/2509) ; enveloppe redimensionnée à l'ordre de 300-400 M€/an (pas 4 Md€/an, 2,5× le compartiment entier).</dd>
-        <dt>Acteurs</dt><dd>Cour des comptes européenne, Conseil (déjà mobilisé pour reprendre le contrôle des priorités du FEC).</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F4</div><div class="card-title">Option de rachat institutionnelle (Yozma adapté aux LP)</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Article du règlement FEC, mise en œuvre BEI — hors aide d'État (pas de ressources d'État), le renvoi initial au RGEC art. 21§13 est à retirer.</dd>
-        <dt>Correction</dt><dd>Taux de rachat à recalibrer (5 %/an jugé trop bas) ou part BEI ramenée de 40 % à 25-30 % ; publication ex ante de l'équivalent-subvention exigée par le règlement financier.</dd>
-        <dt>Dépendance</dt><dd>Suppose l'existence du régime EuVGF (F1) pour le fonds cible — transitoirement applicable aux fonds EuVECA existants.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">F11</div><div class="card-title">Provisionnement différencié par compartiment</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Habilitation déléguée dans le règlement FEC de base (art. 290 TFUE pour l'acte délégué de calibration) — plancher 25 %, plafond 60 %, calibré sur la perte attendue à 10 ans.</dd>
-        <dt>Note</dt><dd>Volet stabilisateur automatique de la version initiale abandonné (incompatible avec les articles 310/314 TFUE sur l'autorité budgétaire).</dd>
-        <dt>Impact</dt><dd>Le différentiel de ~265 Md€ souvent cité est un majorant optimiste — le multiplicateur de 15,2× sur lequel il repose est lui-même contesté par la Cour des comptes (surestimation ~26 %).</dd>
-      </dl>
-    </div>
+<section id="financement-fec" class="wrap wide">
+  <div class="axis-head"><h2>Axe financement — la piste FEC</h2></div>
+  <p class="axis-intro">Trois réformes qui n'existent que comme articles à écrire dans le futur grand règlement budgétaire européen pour la compétitivité (le FEC) — leur destin est donc entièrement lié à l'issue de la négociation budgétaire 2028-2034 dans son ensemble, et à un compartiment budgétaire précis dont la taille (environ 11 milliards d'euros sur sept ans) doit être gardée à l'esprit à chaque proposition de chiffre.</p>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F3</div><div class="reform-title">Un guichet public qui co-investit automatiquement, sans jamais faire attendre un fondateur</div></div><span class="pill p3">Piste 3</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Les instruments publics de financement européens sont souvent trop lents pour une levée de fonds compétitive, où tout se joue en quelques semaines. L'exemple documenté est parlant : à un moment de sa mise en œuvre, un grand programme européen dédié à l'innovation (l'EIC Fund) n'avait conclu qu'une seule opération en fonds propres alors que 149 startups attendaient une décision — un retard que le conseil de ce programme a lui-même qualifié de « revers majeur ». Pour un fondateur en pleine négociation avec des investisseurs privés qui, eux, répondent en semaines, un investisseur public qui met neuf mois à se prononcer n'a, en pratique, aucune valeur.</p>
+
+    <h4>Ce que le texte ferait — et pourquoi la version d'origine devait être corrigée sur deux points essentiels</h4>
+    <p>Le mécanisme retenu : accréditer à l'avance une liste de fonds de capital-risque privés remplissant des critères objectifs et publics (au moins 150 millions d'euros d'actifs sous gestion, établis dans l'Union, agrément réglementaire en cours de validité, au moins cinq ans d'existence, au moins dix opérations de premier tour déjà réalisées). Dès que l'un de ces fonds « chefs de file » boucle un tour d'au moins 15 millions d'euros dans une entreprise éligible, le fonds public co-investit automatiquement, aux mêmes conditions exactement, jusqu'à 30 % du montant du tour.
+
+    La version initiale prévoyait qu'en l'absence de réponse de l'administration dans un délai de 15 jours, l'engagement soit réputé accordé — un « silence vaut accord ». C'était incompatible avec les règles budgétaires de l'Union, qui exigent une vérification réelle avant tout engagement de fonds publics : personne ne peut engager de l'argent public « par défaut », sans que quelqu'un l'ait vérifié. Le mécanisme corrigé prévoit une vérification documentaire automatisée mais réelle, dans un délai garanti de 10 jours ouvrables — la vitesse est préservée, mais par une obligation de résultat, pas par une absence de contrôle.
+
+    Second problème, plus grave et découvert seulement lors de la vérification finale du dossier : l'enveloppe annuelle initialement prévue — 4 milliards d'euros par an, soit 28 milliards sur sept ans — représentait <strong>deux fois et demie l'intégralité</strong> du compartiment budgétaire (environ 11 milliards d'euros sur sept ans) censé l'accueillir. Une erreur d'arithmétique budgétaire pure et simple, qu'aucune des versions précédentes du texte n'avait relevée. L'enveloppe doit donc être redimensionnée à un ordre de grandeur nettement plus modeste — quelque chose comme 300 à 400 millions d'euros par an paraît plus réaliste, un chiffre à faire arbitrer politiquement plutôt qu'à présenter comme calculé.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Ce mécanisme n'est qu'un article du futur règlement établissant le FEC — il suit donc exactement le calendrier de ce texte, sans fenêtre propre : position du Conseil déjà adoptée en juin 2026, négociations finales attendues en 2027, entrée en vigueur visée au 1ᵉʳ janvier 2028.</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>La Cour des comptes européenne, déjà vigilante sur la gouvernance de ce grand fonds consolidé, et le Conseil, qui a déjà renforcé, dans sa position de juin 2026, le rôle des États membres dans la fixation des priorités du FEC à tous les stades, verront dans un mécanisme sans comité de sélection discrétionnaire une perte de contrôle politique. L'argument de réponse le plus solide reste les statistiques de retard déjà documentées sur les précédents programmes publics — un argument factuel, pas un argument de principe.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Aucune donnée ne permet de chiffrer précisément l'effet d'un guichet automatique par rapport à la situation actuelle. Le seul principe solidement documenté est qualitatif : « un engagement de 5 milliards d'euros décidé en 9 mois vaut moins, pour l'écosystème, qu'un engagement de 2 milliards décidé en 6 semaines ».</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F4</div><div class="reform-title">Une option de rachat pour rassurer les premiers grands investisseurs institutionnels</div></div><span class="pill p3">Piste 3</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Dans les années 1990, Israël a lancé son marché du capital-risque avec un programme public appelé « Yozma », où l'État co-investissait aux côtés de gestionnaires de fonds privés, en leur donnant une option d'acheter plus tard la part publique à un prix avantageux — ce qui réduisait le risque perçu d'entrer sur un marché jugé trop jeune. Mais le problème européen aujourd'hui n'est pas le même qu'en Israël il y a trente ans : l'Europe ne manque pas de gestionnaires de fonds compétents. Elle manque de <em>souscripteurs</em> institutionnels — assureurs, fonds de pension — prêts à leur confier de l'argent. Copier le modèle israélien tel quel raterait donc sa cible.</p>
+
+    <h4>Ce que le texte ferait — l'adaptation clé, et deux corrections nécessaires</h4>
+    <p>L'adaptation centrale : la Banque européenne d'investissement souscrit jusqu'à 40 % des engagements d'un fonds de capital-risque européen de première ou deuxième génération, comme n'importe quel autre investisseur du fonds. Mais l'option de rachat n'est pas donnée au gestionnaire du fonds (comme en Israël) — elle est donnée aux <em>investisseurs privés</em> qui co-investissent dans ce même fonds, exerçable entre la cinquième et la huitième année. Pour un assureur ou un fonds de pension qui investit pour la première fois dans cette classe d'actifs, cela transforme le pari en un risque plafonné à la baisse et démultiplié à la hausse.
+
+    Première correction : la version initiale invoquait une base juridique liée aux aides d'État — hors sujet, puisqu'il s'agit de fonds de l'Union gérés directement par la BEI, pas de « ressources d'État ». Le cadre pertinent est en réalité le règlement budgétaire de l'Union, qui interdit qu'elle prenne un risque disproportionné par rapport aux autres investisseurs — ce qui exige de publier, avant chaque opération, une estimation chiffrée de l'avantage implicite accordé.
+
+    Seconde correction : le taux de rachat initialement prévu (coût de revient majoré de seulement 5 % par an) est probablement trop bas pour ce niveau de risque — soit il faut le relever pour qu'il corresponde à ce qu'exigerait un vrai investisseur en capital-risque, soit réduire la part souscrite par la BEI de 40 % à 25-30 %.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Même piste que F3 : article du futur règlement FEC, application visée au 1ᵉʳ janvier 2028. Les tout premiers exercices d'option, cinq ans après les premiers investissements, n'interviendraient pas avant 2033 environ.</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>La Cour des comptes européenne et les États membres qui contribuent nettement plus au budget qu'ils n'en reçoivent contesteront probablement un dispositif qui plafonne volontairement le rendement du budget européen pour transférer la plus-value aux investisseurs privés — une objection déjà documentée sur d'autres volets budgétaires de ce dossier. L'argument de réponse (le budget achète une base d'investisseurs institutionnels permanente, pas un rendement financier) doit être chiffré avant présentation, ce qu'aucune donnée actuelle ne permet de faire précisément.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Aucun chiffre disponible pour estimer l'ampleur de l'effet. Le seul constat documenté est que le Fonds européen d'investissement joue déjà, aujourd'hui, un rôle de « certificateur de fait » dont dépend fortement la capacité d'un gestionnaire de fonds à lever de l'argent — cette réforme cherche à réduire cette dépendance en organisant, pour la première fois dans tout ce dossier, sa propre sortie du dispositif plutôt que d'accroître indéfiniment la présence publique.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">F11</div><div class="reform-title">Calibrer la garantie budgétaire européenne selon le risque réel de chaque type de portefeuille</div></div><span class="pill p3">Piste 3</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Le futur Fonds européen pour la compétitivité prévoit d'accorder des garanties budgétaires en réservant, pour chaque euro garanti, un « provisionnement » de 50 %. Ce taux uniforme ne tient pas compte du fait que certains types de portefeuilles (les garanties aux PME du Fonds européen d'investissement, par exemple) ont historiquement des pertes bien inférieures à d'autres (des opérations dans des pays tiers, par exemple). Un taux unique, trop prudent pour certains portefeuilles, gaspille de la capacité de financement à budget constant : le régime actuel (InvestEU) provisionne à 40 %, ce qui, au multiplicateur observé, permet de mobiliser sensiblement plus d'investissement par euro de crédit budgétaire.</p>
+
+    <h4>Ce que le texte ferait — et ce qui a dû être abandonné</h4>
+    <p>Remplacer le taux uniforme par un taux fixé pour chaque compartiment du fonds, calibré sur la perte réellement observée sur dix ans, avec un plancher de 25 % et un plafond de 60 %, révisé automatiquement si l'écart entre perte attendue et perte réelle dépasse deux points sur trois années consécutives. C'est, à bien y regarder, moins une innovation qu'une application correcte d'une règle déjà prévue par le règlement budgétaire de l'Union — présenter cette réforme ainsi, plutôt que comme une nouveauté, la rend beaucoup plus facile à faire accepter.
+
+    La version initiale comportait aussi un « stabilisateur automatique » : en cas de fort ralentissement du marché du capital-risque, le plafond de déploiement annuel du budget public aurait été relevé automatiquement de 50 %, sans nouvelle décision du Parlement ni du Conseil. Ce mécanisme a dû être totalement abandonné : un acte technique de mise en œuvre ne peut, en droit, jamais ouvrir par avance des crédits appartenant à des exercices budgétaires futurs — ce pouvoir reste exclusivement entre les mains du Parlement et du Conseil, chaque année, sans exception.</p>
+
+    <h4>Le calendrier</h4>
+    <p>L'habilitation de base doit figurer dans le règlement FEC lui-même (application visée 2028) ; le premier acte technique de calibration précise, lui, viendrait ensuite, une fois qu'un an ou deux de données réelles auraient pu être collectées — réaliste vers 2028-2029.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Le chiffre souvent cité — un différentiel de l'ordre de 265 milliards d'euros d'investissement mobilisé en plus, entre un provisionnement à 40 % et à 50 % — doit être présenté comme un majorant optimiste et non comme une estimation centrale : il repose sur un multiplicateur d'investissement (15,2 fois chaque euro de garantie) que la Cour des comptes européenne conteste elle-même, l'estimant surestimé d'environ 26 % sur le programme comparable actuel.</p>
   </div>
 </section>
 
-<section id="rentabilite" class="wrap">
-  <div class="axis-head"><h3>Axe rentabilité — piste EU Inc. et piste réglementaire</h3></div>
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">R1</div><div class="card-title">EU-ESOP — volet non fiscal (séquestre, portabilité, non-déchéance)</div></div><div class="card-badges"><span class="pill p2">Piste 2</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Article 114 TFUE, amendement du règlement EU Inc. COM(2026) 321 — pas d'instrument neuf.</dd>
-        <dt>Point nouveau, non vu par les deux examens précédents</dt><dd>Risque résiduel avec l'article 114§2 TFUE (droits des travailleurs salariés) — traité par une rédaction bornée (droits conférés au porteur du titre, pas au travailleur) et par un séquestre rendu <strong>optionnel</strong> pour ne pas reproduire le défaut qui a fait tomber F8.</dd>
-        <dt>Hors périmètre</dt><dd>Fait générateur d'imposition (art. 115, unanimité) et exonération de charges patronales (art. 153, blocage différent et plus dur) restent des chantiers séparés.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">R3</div><div class="card-title">Prime européenne d'apport en fonds propres (substitut à DEBRA)</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Article 173 TFUE — déjà l'une des bases juridiques du règlement FEC, aucune base nouvelle à créer. Recevabilité conditionnée au fait que le montant dépend du <em>capital souscrit</em>, jamais d'une grandeur fiscale — à écrire explicitement dans l'exposé des motifs.</dd>
-        <dt>Correction critique</dt><dd>Règle de rationnement obligatoire (fenêtres trimestrielles plafonnées) — au rythme actuel, l'enveloppe de 850 M€/an serait épuisée en quelques mois. Tension à assumer : le versement sous 30 jours devient, avec le rationnement, un délai réel allant jusqu'à ~4 mois en fin de fenêtre.</dd>
-        <dt>Séquencement</dt><dd>La règle de non-cumul avec le RGEC art. 21 doit entrer en vigueur (1ᵉʳ janvier 2027) <em>avant</em> le FEC (2028) — rédaction générique nécessaire côté RGEC, sans nommer la PEAF qui n'existe pas encore.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">R4</div><div class="card-title">Bande de capital + Instrument Convertible Européen</div></div><div class="card-badges"><span class="pill p2">Piste 2 — la mieux notée du dossier</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Directement dans le règlement EU Inc. — pas de dérogation nécessaire à la directive 2017/1132 (qui ne s'applique qu'aux sociétés anonymes classiques, pas à EU Inc.).</dd>
-        <dt>Correction</dt><dd>Droit d'opposition des créanciers de 30 jours pour toute réduction — ce qui, assumé explicitement, détruit la promesse d'effet sous 5 jours ouvrables pour cette branche spécifique (la branche augmentation reste, elle, à 5 jours).</dd>
-        <dt>Dépendance interne</dt><dd>La conversion de l'Instrument Convertible sans AG suppose que les titres de conversion soient couverts par la bande de capital — le chapitre ICE dépend du chapitre capital, pas l'inverse.</dd>
-        <dt>Calendrier</dt><dd>Contradiction relevée dans le calendrier officiel EU Inc. (« premières immatriculations 2027 » vs « application 12 mois après entrée en vigueur ») — la feuille de route retient 2028.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">R6</div><div class="card-title">Inventaire biennal du coût cumulé de conformité</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Accord interinstitutionnel « Mieux légiférer » du 13 avril 2016 + décision de la Commission sur le mandat du comité d'examen — pas un règlement (heurterait le droit d'initiative de la Commission, art. 17§2 TUE).</dd>
-        <dt>Séquence recommandée</dt><dd>Inversée par rapport à l'intuition : commencer par les instruments unilatéraux de la Commission (décision sur le mandat, boîte à outils, inventaire expérimental), codifier dans l'AII ensuite — non sanctionné par l'annulation d'un acte, c'est le prix de ce véhicule.</dd>
-        <dt>Note</dt><dd>La clause de caducité automatique de la version initiale est définitivement abandonnée (impossibilité de principe, <em>lex posterior derogat priori</em>).</dd>
-      </dl>
-    </div>
+<section id="rentabilite" class="wrap wide">
+  <div class="axis-head"><h2>Axe rentabilité</h2></div>
+  <p class="axis-intro">Quatre réformes qui ne portent pas sur le financement lui-même, mais sur le coût de faire des affaires en Europe une fois financé. Trois d'entre elles n'existent que comme chapitres du futur statut de société européen optionnel, « EU Inc. » — leur sort est donc lié au sien, y compris son calendrier incertain.</p>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">R1</div><div class="reform-title">Les stock-options qui voyagent avec le salarié — mais seulement leur volet non fiscal</div></div><span class="pill p2">Piste 2</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Dans plusieurs pays européens, un salarié qui reçoit des stock-options est imposé au moment de leur attribution ou de leur exercice — pas au moment où il les revend. Concrètement, cela peut l'obliger à payer un impôt sur un titre qu'il ne peut pas encore vendre, une situation absurde en pratique. De plus, quand un salarié change d'employeur, ses options acquises peuvent tomber, et rien ne garantit leur reconnaissance s'il déménage dans un autre pays européen. Ce sont les points que les données du dossier identifient comme réellement bloquants pour le futur régime de société européenne optionnelle — plus encore que le simple coût de l'immatriculation.</p>
+
+    <h4>Ce qui peut avancer, et ce qui reste bloqué ailleurs</h4>
+    <p>Trois éléments peuvent être adoptés à la majorité qualifiée, sans passer par l'unanimité fiscale : un « séquestre européen agréé » qui tient un registre officiel des instruments de participation salariée d'une EU Inc. (assurant leur traçabilité, mais sans aucune fonction fiscale, contrairement au modèle israélien dont il s'inspire) ; une règle de non-déchéance qui empêche qu'un salarié perde ses options déjà acquises simplement parce qu'il quitte l'entreprise ; et une règle de portabilité qui fait suivre les titres au salarié, sans nouvelle formalité, s'il change d'employeur ou de pays de résidence. Le recours à ce séquestre reste une simple faculté offerte à l'entreprise, jamais une obligation.
+
+    En revanche, deux éléments restent hors de portée pour l'instant, et c'est important de le dire clairement : le moment exact de l'imposition (relève de la fiscalité, unanimité requise des 27 États) et l'exonération de charges sociales patronales (relève d'un article différent du traité, celui sur la sécurité sociale, également soumis à l'unanimité <em>et</em> protégé par une clause qui interdit à l'Union de menacer l'équilibre financier des systèmes nationaux de sécurité sociale). Ce sont pourtant précisément ces deux points-là que les données identifient comme les vrais leviers, plus importants que tout le reste — la feuille de route ne doit surtout pas laisser croire que le volet retenu ici les remplace.</p>
+
+    <h4>Un risque juridique que personne n'avait vu, et comment il a été traité</h4>
+    <p>Un texte qui touche aux « droits et intérêts des travailleurs salariés » ne peut, par construction du traité, jamais s'appuyer sur l'article 114 — c'est exactement ce qui a fait tomber une autre réforme de ce dossier, une proposition de retraite automatique liée au même régime de société. Une lecture stricte pourrait faire le même reproche à ce volet-ci. La parade retenue est double : le texte est rédigé pour dire explicitement qu'il ne régit que le <em>titre</em> lui-même, jamais le contrat de travail, la rémunération ou les conditions de travail — les droits sont conférés au porteur du titre en cette seule qualité, pas au salarié en tant que tel. Et surtout, le recours au séquestre reste optionnel : imposer une obligation coûteuse sur une forme de société qui est censée rester facultative découragerait justement les entreprises de l'adopter, ce qui irait à l'encontre de l'objectif même du nouveau statut.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Ce chapitre n'existe que comme amendement au règlement créant le statut « EU Inc. » — son calendrier suit donc le sien : accord de trilogue visé fin 2026, entrée en vigueur début 2027, application effective réaliste en 2028 (la communication officielle promet des « premières immatriculations début 2027 » tout en prévoyant une application « douze mois après l'entrée en vigueur » — deux échéances qui ne sont conciliables qu'avec une date d'application différenciée, à trancher formellement dans le texte).</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>L'obstacle principal n'est pas dirigé contre ce chapitre en particulier, mais contre le régime tout entier : les grandes confédérations syndicales européennes ont déjà demandé l'arrêt du 28e régime tel qu'il est actuellement conçu, craignant un contournement du droit du travail national — une opposition de porte, qui peut faire tomber ce chapitre avec le texte porteur sans qu'aucun de ses éléments propres n'ait été spécifiquement contesté.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">R3</div><div class="reform-title">Une prime versée directement par l'Europe à chaque augmentation de capital</div></div><span class="pill p3">Piste 3</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>La fiscalité européenne favorise structurellement l'endettement par rapport aux fonds propres — un biais ancien, documenté, qui pénalise justement les entreprises en forte croissance mais pas encore rentables. La Commission avait proposé un texte pour corriger ce biais (« DEBRA »), mais l'a retiré faute de soutien suffisant des États membres. Résultat : le système fiscal continue de favoriser la dette, pendant que les nouvelles règles prudentielles des assureurs commencent, elles, à favoriser les fonds propres — une contradiction de politique publique que personne ne traite aujourd'hui.</p>
+
+    <h4>Ce que le texte ferait, et pourquoi cette astuce juridique fonctionne (là où une autre a échoué)</h4>
+    <p>Puisque la voie fiscale est fermée, reproduire le même effet économique autrement : un versement direct du budget européen, égal à 8 % du montant de toute augmentation de capital en numéraire réalisée par une jeune entreprise innovante éligible (moins de douze ans, moins de 500 salariés, au moins 10 % du chiffre d'affaires en recherche et développement), plafonné à 2 millions d'euros par entreprise sur sa durée de vie. Aucun comité de sélection : c'est un droit automatique, vérifié sur la simple inscription au registre du commerce.
+
+    Le point juridique décisif, à écrire explicitement dans le texte : l'article du traité mobilisé ici (l'article 173, sur la politique industrielle) exclut, dans son propre texte, toute mesure « contenant des dispositions fiscales ». Ce mécanisme y échappe précisément parce que son montant dépend du <em>capital souscrit</em> — une grandeur neutre, sans lien avec la fiscalité — et jamais d'un impôt payé ou d'un taux d'imposition. C'est exactement la nuance qui a fait échouer une autre idée de ce dossier (une prime équivalente pour les investisseurs plutôt que pour les entreprises, dont le montant dépendait, lui, de l'impôt payé — et qui a donc été rejetée pour ce motif précis).
+
+    Élément important, découvert lors de la relecture finale : au rythme actuel des levées de fonds propres en Europe, l'enveloppe annuelle prévue (environ 850 millions d'euros, financerait environ 10,6 milliards d'euros de fonds propres primés) serait épuisée en quelques mois — sur un flux total européen éligible estimé à 40-50 milliards d'euros par an, ce qui ne couvre qu'environ un quart à un cinquième des besoins. Une règle de rationnement est donc indispensable : des fenêtres trimestrielles plafonnées, avec réduction proportionnelle de la prime si la demande dépasse le montant disponible sur la fenêtre. Conséquence assumée : le versement en 30 jours annoncé à l'origine ne concerne alors que le délai après la <em>clôture</em> de la fenêtre, ce qui porte le délai réel jusqu'à environ quatre mois dans le pire des cas.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Cette réforme s'insère dans le futur règlement du FEC (application visée 2028), mais une pièce annexe doit être posée <em>avant</em> : une clause précisant que ce type de versement direct de l'Union ne s'impute pas sur les plafonds d'aides d'État nationales doit être inscrite dans la révision en cours du grand règlement européen sur les aides publiques, dont l'entrée en vigueur est prévue au 1ᵉʳ janvier 2027 — un an avant le FEC lui-même. Comme la prime n'existera pas encore à ce moment-là, la clause doit être rédigée en termes génériques (« les versements directs financés par le budget de l'Union en gestion directe »), sans nommer le dispositif qui n'existe pas encore.</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>Aucune opposition nommément documentée sur ce mécanisme précis. L'obstacle est diffus : cette réforme mobilise 6 milliards d'euros dans un compartiment budgétaire de l'ordre de 11 milliards seulement — une part très importante, qui l'expose directement au clivage budgétaire général entre les pays qui veulent un budget européen plus modeste (dont l'Allemagne, qui a demandé des coupes de l'ordre de 400 milliards d'euros sur l'ensemble du budget) et ceux qui poussent pour un budget plus ambitieux.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Pour un tour de série A de 10 millions d'euros, l'effet est un calcul exact : 800 000 euros non dilutifs. Ce qui n'est en revanche pas mesuré, c'est l'effet comportemental correspondant — combien d'entreprises supplémentaires lèveraient des fonds, ou lèveraient davantage, grâce à cette prime. Une estimation de « l'effet d'aubaine » (la part des augmentations de capital qui auraient eu lieu de toute façon, prime ou pas) doit être publiée régulièrement — c'est une condition posée pour que le dispositif reste défendable dans la durée.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">R4</div><div class="reform-title">Simplifier chaque levée de fonds successive — la réforme la mieux notée de tout le dossier</div></div><span class="pill p2 star">Piste 2 — la plus solide des 20 réformes</span></div>
+
+    <h4>Pourquoi cette réforme se distingue de toutes les autres</h4>
+    <p>C'est la seule des vingt réformes que les deux examens indépendants — sur le plan juridique comme sur le plan politique — qualifient sans réserve de la plus solide du dossier entier. C'est aussi la seule de l'axe rentabilité jugée totalement praticable, sans aucune réserve politique. Elle mérite donc le niveau de détail le plus poussé.</p>
+
+    <h4>Le problème, en clair</h4>
+    <p>Dans la plupart des pays européens, chaque augmentation de capital d'une société — c'est-à-dire chaque nouveau tour de financement — exige une décision d'assemblée générale, et souvent un acte notarié distinct. Ce coût de friction, en temps et en argent, rend structurellement non rentables les petits tours (moins de 250 000 euros) et pousse les entreprises vers des levées plus grosses et plus tardives. Aux États-Unis, un instrument standardisé (le « SAFE ») permet de boucler un tour d'amorçage en deux à trois semaines, sans rien de comparable à cette lourdeur. Sur la même période récente, le nombre d'opérations d'amorçage en Europe a chuté de 44 % en nombre alors que les montants totaux progressaient de 50 % — un signe que le marché se polarise entre très petits et très gros tours, au détriment du milieu de la distribution. (Attention, précision honnête : cette chute de 44 % ne peut pas être attribuée avec certitude au seul coût juridique — d'autres explications concurrentes, tout aussi crédibles, existent, comme le cycle particulier de l'investissement dans l'intelligence artificielle en 2026.)</p>
+
+    <h4>Ce que le texte ferait concrètement</h4>
+    <p>Deux mécanismes, directement inspirés d'une réforme suisse entrée en vigueur en 2023 qui a fait ses preuves. D'abord, une « bande de capital » : l'assemblée générale peut autoriser, pour cinq ans, son conseil d'administration à faire varier le capital de la société de plus ou moins 50 %, sans nouvelle décision collective ni acte notarié à chaque opération — seulement un dépôt électronique, avec effet sous cinq jours ouvrables pour les augmentations. Une correction essentielle, absente de la version initiale et ajoutée après vérification : toute <em>réduction</em> de capital dans cette bande ouvre un droit d'opposition des créanciers de trente jours (une protection présente dans le modèle suisse d'origine, qu'il ne fallait pas oublier d'importer) — ce qui, assumé honnêtement, signifie que la promesse de rapidité en cinq jours ne s'applique en réalité qu'aux augmentations, pas aux réductions.
+
+    Ensuite, un « Instrument Convertible Européen » : un modèle unique et standardisé, annexé directement au règlement, où seuls quatre paramètres restent à remplir (montant, décote, plafond de valorisation, événement de conversion) — souscrit et converti par simple inscription électronique, sans acte notarié ni assemblée générale.</p>
+
+    <h4>Une précision juridique importante, qui simplifie plutôt qu'elle ne complique</h4>
+    <p>La version initiale du texte prévoyait d'écarter explicitement l'application d'un texte européen existant sur le droit des sociétés. Ce n'était pas nécessaire : ce texte ne s'applique qu'aux sociétés anonymes classiques d'un type précis, et le futur statut « EU Inc. » est une forme entièrement nouvelle de droit européen qui n'y est pas soumise — la clause de mise à l'écart a donc été supprimée, ce qui rend le texte plus simple et plus solide. Un point technique à ne pas perdre en négociation : la conversion de l'instrument convertible suppose l'émission de nouveaux titres, qui doivent être couverts par la bande de capital pour éviter, précisément, une nouvelle assemblée générale au moment de la conversion — les deux mécanismes sont donc liés entre eux, pas indépendants.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Comme R1, ces deux chapitres n'existent que comme amendements au futur règlement EU Inc. — même calendrier, même incertitude sur la date exacte d'application, retenue prudemment à 2028.</p>
+
+    <h4>Qui doit agir, et où ça résiste vraiment</h4>
+    <p>Le point de friction le plus prévisible et le plus documenté touche un acteur précis, non un principe : les professions notariales de plusieurs grands pays (Allemagne, Autriche, Italie, France), pour qui la suppression de l'acte authentique touche directement le cœur économique de leur activité en droit des sociétés — une opposition certaine, documentée dans la version d'origine du texte. Ce risque est distinct de l'opposition syndicale générale au 28e régime, à laquelle ce chapitre reste néanmoins exposé par ricochet, puisqu'il partage le sort procédural du texte porteur.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>C'est un gain de rentabilité pur, sans coût budgétaire ni fiscal, sur une population très large d'entreprises. Le mécanisme de coût est bien documenté (l'acte notarié obligatoire, l'absence d'instrument convertible standardisé), le modèle de référence est un dispositif suisse déjà éprouvé depuis 2023 — mais l'ampleur exacte de la réponse (combien de tours de financement supplémentaires cette simplification produirait réellement) n'est pas mesurée, et aucun chiffre de ce type ne doit être avancé.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">R6</div><div class="reform-title">Un inventaire régulier du coût cumulé de toutes les règles européennes, pour les petites entreprises</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>70 % des fondateurs européens jugent l'environnement réglementaire restrictif. Le mécanisme précis derrière ce chiffre est bien documenté : un coût de conformité de 500 000 euros par an est négligeable pour un grand groupe et représente 10 % du chiffre d'affaires d'une scale-up de 5 millions d'euros. C'est ce <em>ratio</em>, pas le montant absolu, qui détermine si une entreprise en croissance doit sacrifier de la recherche ou du développement commercial pour rester en conformité. Or chaque nouvelle règle européenne (intelligence artificielle, reporting environnemental, cybersécurité) est évaluée isolément — jamais l'empilement de toutes les règles existantes, pris ensemble, sur une même entreprise.</p>
+
+    <h4>Ce que le texte ferait, et une correction de véhicule juridique importante</h4>
+    <p>Deux obligations. D'abord, toute étude d'impact accompagnant une nouvelle règle européenne devra chiffrer son coût de conformité en pourcentage du chiffre d'affaires d'une entreprise de référence (50 salariés, 10 millions d'euros de chiffre d'affaires) — et pas seulement en valeur absolue agrégée pour toute l'économie, comme c'est le cas aujourd'hui. Ensuite — et c'est l'élément jugé le plus utile par les deux examens du dossier — la Commission publierait, tous les deux ans, un <em>inventaire du coût cumulé</em> de conformité supporté par cette même entreprise de référence, toutes règles européennes confondues. C'est un problème d'empilement qu'aucun examen texte par texte ne peut jamais capter.
+
+    La version initiale prévoyait aussi une « clause de caducité » : toute règle dont le coût dépasse un certain seuil deviendrait automatiquement caduque pour les petites entreprises après cinq ans, sauf renouvellement explicite. Cette idée a dû être définitivement abandonnée — pas pour une question de champ d'application, mais pour un principe juridique de base : un texte adopté aujourd'hui ne peut structurellement pas décider, par avance, qu'un texte futur sera caduc. Elle ne produirait un effet que si chaque futur texte la reprenait lui-même explicitement — c'est-à-dire précisément dans le seul cas où elle serait devenue inutile.
+
+    Autre correction : ce dispositif ne peut pas être imposé par une loi classique. Un règlement qui dicterait à la Commission le contenu de ses propres études d'impact toucherait à son droit d'initiative garanti par les traités. La bonne voie combine trois instruments de nature différente : une modification de l'accord que les trois institutions européennes se donnent mutuellement sur leurs méthodes de travail (« Mieux légiférer ») ; une décision interne de la Commission modifiant le mandat du comité qui contrôle la qualité de ses études d'impact — c'est en réalité le seul des trois instruments qui mord vraiment, un avis défavorable de ce comité bloquant en pratique l'adoption d'un texte ; et une révision de la méthode de calcul elle-même, un travail de fond mené par les services de la Commission.</p>
+
+    <h4>Le calendrier — le plus rapide et le plus autonome de tout le dossier</h4>
+    <p>Cette réforme ne dépend d'aucun autre texte de ce dossier — ni du règlement EU Inc., ni du budget européen, ni de la révision des aides d'État. Elle peut démarrer immédiatement. L'ordre de mise en œuvre recommandé est d'ailleurs inversé par rapport à l'intuition : commencer par les décisions que la Commission peut prendre seule (modifier le mandat de son comité de contrôle, publier un premier inventaire à titre expérimental) et ne codifier l'accord entre les trois institutions qu'ensuite, une fois que le dispositif a fait ses preuves — plutôt que de négocier, pendant des mois, un engagement sur un livrable que personne n'a encore vu. Premier inventaire réaliste : 2028. La contrainte réelle qui détermine ce calendrier n'est pas juridique, c'est pratique : il n'existe aujourd'hui aucune donnée consolidée sur les coûts de conformité par entreprise au niveau européen — il faut d'abord la construire.</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>Le Parlement européen résistera probablement à toute règle qui l'oblige, lui aussi, à chiffrer le coût de ses propres amendements — une atteinte perçue à son droit d'amendement, qu'une formulation en obligation de moyens plutôt que de résultat (« s'efforce de » plutôt que « chiffre ») permet de désamorcer partiellement. Les associations de défense des consommateurs pourraient lire cet inventaire comme un outil de dérégulation déguisé — un risque réel si l'inventaire est présenté avec un objectif chiffré de réduction, ce qui n'est pas recommandé : mieux vaut d'abord publier l'inventaire, sans objectif attaché, et discuter d'un objectif ensuite, sur la base de chiffres qui existeront enfin.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Cet outil produit de l'information, pas des économies directes. Il ne crée ni obligation de réduire les coûts, ni sanction. Son effet passe entièrement par la visibilité qu'il donne à un problème qu'aucun texte pris isolément ne révèle, et par la pression que le comité de contrôle interne pourra désormais exercer sur la qualité des futures études d'impact. Cet effet n'est, par nature, pas quantifiable à l'avance — et c'est aussi pour cela que les deux examens du dossier l'ont jugé être la partie la plus solide de toute cette réforme : elle ne promet que ce qu'elle peut effectivement tenir.</p>
   </div>
 </section>
 
-<section id="demande" class="wrap">
-  <div class="axis-head"><h3>Axe demande — piste réglementaire et piste FEC</h3></div>
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">D1</div><div class="card-title">Réserve européenne d'achat d'innovation — volet budget UE seul</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Actes de base de chaque programme concerné (FEC en premier lieu) — taux de réservation ≥3 % différencié par programme, pas uniforme.</dd>
-        <dt>Contrainte AMP</dt><dd>Le passage direct au marché de production (phase 3, sans nouvel appel d'offres) est limité aux marchés sous les seuils de l'AMP ou relevant de l'exclusion « services de R&D » (art. 14, directive 2014/24/UE) — l'Union n'a jamais inscrit, contrairement aux États-Unis, d'exclusion pour les marchés réservés aux petites entreprises.</dd>
-        <dt>Hors périmètre</dt><dd>Le volet de conditionnalité sur les dépenses nationales cofinancées est écarté — rouvre un conflit de subsidiarité déjà documenté.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">D2</div><div class="card-title">Objectif indicatif publié + suppression des critères excluants</div></div><div class="card-badges"><span class="pill p1">Piste 1</span> <span class="pill p3">volet garantie : Piste 3</span></div></div>
-      <dl class="spec">
-        <dt>Bloc 1 (affaibli)</dt><dd>Objectif indicatif 15 %/3 %, publication trimestrielle par acheteur &gt;50 M€/an à partir des données TED — sans sanction (le quota contraignant initial heurtait l'égalité de traitement et l'AMP).</dd>
-        <dt>Bloc 2 (solide)</dt><dd>Durcissement de l'art. 58§3 (plafond de CA exigé), allotissement obligatoire &gt;5 M€, paiement à 30 jours + avance 20 % pour les &lt;10 ans, garanties plafonnées à 5 % avec contre-garantie FEC — <strong>à plafonner, provisionner et chiffrer explicitement</strong>, ce que la version initiale ne faisait pas.</dd>
-        <dt>Véhicule</dt><dd>Révision des directives marchés publics, 9 septembre 2026.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">D3</div><div class="card-title">Centrale d'achat européenne + précertification + assurance de l'acheteur</div></div><div class="card-badges"><span class="pill p1">Piste 1</span> <span class="pill p3">garantie : Piste 3</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Extension systématique de l'article 39 (directive 2014/24/UE) — <strong>lacune à combler</strong> : cet article désigne le droit de l'État où la centrale est établie, une centrale européenne sans État de rattachement doit voir son régime de recours explicitement désigné (directives « recours » ou juge de l'Union) avant toute rédaction opérationnelle.</dd>
-        <dt>Correction</dt><dd>Présomption de conformité de la précertification rendue réfutable (art. 43§1) ; garantie de performance plafonnée, provisionnée sur perte attendue estimée, vérification de la défaillance par un tiers indépendant.</dd>
-        <dt>Impact</dt><dd>Jugée l'idée la plus originale de l'axe demande par les deux niveaux d'examen — cible l'exposition personnelle du fonctionnaire acheteur, jamais traitée ailleurs dans le dossier.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">D5</div><div class="card-title">Normes livrées au moment de la proposition, pas du texte adopté</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Modification du règlement (UE) n° 1025/2012 + accord interinstitutionnel — obligation d'émettre la demande de normalisation dès la proposition, pas après l'adoption.</dd>
-        <dt>Correction</dt><dd>Le report automatique de la date d'application (version initiale) est abandonné — inopérant juridiquement et incitation perverse à ralentir la normalisation. Financement limité aux schémas techniques neutres, jamais à des bibliothèques applicatives concurrentes des fournisseurs européens.</dd>
-        <dt>Acteurs</dt><dd>CEN, CENELEC, ETSI — financement renforcé via l'article 15 du règlement 1025/2012, déjà disponible.</dd>
-      </dl>
-    </div>
-    <div class="card">
-      <div class="card-top"><div><div class="card-id">D6</div><div class="card-title">Engagements d'achat anticipé pour technologies stratégiques</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
-      <dl class="spec">
-        <dt>Base juridique</dt><dd>Article 30, directive 2014/24/UE (dialogue compétitif) + instrument budgétaire du règlement FEC.</dd>
-        <dt>Correction budgétaire critique</dt><dd>Le paiement intervient au scénario de <em>réussite</em>, pas de défaut — à rebudgétiser en crédits d'engagement pluriannuels dissociés, pas en garantie provisionnée à taux faible.</dd>
-        <dt>Contrainte AMP</dt><dd>La réservation aux fournisseurs d'origine européenne est une <strong>exclusion</strong>, pas une pondération — l'élément le plus exposé de tout le dossier au regard de l'AMP, plus encore que D4.</dd>
-      </dl>
-    </div>
+<section id="demande" class="wrap wide">
+  <div class="axis-head"><h2>Axe demande</h2></div>
+  <p class="axis-intro">Cinq réformes sur la commande publique et l'adoption réglementaire — le levier le moins coûteux budgétairement de tout le dossier, puisqu'il s'agit de réorienter une dépense déjà engagée plutôt que d'en créer une nouvelle. C'est aussi l'axe où une contrainte internationale précise — l'accord de l'OMC sur les marchés publics — revient sans cesse, et qu'il faut connaître avant d'aborder chaque réforme.</p>
+
+  <div class="callout gold" style="margin-bottom:28px;">
+    <h4 style="text-transform:none;letter-spacing:0;margin-top:0;">La contrainte qui traverse tout cet axe</h4>
+    <p>Les États-Unis ont inscrit, dans leurs propres engagements internationaux à l'accord de l'OMC sur les marchés publics, une exclusion explicite pour les marchés réservés aux petites entreprises. C'est cette exclusion, et elle seule, qui rend légal leur célèbre programme SBIR (une part du budget de recherche fédéral réservée aux petites entreprises, avec passage direct au marché de production sans nouvel appel d'offres). <strong>L'Union européenne n'a jamais inscrit d'équivalent pour elle-même.</strong> Copier ce modèle sans corriger cette asymétrie exposerait l'Union à une contestation commerciale internationale. C'est pour cela que plusieurs réformes ci-dessous limitent leurs mécanismes les plus ambitieux aux seuls marchés qui restent en dessous des seuils couverts par cet accord — une renégociation de l'accord lui-même est un chantier de plusieurs années, hors de portée de ce cycle budgétaire.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">D1</div><div class="reform-title">Un « SBIR européen » — mais limité au seul budget propre de l'Union</div></div><span class="pill p3">Piste 3</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Aux États-Unis, chaque agence fédérale dont le budget de recherche externe dépasse 100 millions de dollars doit, par la loi, réserver une part de ce budget à des marchés de recherche accordés directement à des petites entreprises — plus de 8 milliards de dollars en 2025. Rien de comparable, sous forme d'obligation légale, n'existe en Europe.</p>
+
+    <h4>Ce que le texte ferait — et pourquoi une partie de l'ambition initiale a dû être retirée</h4>
+    <p>Réserver au moins 3 % du budget de recherche et d'acquisition de chaque grand programme européen (le futur FEC en premier lieu) à des marchés « avant-commercialisation » réservés aux entreprises de moins de 500 salariés — avec un taux différencié selon le programme plutôt qu'un taux unique, la défense et la santé n'ayant pas la même structure de coûts. L'élément le plus précieux du modèle américain, repris ici : une fois qu'une entreprise a développé avec succès un prototype financé de cette manière, l'acheteur public peut lui passer directement le marché de production qui suit, sans nouvel appel d'offres — sans ce mécanisme, l'entreprise finance un prototype et perd quand même le marché final.
+
+    Deux limitations, imposées par la vérification finale. D'abord, ce passage direct au marché de production ne peut être autorisé que pour les marchés qui restent sous les seuils couverts par l'accord international sur les marchés publics (voir l'encadré ci-dessus) — au-delà, il exposerait l'Union à un risque réel de contestation commerciale. Ensuite, le volet qui prévoyait d'étendre cette obligation aux dépenses <em>nationales</em> cofinancées par des fonds européens a été entièrement retiré : il rouvrait un conflit déjà bien documenté sur la centralisation du pouvoir de décision régional, avec le Comité européen des Régions notamment.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Pour l'essentiel de son budget, cette réforme est un article à écrire dans le futur règlement FEC — même calendrier que les autres réformes de la piste 3, application visée 2028.</p>
+
+    <h4>Qui doit agir, et où ça résiste</h4>
+    <p>Chaque direction générale et chaque agence gestionnaire d'un programme concerné verra sa marge de manœuvre amputée par ce prélèvement obligatoire — une résistance institutionnelle interne, plus qu'une opposition politique visible, mais réelle et à anticiper.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Aucun chiffre précis n'existe pour ce dispositif limité au seul budget propre de l'Union. Le chiffre souvent cité pour la commande publique dans son ensemble (réorienter 1 % de la commande publique de l'Union représenterait environ 20 milliards d'euros par an, l'équivalent de toute la collecte annuelle de capital-risque européenne) porte sur la commande publique nationale et locale, un périmètre bien plus large que le seul budget de R&D de l'Union — il ne faut pas les confondre.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">D2</div><div class="reform-title">Un objectif publié, et la suppression des critères qui excluent mécaniquement les jeunes entreprises</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>La commande publique représente environ 14 % du PIB européen — un levier théorique énorme. Mais en pratique, elle reste quasiment inaccessible à une jeune entreprise : exigence d'un chiffre d'affaires historique qui exclut mécaniquement une société de trois ans, garanties financières disproportionnées, et des délais de paiement qui transforment un contrat gagné en risque de faillite pour une société sans trésorerie.</p>
+
+    <h4>Ce que le texte ferait — deux blocs, deux destins très différents</h4>
+    <p>Le premier bloc envisageait, à l'origine, un objectif chiffré et <em>contraignant</em> (15 % de la valeur des marchés publics pour les PME, 3 % pour les jeunes entreprises), avec une sanction en cas de non-respect — sur le modèle d'un quota coréen bien plus élevé (50 %). Ce mécanisme heurte le principe d'égalité de traitement entre tous les candidats d'un marché public, un principe fondateur du droit européen des marchés publics, et pose la même difficulté d'exposition internationale que D1. Il a donc été reconstruit en un objectif purement <em>indicatif</em>, sans sanction, mais publié automatiquement tous les trimestres, acheteur public par acheteur public, à partir de données déjà collectées (la base de données européenne TED). Ce qui faisait vraiment fonctionner le modèle coréen cité en référence n'était probablement pas le niveau du quota lui-même, mais le simple fait de mesurer et de publier chaque année — la version reconstruite reproduit cet effet de redevabilité, sans le vice juridique.
+
+    Le second bloc, lui, est solide et n'a pratiquement pas eu besoin d'être modifié : interdire d'exiger un chiffre d'affaires supérieur à deux fois la valeur du marché, interdire les références de plus de trois ans, imposer un découpage des gros marchés en lots plus petits, garantir un paiement à 30 jours avec une avance de trésorerie de 20 % pour les entreprises de moins de dix ans, et plafonner à 5 % les garanties financières exigées de ces mêmes entreprises — la différence étant couverte par une garantie du futur budget européen, garantie qui doit être explicitement plafonnée et chiffrée, ce que la version initiale ne faisait pas.</p>
+
+    <h4>Le calendrier</h4>
+    <p>La fenêtre est la révision des directives européennes sur les marchés publics, attendue le 9 septembre 2026 — les deux blocs suivent ce même véhicule, avec une adoption réaliste en 2027-2028.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Le second bloc traite un problème documenté très concrètement : pour une société sans trésorerie, le délai de paiement et la garantie financière sont souvent des contraintes plus discriminantes que le prix lui-même. Aucune estimation chiffrée de l'effet global n'existe cependant dans les données rassemblées.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">D3</div><div class="reform-title">Une centrale d'achat européenne, avec une assurance pour le fonctionnaire qui prend un risque</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Gagner un marché public à Rotterdam n'aide en rien à en gagner un à Lyon — chaque nouveau pays est un coût fixe complet à supporter à nouveau. Mais un problème plus profond, souvent négligé dans le débat public, bloque en amont : un fonctionnaire qui choisit une jeune entreprise plutôt qu'un grand fournisseur établi prend, personnellement, un risque professionnel en cas d'échec du projet — un frein comportemental que ni le droit ni le prix ne suffisent à lever, et que rien d'autre dans tout ce dossier ne traite directement.</p>
+
+    <h4>Ce que le texte ferait — et une lacune juridique découverte lors de la vérification finale</h4>
+    <p>Trois éléments. D'abord, une centrale d'achat de niveau européen, à laquelle tout acheteur public national, régional ou local pourrait adhérer librement pour bénéficier automatiquement d'un marché déjà attribué au niveau européen, sans conduire sa propre procédure — une utilisation systématique d'une faculté qui existe déjà dans le droit européen des marchés publics, mais rarement employée. Une lacune a été découverte en vérifiant le texte : la règle qui permet aujourd'hui de recourir à une centrale d'achat établie dans un autre pays européen désigne, en cas de litige, le droit de <em>ce</em> pays — mais une centrale véritablement européenne, sans pays de rattachement précis, n'a aucun régime de recours désigné. Ce vide doit être comblé explicitement avant toute rédaction opérationnelle, faute de quoi toute contestation d'une procédure de cette centrale se heurterait à un trou juridictionnel.
+
+    Ensuite, un label de précertification technique, valable trois ans, attestant qu'une solution répond déjà à certaines exigences — avec une correction : la présomption de conformité doit rester réfutable (le droit européen impose d'accepter tout autre moyen de preuve pertinent), et les critères doivent rester ouverts, sans contingentement du nombre de labels délivrés.
+
+    Enfin, l'élément le plus original de tout cet axe : une garantie du futur budget européen, protégeant tout acheteur public qui retient un fournisseur précertifié de moins de dix ans contre le risque d'une défaillance d'exécution — jusqu'à 3 millions d'euros par marché, avec une franchise de 10 %, et une vérification par un tiers indépendant de la défaillance avant tout appel de la garantie, pour éviter les résiliations de complaisance.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Les volets centrale d'achat et précertification suivent la révision des marchés publics du 9 septembre 2026 (adoption réaliste 2027-2028) ; le volet garantie, lui, dépend du futur budget FEC (2028).</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Les deux niveaux d'examen de ce dossier saluent cette intuition comme la plus originale de tout l'axe demande — mais aucun chiffre d'impact n'est disponible dans les données rassemblées.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">D5</div><div class="reform-title">Livrer les normes techniques en même temps que la proposition de loi, pas des années après</div></div><span class="pill p1">Piste 1</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Chaque nouvelle règle européenne (cybersécurité, intelligence artificielle, reporting environnemental) crée, en théorie, un nouveau marché pour les entreprises capables de s'y conformer. Mais en pratique, il s'écoule 18 à 36 mois entre l'adoption du texte et la publication de ses normes techniques précises. Pendant ce délai, seuls les acteurs déjà installés, capables d'absorber l'incertitude, peuvent continuer à opérer — ce qui inverse complètement l'avantage de « premier arrivé » que la réglementation était censée offrir aux fournisseurs européens.</p>
+
+    <h4>Ce que le texte ferait — et pourquoi le mécanisme initial a dû être remplacé</h4>
+    <p>L'idée d'origine prévoyait qu'une règle ne puisse pas entrer en application avant que ses normes techniques soient publiées, avec un report automatique de la date en cas de retard. Ce mécanisme s'est révélé juridiquement inopérant (un texte ne peut pas décider, par avance, de reporter automatiquement l'application d'un texte ultérieur de même rang) — et pire, il créait une incitation perverse évidente : tout opposant à un nouveau texte aurait intérêt à ralentir la production de ses normes techniques pour en retarder l'application indéfiniment.
+
+    Le mécanisme corrigé impose plutôt d'émettre la demande de normalisation <em>dès le stade de la proposition</em> du texte, et non après son adoption — ce qui gagne, mécaniquement, un temps précieux. Un financement dédié soutient un atelier produisant des schémas techniques neutres et des jeux de test, gratuits pour toute entreprise. Autre correction, pour éviter une contradiction interne repérée en vérification : ce financement doit se limiter à ces éléments techniques neutres, jamais à des outils applicatifs complets qui viendraient concurrencer directement les entreprises européennes de conformité que la mesure prétend justement aider.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Aucune fenêtre législative précise n'est identifiée — c'est une initiative à déposer, avec un calendrier réaliste vers 2027-2028.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Ce diagnostic est qualifié d'« excellent et rarement formulé » par les deux niveaux d'examen de ce dossier — mais aucune donnée ne permet de chiffrer son effet.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><div class="reform-id">D6</div><div class="reform-title">L'Europe s'engage à acheter, à l'avance, un produit qui n'existe pas encore</div></div><span class="pill p3">Piste 3</span></div>
+
+    <h4>Le problème, en clair</h4>
+    <p>Pour des technologies très coûteuses en capital, à forte courbe d'apprentissage (semi-conducteurs, stockage d'électricité, informatique quantique), le vrai blocage n'est pas seulement le capital disponible — c'est l'absence d'un marché prévisible : un investisseur ne peut pas modéliser un chiffre d'affaires qui dépend de l'adoption future, incertaine, d'une technologie qui n'existe pas encore.</p>
+
+    <h4>Ce que le texte ferait — et une erreur budgétaire contre-intuitive, corrigée</h4>
+    <p>L'Union s'engagerait, via une procédure déjà existante (le « dialogue compétitif »), à acheter, à un prix garanti et pour une durée d'au moins trois ans, une quantité donnée d'un produit qui reste à développer — payé uniquement à la livraison, jamais en amont.
+
+    Le point le plus surprenant de toute cette feuille de route concerne le traitement budgétaire de cet engagement. La version initiale présentait le coût budgétaire comme « contingent à la réussite » du dispositif, comme si c'était un facteur rassurant, et proposait de le provisionner à un taux faible, comme un simple risque éventuel peu probable. C'est l'inverse de la réalité : un tel engagement paie précisément quand le dispositif <em>fonctionne</em> — le scénario de paiement est le scénario de <em>succès</em>, qui est justement l'objectif recherché, pas un accident statistique rare. Le budgéter comme un risque improbable sous-estime largement le montant réellement mobilisable si tout se passe bien. La correction : le rebudgétiser en crédits d'engagement pluriannuels clairement affichés pour leur montant potentiel intégral.
+
+    Deux autres corrections. La clause qui obligeait le fournisseur à rembourser rétroactivement l'Europe s'il vendait moins cher à un autre client dissuadait, en réalité, ce fournisseur d'accorder des rabais aux autres acheteurs européens — l'inverse de l'objectif de diffusion recherché ; elle est remplacée par un partage du rendement excédentaire au-delà d'un niveau de rentabilité défini à l'avance. Et la réservation du dispositif aux seuls fournisseurs d'origine européenne, identifiée trop tard comme une <em>exclusion</em> pure et simple plutôt qu'une simple préférence pondérée, est l'élément le plus exposé de tout ce dossier vis-à-vis de l'accord international sur les marchés publics — plus encore qu'une autre réforme de préférence numérique traitée séparément dans ce dossier.</p>
+
+    <h4>Le calendrier</h4>
+    <p>Cette réforme est un instrument budgétaire du futur FEC — application visée 2028, avec des premiers engagements concrets qui pourraient suivre rapidement une fois l'instrument créé.</p>
+
+    <h4>L'impact, honnêtement</h4>
+    <p>Le raisonnement économique de base est documenté qualitativement (un euro de chiffre d'affaires contractualisé vaut, en valeur d'entreprise, un multiple de son montant, parce qu'il est non dilutif et réduit le risque perçu par les investisseurs suivants) — mais aucune donnée ne permet de chiffrer l'effet quantitatif spécifique attendu de ce dispositif précis.</p>
   </div>
 </section>
 
-<section id="transversal" class="wrap">
-  <p class="kicker">Ce qui traverse plusieurs réformes à la fois</p>
-  <h2>Trois risques à traiter une fois, pas fiche par fiche</h2>
+<section id="bilan" class="wrap">
+  <p class="kicker">Pour conclure</p>
+  <h2>Ce que cette feuille de route établit, et ce qu'elle n'établit pas</h2>
 
-  <h3>La contrainte AMP</h3>
-  <p>L'Union n'a jamais inscrit, dans son appendice I à l'Accord sur les marchés publics de l'OMC, l'exclusion pour les marchés réservés aux petites entreprises que les États-Unis ont inscrite pour eux-mêmes. Cette asymétrie touche <strong>D1, D2 (bloc 1), D6, et, dans une moindre mesure, D3</strong> — une note juridique unique sur ce point, présentée en amont de toute négociation sur l'axe demande, éviterait de la redécouvrir texte par texte.</p>
+  <p>Sur les vingt réformes détaillées ici, une poignée seulement — R4 en tête, N3 et N5 juste derrière, D2 (bloc suppression des critères excluants) et D5 — sont aujourd'hui prêtes à être portées sans réserve substantielle. La majorité des autres restent utiles et actionnables, mais exigent un correctif désormais précisément identifié : un chiffre à recalibrer, une base juridique à border différemment, un séquencement à respecter à la lettre. Et treize autres propositions, plus ambitieuses encore, sont écartées ailleurs dans ce dossier pour un motif de droit qui ne se discute pas.</p>
 
-  <h3>Le compartiment budgétaire de 11 Md€</h3>
-  <p>Sept réformes (piste 3) partagent le même compartiment du règlement FEC, dont la taille — environ 11 Md€ sur sept ans — est significativement plus petite que ce que plusieurs versions initiales de ces réformes présupposaient. Un arbitrage d'ensemble entre F3, F4, F11, R3, D1, D3 (garantie) et D6 sera nécessaire avant le dépôt du texte — les traiter séparément, comme des enveloppes indépendantes, reproduirait l'erreur déjà identifiée sur F3 et F10 (ce dernier écarté de cette feuille de route).</p>
-
-  <h3>La fracture de coalition</h3>
-  <p>Une mesure qui avantage les jeunes entreprises sur des critères de taille ou d'ancienneté plutôt que d'origine géographique peut diviser une coalition industrielle par ailleurs unie sur les mesures d'origine (le précédent est documenté pour la proposition N4 du second tour, écartée pour un autre motif) — à surveiller en particulier pour D1 et D3, qui touchent au même écosystème d'entreprises technologiques établies que D4.</p>
-
-  <div class="callout">
-    <h4>Ce que cette feuille de route ne fait pas</h4>
-    <p>Elle ne remplace ni une analyse d'impact officielle, ni un avis du service juridique du Conseil, ni une consultation réelle des parties prenantes. Neuf références (numéros de règlements délégués, bases juridiques précises pour F14 et D3, rapporteurs pressentis) sont signalées dans les quatre documents de détail comme à vérifier sur EUR-Lex avant toute circulation externe. Le détail complet de chacune des 20 fiches — texte de rédaction, séquencement fin, calendrier justifié — reste dans les quatre documents de grappe, référencés ci-dessous.</p>
-  </div>
+  <p>Ce document ne remplace ni une analyse d'impact officielle de la Commission, ni un avis du service juridique du Conseil, ni une consultation réelle des parties prenantes concernées. Plusieurs références précises — numéros exacts d'articles de règlements délégués, base juridique exacte de la révision du contrôle des concentrations, désignation officielle d'un rapporteur — restent signalées, dans les quatre documents de détail, comme à vérifier sur EUR-Lex avant toute circulation en dehors de ce cercle de travail.</p>
 </section>
 
 </main>
@@ -443,13 +767,13 @@
 <footer>
   <div class="wrap">
     <h4>Documents de détail</h4>
-    <p>Cette synthèse condense quatre feuilles de route complètes, dans <code>eu-financial-policy-claude-code/policy/mff-startup-funding/</code> :</p>
+    <p>Cette version longue reste elle-même une synthèse pédagogique de quatre feuilles de route complètes, dans <code>eu-financial-policy-claude-code/policy/mff-startup-funding/</code> — chacune va plus loin encore, jusqu'au texte de rédaction article par article :</p>
     <ul class="filelist">
       <li>roadmap-cluster-A-financement-reglementaire.md — F1, F5, F7, F9, F12, N3, N5</li>
       <li>roadmap-cluster-B-fec-budgetaire.md — F3, F4, F11, F14</li>
       <li>roadmap-cluster-C-rentabilite.md — R1, R3, R4, R6</li>
       <li>roadmap-cluster-D-demande.md — D1, D2, D3, D5, D6</li>
     </ul>
-    <p style="margin-top:20px;">D4 (préférence numérique) n'est volontairement pas repris ici : légalement recevable sous garde-fous, mais classée en faisabilité politique très faible par la vérification indépendante, face à la coalition d'opposition la mieux organisée de tout le dossier.</p>
+    <p style="margin-top:20px;">D4 (préférence numérique pour les logiciels et services européens) n'est volontairement pas reprise ici : juridiquement recevable sous conditions, mais classée en faisabilité politique très faible par la vérification indépendante, face à la coalition d'opposition la mieux organisée et la mieux financée de tout ce dossier.</p>
   </div>
 </footer>
