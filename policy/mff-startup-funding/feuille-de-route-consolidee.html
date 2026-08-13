@@ -1,0 +1,455 @@
+<!doctype html>
+<title>La feuille de route — 20 réformes faisables</title>
+<meta name="description" content="Séquencement, calendrier réel, base juridique et impact des 20 réformes confirmées faisables par les deux vérifications indépendantes.">
+<style>
+  :root{
+    --bg:#EEF1F0; --surface:#FFFFFF; --surface-2:#E3E9E7; --surface-3:#DCE3E1;
+    --ink:#172023; --ink-soft:#4B5A5C; --ink-faint:#7C8B8C;
+    --accent:#1F6F6B; --accent-ink:#0E3D3B; --accent-soft:#DCEDEA;
+    --gold:#9C6F28; --gold-soft:#F1E4CC;
+    --line:#D6DCDA; --line-soft:#E4E9E7;
+    --ok:#2E7D4F; --ok-soft:#DCEEE0;
+    --warn:#9C6F28; --warn-soft:#F1E4CC;
+    --bad:#A63A31; --bad-soft:#F5DFDB;
+    --neutral:#5C6B6C; --neutral-soft:#E3E9E7;
+    --p1:#1F6F6B; --p1-soft:#DCEDEA;
+    --p2:#5A5490; --p2-soft:#E6E4F2;
+    --p3:#9C6F28; --p3-soft:#F1E4CC;
+    --serif: Iowan Old Style, "Palatino Linotype", Palatino, Georgia, "Noto Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11161A; --surface:#181F23; --surface-2:#1F2A2D; --surface-3:#263133;
+      --ink:#E7EDEB; --ink-soft:#AEBCBA; --ink-faint:#7E8E8D;
+      --accent:#5CC2B8; --accent-ink:#9BE0D6; --accent-soft:#1C3634;
+      --gold:#D8AE6C; --gold-soft:#3A2F1B;
+      --line:#2B3639; --line-soft:#212B2E;
+      --ok:#68C88A; --ok-soft:#173425;
+      --warn:#D8AE6C; --warn-soft:#3A2F1B;
+      --bad:#E28378; --bad-soft:#3B211E;
+      --neutral:#8CA0A0; --neutral-soft:#212B2E;
+      --p1:#5CC2B8; --p1-soft:#1C3634;
+      --p2:#A79EDB; --p2-soft:#2A2740;
+      --p3:#D8AE6C; --p3-soft:#3A2F1B;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11161A; --surface:#181F23; --surface-2:#1F2A2D; --surface-3:#263133;
+    --ink:#E7EDEB; --ink-soft:#AEBCBA; --ink-faint:#7E8E8D;
+    --accent:#5CC2B8; --accent-ink:#9BE0D6; --accent-soft:#1C3634;
+    --gold:#D8AE6C; --gold-soft:#3A2F1B;
+    --line:#2B3639; --line-soft:#212B2E;
+    --ok:#68C88A; --ok-soft:#173425;
+    --warn:#D8AE6C; --warn-soft:#3A2F1B;
+    --bad:#E28378; --bad-soft:#3B211E;
+    --neutral:#8CA0A0; --neutral-soft:#212B2E;
+    --p1:#5CC2B8; --p1-soft:#1C3634;
+    --p2:#A79EDB; --p2-soft:#2A2740;
+    --p3:#D8AE6C; --p3-soft:#3A2F1B;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16.5px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  a{color:var(--accent-ink);}
+  a:focus-visible, summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px 40px;}
+  .narrow{max-width:760px;}
+
+  header.masthead{border-bottom:1px solid var(--line); padding:52px 24px 36px; background:var(--surface);}
+  .masthead-inner{max-width:1120px; margin:0 auto;}
+  .eyebrow{font-family:var(--mono); font-size:12.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent-ink); display:flex; align-items:center; gap:10px; margin-bottom:16px;}
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--accent);}
+  h1{font-family:var(--serif); font-weight:600; font-size:clamp(28px,4.4vw,42px); line-height:1.1; margin:0 0 14px; text-wrap:balance; letter-spacing:-.01em;}
+  .subtitle{font-size:17px; color:var(--ink-soft); max-width:70ch; margin:0; text-wrap:pretty;}
+
+  nav.toc{background:var(--surface-2); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; backdrop-filter:blur(6px);}
+  .toc-inner{max-width:1120px; margin:0 auto; padding:0 24px; display:flex; gap:20px; overflow-x:auto; scrollbar-width:none;}
+  .toc-inner::-webkit-scrollbar{display:none;}
+  nav.toc a{font-size:12.5px; color:var(--ink-soft); text-decoration:none; padding:11px 0; white-space:nowrap; border-bottom:2px solid transparent; font-weight:600;}
+  nav.toc a:hover{color:var(--accent-ink); border-bottom-color:var(--accent);}
+
+  section{padding:44px 0; border-bottom:1px solid var(--line-soft);}
+  section:last-of-type{border-bottom:none;}
+  .kicker{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); margin:0 0 8px;}
+  h2{font-family:var(--serif); font-size:clamp(23px,3vw,30px); font-weight:600; margin:0 0 14px; text-wrap:balance;}
+  h3{font-family:var(--serif); font-size:19px; font-weight:600; margin:26px 0 8px;}
+  p{margin:0 0 15px; max-width:78ch;}
+  .lede{font-size:17px; color:var(--ink-soft); max-width:74ch;}
+  code{font-family:var(--mono); font-size:.9em; background:var(--surface-2); padding:1px 5px; border-radius:4px;}
+
+  .stat-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:24px 0;}
+  .stat{background:var(--surface); padding:18px 16px;}
+  .stat .n{font-family:var(--serif); font-size:28px; font-weight:600; line-height:1; color:var(--ink); font-variant-numeric:tabular-nums;}
+  .stat .l{font-size:12px; color:var(--ink-faint); margin-top:6px;}
+
+  /* phase timeline */
+  .phase{margin:28px 0; border-radius:12px; overflow:hidden; border:1px solid var(--line);}
+  .phase-head{padding:16px 22px; display:flex; align-items:baseline; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .phase-head h3{margin:0; font-family:var(--serif);}
+  .phase.p1 .phase-head{background:var(--p1-soft); border-bottom:1px solid var(--line);}
+  .phase.p2 .phase-head{background:var(--p2-soft); border-bottom:1px solid var(--line);}
+  .phase.p3 .phase-head{background:var(--p3-soft); border-bottom:1px solid var(--line);}
+  .phase-when{font-family:var(--mono); font-size:12px; color:var(--ink-faint);}
+  .phase-body{background:var(--surface); padding:18px 22px;}
+  .reform-chip-row{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:6px;}
+  .reform-chip{
+    font-family:var(--mono); font-size:12.5px; font-weight:700; padding:5px 11px; border-radius:20px;
+    border:1px solid var(--line); background:var(--surface-2); color:var(--ink);
+  }
+  .phase.p1 .reform-chip{border-color:var(--p1); color:var(--p1);}
+  .phase.p2 .reform-chip{border-color:var(--p2); color:var(--p2);}
+  .phase.p3 .reform-chip{border-color:var(--p3); color:var(--p3);}
+
+  /* reform cards */
+  .axis-head{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin:36px 0 16px; border-bottom:1px solid var(--line); padding-bottom:10px;}
+  .axis-head h3{margin:0; font-size:22px;}
+  .card-grid{display:grid; grid-template-columns:1fr; gap:12px;}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:18px 20px;}
+  .card-top{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; margin-bottom:8px; flex-wrap:wrap;}
+  .card-id{font-family:var(--mono); font-size:12px; color:var(--accent-ink); font-weight:700;}
+  .card-title{font-weight:700; font-size:15.5px; margin:2px 0 0;}
+  .card-badges{display:flex; gap:6px; flex-shrink:0; flex-wrap:wrap;}
+  .pill{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; font-weight:700; padding:3px 9px; border-radius:20px; white-space:nowrap;}
+  .pill.p1{background:var(--p1-soft); color:var(--p1);}
+  .pill.p2{background:var(--p2-soft); color:var(--p2);}
+  .pill.p3{background:var(--p3-soft); color:var(--p3);}
+  dl.spec{display:grid; grid-template-columns:120px 1fr; gap:6px 14px; margin:10px 0 0; font-size:14px;}
+  dl.spec dt{font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-faint); padding-top:2px;}
+  dl.spec dd{margin:0; color:var(--ink-soft);}
+
+  table{border-collapse:collapse; width:100%; margin:16px 0; font-size:13.5px;}
+  th,td{text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{font-family:var(--mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-faint); font-weight:600;}
+  .table-wrap{overflow-x:auto; margin:16px 0;}
+  .table-wrap table{margin:0;}
+
+  .callout{background:var(--accent-soft); border-radius:10px; padding:20px 22px; margin:22px 0;}
+  .callout.gold{background:var(--gold-soft);}
+  .callout p:last-child{margin-bottom:0;}
+  .callout h4{margin:0 0 8px; font-family:var(--serif); font-size:16px;}
+
+  footer{padding:44px 24px 60px; background:var(--surface-2); border-top:1px solid var(--line);}
+  footer .wrap{padding-bottom:0;}
+  footer h4{font-family:var(--serif); font-size:16px; margin:0 0 10px;}
+  footer p{font-size:13.5px; color:var(--ink-soft);}
+  .filelist{list-style:none; margin:0; padding:0; font-family:var(--mono); font-size:12.5px; color:var(--ink-soft); display:grid; gap:6px;}
+  .filelist li::before{content:"› "; color:var(--accent-ink);}
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="eyebrow"><span class="dot"></span>Phase 10 — feuille de route de mise en œuvre</div>
+    <h1>La feuille de route : 20 réformes, dans l'ordre, avec le calendrier réel</h1>
+    <p class="subtitle">Pour chacune des propositions confirmées légalement solides <em>et</em> politiquement praticables par les deux vérifications indépendantes, ce document donne la base juridique précise, ce qu'il faut rédiger, qui doit agir, à quelle échéance réaliste, et l'impact attendu — chiffré uniquement quand une donnée existe vraiment. Chaque réforme reprise ici part de sa <strong>version corrigée</strong>, pas de son texte d'origine parfois défaillant.</p>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#calendrier">Le calendrier</a>
+    <a href="#financement-reg">Financement — réglementaire</a>
+    <a href="#financement-fec">Financement — FEC</a>
+    <a href="#rentabilite">Rentabilité</a>
+    <a href="#demande">Demande</a>
+    <a href="#transversal">Risques transversaux</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="calendrier" class="wrap">
+  <p class="kicker">Vue d'ensemble</p>
+  <h2>Trois vitesses, pas une seule</h2>
+  <p class="lede">Les 20 réformes ne partagent pas un calendrier unique — certaines peuvent avancer dès maintenant sur des textes déjà en négociation, d'autres ne peuvent exister qu'une fois le règlement EU Inc. adopté, d'autres encore sont entièrement suspendues à l'issue de la négociation du CFP dans son ensemble. Les confondre dans un seul agenda produirait un calendrier irréaliste.</p>
+
+  <div class="stat-grid">
+    <div class="stat"><div class="n">20</div><div class="l">réformes en feuille de route</div></div>
+    <div class="stat"><div class="n">11</div><div class="l">indépendantes du CFP — piste réglementaire propre</div></div>
+    <div class="stat"><div class="n">2</div><div class="l">rattachées au règlement EU Inc.</div></div>
+    <div class="stat"><div class="n">7</div><div class="l">suspendues à l'accord CFP/FEC (visé fin 2026, entrée en vigueur 2028)</div></div>
+  </div>
+
+  <div class="phase p1">
+    <div class="phase-head"><h3>Piste 1 — Réglementaire, indépendante du CFP</h3><span class="phase-when">Textes déjà en négociation · 2026-2028</span></div>
+    <div class="phase-body">
+      <p>Ces réformes s'accrochent à des révisions déjà engagées ou déjà calendrier (EuVECA T3 2026, révision marchés publics 9 septembre 2026, trilogue titrisation fin 2026, LTEI Solvabilité II 30 janvier 2027) ou à des textes à déposer sans lien avec l'issue du CFP. Elles peuvent, en théorie, avancer même si la négociation budgétaire prend du retard.</p>
+      <div class="reform-chip-row">
+        <span class="reform-chip">F1 — EuVGF</span>
+        <span class="reform-chip">F5 — Solvabilité II</span>
+        <span class="reform-chip">F7 — Label EPE</span>
+        <span class="reform-chip">F9 — Liquidité pré-IPO</span>
+        <span class="reform-chip">F12 — Titrisation</span>
+        <span class="reform-chip">F14 — Guichet concentrations</span>
+        <span class="reform-chip">N3 — Valorisation</span>
+        <span class="reform-chip">N5 — Collège de stabilité</span>
+        <span class="reform-chip">R6 — Inventaire des coûts</span>
+        <span class="reform-chip">D2 — Marchés publics</span>
+        <span class="reform-chip">D3 — Centrale d'achat*</span>
+        <span class="reform-chip">D5 — Normes</span>
+      </div>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:10px;">* hors volet garantie, qui relève de la piste 3.</p>
+    </div>
+  </div>
+
+  <div class="phase p2">
+    <div class="phase-head"><h3>Piste 2 — Rattachée au règlement EU Inc. (28e régime)</h3><span class="phase-when">Trilogue visé fin 2026 · application 2028</span></div>
+    <div class="phase-body">
+      <p>Ces réformes n'ont de sens qu'intégrées au règlement créant le statut de société européen optionnel — leur calendrier suit donc exactement celui de ce texte, y compris son incertitude propre (l'annonce officielle mentionne à la fois « premières immatriculations début 2027 » et « application 12 mois après l'entrée en vigueur », deux échéances qui ne se concilient pas sans une date d'application différenciée — la feuille de route retient 2028 par prudence).</p>
+      <div class="reform-chip-row">
+        <span class="reform-chip">R1 — EU-ESOP (volet non fiscal)</span>
+        <span class="reform-chip">R4 — Bande de capital + ICE</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="phase p3">
+    <div class="phase-head"><h3>Piste 3 — Suspendue à l'accord CFP / règlement FEC</h3><span class="phase-when">Accord visé fin 2026 · entrée en vigueur 1ᵉʳ janvier 2028</span></div>
+    <div class="phase-body">
+      <p>Ces réformes sont des articles du futur règlement établissant le Fonds européen pour la compétitivité, ou dépendent de son compartiment budgétaire (~11 Md€ sur sept ans) pour leur financement. Elles n'ont, à la lettre, aucune existence avant l'accord politique sur le CFP dans son ensemble — le risque documenté que ce compartiment serve de variable d'ajustement en cas de coupe budgétaire s'applique à toutes en bloc.</p>
+      <div class="reform-chip-row">
+        <span class="reform-chip">F3 — Guichet miroir</span>
+        <span class="reform-chip">F4 — Option de rachat</span>
+        <span class="reform-chip">F11 — Provisionnement différencié</span>
+        <span class="reform-chip">R3 — Prime fonds propres</span>
+        <span class="reform-chip">D1 — Réserve d'achat d'innovation</span>
+        <span class="reform-chip">D3 — Garantie de performance*</span>
+        <span class="reform-chip">D6 — Achat anticipé</span>
+      </div>
+      <p style="font-size:13px;color:var(--ink-faint);margin-top:10px;">* et le volet garantie du plafonnement des garanties financières de D2.</p>
+    </div>
+  </div>
+
+  <div class="callout gold">
+    <h4>Un arbitrage de séquencement qui contredit l'intuition</h4>
+    <p>N5 (le collège de suivi macroprudentiel) ne produit aucun financement — mais il doit être négocié <strong>avant</strong> F5 et F9, pas après, parce que sa fonction est d'acheter la recevabilité macroprudentielle des deux textes qui, eux, produisent un effet de financement réel. C'est le seul cas de toute la feuille de route où l'ordre logique n'est pas l'ordre d'impact attendu.</p>
+  </div>
+</section>
+
+<section id="financement-reg" class="wrap">
+  <div class="axis-head"><h3>Axe financement — piste réglementaire</h3></div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F1</div><div class="card-title">Régime EuVGF proportionné (paliers jusqu'à 2 Md€, passeport de gestion)</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Modification explicite de l'article 3 de l'AIFMD (directive 2011/61/UE) + nouveau règlement EuVGF — procédure ordinaire, majorité qualifiée.</dd>
+        <dt>Véhicule</dt><dd>Proposition législative EuVECA/EuSEF attendue T3 2026.</dd>
+        <dt>Acteurs</dt><dd>DG FISMA, ESMA (collège de superviseurs à créer), résistance anticipée de l'Irlande et du Luxembourg sur le passeport de gestion.</dd>
+        <dt>Impact</dt><dd>Condition de faisabilité des fonds de 300 M€-1 Md€ que l'ETCI 2.0 vise à financer — sans donnée chiffrée sur l'ampleur propre de F1.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F5</div><div class="card-title">Escalier de charge Solvabilité II selon la durée de détention</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Acte délégué (article 111, directive 2009/138/CE) pour l'escalier ; le sous-module dédié à 17 % excède probablement cette habilitation et nécessiterait un acte de niveau 1 — à trancher avant dépôt.</dd>
+        <dt>Véhicule</dt><dd>Articulé avec l'entrée en application du régime LTEI le 30 janvier 2027 ; paliers intermédiaires à calibrer par étude EIOPA, pas fixés a priori.</dd>
+        <dt>Acteurs</dt><dd>EIOPA, Commission (DG FISMA) ; N5 doit exister avant l'entrée en vigueur pour la recevabilité macroprudentielle.</dd>
+        <dt>Impact</dt><dd>Le mouvement 49→22 % est déjà en droit en vigueur — le 45-50 Md€ de stock cité pour 0,5 pt de réallocation assurance (macro §3.2a) n'est donc <em>pas</em> attribuable à F5 seule.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F7</div><div class="card-title">Label « Épargne Productive Européenne »</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Article 114 TFUE (précédents : ELTIF, EuVECA, PEPP, obligations vertes européennes).</dd>
+        <dt>Véhicule</dt><dd>Règlement autonome, pas de fenêtre législative imposée — à déposer.</dd>
+        <dt>Acteurs</dt><dd>Fédérations de fonds de pension allemande et italienne — résistance résiduelle anticipée même sans obligation légale.</dd>
+        <dt>Impact</dt><dd>Taux de recours au label non estimable a priori.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F9</div><div class="card-title">Plateformes de liquidité pré-IPO — sous-régime de MTF</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Modification de MiFID II (2014/65/UE), sous-catégorie de MTF sur le modèle de l'article 33 (marchés de croissance PME) — pas une 4ᵉ catégorie autonome, interdite par l'article 1§7.</dd>
+        <dt>Véhicule</dt><dd>Paquet intégration des marchés et supervision, en trilogue.</dd>
+        <dt>Acteurs</dt><dd>ESMA ; régime LCB-FT à ajouter explicitement (entité assujettie de plein droit dans la reconstruction en MTF).</dd>
+        <dt>Impact</dt><dd>Volumes secondaires non estimables a priori.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F12</div><div class="card-title">Recyclage du bilan de garantie — tranchage inversé</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Titrisation synthétique de bilan STS (articles 26bis-26sexies, règlement 2017/2402) — catégorie déjà existante, pas de nouvelle catégorie « position résiliente ».</dd>
+        <dt>Véhicule</dt><dd>Trilogue titrisation/CRR déjà engagé, conclusion visée fin 2026.</dd>
+        <dt>Correction</dt><dd>Céder la première perte (ou une tranche mezzanine), retenir une part senior ou verticale — l'inverse du montage initial. Note : l'article 6 du règlement 2017/2402 pourrait ne pas admettre la rétention d'une senior seule, réduisant l'option praticable à la part verticale (sous réserve du texte issu du trilogue).</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F14</div><div class="card-title">Guichet unique — volet concentrations seul</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Modification du règlement 139/2004 ; base précise (art. 103 TFUE probable, unanimité) à confirmer avant dépôt — seule réforme de la piste 1 à exiger l'unanimité du Conseil.</dd>
+        <dt>Véhicule</dt><dd>Aucune fenêtre identifiée — initiative à déposer, répond au vide révélé par l'arrêt <em>Illumina/Grail</em> (C-611/22 P).</dd>
+        <dt>Acteurs</dt><dd>DG COMP ; le volet filtrage IDE est réduit à un simple portail commun, décisions restant nationales (art. 4§2 TUE).</dd>
+        <dt>Impact</dt><dd>43 % des investisseurs citent l'absence de sorties M&A comme premier frein (micro §1.6) — effet spécifique de ce guichet non isolable.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">N3</div><div class="card-title">Utilité européenne de valorisation des actifs privés</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Logée dans le comité mixte des autorités européennes de surveillance déjà existant — pas de nouvel organisme.</dd>
+        <dt>Correction</dt><dd>Présomption sur le respect de la méthode, jamais sur l'exactitude du résultat ; publier des fourchettes, pas des valeurs ponctuelles (risque de monoculture de valorisation sinon).</dd>
+        <dt>Calendrier</dt><dd>Rédigé en deux phases de sources de données pour ne pas hériter du calendrier de F9 — gain d'environ 4 ans.</dd>
+        <dt>Impact</dt><dd>Seule proposition de tout l'exercice qui traite la cause déclarée d'une opposition politique documentée (coût de diligence des fonds de pension) plutôt que de la contourner.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">N5</div><div class="card-title">Collège de stabilité financière de l'innovation</div></div><div class="card-badges"><span class="pill p1">Piste 1 — à séquencer en premier</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Sous-structure du Conseil général du CERS (règlement (UE) n°1092/2010, art. 3) — pas de nouvel organisme.</dd>
+        <dt>La vraie nouveauté</dt><dd>Obligation légale de déclaration pour le Groupe BEI et les banques nationales de promotion (entités déclarantes, pas membres du collège) — aujourd'hui inexistante.</dd>
+        <dt>Séquencement</dt><dd>À négocier avant F5 et F9, dont il conditionne la recevabilité macroprudentielle.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="financement-fec" class="wrap">
+  <div class="axis-head"><h3>Axe financement — piste FEC</h3></div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F3</div><div class="card-title">Guichet miroir : co-investissement automatique accéléré</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Nouvel article du règlement FEC (compartiment financier) — procédure ordinaire.</dd>
+        <dt>Correction</dt><dd>Vérification documentaire à délai garanti de 10 jours (pas de silence valant accord — exigé par le règlement financier (UE, Euratom) 2024/2509) ; enveloppe redimensionnée à l'ordre de 300-400 M€/an (pas 4 Md€/an, 2,5× le compartiment entier).</dd>
+        <dt>Acteurs</dt><dd>Cour des comptes européenne, Conseil (déjà mobilisé pour reprendre le contrôle des priorités du FEC).</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F4</div><div class="card-title">Option de rachat institutionnelle (Yozma adapté aux LP)</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Article du règlement FEC, mise en œuvre BEI — hors aide d'État (pas de ressources d'État), le renvoi initial au RGEC art. 21§13 est à retirer.</dd>
+        <dt>Correction</dt><dd>Taux de rachat à recalibrer (5 %/an jugé trop bas) ou part BEI ramenée de 40 % à 25-30 % ; publication ex ante de l'équivalent-subvention exigée par le règlement financier.</dd>
+        <dt>Dépendance</dt><dd>Suppose l'existence du régime EuVGF (F1) pour le fonds cible — transitoirement applicable aux fonds EuVECA existants.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">F11</div><div class="card-title">Provisionnement différencié par compartiment</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Habilitation déléguée dans le règlement FEC de base (art. 290 TFUE pour l'acte délégué de calibration) — plancher 25 %, plafond 60 %, calibré sur la perte attendue à 10 ans.</dd>
+        <dt>Note</dt><dd>Volet stabilisateur automatique de la version initiale abandonné (incompatible avec les articles 310/314 TFUE sur l'autorité budgétaire).</dd>
+        <dt>Impact</dt><dd>Le différentiel de ~265 Md€ souvent cité est un majorant optimiste — le multiplicateur de 15,2× sur lequel il repose est lui-même contesté par la Cour des comptes (surestimation ~26 %).</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="rentabilite" class="wrap">
+  <div class="axis-head"><h3>Axe rentabilité — piste EU Inc. et piste réglementaire</h3></div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">R1</div><div class="card-title">EU-ESOP — volet non fiscal (séquestre, portabilité, non-déchéance)</div></div><div class="card-badges"><span class="pill p2">Piste 2</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Article 114 TFUE, amendement du règlement EU Inc. COM(2026) 321 — pas d'instrument neuf.</dd>
+        <dt>Point nouveau, non vu par les deux examens précédents</dt><dd>Risque résiduel avec l'article 114§2 TFUE (droits des travailleurs salariés) — traité par une rédaction bornée (droits conférés au porteur du titre, pas au travailleur) et par un séquestre rendu <strong>optionnel</strong> pour ne pas reproduire le défaut qui a fait tomber F8.</dd>
+        <dt>Hors périmètre</dt><dd>Fait générateur d'imposition (art. 115, unanimité) et exonération de charges patronales (art. 153, blocage différent et plus dur) restent des chantiers séparés.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">R3</div><div class="card-title">Prime européenne d'apport en fonds propres (substitut à DEBRA)</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Article 173 TFUE — déjà l'une des bases juridiques du règlement FEC, aucune base nouvelle à créer. Recevabilité conditionnée au fait que le montant dépend du <em>capital souscrit</em>, jamais d'une grandeur fiscale — à écrire explicitement dans l'exposé des motifs.</dd>
+        <dt>Correction critique</dt><dd>Règle de rationnement obligatoire (fenêtres trimestrielles plafonnées) — au rythme actuel, l'enveloppe de 850 M€/an serait épuisée en quelques mois. Tension à assumer : le versement sous 30 jours devient, avec le rationnement, un délai réel allant jusqu'à ~4 mois en fin de fenêtre.</dd>
+        <dt>Séquencement</dt><dd>La règle de non-cumul avec le RGEC art. 21 doit entrer en vigueur (1ᵉʳ janvier 2027) <em>avant</em> le FEC (2028) — rédaction générique nécessaire côté RGEC, sans nommer la PEAF qui n'existe pas encore.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">R4</div><div class="card-title">Bande de capital + Instrument Convertible Européen</div></div><div class="card-badges"><span class="pill p2">Piste 2 — la mieux notée du dossier</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Directement dans le règlement EU Inc. — pas de dérogation nécessaire à la directive 2017/1132 (qui ne s'applique qu'aux sociétés anonymes classiques, pas à EU Inc.).</dd>
+        <dt>Correction</dt><dd>Droit d'opposition des créanciers de 30 jours pour toute réduction — ce qui, assumé explicitement, détruit la promesse d'effet sous 5 jours ouvrables pour cette branche spécifique (la branche augmentation reste, elle, à 5 jours).</dd>
+        <dt>Dépendance interne</dt><dd>La conversion de l'Instrument Convertible sans AG suppose que les titres de conversion soient couverts par la bande de capital — le chapitre ICE dépend du chapitre capital, pas l'inverse.</dd>
+        <dt>Calendrier</dt><dd>Contradiction relevée dans le calendrier officiel EU Inc. (« premières immatriculations 2027 » vs « application 12 mois après entrée en vigueur ») — la feuille de route retient 2028.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">R6</div><div class="card-title">Inventaire biennal du coût cumulé de conformité</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Accord interinstitutionnel « Mieux légiférer » du 13 avril 2016 + décision de la Commission sur le mandat du comité d'examen — pas un règlement (heurterait le droit d'initiative de la Commission, art. 17§2 TUE).</dd>
+        <dt>Séquence recommandée</dt><dd>Inversée par rapport à l'intuition : commencer par les instruments unilatéraux de la Commission (décision sur le mandat, boîte à outils, inventaire expérimental), codifier dans l'AII ensuite — non sanctionné par l'annulation d'un acte, c'est le prix de ce véhicule.</dd>
+        <dt>Note</dt><dd>La clause de caducité automatique de la version initiale est définitivement abandonnée (impossibilité de principe, <em>lex posterior derogat priori</em>).</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="demande" class="wrap">
+  <div class="axis-head"><h3>Axe demande — piste réglementaire et piste FEC</h3></div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">D1</div><div class="card-title">Réserve européenne d'achat d'innovation — volet budget UE seul</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Actes de base de chaque programme concerné (FEC en premier lieu) — taux de réservation ≥3 % différencié par programme, pas uniforme.</dd>
+        <dt>Contrainte AMP</dt><dd>Le passage direct au marché de production (phase 3, sans nouvel appel d'offres) est limité aux marchés sous les seuils de l'AMP ou relevant de l'exclusion « services de R&D » (art. 14, directive 2014/24/UE) — l'Union n'a jamais inscrit, contrairement aux États-Unis, d'exclusion pour les marchés réservés aux petites entreprises.</dd>
+        <dt>Hors périmètre</dt><dd>Le volet de conditionnalité sur les dépenses nationales cofinancées est écarté — rouvre un conflit de subsidiarité déjà documenté.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">D2</div><div class="card-title">Objectif indicatif publié + suppression des critères excluants</div></div><div class="card-badges"><span class="pill p1">Piste 1</span> <span class="pill p3">volet garantie : Piste 3</span></div></div>
+      <dl class="spec">
+        <dt>Bloc 1 (affaibli)</dt><dd>Objectif indicatif 15 %/3 %, publication trimestrielle par acheteur &gt;50 M€/an à partir des données TED — sans sanction (le quota contraignant initial heurtait l'égalité de traitement et l'AMP).</dd>
+        <dt>Bloc 2 (solide)</dt><dd>Durcissement de l'art. 58§3 (plafond de CA exigé), allotissement obligatoire &gt;5 M€, paiement à 30 jours + avance 20 % pour les &lt;10 ans, garanties plafonnées à 5 % avec contre-garantie FEC — <strong>à plafonner, provisionner et chiffrer explicitement</strong>, ce que la version initiale ne faisait pas.</dd>
+        <dt>Véhicule</dt><dd>Révision des directives marchés publics, 9 septembre 2026.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">D3</div><div class="card-title">Centrale d'achat européenne + précertification + assurance de l'acheteur</div></div><div class="card-badges"><span class="pill p1">Piste 1</span> <span class="pill p3">garantie : Piste 3</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Extension systématique de l'article 39 (directive 2014/24/UE) — <strong>lacune à combler</strong> : cet article désigne le droit de l'État où la centrale est établie, une centrale européenne sans État de rattachement doit voir son régime de recours explicitement désigné (directives « recours » ou juge de l'Union) avant toute rédaction opérationnelle.</dd>
+        <dt>Correction</dt><dd>Présomption de conformité de la précertification rendue réfutable (art. 43§1) ; garantie de performance plafonnée, provisionnée sur perte attendue estimée, vérification de la défaillance par un tiers indépendant.</dd>
+        <dt>Impact</dt><dd>Jugée l'idée la plus originale de l'axe demande par les deux niveaux d'examen — cible l'exposition personnelle du fonctionnaire acheteur, jamais traitée ailleurs dans le dossier.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">D5</div><div class="card-title">Normes livrées au moment de la proposition, pas du texte adopté</div></div><div class="card-badges"><span class="pill p1">Piste 1</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Modification du règlement (UE) n° 1025/2012 + accord interinstitutionnel — obligation d'émettre la demande de normalisation dès la proposition, pas après l'adoption.</dd>
+        <dt>Correction</dt><dd>Le report automatique de la date d'application (version initiale) est abandonné — inopérant juridiquement et incitation perverse à ralentir la normalisation. Financement limité aux schémas techniques neutres, jamais à des bibliothèques applicatives concurrentes des fournisseurs européens.</dd>
+        <dt>Acteurs</dt><dd>CEN, CENELEC, ETSI — financement renforcé via l'article 15 du règlement 1025/2012, déjà disponible.</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <div class="card-top"><div><div class="card-id">D6</div><div class="card-title">Engagements d'achat anticipé pour technologies stratégiques</div></div><div class="card-badges"><span class="pill p3">Piste 3</span></div></div>
+      <dl class="spec">
+        <dt>Base juridique</dt><dd>Article 30, directive 2014/24/UE (dialogue compétitif) + instrument budgétaire du règlement FEC.</dd>
+        <dt>Correction budgétaire critique</dt><dd>Le paiement intervient au scénario de <em>réussite</em>, pas de défaut — à rebudgétiser en crédits d'engagement pluriannuels dissociés, pas en garantie provisionnée à taux faible.</dd>
+        <dt>Contrainte AMP</dt><dd>La réservation aux fournisseurs d'origine européenne est une <strong>exclusion</strong>, pas une pondération — l'élément le plus exposé de tout le dossier au regard de l'AMP, plus encore que D4.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="transversal" class="wrap">
+  <p class="kicker">Ce qui traverse plusieurs réformes à la fois</p>
+  <h2>Trois risques à traiter une fois, pas fiche par fiche</h2>
+
+  <h3>La contrainte AMP</h3>
+  <p>L'Union n'a jamais inscrit, dans son appendice I à l'Accord sur les marchés publics de l'OMC, l'exclusion pour les marchés réservés aux petites entreprises que les États-Unis ont inscrite pour eux-mêmes. Cette asymétrie touche <strong>D1, D2 (bloc 1), D6, et, dans une moindre mesure, D3</strong> — une note juridique unique sur ce point, présentée en amont de toute négociation sur l'axe demande, éviterait de la redécouvrir texte par texte.</p>
+
+  <h3>Le compartiment budgétaire de 11 Md€</h3>
+  <p>Sept réformes (piste 3) partagent le même compartiment du règlement FEC, dont la taille — environ 11 Md€ sur sept ans — est significativement plus petite que ce que plusieurs versions initiales de ces réformes présupposaient. Un arbitrage d'ensemble entre F3, F4, F11, R3, D1, D3 (garantie) et D6 sera nécessaire avant le dépôt du texte — les traiter séparément, comme des enveloppes indépendantes, reproduirait l'erreur déjà identifiée sur F3 et F10 (ce dernier écarté de cette feuille de route).</p>
+
+  <h3>La fracture de coalition</h3>
+  <p>Une mesure qui avantage les jeunes entreprises sur des critères de taille ou d'ancienneté plutôt que d'origine géographique peut diviser une coalition industrielle par ailleurs unie sur les mesures d'origine (le précédent est documenté pour la proposition N4 du second tour, écartée pour un autre motif) — à surveiller en particulier pour D1 et D3, qui touchent au même écosystème d'entreprises technologiques établies que D4.</p>
+
+  <div class="callout">
+    <h4>Ce que cette feuille de route ne fait pas</h4>
+    <p>Elle ne remplace ni une analyse d'impact officielle, ni un avis du service juridique du Conseil, ni une consultation réelle des parties prenantes. Neuf références (numéros de règlements délégués, bases juridiques précises pour F14 et D3, rapporteurs pressentis) sont signalées dans les quatre documents de détail comme à vérifier sur EUR-Lex avant toute circulation externe. Le détail complet de chacune des 20 fiches — texte de rédaction, séquencement fin, calendrier justifié — reste dans les quatre documents de grappe, référencés ci-dessous.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h4>Documents de détail</h4>
+    <p>Cette synthèse condense quatre feuilles de route complètes, dans <code>eu-financial-policy-claude-code/policy/mff-startup-funding/</code> :</p>
+    <ul class="filelist">
+      <li>roadmap-cluster-A-financement-reglementaire.md — F1, F5, F7, F9, F12, N3, N5</li>
+      <li>roadmap-cluster-B-fec-budgetaire.md — F3, F4, F11, F14</li>
+      <li>roadmap-cluster-C-rentabilite.md — R1, R3, R4, R6</li>
+      <li>roadmap-cluster-D-demande.md — D1, D2, D3, D5, D6</li>
+    </ul>
+    <p style="margin-top:20px;">D4 (préférence numérique) n'est volontairement pas repris ici : légalement recevable sous garde-fous, mais classée en faisabilité politique très faible par la vérification indépendante, face à la coalition d'opposition la mieux organisée de tout le dossier.</p>
+  </div>
+</footer>
