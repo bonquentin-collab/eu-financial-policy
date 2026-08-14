@@ -1,0 +1,417 @@
+<!doctype html>
+<title>Capter, financer, liquéfier — cinq réformes prioritaires</title>
+<meta name="description" content="Rapport complet sur cinq réformes choisies : guichet miroir, garantie mezzanine, cornerstone BEI, stock-options européens et marché secondaire pré-IPO — vérifications d'impact et de faisabilité indépendantes, impacts économiques et prudentiels sourcés et illustratifs.">
+<style>
+  :root{
+    --bg:#EEF1F0; --surface:#FFFFFF; --surface-2:#E3E9E7; --surface-3:#DCE3E1;
+    --ink:#172023; --ink-soft:#4B5A5C; --ink-faint:#7C8B8C;
+    --accent:#1F6F6B; --accent-ink:#0E3D3B; --accent-soft:#DCEDEA;
+    --gold:#9C6F28; --gold-soft:#F1E4CC;
+    --line:#D6DCDA; --line-soft:#E4E9E7;
+    --ok:#2E7D4F; --ok-soft:#DCEEE0;
+    --warn:#9C6F28; --warn-soft:#F1E4CC;
+    --bad:#A63A31; --bad-soft:#F5DFDB;
+    --neutral:#5C6B6C; --neutral-soft:#E3E9E7;
+    --p1:#1F6F6B; --p1-soft:#DCEDEA;
+    --p2:#5A5490; --p2-soft:#E6E4F2;
+    --p3:#9C6F28; --p3-soft:#F1E4CC;
+    --chart-surface:#FCFCFB;
+    --serif: Iowan Old Style, "Palatino Linotype", Palatino, Georgia, "Noto Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11161A; --surface:#181F23; --surface-2:#1F2A2D; --surface-3:#263133;
+      --ink:#E7EDEB; --ink-soft:#AEBCBA; --ink-faint:#7E8E8D;
+      --accent:#5CC2B8; --accent-ink:#9BE0D6; --accent-soft:#1C3634;
+      --gold:#D8AE6C; --gold-soft:#3A2F1B;
+      --line:#2B3639; --line-soft:#212B2E;
+      --ok:#68C88A; --ok-soft:#173425;
+      --warn:#D8AE6C; --warn-soft:#3A2F1B;
+      --bad:#E28378; --bad-soft:#3B211E;
+      --neutral:#8CA0A0; --neutral-soft:#212B2E;
+      --p1:#5CC2B8; --p1-soft:#1C3634;
+      --p2:#A79EDB; --p2-soft:#2A2740;
+      --p3:#D8AE6C; --p3-soft:#3A2F1B;
+      --chart-surface:#181F23;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11161A; --surface:#181F23; --surface-2:#1F2A2D; --surface-3:#263133;
+    --ink:#E7EDEB; --ink-soft:#AEBCBA; --ink-faint:#7E8E8D;
+    --accent:#5CC2B8; --accent-ink:#9BE0D6; --accent-soft:#1C3634;
+    --gold:#D8AE6C; --gold-soft:#3A2F1B;
+    --line:#2B3639; --line-soft:#212B2E;
+    --ok:#68C88A; --ok-soft:#173425;
+    --warn:#D8AE6C; --warn-soft:#3A2F1B;
+    --bad:#E28378; --bad-soft:#3B211E;
+    --neutral:#8CA0A0; --neutral-soft:#212B2E;
+    --p1:#5CC2B8; --p1-soft:#1C3634;
+    --p2:#A79EDB; --p2-soft:#2A2740;
+    --p3:#D8AE6C; --p3-soft:#3A2F1B;
+    --chart-surface:#181F23;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased;}
+  a{color:var(--accent-ink);}
+  a:focus-visible, summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
+  .wrap{max-width:800px; margin:0 auto; padding:0 24px 40px;}
+  .wide{max-width:1080px;}
+
+  header.masthead{border-bottom:1px solid var(--line); padding:52px 24px 36px; background:var(--surface);}
+  .masthead-inner{max-width:800px; margin:0 auto;}
+  .eyebrow{font-family:var(--mono); font-size:12.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent-ink); display:flex; align-items:center; gap:10px; margin-bottom:16px;}
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--accent);}
+  h1{font-family:var(--serif); font-weight:600; font-size:clamp(26px,4.2vw,40px); line-height:1.12; margin:0 0 14px; text-wrap:balance; letter-spacing:-.01em;}
+  .subtitle{font-size:16.5px; color:var(--ink-soft); max-width:72ch; margin:0; text-wrap:pretty;}
+
+  nav.toc{background:var(--surface-2); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; backdrop-filter:blur(6px);}
+  .toc-inner{max-width:1080px; margin:0 auto; padding:0 24px; display:flex; gap:18px; overflow-x:auto; scrollbar-width:none;}
+  .toc-inner::-webkit-scrollbar{display:none;}
+  nav.toc a{font-size:12px; color:var(--ink-soft); text-decoration:none; padding:11px 0; white-space:nowrap; border-bottom:2px solid transparent; font-weight:600;}
+  nav.toc a:hover{color:var(--accent-ink); border-bottom-color:var(--accent);}
+
+  section{padding:44px 0; border-bottom:1px solid var(--line-soft);}
+  section:last-of-type{border-bottom:none;}
+  .kicker{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); margin:0 0 8px;}
+  h2{font-family:var(--serif); font-size:clamp(22px,3vw,29px); font-weight:600; margin:0 0 14px; text-wrap:balance;}
+  h3{font-family:var(--serif); font-size:19px; font-weight:600; margin:26px 0 8px;}
+  h4{font-family:var(--sans); font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.02em; color:var(--accent-ink); margin:20px 0 7px;}
+  p{margin:0 0 14px; max-width:76ch;}
+  .lede{font-size:16.5px; color:var(--ink-soft); max-width:72ch;}
+  ul,ol{margin:0 0 14px; padding-left:22px;}
+  li{margin-bottom:6px; max-width:72ch;}
+  code{font-family:var(--mono); font-size:.88em; background:var(--surface-2); padding:1px 5px; border-radius:4px;}
+  em.term{font-style:normal; font-weight:700; color:var(--accent-ink); border-bottom:1px dotted var(--accent);}
+
+  .stat-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:24px 0;}
+  .stat{background:var(--surface); padding:18px 16px;}
+  .stat .n{font-family:var(--serif); font-size:26px; font-weight:600; line-height:1; color:var(--ink); font-variant-numeric:tabular-nums;}
+  .stat .l{font-size:12px; color:var(--ink-faint); margin-top:6px;}
+
+  .glossary{display:grid; grid-template-columns:1fr; gap:2px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:20px 0;}
+  .term{background:var(--surface); padding:14px 18px;}
+  .term dt{font-family:var(--serif); font-weight:700; font-size:15px; color:var(--accent-ink); margin-bottom:3px;}
+  .term dd{margin:0; font-size:14px; color:var(--ink-soft);}
+
+  .reform{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:26px 28px; margin:0 0 24px;}
+  .reform-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:6px;}
+  .reform-id{font-family:var(--mono); font-size:13px; color:var(--accent-ink); font-weight:700;}
+  .reform-title{font-family:var(--serif); font-weight:700; font-size:21px; margin:3px 0 0; text-wrap:balance;}
+  .pill{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; font-weight:700; padding:4px 10px; border-radius:20px; white-space:nowrap;}
+  .pill.p1{background:var(--p1-soft); color:var(--p1);}
+  .pill.p2{background:var(--p2-soft); color:var(--p2);}
+  .pill.p3{background:var(--p3-soft); color:var(--p3);}
+  .pill.ok{background:var(--ok-soft); color:var(--ok);}
+  .pill.warn{background:var(--warn-soft); color:var(--warn);}
+  .pill.bad{background:var(--bad-soft); color:var(--bad);}
+
+  .callout{background:var(--accent-soft); border-radius:10px; padding:16px 20px; margin:16px 0;}
+  .callout.gold{background:var(--gold-soft);}
+  .callout.bad{background:var(--bad-soft);}
+  .callout p:last-child{margin-bottom:0;}
+  .callout p{font-size:14.5px;}
+
+  table{border-collapse:collapse; width:100%; margin:14px 0; font-size:13.5px;}
+  th,td{text-align:left; padding:7px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{font-family:var(--mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-faint); font-weight:600;}
+  .table-wrap{overflow-x:auto; margin:14px 0;}
+  .table-wrap table{margin:0;}
+
+  .cond-list{list-style:none; margin:10px 0 0; padding:0; display:grid; gap:8px;}
+  .cond-list li{margin:0; padding:10px 14px; background:var(--surface-3); border-radius:8px; font-size:14px; max-width:none;}
+  .cond-list li::before{content:"◦ "; color:var(--accent-ink); font-weight:700;}
+  .cond-list li.blocking{background:var(--bad-soft);}
+  .cond-list li.blocking::before{content:"▲ "; color:var(--bad);}
+
+  .illus-tag{display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:700; letter-spacing:.03em; text-transform:uppercase; color:var(--gold); background:var(--gold-soft); border-radius:5px; padding:2px 7px; margin-right:6px; vertical-align:1px;}
+  .sourced-tag{display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:700; letter-spacing:.03em; text-transform:uppercase; color:var(--ok); background:var(--ok-soft); border-radius:5px; padding:2px 7px; margin-right:6px; vertical-align:1px;}
+  .illus-box{border:1.5px dashed var(--gold); background:var(--gold-soft); border-radius:10px; padding:14px 18px; margin:14px 0; font-size:14px;}
+  .illus-box p{margin-bottom:8px;}
+  .illus-box p:last-child{margin-bottom:0;}
+
+  /* Timeline */
+  .chart-card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:24px 26px 26px; margin:22px 0;}
+  .chart-title{font-family:var(--sans); font-size:13px; font-weight:700; color:var(--ink); margin:0 0 3px;}
+  .chart-sub{font-size:12.5px; color:var(--ink-faint); margin:0 0 26px;}
+  .timeline{position:relative; height:150px; margin:0 6px 10px;}
+  .tl-axis{position:absolute; left:0; right:0; top:70px; height:2px; background:var(--line);}
+  .tl-tick{position:absolute; top:64px; width:1px; height:14px; background:var(--line);}
+  .tl-tick-label{position:absolute; top:82px; font-family:var(--mono); font-size:11px; color:var(--ink-faint); transform:translateX(-50%);}
+  .tl-mark{position:absolute; top:70px; width:12px; height:12px; border-radius:50%; transform:translate(-50%,-50%); border:2px solid var(--chart-surface); cursor:default;}
+  .tl-mark.cluster{background:var(--p1);}
+  .tl-mark.late{background:var(--gold);}
+  .tl-label{position:absolute; font-family:var(--sans); font-size:11.5px; font-weight:700; white-space:nowrap; text-align:center;}
+  .tl-label .sub{display:block; font-weight:400; font-family:var(--mono); font-size:10px; color:var(--ink-faint); margin-top:1px;}
+  .chart-legend{display:flex; flex-wrap:wrap; gap:18px; margin-top:8px;}
+  .legend-item{display:flex; align-items:flex-start; gap:9px; font-size:13px; max-width:320px;}
+  .swatch{width:11px; height:11px; border-radius:50%; margin-top:4px; flex:none;}
+  .swatch.cluster{background:var(--p1);}
+  .swatch.late{background:var(--gold);}
+  .legend-item .lt{font-weight:700; color:var(--ink);}
+  .legend-item .ld{color:var(--ink-soft); font-size:12.5px;}
+  .chart-note{font-size:12.5px; color:var(--ink-faint); margin-top:18px; border-top:1px dashed var(--line); padding-top:14px;}
+
+  footer{padding:44px 24px 60px; background:var(--surface-2); border-top:1px solid var(--line);}
+  footer .wrap{padding-bottom:0;}
+  footer h4{font-family:var(--serif); font-size:16px; margin:0 0 10px; color:var(--ink); text-transform:none; letter-spacing:0;}
+  footer p{font-size:13.5px; color:var(--ink-soft);}
+  .filelist{list-style:none; margin:0; padding:0; font-family:var(--mono); font-size:12.5px; color:var(--ink-soft); display:grid; gap:6px;}
+  .filelist li::before{content:"› "; color:var(--accent-ink);}
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="eyebrow"><span class="dot"></span>Dossier prioritaire — 5 réformes</div>
+    <h1>Capter, financer, liquéfier : cinq réformes passées au crible</h1>
+    <p class="subtitle">Trois mécanismes font entrer du capital dans l'écosystème des startups et scale-ups européennes par des canaux différents. Deux autres permettent à ceux qui l'ont apporté — salariés comme investisseurs — de le récupérer avant une sortie complète. Les cinq ont été soumis à un audit d'impact réglementaire et un audit de faisabilité politique menés par des examinateurs indépendants, formant leur propre jugement avant toute comparaison. Deux d'entre eux (les stock-options européennes et le marché secondaire) viennent d'être vérifiés une nouvelle fois, dans ce cadre précis — et ce nouveau tour a trouvé quelque chose que personne n'avait vu jusqu'ici.</p>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#glossaire">Glossaire</a>
+    <a href="#cadrage">Le paquet</a>
+    <a href="#f3">F3</a>
+    <a href="#f6bis">F6bis</a>
+    <a href="#f10bis">F10bis</a>
+    <a href="#r1">Stock-options</a>
+    <a href="#f9">Marché secondaire</a>
+    <a href="#coherence">Le paquet, pris ensemble</a>
+    <a href="#bilan">Bilan</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="glossaire" class="wrap">
+  <p class="kicker">Avant de commencer</p>
+  <h2>Le vocabulaire de ce rapport</h2>
+  <p class="lede">Ce rapport suppose que le lecteur n'a lu aucun des documents précédents. Deux étiquettes reviennent partout dans les sections d'impact chiffré : <span class="sourced-tag">sourcé</span> pour une donnée mesurée et publiée, <span class="illus-tag">illustratif</span> pour un ordre de grandeur construit avec des hypothèses explicites — jamais une prévision.</p>
+
+  <dl class="glossary">
+    <div class="term"><dt>Article 114 TFUE</dt><dd>La base légale pour harmoniser le marché intérieur — vote à la <em>majorité qualifiée</em>, pas besoin de l'unanimité des 27. Son paragraphe 2 exclut expressément deux domaines : la fiscalité, et « les droits et intérêts des travailleurs salariés ». Une mesure ne peut s'y adosser que si son <em>centre de gravité</em> porte sur autre chose que la relation de travail elle-même — une nuance centrale pour la réforme sur les stock-options de ce rapport.</dd></div>
+    <div class="term"><dt>Article 115 et article 153 TFUE</dt><dd>Deux bases distinctes, souvent confondues à tort. L'article 115 harmonise la fiscalité directe (unanimité). L'article 153 régit la sécurité sociale (unanimité <em>et</em> protection expresse de l'équilibre financier des régimes nationaux — un obstacle plus dur que le premier, pas le même). Les deux ont fait échouer, chacun pour son propre motif, le volet fiscal des stock-options européennes.</dd></div>
+    <div class="term"><dt>Article 173 TFUE</dt><dd>La base pour la politique industrielle — majorité qualifiée. Son paragraphe 3 exclut toute mesure « contenant des dispositions fiscales ». C'est la base qui permet à un versement budgétaire de produire un effet économique proche d'un avantage fiscal sans en être un, juridiquement.</dd></div>
+    <div class="term"><dt>Aide d'État (article 107 TFUE)</dt><dd>Un versement fait directement par le budget de l'Union, ou indirectement via le Groupe BEI, n'est pas une « ressource d'État » — donc hors du champ de l'interdiction des aides d'État, qui ne vise que les aides financées par un gouvernement national.</dd></div>
+    <div class="term"><dt>Majorité qualifiée</dt><dd>Le mode de vote normal du Conseil : au moins 55 % des États membres (15 sur 27), représentant au moins 65 % de la population de l'Union — bien plus facile à atteindre que l'unanimité, où un seul pays bloque tout.</dd></div>
+    <div class="term"><dt>Le règlement EU Inc.</dt><dd>Le projet de statut de société européenne optionnel « 28e régime » (COM(2026) 321 final), en cours de négociation. Deux des cinq réformes de ce rapport (les stock-options et, en partie, le marché secondaire) sont rédigées comme des chapitres de ce règlement — ce qui les rend dépendantes de son sort.</dd></div>
+    <div class="term"><dt>MiFID II et MiFIR</dt><dd>Le cadre européen des marchés financiers se compose de deux textes complémentaires mais distincts. <strong>MiFID II</strong> (directive) définit les catégories de plateformes de négociation autorisées — marché réglementé, MTF, OTF — et impose qu'aucune quatrième catégorie ne puisse être inventée. <strong>MiFIR</strong> (règlement) impose, séparément, des obligations de transparence sur les prix avant et après chaque transaction exécutée sur l'une de ces plateformes. Une réforme peut corriger sa conformité à MiFID II sans avoir traité sa conformité à MiFIR — l'un des deux textes de ce rapport en offre l'exemple exact.</dd></div>
+    <div class="term"><dt>MTF (système multilatéral de négociation)</dt><dd>Une des trois catégories de plateforme de négociation reconnues par MiFID II, au régime plus souple qu'un marché réglementé — c'est la catégorie sur laquelle s'adosse le marché secondaire de ce rapport, plutôt que d'inventer une catégorie nouvelle.</dd></div>
+    <div class="term"><dt>Transparence pré- et post-négociation</dt><dd>Deux obligations distinctes imposées par MiFIR à toute plateforme de négociation : afficher les prix avant qu'une transaction ait lieu (pré-négociation), et publier le prix et le volume après qu'elle a eu lieu (post-négociation). Des dérogations existent pour la première ; la seconde ne peut, au mieux, être <em>retardée</em> — jamais supprimée définitivement.</dd></div>
+    <div class="term"><dt>Solvabilité II et le SCR</dt><dd>Le cadre prudentiel des assureurs européens. Le <em>SCR</em> est le montant de fonds propres qu'un assureur doit provisionner pour chaque actif détenu, selon son risque — 49 % par défaut pour des actions non cotées.</dd></div>
+    <div class="term"><dt>Tranche mezzanine</dt><dd>Dans un mécanisme de garantie ou de titrisation, la part du risque qui n'est touchée que si les pertes dépassent un premier seuil, jusqu'à un second — un risque intermédiaire, moins coûteux à assurer que la toute première tranche de pertes.</dd></div>
+    <div class="term"><dt>Cornerstone investor et clause <em>pari passu</em></dt><dd>Un investisseur d'ancrage (<em>cornerstone</em>) s'engage tôt et publiquement dans une introduction en bourse pour rassurer les autres souscripteurs. <em>Pari passu</em> désigne une clause qui oblige deux investisseurs à entrer aux mêmes conditions économiques, sans avantage pour l'un par rapport à l'autre.</dd></div>
+    <div class="term"><dt>Séquestre agréé</dt><dd>Un teneur de registre indépendant, agréé par une autorité nationale et passeporté dans toute l'Union, qui inscrit et rend opposables les titres attribués à un salarié ou un dirigeant — l'infrastructure sur laquelle repose la réforme des stock-options de ce rapport.</dd></div>
+    <div class="term"><dt>Clause de <em>bad leaver</em></dt><dd>Une clause contractuelle, courante dans les pactes d'actionnaires de sociétés financées par capital-risque, qui permet de racheter à prix réduit les titres d'un associé ou salarié parti dans des conditions jugées défavorables — un outil de gouvernance des investisseurs, distinct d'une simple clause de licenciement de l'employeur.</dd></div>
+    <div class="term"><dt>Pacte d'actionnaires et clauses de cessibilité restreinte</dt><dd>Un contrat, distinct des statuts de la société, par lequel les actionnaires d'une société financée par capital-risque s'accordent mutuellement des droits de préemption ou d'agrément qui limitent, en pratique, la libre revente de leurs titres — même quand le droit des sociétés applicable ne l'impose pas.</dd></div>
+  </dl>
+</section>
+
+<section id="cadrage" class="wrap">
+  <p class="kicker">Le paquet</p>
+  <h2>Pourquoi ces cinq réformes, et ce qu'elles ne sont pas</h2>
+  <p class="lede">Trois réformes font entrer du capital par des canaux complémentaires — un guichet qui suit le marché, une garantie qui débloque du capital d'assureur, un ancrage qui aide une entreprise à passer le cap de la cotation. Deux autres s'attaquent au problème symétrique : une fois le capital entré, rien ne permet à ceux qui l'ont apporté de le récupérer avant une sortie complète — ce qui dégrade l'attractivité de la rémunération en titres et referme la boucle sur elle-même.</p>
+
+  <div class="stat-grid">
+    <div class="stat"><div class="n">3</div><div class="l">mécanismes budgétaires, calendrier CFP/FEC, ~2028</div></div>
+    <div class="stat"><div class="n">2</div><div class="l">réformes réglementaires, rattachées au règlement EU Inc.</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">verdicts : aucun échec, chacun sous conditions précises</div></div>
+    <div class="stat"><div class="n">2031-32</div><div class="l">calendrier réaliste du plus tardif des cinq (marché secondaire)</div></div>
+  </div>
+
+  <div class="callout gold">
+    <p><strong>Deux précisions à lire avant tout le reste, pour ne pas se méprendre sur ce que ce rapport livre.</strong> « Stock-options européennes » ne désigne pas ici un régime fiscal harmonisé — celui-ci a déjà été testé et a échoué à deux titres distincts (unanimité fiscale de l'article 115 TFUE, puis obstacle encore plus dur de l'article 153 TFUE sur les cotisations sociales). Ce qui est validé est un chapitre de droit des sociétés et des titres : un registre, une règle anti-déchéance, une règle de portabilité — une infrastructure juridique nécessaire, pas le levier fiscal principal. Et « marché secondaire » ne désigne pas une nouvelle bourse ouverte à tous, mais un sous-régime allégé de plateforme de négociation, réservé aux titres non cotés, fonctionnant par enchères trimestrielles — et dont le calendrier réaliste, on le verra, est le plus tardif des cinq réformes de ce rapport.</p>
+  </div>
+</section>
+
+<section id="f3" class="wrap">
+  <p class="kicker">Déjà validé</p>
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">F3</span><h3 class="reform-title" style="margin-top:3px;">Guichet miroir — co-investissement automatique</h3></div><span class="pill ok">Validé, audité deux fois</span></div>
+    <p>Le futur Fonds européen pour la compétitivité (FEC) co-investit automatiquement, <em class="term">pari passu</em>, jusqu'à 30 % de tout tour de table d'au moins 15 M€ mené par un investisseur privé accrédité selon des critères objectifs et publics — décision en 10 jours ouvrables sur simple vérification documentaire, jamais un silence valant accord. Enveloppe corrigée : 300 à 400 M€/an.</p>
+    <div class="illus-box">
+      <p><span class="illus-tag">Illustratif</span> Sur la base de l'enveloppe médiane (350 M€/an), d'une utilisation intégrale du taux de 30 %, et d'une taille moyenne de tour touché de l'ordre de 30 à 50 M€ : entre <strong>20 et 35 opérations par an</strong>, pour un volume total de tours de table touchés de l'ordre de <strong>1,0 à 1,2 Md€ par an</strong>. Ce que cette construction ne dit pas : combien de ces opérations n'auraient pas eu lieu sans le mécanisme.</p>
+    </div>
+    <p style="font-size:13.5px;color:var(--ink-faint);">Détail complet de rédaction : <code>mff-startup-funding/roadmap-cluster-B-fec-budgetaire.md</code>.</p>
+  </div>
+</section>
+
+<section id="f6bis" class="wrap">
+  <p class="kicker">Déjà validé, sous conditions techniques</p>
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">F6bis</span><h3 class="reform-title" style="margin-top:3px;">Garantie mezzanine adossée au SCR</h3></div><span class="pill p3">Validé sous conditions fortes</span></div>
+    <p>Une garantie du FEC couvre la <em class="term">tranche mezzanine</em> (10 % à 40 % de perte) d'un portefeuille d'actions d'innovation détenu par un assureur — la réduction de charge en capital qui en résulte n'est pas décrétée dans le texte : elle est <strong>calculée par l'assureur</strong>, selon une méthode qu'EIOPA doit encore publier. Phase pilote de trois ans, échelle réduite.</p>
+    <div class="illus-box">
+      <p><span class="illus-tag">Illustratif — logique de calcul, pas un chiffre anticipé</span> Sur un portefeuille pilote de 2 Md€ et une hypothèse, non validée par EIOPA, d'un allègement de charge de l'ordre de 10 points : environ <strong>200 M€ de capital réglementaire libéré</strong>. Ce nombre sert à illustrer un mécanisme, pas à anticiper un résultat.</p>
+    </div>
+    <p style="font-size:13.5px;color:var(--ink-faint);">Détail complet : <code>equity-financing-mff/01-reconstructions-proposees.md</code> et <code>02a-verification-impact.md</code>.</p>
+  </div>
+</section>
+
+<section id="f10bis" class="wrap">
+  <p class="kicker">Déjà validé, le plus mûr des trois</p>
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">F10bis</span><h3 class="reform-title" style="margin-top:3px;">Cornerstone discrétionnaire du Groupe BEI</h3></div><span class="pill p1">Validé sous une condition</span></div>
+    <p>Le Groupe BEI peut souscrire, à sa propre appréciation, jusqu'à 8 % d'une introduction en bourse (plafond 60 M€), à la condition qu'un investisseur privé de référence souscrive un montant au moins égal aux mêmes conditions — la sélection reste externalisée au marché plutôt que confiée à une règle automatique.</p>
+    <div class="illus-box">
+      <p><span class="illus-tag">Illustratif</span> Sur une enveloppe totale de 300 M€ (point médian de « quelques centaines de millions ») et un ticket moyen de 25 à 35 M€ : de l'ordre de <strong>9 à 12 introductions en bourse soutenues sur toute la durée du CFP</strong>, soit environ 1 à 2 par an — un rythme cohérent avec un marché primaire européen aujourd'hui qualifié d'atone.</p>
+    </div>
+    <p style="font-size:13.5px;color:var(--ink-faint);">Détail complet : <code>equity-financing-mff/01-reconstructions-proposees.md</code> et <code>02a-verification-impact.md</code>.</p>
+  </div>
+</section>
+
+<section id="r1" class="wrap">
+  <p class="kicker">Nouveau tour de vérification indépendante</p>
+  <h2>Les stock-options européennes — ce qui est réellement faisable</h2>
+
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">R1</span><h3 class="reform-title" style="margin-top:3px;">Chapitre « instruments de participation salariée » du règlement EU Inc.</h3></div><span class="pill warn">Validé sous une condition de rédaction précise</span></div>
+
+    <h4>Le mécanisme</h4>
+    <p>Trois briques de droit des sociétés et des titres, aucune de droit fiscal ni de droit social : un <em class="term">séquestre agréé</em> qui tient un registre traçable et opposable des instruments de participation salariée, passeporté dans toute l'Union ; une règle de <strong>non-déchéance</strong>, qui empêche qu'un instrument déjà acquis soit perdu du seul fait du départ du salarié (hors faute lourde étroitement définie) ; une règle de <strong>portabilité</strong>, qui fait suivre le titre d'un employeur ou d'un pays à l'autre sans nouvelle formalité. Le recours au séquestre est optionnel pour l'entreprise émettrice.</p>
+
+    <h4>Ce qui n'est pas dans cette réforme, et pourquoi</h4>
+    <p>Le volet le plus attendu — le moment de l'imposition (à la revente plutôt qu'à l'attribution ou à l'exercice) et l'exonération de cotisations sociales patronales — a été testé et retiré. Le premier point relève de l'article 115 TFUE (unanimité fiscale, aucun État membre demandeur documenté) ; le second de l'article 153 TFUE (sécurité sociale, unanimité <em>et</em> protection expresse de l'équilibre financier des régimes nationaux — un obstacle plus dur que le premier, pas le même). La base factuelle de ce dossier identifie précisément ce volet fiscal comme le « gain marginal substantiel » d'un régime de stock-options européen. R1, tel que validé ici, ne le délivre pas : il en construit la précondition juridique — la traçabilité et l'opposabilité du titre — sans laquelle aucun régime fiscal futur ne pourrait s'appliquer proprement.</p>
+
+    <h4>Ce que le nouveau tour de vérification indépendante a trouvé</h4>
+    <p>Sur trois des quatre articles du chapitre — le séquestre, les effets de l'inscription, la portabilité — rien à redire : ils passent sans réserve. Sur le quatrième, la non-déchéance, l'audit d'impact a identifié un risque plus sérieux que ce que la feuille de route affichait jusqu'ici : le texte choisit comme événement déclencheur « la cessation de la relation de travail » — et plus un texte nomme un événement de droit du travail comme condition d'application, plus il devient plausible qu'un service juridique le requalifie comme une disposition « relative aux droits et intérêts des travailleurs salariés », exclue de l'article 114 TFUE. C'est exactement le motif qui a fait tomber, ailleurs dans ce même dossier, une réforme de retraite paneuropéenne adossée au même règlement.</p>
+    <p>Deux angles entièrement nouveaux, absents de tous les tours précédents : la règle de non-déchéance entre en tension avec les <em class="term">clauses de bad leaver</em> que les investisseurs en capital-risque — pas seulement l'employeur — exigent couramment pour leur gouvernance de portefeuille, un point qu'aucune cartographie des parties prenantes n'avait documenté. Et la correction elle-même, en retirant à bon droit le volet fiscal, fait désormais voyager la portabilité du titre sans la règle de répartition fiscale qui l'accompagnait dans la version d'origine — ce qui peut, paradoxalement, <strong>augmenter</strong> le risque de double imposition partielle pour un salarié mobile, exactement la population que la réforme veut aider.</p>
+
+    <div class="callout ok">
+      <p><strong>Faisabilité politique : élevée, conditionnelle au sort du texte porteur.</strong> Sur le contenu même du chapitre, aucune opposition n'est documentée, et le soutien est réel (coalition EU Inc., groupe des employeurs du CESE). Le seul risque véritable est un risque de véhicule : R1 est logé entièrement dans le règlement EU Inc., dont l'ensemble est exposé à l'opposition syndicale la plus radicale de toute la cartographie des parties prenantes — mais cette opposition, telle que documentée, vise le texte dans son ensemble et le risque de contournement du droit du travail, pas ce chapitre précis, qui n'y touche pas. Point décisif : EU Inc. avance à la majorité qualifiée, pas à l'unanimité — aucun syndicat ne dispose d'un droit de veto formel.</p>
+    </div>
+
+    <h4>Conditions avant tout dépôt</h4>
+    <ul class="cond-list">
+      <li class="blocking">Reformuler le fait générateur de la règle de non-déchéance en termes neutres au statut d'emploi (« cessation, pour quelque cause que ce soit, de la relation contractuelle au titre de laquelle l'instrument a été attribué ») — condition bloquante, faute de quoi cet article précis retomberait en échec</li>
+      <li>Documenter et arbitrer la tension avec les clauses de <em>bad leaver</em> des investisseurs en capital-risque avant dépôt</li>
+      <li>Traiter explicitement, dans l'exposé des motifs, l'asymétrie que la correction introduit entre portabilité juridique et absence de règle de répartition fiscale</li>
+      <li>Prévoir une clause de sauvegarde rendant le chapitre techniquement détachable vers un texte autonome si le trilogue sur EU Inc. n'aboutit pas d'ici mi-2027</li>
+    </ul>
+  </div>
+</section>
+
+<section id="f9" class="wrap">
+  <p class="kicker">Nouveau tour de vérification indépendante — le constat le plus important de ce rapport</p>
+  <h2>Le marché secondaire — une pièce manquante qu'aucun tour précédent n'avait vue</h2>
+
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">F9</span><h3 class="reform-title" style="margin-top:3px;">Sous-régime de MTF pour la liquidité pré-IPO</h3></div><span class="pill bad">Validé, mais la correction déjà appliquée doit être complétée</span></div>
+
+    <h4>Le mécanisme</h4>
+    <p>Ce n'est pas une nouvelle bourse : c'est un label allégé de <em class="term">MTF</em> — une des trois catégories de plateforme de négociation reconnues par <em class="term">MiFID II</em> — dédié aux titres non cotés, sur le modèle des marchés de croissance des PME déjà prévus par cette même directive. Fonctionnement par enchères périodiques trimestrielles au maximum, jamais en continu. Réservé aux titres librement cessibles et dématérialisés — les entreprises constituées sous le régime EU Inc. en priorité. La fenêtre de liquidité, obligatoire dans la version d'origine, est devenue une simple présomption de gouvernance non contraignante.</p>
+
+    <h4>Le problème que cette réforme comble, documenté et jamais traité ailleurs</h4>
+    <p>L'absence de marché secondaire pour les titres non cotés est un coût opérationnel réel, pas un simple manque de liquidité : les salariés ne peuvent pas monétiser leurs instruments, ce qui dégrade l'attractivité de la rémunération en titres, augmente la part de rémunération en numéraire, et raccourcit la trésorerie disponible. C'est l'une des micro-incitations documentées au transfert de sociétés européennes vers d'autres juridictions — et c'est le seul dispositif de ce dossier qui ne double aucun autre texte déjà en discussion.</p>
+
+    <h4>Ce que le nouveau tour de vérification indépendante a trouvé — un texte de niveau 1 manquant</h4>
+    <p>Le premier tour de correction avait déjà réglé le défaut le plus visible : la version d'origine créait une catégorie de plateforme entièrement nouvelle, ce que MiFID II interdit expressément (elle n'admet que trois catégories, et aucune quatrième). Le passage à un sous-régime de MTF classique règle ce point, et le nouveau tour de vérification le confirme solide.</p>
+    <p><strong>Mais ce nouveau tour a trouvé un problème d'une autre nature, jamais identifié jusqu'ici, ni par le premier audit ni par la feuille de route déjà écrite : le paquet de textes à modifier oublie le règlement MiFIR.</strong> MiFID II et MiFIR sont deux textes complémentaires mais distincts — le premier définit les catégories de plateformes autorisées, le second impose, séparément, des obligations de transparence des prix avant et après chaque transaction. Or la caractéristique centrale du marché secondaire proposé — la confidentialité des prix de transaction, justifiée pour éviter tout effet de signal sur la valorisation des entreprises non cotées — est incompatible avec MiFIR, qui n'autorise, pour toute plateforme de négociation, qu'une publication <strong>différée</strong> des prix après transaction — jamais une non-publication permanente. C'est précisément une non-publication permanente que le dispositif prévoit aujourd'hui. Ce n'est pas un détail technique : c'est le cœur de la proposition de valeur du mécanisme qui est, en l'état du texte, juridiquement indéfendable dès l'entrée en vigueur.</p>
+    <p>Deux autres points, plus mineurs mais réels : l'exemption de prospectus (plafonnée à 50 M€ par fenêtre) n'a pas de règle de cumul sur douze mois glissants — avec une fréquence trimestrielle, un émetteur pourrait cumuler jusqu'à 200 M€ par an exemptés de prospectus, un ordre de grandeur disproportionné au regard du seuil d'éligibilité de l'entreprise elle-même (20 M€ levés). Et le véritable frein à l'adoption n'est pas seulement, comme on le pensait jusqu'ici, le nombre d'entreprises constituées sous le régime EU Inc. — c'est le <strong>consentement des investisseurs déjà en place</strong>, titulaires de clauses de préemption et d'agrément dans leurs pactes d'actionnaires, qui restreignent contractuellement la cessibilité des titres indépendamment de la forme sociale de l'entreprise.</p>
+
+    <div class="callout">
+      <p><strong>Faisabilité politique : moyenne.</strong> Un socle de soutien réel existe (bourses européennes, scale-ups), et son exposition à l'opposition syndicale documentée contre le règlement EU Inc. est nettement plus limitée que celle des stock-options : l'essentiel du texte vit dans une directive MiFID II indépendante du sort d'EU Inc., et la seule clause qui y reste logée a perdu son caractère contraignant. Ce qui retient le verdict à « moyenne » plutôt qu'« élevée » n'est pas une opposition organisée — elle n'existe nulle part dans la cartographie pour ce dispositif précis — mais un faisceau d'incertitudes structurelles : une préoccupation de stabilité financière déjà anticipée dans le dossier mais non rattachée à une position documentée d'une autorité nommée, un calendrier qui traverse l'échéance électorale européenne de 2029, et la dépendance déjà décrite au consentement des investisseurs en place.</p>
+    </div>
+
+    <h4>Un calendrier à part — le plus tardif des cinq réformes de ce rapport</h4>
+    <p>La feuille de route déjà écrite pour cette réforme la situe explicitement comme un dossier « de la législature 2029-2034 » : travaux préparatoires en 2027, proposition de la Commission en 2028, négociation traversant l'échéance électorale de 2029, publication en 2030, puis 18 à 24 mois de transposition — une application réaliste en <strong>2031-2032</strong>. C'est près de quatre ans après l'entrée en vigueur visée pour les trois mécanismes budgétaires de ce rapport.</p>
+
+    <div class="illus-box">
+      <p><span class="illus-tag">Illustratif — la construction la plus incertaine de ce rapport, à deux horizons distincts</span> <strong>Court terme (jusqu'en 2032) : de l'ordre de zéro</strong> — ce n'est pas une hypothèse mais une conséquence directe du calendrier ci-dessus. <strong>À maturité, au-delà :</strong> le marché américain des transactions secondaires privées, pour comparaison seulement (<span class="sourced-tag">sourcé</span>), dépasse 120 Md$ en 2025. En chaînant ce chiffre avec l'échelle relative du capital-risque européen (environ 22 % du volume américain) et une hypothèse de travail non sourcée sur la maturité du marché, un plafond notionnel de l'ordre de <strong>25 à 30 Md$/an</strong> se dessine — un chiffre qui doit encore être réduit d'un ou deux ordres de grandeur pour approcher un volume réaliste en début de régime, compte tenu du périmètre restreint, de la dépendance au consentement des investisseurs, et de la fréquence trimestrielle plutôt que continue. Ce chiffre ne doit jamais être cité seul, hors de ces réserves.</p>
+    </div>
+
+    <h4>Conditions avant tout dépôt</h4>
+    <ul class="cond-list">
+      <li class="blocking">Ajouter une modification de niveau 1 du règlement MiFIR (titre II) au paquet corrélatif — condition bloquante pour la caractéristique centrale du dispositif, sur le modèle du Listing Act, qui a déjà procédé par un paquet de quatre actes regroupés</li>
+      <li>Ajouter une règle d'agrégation sur douze mois glissants à l'exemption de prospectus</li>
+      <li>Documenter, dans l'exposé des motifs, que le principal frein à l'adoption est le consentement des investisseurs existants, pas seulement la disponibilité de sociétés EU Inc.</li>
+      <li>Retirer la clause de gouvernance encore logée dans le règlement EU Inc. vers une orientation ESMA autonome, pour achever la dissociation déjà engagée par la première correction</li>
+      <li>Insérer un renvoi croisé de définition avec le chapitre stock-options (R1), dont la notion de « porteur » ne recoupe pas exactement celle de « salarié ou ancien salarié de l'émetteur »</li>
+    </ul>
+  </div>
+</section>
+
+<section id="coherence" class="wrap wide">
+  <p class="kicker">Ce que l'examen fiche par fiche ne montre pas</p>
+  <h2>Le paquet, pris ensemble</h2>
+  <p class="lede" style="max-width:76ch;">Chacune des cinq réformes est cohérente avec son propre calendrier, sa propre base juridique, ses propres parties prenantes. Ce n'est qu'en les regardant ensemble que trois problèmes apparaissent — aucun n'est un motif d'échec pour l'une ou l'autre réforme prise isolément, mais tous doivent être présentés honnêtement.</p>
+
+  <div class="chart-card">
+    <p class="chart-title">Calendrier réaliste des cinq réformes</p>
+    <p class="chart-sub">Entrée en vigueur ou application effective visée</p>
+    <div class="timeline" role="img" aria-label="Frise chronologique : F3, F6bis, F10bis et R1 se regroupent autour de 2028 ; F9 est isolée en 2031-2032, sur la législature suivante.">
+      <div class="tl-axis"></div>
+      <div class="tl-tick" style="left:8%;"></div><div class="tl-tick-label" style="left:8%;">2026</div>
+      <div class="tl-tick" style="left:30%;"></div><div class="tl-tick-label" style="left:30%;">2028</div>
+      <div class="tl-tick" style="left:52%;"></div><div class="tl-tick-label" style="left:52%;">2029</div>
+      <div class="tl-tick" style="left:74%;"></div><div class="tl-tick-label" style="left:74%;">2030</div>
+      <div class="tl-tick" style="left:94%;"></div><div class="tl-tick-label" style="left:94%;">2032</div>
+
+      <div class="tl-mark cluster" style="left:28%;" tabindex="0" title="F3, F6bis, F10bis — 2028"></div>
+      <div class="tl-label" style="left:28%; top:6px; transform:translateX(-50%);">F3 · F6bis · F10bis<span class="sub">2028, calendrier FEC</span></div>
+
+      <div class="tl-mark cluster" style="left:33%;" tabindex="0" title="R1 — 2028"></div>
+      <div class="tl-label" style="left:37%; top:106px; transform:translateX(-15%);">R1<span class="sub">2028, calendrier EU Inc.</span></div>
+
+      <div class="tl-mark late" style="left:92%;" tabindex="0" title="F9 — 2031-2032"></div>
+      <div class="tl-label" style="left:78%; top:6px; transform:translateX(-15%);">F9<span class="sub">2031-2032, législature suivante</span></div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><span class="swatch cluster"></span><div><div class="lt">F3, F6bis, F10bis, R1</div><div class="ld">Groupées autour de 2028 — CFP/FEC et EU Inc. avancent en parallèle</div></div></div>
+      <div class="legend-item"><span class="swatch late"></span><div><div class="lt">F9</div><div class="ld">Isolée en 2031-2032 — traverse l'échéance électorale de 2029, dossier de la législature suivante</div></div></div>
+    </div>
+    <p class="chart-note">Le récit « le capital entre, les salariés le captent, tout le monde peut le liquéfier » ne se vérifie donc, au mieux, qu'à partir de 2031-2032 — après que les trois mécanismes budgétaires auront déjà produit le gros de leurs effets.</p>
+  </div>
+
+  <h3>1. Un décalage qui allonge, plutôt qu'il ne referme, le nœud du système</h3>
+  <p>La boucle « collecte-sortie-recyclage » est déjà identifiée, dans la base factuelle de ce dossier, comme le nœud systémique du financement européen des startups. F3 et F6bis augmentent le capital qui entre dans les fonds et les bilans d'assurance sans qu'aucun mécanisme correspondant n'accélère la sortie ou la distribution avant 2031-2032 au mieux — puisque le marché secondaire est précisément le seul des cinq mécanismes à agir sur ce maillon, et qu'il est le plus tardif. Injecter davantage de capital sans desserrer le goulot de sortie ne referme pas la boucle : il l'allonge, pendant plusieurs années.</p>
+
+  <h3>2. Deux réformes qui tirent en partie en sens contraire</h3>
+  <p>La base factuelle documente déjà, sans les mettre en regard : « avec des secondaires accessibles pour les salariés et les fonds anciens, l'incitation à coter s'affaiblit ». Le cornerstone discrétionnaire (F10bis) existe précisément pour aider davantage de sociétés à réussir une introduction en bourse. Un marché secondaire qui fonctionne bien peut donc réduire le nombre de sociétés qui ressentent l'urgence de coter — ce n'est pas nécessairement un défaut (une société mieux dotée en liquidité privée peut coter plus tard, mieux préparée), mais c'est une interaction réelle qu'aucun des deux textes, pris séparément, ne reconnaît.</p>
+
+  <h3>3. Une seule ligne de fracture politique, qui ne touche que deux réformes sur cinq</h3>
+  <p>Les stock-options et le marché secondaire héritent tous deux, par leur rattachement au règlement EU Inc., de l'opposition syndicale la plus radicale de toute la cartographie des parties prenantes — un risque de véhicule, pas de contenu. Le guichet miroir, la garantie mezzanine et le cornerstone BEI, purement budgétaires, n'y sont pas exposés et suivent le risque distinct, propre à eux, de la négociation du budget européen. <strong>Bonne nouvelle :</strong> aucun front d'opposition commun ne traverse le paquet entier — un blocage sur l'un des deux textes porteurs n'emporte pas l'autre moitié. <strong>Mauvaise nouvelle, à ne pas dissimuler :</strong> cela signifie aussi que le paquet ne peut pas être négocié comme un bloc unique. Ce sont deux dossiers apparentés par le récit, indépendants par la procédure et le calendrier.</p>
+
+  <div class="callout gold">
+    <p><strong>Recommandation de présentation.</strong> Présenter ce paquet comme deux sous-ensembles à calendrier et véhicule distincts, reliés par un même objectif — pas comme un texte unique à trancher d'un bloc. Le sous-ensemble budgétaire (F3, F6bis, F10bis) se joue maintenant, sur le calendrier de la négociation CFP. Le sous-ensemble EU Inc. (R1 vers 2027-2028, puis F9 vers 2031-2032) doit être préparé dès maintenant mais présenté sans ambiguïté comme un chantier qui se livre pour l'essentiel sur la législature suivante.</p>
+  </div>
+</section>
+
+<section id="bilan" class="wrap">
+  <p class="kicker">En résumé</p>
+  <h2>Cinq réformes, cinq statuts, une seule ligne de fracture politique</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Réforme</th><th>Piste</th><th>Verdict</th><th>Condition principale</th><th>Calendrier</th></tr></thead>
+      <tbody>
+        <tr><td>F3 — guichet miroir</td><td>Budgétaire</td><td>Validé</td><td>Rédaction législative</td><td>2028</td></tr>
+        <tr><td>F6bis — garantie mezzanine</td><td>Budgétaire</td><td>Validé, conditions fortes</td><td>Étude EIOPA préalable</td><td>2028 (pilote)</td></tr>
+        <tr><td>F10bis — cornerstone BEI</td><td>Budgétaire</td><td>Validé, une condition</td><td>Clause anti-abus à rédiger</td><td>2028</td></tr>
+        <tr><td>R1 — stock-options</td><td>Réglementaire (EU Inc.)</td><td>Validé, condition de rédaction</td><td>Reformuler l'article de non-déchéance</td><td>2027-2028</td></tr>
+        <tr><td>F9 — marché secondaire</td><td>Réglementaire (MiFID II/MiFIR)</td><td>Validé, correction à compléter</td><td>Ajouter la modification MiFIR</td><td>2031-2032</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Aucune des cinq réformes n'échoue. Chacune porte au moins une condition précise et déjà identifiée — jamais un chantier de conception à rouvrir. Le nouveau tour de vérification indépendante, demandé spécifiquement pour les stock-options et le marché secondaire, a trouvé sur chacun un défaut d'une nature que les tours précédents n'avaient pas vue : un article isolé encore exposé à l'article 114§2 TFUE pour les stock-options, un texte de rang parallèle manquant pour le marché secondaire. C'est le signe que la méthode de correction déjà appliquée dans ce dossier fonctionne — mais qu'elle doit être répétée une fois de plus, sur chaque texte, avant toute rédaction législative définitive.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h4>Documents de ce dossier</h4>
+    <p>Analyse produite dans <code>eu-financial-policy-claude-code/policy/priority-package/</code>, en continuité des dossiers <code>policy/mff-startup-funding/</code> et <code>policy/equity-financing-mff/</code>.</p>
+    <ul class="filelist">
+      <li>00-cadrage.md — périmètre du paquet, ce que chaque réforme est et n'est pas</li>
+      <li>01a-verification-impact.md — audit d'impact réglementaire indépendant sur R1 et F9</li>
+      <li>01b-verification-faisabilite.md — audit de faisabilité politique indépendant sur R1 et F9</li>
+      <li>02-estimations-illustratives.md — ordres de grandeur construits, hypothèses explicites</li>
+      <li>03-synthese.md — synthèse consolidée et recommandation de présentation</li>
+    </ul>
+  </div>
+</footer>
