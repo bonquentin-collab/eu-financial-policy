@@ -1,0 +1,1004 @@
+<!doctype html>
+<title>Financer les scale-ups européennes — le dossier complet expliqué</title>
+<meta name="description" content="Rapport pédagogique complet : le problème, les 33 propositions, ce que deux débats contradictoires (dont un vérifié par des agents indépendants) en ont conclu, et pourquoi.">
+<style>
+  :root{
+    --bg:#EEF1F0; --surface:#FFFFFF; --surface-2:#E3E9E7; --surface-3:#DCE3E1;
+    --ink:#172023; --ink-soft:#4B5A5C; --ink-faint:#7C8B8C;
+    --accent:#1F6F6B; --accent-ink:#0E3D3B; --accent-soft:#DCEDEA;
+    --gold:#9C6F28; --gold-soft:#F1E4CC;
+    --line:#D6DCDA; --line-soft:#E4E9E7;
+    --ok:#2E7D4F; --ok-soft:#DCEEE0;
+    --warn:#9C6F28; --warn-soft:#F1E4CC;
+    --bad:#A63A31; --bad-soft:#F5DFDB;
+    --neutral:#5C6B6C; --neutral-soft:#E3E9E7;
+    --serif: Iowan Old Style, "Palatino Linotype", Palatino, Georgia, "Noto Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11161A; --surface:#181F23; --surface-2:#1F2A2D; --surface-3:#263133;
+      --ink:#E7EDEB; --ink-soft:#AEBCBA; --ink-faint:#7E8E8D;
+      --accent:#5CC2B8; --accent-ink:#9BE0D6; --accent-soft:#1C3634;
+      --gold:#D8AE6C; --gold-soft:#3A2F1B;
+      --line:#2B3639; --line-soft:#212B2E;
+      --ok:#68C88A; --ok-soft:#173425;
+      --warn:#D8AE6C; --warn-soft:#3A2F1B;
+      --bad:#E28378; --bad-soft:#3B211E;
+      --neutral:#8CA0A0; --neutral-soft:#212B2E;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11161A; --surface:#181F23; --surface-2:#1F2A2D; --surface-3:#263133;
+    --ink:#E7EDEB; --ink-soft:#AEBCBA; --ink-faint:#7E8E8D;
+    --accent:#5CC2B8; --accent-ink:#9BE0D6; --accent-soft:#1C3634;
+    --gold:#D8AE6C; --gold-soft:#3A2F1B;
+    --line:#2B3639; --line-soft:#212B2E;
+    --ok:#68C88A; --ok-soft:#173425;
+    --warn:#D8AE6C; --warn-soft:#3A2F1B;
+    --bad:#E28378; --bad-soft:#3B211E;
+    --neutral:#8CA0A0; --neutral-soft:#212B2E;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16.5px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  a{color:var(--accent-ink);}
+  a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px 40px;}
+  .wide{max-width:1080px;}
+
+  header.masthead{border-bottom:1px solid var(--line); padding:52px 24px 36px; background:var(--surface);}
+  .masthead-inner{max-width:760px; margin:0 auto;}
+  .eyebrow{font-family:var(--mono); font-size:12.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent-ink); display:flex; align-items:center; gap:10px; margin-bottom:16px;}
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--accent);}
+  h1{font-family:var(--serif); font-weight:600; font-size:clamp(28px,4.4vw,42px); line-height:1.1; margin:0 0 14px; text-wrap:balance; letter-spacing:-.01em;}
+  .subtitle{font-size:17px; color:var(--ink-soft); max-width:62ch; margin:0; text-wrap:pretty;}
+
+  nav.toc{background:var(--surface-2); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; backdrop-filter:blur(6px);}
+  .toc-inner{max-width:760px; margin:0 auto; padding:0 24px; display:flex; gap:20px; overflow-x:auto; scrollbar-width:none;}
+  .toc-inner::-webkit-scrollbar{display:none;}
+  nav.toc a{font-size:12.5px; color:var(--ink-soft); text-decoration:none; padding:11px 0; white-space:nowrap; border-bottom:2px solid transparent; font-weight:600;}
+  nav.toc a:hover{color:var(--accent-ink); border-bottom-color:var(--accent);}
+
+  section{padding:44px 0; border-bottom:1px solid var(--line-soft);}
+  section:last-of-type{border-bottom:none;}
+  .kicker{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); margin:0 0 8px;}
+  h2{font-family:var(--serif); font-size:clamp(23px,3vw,30px); font-weight:600; margin:36px 0 14px; text-wrap:balance;}
+  h2:first-child{margin-top:0;}
+  h3{font-family:var(--serif); font-size:20px; font-weight:600; margin:28px 0 8px;}
+  h4{font-family:var(--sans); font-size:14.5px; font-weight:700; margin:18px 0 6px; color:var(--ink);}
+  p{margin:0 0 15px; max-width:70ch;}
+  .lede{font-size:17.5px; color:var(--ink-soft); max-width:66ch;}
+  ul,ol{margin:0 0 15px; padding-left:22px;}
+  li{margin-bottom:6px; max-width:66ch;}
+  strong{font-weight:700;}
+  code{font-family:var(--mono); font-size:.92em; background:var(--surface-2); padding:1px 5px; border-radius:4px;}
+
+  .callout{background:var(--accent-soft); border-radius:10px; padding:20px 22px; margin:22px 0;}
+  .callout p:last-child{margin-bottom:0;}
+  .callout.gold{background:var(--gold-soft);}
+  .callout.bad{background:var(--bad-soft);}
+  .callout h4{margin-top:0; color:inherit;}
+
+  /* glossary */
+  .glossary{display:grid; grid-template-columns:1fr; gap:2px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:24px 0;}
+  .term{background:var(--surface); padding:16px 20px;}
+  .term dt{font-family:var(--serif); font-weight:700; font-size:15.5px; color:var(--accent-ink); margin-bottom:4px;}
+  .term dd{margin:0; font-size:14.5px; color:var(--ink-soft); max-width:68ch;}
+  .term dd code{background:var(--surface-2);}
+
+  /* stat dashboard */
+  .stat-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:24px 0;}
+  .stat{background:var(--surface); padding:18px 16px;}
+  .stat .n{font-family:var(--serif); font-size:28px; font-weight:600; line-height:1; color:var(--ink); font-variant-numeric:tabular-nums;}
+  .stat .l{font-size:12px; color:var(--ink-faint); margin-top:6px;}
+
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:14px;}
+  th,td{text-align:left; padding:8px 12px; border-bottom:1px solid var(--line);}
+  th{font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-faint); font-weight:600;}
+  .table-wrap{overflow-x:auto; margin:18px 0;}
+  .table-wrap table{margin:0;}
+
+  /* pills / badges */
+  .pill{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11.5px; font-weight:700; letter-spacing:.02em; padding:4px 10px; border-radius:20px; white-space:nowrap;}
+  .pill.ok{background:var(--ok-soft); color:var(--ok);}
+  .pill.warn{background:var(--warn-soft); color:var(--warn);}
+  .pill.bad{background:var(--bad-soft); color:var(--bad);}
+  .pill.neutral{background:var(--neutral-soft); color:var(--neutral);}
+
+  /* proposal card */
+  .prop{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:22px 24px; margin:18px 0;}
+  .prop-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:4px;}
+  .prop-id{font-family:var(--mono); font-size:12px; color:var(--accent-ink); font-weight:700;}
+  .prop-title{font-family:var(--serif); font-weight:700; font-size:18px; margin:2px 0 10px;}
+  .prop-badges{display:flex; gap:6px; flex-wrap:wrap;}
+  .prop h4{margin-top:14px;}
+  .prop h4:first-of-type{margin-top:6px;}
+  .prop p{font-size:15px;}
+
+  details{margin-top:14px; border-top:1px dashed var(--line); padding-top:12px;}
+  summary{cursor:pointer; font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--accent-ink); font-weight:700; list-style:none; display:flex; align-items:center; gap:8px;}
+  summary::-webkit-details-marker{display:none;}
+  summary::before{content:"▸"; display:inline-block; transition:transform .15s ease; font-size:11px;}
+  details[open] summary::before{transform:rotate(90deg);}
+  .debate-block{margin-top:14px; padding-left:16px; border-left:2px solid var(--line-soft);}
+  .debate-block h5{font-family:var(--sans); font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-faint); margin:16px 0 6px;}
+  .debate-block h5:first-child{margin-top:0;}
+  .debate-block p{font-size:14.5px; color:var(--ink-soft);}
+
+  .axis-intro{background:var(--surface-3); border-radius:10px; padding:20px 22px; margin:20px 0 24px;}
+
+  footer{padding:44px 24px 60px; background:var(--surface-2); border-top:1px solid var(--line);}
+  footer .wrap{padding-bottom:0;}
+  footer h4{font-family:var(--serif); font-size:16px; margin:0 0 10px;}
+  footer p{font-size:13.5px; color:var(--ink-soft);}
+  .filelist{list-style:none; margin:0; padding:0; font-family:var(--mono); font-size:12.5px; color:var(--ink-soft); display:grid; gap:6px;}
+  .filelist li::before{content:"› "; color:var(--accent-ink);}
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="eyebrow"><span class="dot"></span>Dossier complet — édition pédagogique</div>
+    <h1>Financer les scale-ups européennes : le dossier complet, expliqué de bout en bout</h1>
+    <p class="subtitle">Ce document explique tout, dans l'ordre : le problème réel, la méthode utilisée pour chercher des solutions, les 33 propositions une par une (ce qu'elles feraient concrètement, ce qu'on leur a reproché, ce qu'une vérification indépendante a changé), et un bilan final honnête. Aucune connaissance préalable du droit européen n'est supposée — les termes techniques sont expliqués au fur et à mesure.</p>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#probleme">Le problème</a>
+    <a href="#methode">La méthode</a>
+    <a href="#glossaire">Glossaire</a>
+    <a href="#financement">Financement</a>
+    <a href="#rentabilite">Rentabilité</a>
+    <a href="#demande">Demande</a>
+    <a href="#tour2">Second tour</a>
+    <a href="#bilan">Bilan final</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="probleme" class="wrap">
+  <p class="kicker">Partie 1 — Le problème, en clair</p>
+  <h2>Pourquoi ce dossier existe</h2>
+  <p class="lede">L'Union européenne prépare son budget pour 2028-2034 (le « Cadre financier pluriannuel », CFP — parfois appelé MFF en anglais). Une partie de ce budget, et des règles qui l'accompagnent, doit décider comment l'Europe finance ses jeunes entreprises technologiques (startups) et celles qui grandissent (scale-ups). Ce dossier explore, de façon volontairement ambitieuse, ce qu'on pourrait faire de mieux.</p>
+
+  <h3>Le budget et les textes qui l'entourent</h3>
+  <p>Le CFP n'est pas un texte isolé. Il est entouré d'une demi-douzaine de réformes qui avancent chacune à leur rythme, et qu'il faut connaître pour comprendre le reste de ce document :</p>
+  <ul>
+    <li><strong>Le Fonds européen pour la compétitivité (FEC)</strong> — la pièce maîtresse du futur budget recherche/innovation : il fusionnerait 14 programmes existants (InvestEU, le Conseil européen de l'innovation, l'EIT, une partie d'Horizon Europe...) en un seul instrument de 234 milliards d'euros.</li>
+    <li><strong>La Savings and Investments Union (SIU)</strong> — la stratégie de la Commission pour faire sortir l'épargne des ménages et des investisseurs institutionnels européens (environ 10 000 milliards d'euros dorment sur des comptes bancaires à faible rendement) et la faire entrer dans l'économie productive.</li>
+    <li><strong>EuVECA</strong> — le régime qui permet aujourd'hui à un fonds de capital-risque de moins de 500 millions d'euros d'actifs de vendre ses parts dans toute l'Union sans passer par l'agrément complet et lourd réservé aux gros fonds (l'« AIFMD », voir glossaire).</li>
+    <li><strong>Solvabilité II</strong> — les règles qui déterminent combien de capital de réserve un assureur doit détenir pour chaque type d'actif qu'il possède. Plus ce capital de réserve est élevé, plus il est cher pour l'assureur d'investir dans cet actif.</li>
+    <li><strong>Le « 28e régime » (« EU Inc. »)</strong> — un projet de statut de société unique, valable dans les 27 États membres, qui viendrait s'ajouter (pas remplacer) aux plus de 60 formes de société nationales existantes.</li>
+    <li><strong>Le RGEC (ou « GBER »)</strong> — le règlement qui autorise les États à donner certaines aides publiques aux entreprises sans devoir demander l'autorisation préalable de la Commission, sous certains plafonds.</li>
+  </ul>
+  <p>Au 8 août 2026, aucun de ces chantiers n'est achevé : le CFP est en pleine négociation entre le Conseil et le Parlement, la Savings and Investments Union commence à peine ses trilogues, et plusieurs textes sectoriels sont encore au stade de la consultation.</p>
+
+  <h3>Le vrai problème n'est pas celui qu'on croit</h3>
+  <p>L'intuition commune est : « l'Europe manque de capital-risque, il faut en injecter plus ». Les données rassemblées pour ce dossier racontent une histoire plus précise et, en un sens, plus inquiétante.</p>
+  <div class="callout">
+    <h4>Le constat le plus contre-intuitif de tout le dossier</h4>
+    <p>La Banque centrale européenne a documenté que les entreprises européennes qui <em>ne sont pas</em> financées par du capital-risque sont, en moyenne, presque deux fois plus grandes en emploi et croissent environ 15 points de pourcentage plus vite que leurs équivalentes américaines non financées. Autrement dit : ce n'est probablement pas la qualité des projets européens qui manque. C'est l'offre de capital patient disponible pour les financer qui est insuffisante et mal distribuée.</p>
+  </div>
+
+  <p>Trois chiffres résument où se situe précisément le blocage :</p>
+  <div class="stat-grid">
+    <div class="stat"><div class="n">30-300M$</div><div class="l">la zone de tour de table où l'Europe décroche — pas au premier tour, mais à partir de la Series B</div></div>
+    <div class="stat"><div class="n">&gt;50%</div><div class="l">des investissements des fonds de capital-risque européens vont vers des entreprises hors UE (contre 20 % pour les fonds américains)</div></div>
+    <div class="stat"><div class="n">0,01%</div><div class="l">c'est la part du capital-risque dans les actifs des fonds de pension européens — contre 0,03 % aux États-Unis, déjà jugé faible là-bas</div></div>
+  </div>
+
+  <p>Le marché européen ne manque pas d'argent au sens global : il « se barbellise ». Beaucoup de très petits tours d'amorçage, un tout petit nombre de tours géants (au premier semestre 2026, quatre sociétés ont capté 25 % de tout l'investissement du trimestre), et un affaissement du milieu — exactement la zone où une entreprise a besoin de 20 à 60 millions d'euros pour passer à l'échelle. Et le bout de la chaîne casse aussi : 43 % des investisseurs citent l'absence de rachats ou d'introductions en bourse en Europe comme leur premier frein — un fonds qui ne peut pas revendre sa participation dans 8 à 10 ans paie moins cher dès le premier tour, ce qui réduit la mise de départ, ce qui réduit la taille des tours suivants. Le manque de sorties d'aujourd'hui est un manque de financement à retardement.</p>
+
+  <p>Enfin, un fait qui traverse tout le dossier : le levier <strong>réglementaire</strong> (changer une règle) dépasse largement le levier <strong>budgétaire</strong> (dépenser de l'argent public) en ordre de grandeur. La composante « fonds propres et garanties » du futur FEC pèse environ 11 milliards d'euros sur sept ans. Une réallocation de seulement 0,5 point de pourcentage des portefeuilles des assureurs européens (qui gèrent environ 9 500 milliards d'euros) vers ce type d'actifs représenterait, à elle seule, 45 à 50 milliards d'euros — quatre fois plus, sans un euro de budget public. C'est ce constat qui explique pourquoi une bonne partie des 33 propositions de ce dossier touchent à des règles plutôt qu'à des chèques.</p>
+</section>
+
+<section id="methode" class="wrap">
+  <p class="kicker">Partie 2 — La méthode</p>
+  <h2>Comment ce dossier a été construit — et pourquoi il a changé en cours de route</h2>
+
+  <p>Ce dossier n'a pas été écrit par une seule personne qui aurait réfléchi et tranché. Il a été construit comme un procès contradictoire, avec plusieurs rôles distincts, chacun avec un mandat différent :</p>
+  <ol>
+    <li><strong>Cinq enquêteurs de fait, en parallèle</strong> — chacun chargé d'un angle différent : le droit tel qu'il existe aujourd'hui, la mécanique financière au niveau d'une transaction, les effets sur la stabilité financière au niveau du système, la comparaison avec huit autres pays, et une cartographie de qui soutient quoi parmi les acteurs réels (associations professionnelles, syndicats, gouvernements, régulateurs).</li>
+    <li><strong>Un agent d'innovation</strong>, chargé de proposer — avec un mandat explicite de ne pas s'autocensurer, quitte à produire des idées qui échouent ensuite. Le raisonnement : si aucune proposition n'échoue, c'est le signe qu'on ne l'a pas assez poussée.</li>
+    <li><strong>Un agent auditeur</strong>, chargé de démolir chaque proposition sur des critères de rigueur réglementaire : est-ce que l'Union a le droit de faire ça ? Est-ce que le mécanisme choisi est cohérent avec les lois qui existent déjà ? Est-ce que le rapport coût-bénéfice tient la route au regard des données ?</li>
+    <li><strong>Un agent cartographe</strong>, chargé de tester non pas si une proposition est <em>juste</em>, mais si elle a une chance réelle d'être <em>acceptée</em> — qui la soutient, qui s'y oppose, avec quelle force documentée.</li>
+  </ol>
+
+  <h3>Ce qui s'est mal passé, et pourquoi ça compte</h3>
+  <p>Au moment de lancer l'agent d'innovation et les deux agents critiques comme des processus véritablement séparés et indépendants, une limite technique (un plafond de dépense sur le compte utilisé) a interrompu le premier essai. Plutôt que de réessayer indéfiniment, l'analyse a été reprise directement — c'est-à-dire qu'un seul assistant a joué successivement le rôle de l'innovateur, puis de l'auditeur, puis du cartographe, dans un débat écrit en continu.</p>
+  <p>Ce premier débat, que ce dossier appelle le <strong>débat auto-rédigé</strong>, est réel : il applique de vrais critères, cite de vrais articles de droit, corrige de vraies propositions. Mais il a un défaut structurel qu'on peut résumer simplement : <strong>c'est difficile de se contredire soi-même aussi durement qu'un adversaire réel le ferait.</strong> Un peu comme relire sa propre copie avant de la rendre — on repère les fautes de frappe, beaucoup plus rarement les erreurs de raisonnement qu'on a soi-même commises en écrivant.</p>
+
+  <h3>La vérification indépendante — ce qui a vraiment changé la photographie</h3>
+  <p>Une seconde étape a donc consisté à relancer, cette fois avec succès, deux agents réellement séparés et indépendants : un auditeur et un cartographe qui n'ont <strong>pas</strong> lu le débat auto-rédigé avant de former leur propre jugement sur les 33 propositions. Ce n'est qu'après avoir figé leur avis qu'ils ont comparé leurs conclusions à ce qui existait déjà.</p>
+  <div class="callout gold">
+    <h4>L'écart mesuré entre les deux exercices</h4>
+    <p>Le débat auto-rédigé validait 3 propositions sans aucune réserve et en rejetait 3 nettement. L'auditeur indépendant, lui, n'en valide <strong>aucune</strong> sans réserve et en rejette <strong>12</strong>. Au total, sur les 33 propositions, l'examen indépendant change le verdict ou corrige une erreur de raisonnement dans <strong>20 cas</strong>. Ce n'est pas que le premier débat était malhonnête — c'est qu'un débat mené par un seul agent jouant tous les rôles converge presque toujours trop vite vers un compromis, exactement comme deux personnes qui négocient avec elles-mêmes finissent presque toujours par se mettre d'accord.</p>
+  </div>
+  <p>Ce dossier retient donc, chaque fois que les deux niveaux d'examen divergent, la conclusion de la vérification indépendante — tout en montrant le raisonnement du premier débat, parce qu'il reste utile et parfois plus juste sur certains points précis (cela arrive, et ce dossier le signale explicitement à chaque fois).</p>
+</section>
+
+<section id="glossaire" class="wrap">
+  <p class="kicker">Partie 3 — À garder sous la main</p>
+  <h2>Glossaire des notions qui reviennent tout le temps</h2>
+  <p class="lede">Ces notions reviennent dans presque toutes les fiches qui suivent. Elles sont expliquées ici une fois pour toutes plutôt que répétées à chaque fois — un lien retour vers cette section apparaît régulièrement.</p>
+
+  <dl class="glossary">
+    <div class="term"><dt>Article 114 TFUE</dt><dd>La base légale la plus utilisée pour « harmoniser le marché intérieur » — elle permet d'adopter un texte à la majorité qualifiée (pas besoin de l'accord des 27). Mais son paragraphe 2 <strong>exclut expressément</strong> deux domaines : les dispositions fiscales, et les dispositions relatives aux droits des travailleurs salariés. Un texte qui touche à l'un de ces deux domaines ne peut pas s'appuyer sur cet article, quel que soit son emballage.</dd></div>
+    <div class="term"><dt>Article 115 TFUE</dt><dd>La base légale pour harmoniser la <strong>fiscalité directe</strong> (impôt sur le revenu, sur les sociétés, sur les plus-values). Elle exige l'<strong>unanimité</strong> des 27 États — un seul refus bloque tout. C'est le mur le plus dur de tout ce dossier.</dd></div>
+    <div class="term"><dt>Article 173 TFUE</dt><dd>La base légale pour la politique industrielle de l'Union — majorité qualifiée, pas d'unanimité. Mais son paragraphe 3 exclut, lui aussi, toute mesure « contenant des dispositions fiscales ». Plusieurs propositions de ce dossier essaient de passer par cet article pour produire un effet économique proche d'un avantage fiscal, sans en être un juridiquement — un exercice d'équilibriste qui réussit parfois et échoue parfois.</dd></div>
+    <div class="term"><dt>Article 153 TFUE</dt><dd>La base légale pour la politique sociale (droit du travail, sécurité sociale). Pour la sécurité sociale, elle exige l'unanimité, et elle protège explicitement l'équilibre financier des systèmes nationaux de retraite — l'Union ne peut pas adopter un texte qui menacerait ce financement.</dd></div>
+    <div class="term"><dt>Aide d'État (article 107 TFUE)</dt><dd>Interdiction, en principe, des aides publiques qui faussent la concurrence — mais elle ne s'applique qu'aux aides financées par des « ressources d'État » (un gouvernement national). Un versement fait <strong>directement</strong> par le budget de l'Union européenne, géré par la Commission elle-même, n'est en général pas une « ressource d'État » — donc pas soumis à cette interdiction. C'est une distinction technique, mais elle change tout : plusieurs propositions de ce dossier passent ou échouent selon qu'elles respectent bien cette frontière.</dd></div>
+    <div class="term"><dt>Coopération renforcée</dt><dd>Un mécanisme qui permet à un sous-groupe d'au moins 9 États membres d'avancer ensemble sur un sujet quand l'unanimité à 27 est hors d'atteinte. Point souvent mal compris : elle permet de créer de <strong>nouvelles</strong> règles entre volontaires ; elle ne permet <strong>pas</strong> d'écarter, pour ce sous-groupe, des règles qui s'appliquent déjà à tous les 27 (comme les règles des marchés financiers, par exemple).</dd></div>
+    <div class="term"><dt>Principe d'universalité budgétaire</dt><dd>Une règle de base des finances publiques européennes : toutes les recettes du budget de l'Union financent toutes les dépenses ensemble, sans « fléchage » d'une recette précise vers une dépense précise (sauf exceptions très encadrées). On ne peut donc pas décider, par exemple, qu'« telle taxe finance exclusivement tel fonds ».</dd></div>
+    <div class="term"><dt>Solvabilité II et le SCR</dt><dd>Le cadre prudentiel des assureurs européens. Le <em>SCR</em> (Solvency Capital Requirement) est le montant de fonds propres qu'un assureur doit mettre de côté pour chaque actif détenu, en fonction de son risque. Détenir des actions non cotées coûte aujourd'hui, en général, 49 % de leur valeur en capital de réserve (avec un ajustement possible) — sauf régime spécial (voir LTEI ci-dessous). Plus ce taux est élevé, moins l'actif est attractif pour un assureur, indépendamment de sa performance réelle.</dd></div>
+    <div class="term"><dt>LTEI</dt><dd>Un régime spécial de Solvabilité II (« Long-Term Equity Investment ») qui ramène le SCR à 22 % pour des actions détenues très longtemps, sans intention de revente forcée. Une réforme entrant en application le 30 janvier 2027 permet désormais d'apprécier cette condition au niveau du <em>fonds</em> plutôt que ligne par ligne — un changement technique qui compte énormément en pratique, parce que vérifier la condition actif par actif dans un fonds de 40 participations était, avant cette réforme, quasiment impossible pour un assureur de taille moyenne.</dd></div>
+    <div class="term"><dt>AMP / GPA (Accord sur les marchés publics de l'OMC)</dt><dd>Un traité international qui oblige ses signataires (dont l'Union européenne et les États-Unis) à ouvrir une partie de leur commande publique aux entreprises des autres pays signataires — sauf pour les catégories de marchés que chaque pays a explicitement mises de côté dans sa liste d'engagements, négociée une fois pour toutes. Point clé pour ce dossier : <strong>les États-Unis ont inscrit une exclusion pour les marchés réservés aux petites entreprises ; l'Union européenne n'a jamais inscrit d'équivalent.</strong> C'est ce qui rend leur modèle « SBIR » (une part du budget de recherche publique réservée aux petites entreprises) légal chez eux et juridiquement fragile chez nous, si on cherche à le copier tel quel.</dd></div>
+    <div class="term"><dt>Critères de sélection vs critères d'attribution (marchés publics)</dt><dd>Une règle de base, et souvent oubliée, du droit européen des marchés publics : les critères qui servent à choisir <em>qui a le droit de candidater</em> (l'expérience de l'entreprise, sa taille, son ancienneté) doivent rester séparés des critères qui servent à noter <em>quelle offre est la meilleure</em> une fois qu'on a candidaté. On ne peut normalement pas donner des points, dans la note finale d'une offre, au fait que l'entreprise qui la soumet soit jeune ou petite — ce sont des qualités du candidat, pas de l'offre.</dd></div>
+    <div class="term"><dt>Bâle III et l'« output floor »</dt><dd>Une norme internationale de solidité bancaire qui plafonne à quel point une banque peut réduire ses exigences de fonds propres en utilisant des modèles de risque internes plutôt que la méthode standard — pour éviter qu'une banque ne sous-estime artificiellement ses risques. Toute proposition qui réduit fortement la charge en capital d'un prêt à une jeune entreprise non notée doit composer avec ce plancher.</dd></div>
+    <div class="term"><dt>Comitologie / décision d'exécution</dt><dd>La procédure par laquelle la Commission européenne met en musique, techniquement, un texte déjà adopté par les colégislateurs — sous le contrôle de comités d'États membres. Elle sert à <em>exécuter</em> des règles déjà votées, jamais à <em>créer</em> de nouvelles autorisations de dépense budgétaire : ce pouvoir-là reste exclusivement entre les mains du Parlement et du Conseil.</dd></div>
+    <div class="term"><dt>AIFMD, et le seuil des 500 M€</dt><dd>La directive-cadre qui régit les gestionnaires de fonds d'investissement « alternatifs » (dont le capital-risque) au-delà d'un certain seuil : dépositaire obligatoire, fonds propres réglementaires, reporting détaillé. En dessous de 500 millions d'euros d'actifs, un gérant peut choisir le régime allégé EuVECA à la place. Le problème : au franchissement de ce seuil, toutes les obligations lourdes s'appliquent d'un coup — un « effet de falaise » que la Commission elle-même reconnaît, et qui pousse les gérants à plafonner artificiellement la taille de leurs fonds juste en dessous.</dd></div>
+  </dl>
+</section>
+
+<section id="financement" class="wrap wide">
+  <p class="kicker">Partie 4 — Les 27 propositions du premier tour</p>
+  <h2>Axe 1 — L'accès au financement</h2>
+  <div class="axis-intro">
+    <p>Quatorze propositions (F1 à F14) attaquent le problème documenté en Partie 1 : la discontinuité entre 30 et 300 millions de dollars par tour, la fuite de plus de la moitié du capital-risque européen hors de l'Union, et le blocage à la sortie qui referme toute la boucle. Chaque fiche indique : le problème visé, ce que la proposition ferait concrètement, ce que le premier débat en a dit, ce que la vérification indépendante a changé, et le verdict final à retenir.</p>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F1</div><div class="prop-title">Remplacer le seuil couperet de 500 M€ par un régime progressif, avec passeport de gestion</div></div>
+    <div class="prop-badges"><span class="pill warn">Utile, à corriger</span></div></div>
+    <h4>Le problème</h4>
+    <p>Le seuil EuVECA de 500 millions d'euros (voir glossaire) tombe exactement dans la zone où l'Europe manque de capacité de financement — les tours de série B et C. Un gérant dont le fonds approche ce seuil a trois choix : plafonner artificiellement la taille du fonds, le scinder artificiellement en deux véhicules jumeaux, ou basculer d'un coup dans le régime complet et coûteux de l'AIFMD. Les deux premières options sont massivement choisies en pratique — ce qui prive l'écosystème exactement de la taille de fonds (500 M€ à 1 Md€) qui manque le plus pour financer la croissance.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Remplacer le seuil unique par des paliers progressifs (obligations de plus en plus lourdes au fur et à mesure que le fonds grandit, plutôt qu'un saut d'un coup), avec une période de transition de deux à trois ans à chaque franchissement de palier. Ajout d'un « passeport de gestion » : aujourd'hui, un gérant agréé dans un pays peut vendre ses parts dans toute l'Union, mais ne peut pas <em>gérer</em> un fonds établi dans un autre pays sans s'y implanter physiquement — cette proposition supprimerait cette contrainte.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé l'idée en demandant d'ajouter un mécanisme de coordination entre les régulateurs nationaux, pour répondre à l'inquiétude prévisible de l'Irlande et du Luxembourg, deux pays dont l'attractivité comme lieu d'implantation de fonds repose en partie sur cette obligation d'implantation locale.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur indépendant relève trois défauts non vus. D'abord, un problème de hiérarchie des textes : un règlement (le nouveau régime EuVGF) ne peut pas simplement <em>ignorer</em> des obligations posées par une directive existante (l'AIFMD) — il faut modifier l'AIFMD elle-même en même temps, pas créer un régime parallèle qui prétend s'en affranchir. Ensuite, une partie de la proposition est redondante : l'« exemption » de gestion du risque de liquidité qu'elle propose d'ajouter existe déjà dans le droit actuel pour ce type de fonds. Enfin, le plafond de 5 milliards d'euros retenu pour le nouveau régime n'est appuyé par aucune donnée — la base factuelle elle-même suggérait plutôt une fourchette de 500 millions à 2 milliards d'euros, qu'il vaut mieux retenir.</p>
+        <h5>Verdict final</h5>
+        <p>La proposition reste utile et va dans le sens de la consultation déjà lancée par la Commission — mais elle doit être rédigée comme une modification explicite de l'AIFMD, avec un plafond plus bas et plus documenté, et sans revendiquer une exemption qui existe déjà.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F2</div><div class="prop-title">Rendre les fonds européens fiscalement transparents dans toute l'Union</div></div>
+    <div class="prop-badges"><span class="pill bad">Écartée</span></div></div>
+    <h4>Le problème</h4>
+    <p>Un investisseur institutionnel qui souscrit à un fonds de capital-risque établi dans un autre État membre risque une double imposition ou une retenue à la source qu'il ne subirait pas sur un fonds domestique. Résultat : le réseau d'investisseurs transfrontalier est aujourd'hui quasi inexistant en dehors d'un petit triangle Luxembourg-Allemagne / Luxembourg-Irlande / Luxembourg-France — ce qui limite fortement la taille des fonds qu'on peut lever à l'échelle européenne.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Une directive imposant que tout fonds enregistré sous le nouveau régime soit considéré comme fiscalement « transparent » dans les 27 pays (l'impôt est payé uniquement par l'investisseur final, selon son propre pays de résidence, pas par le fonds lui-même), avec reconnaissance automatique par tous les États du traitement fiscal choisi par le pays du gérant. Comme cela nécessite l'unanimité fiscale (voir glossaire, article 115 TFUE) — quasiment impossible à obtenir à 27 — la proposition prévoit dès le départ une solution de repli : avancer avec seulement 9 États volontaires (la « coopération renforcée », voir glossaire).</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a identifié un risque de nivellement par le bas (un pays pourrait devenir la référence de qualification la plus généreuse pour attirer les gérants) et a demandé un test renforcé garantissant que le gérant ait une vraie présence économique dans le pays qui le qualifie. Sous cette condition, il a validé la proposition sans autre réserve.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur indépendant identifie deux défauts que ce correctif ne règle pas. D'abord, un conflit frontal avec une règle anti-abus fiscal déjà en vigueur (la clause sur les « entités hybrides inversées » d'ATAD 2), qui va dans le sens exactement inverse de ce que F2 propose. Ensuite et surtout : même avec un test de présence renforcé, la reconnaissance automatique de la qualification fiscale d'un pays par les 26 autres <strong>recrée exactement le problème qu'elle prétend résoudre</strong> — le gérant continuera de choisir le pays qui le traite le plus favorablement, ce qui reconduit la prime de domiciliation actuelle plutôt que de la supprimer. Le cartographe politique indépendant ajoute un doute sur la solution de repli elle-même : les deux places financières les plus concernées (Luxembourg, Irlande) ont un intérêt économique à <em>ne pas</em> rejoindre un texte qui réduit justement l'avantage fiscal sur lequel repose une partie de leur modèle — leur participation au groupe des 9 volontaires nécessaires n'est donc pas acquise, contrairement à ce que supposait le premier débat.</p>
+        <h5>Verdict final</h5>
+        <p>Écartée sous cette forme. Ce qui peut survivre : les aspects purement procéduraux (accélérer les remboursements de retenue à la source, déjà prévus par un autre texte européen récent) et une règle de non-discrimination entre investissement domestique et transfrontalier — cette dernière étant, comme on le verra pour une proposition voisine (R2), probablement déjà obtenable par la voie des tribunaux plutôt que par une nouvelle loi.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F3</div><div class="prop-title">Un guichet public qui co-investit automatiquement, sans comité</div></div>
+    <div class="prop-badges"><span class="pill warn">Utile, à corriger fortement</span></div></div>
+    <h4>Le problème</h4>
+    <p>Les instruments publics de financement sont souvent trop lents pour une levée de fonds compétitive. Exemple documenté : à un moment de sa mise en œuvre, un grand programme européen (l'EIC Fund) n'avait conclu qu'une seule opération en fonds propres alors que 149 startups attendaient une décision — un retard que le conseil du programme lui-même a qualifié de « revers majeur ». Pour un fondateur en pleine négociation, un investisseur public qui met neuf mois à répondre n'a, en pratique, aucune valeur.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Accréditer à l'avance une liste de « chefs de file » privés respectant des critères objectifs (taille du fonds, ancienneté, nombre d'opérations déjà réalisées). Dès que l'un d'eux boucle un tour d'au moins 15 millions d'euros dans une entreprise éligible, le fonds public co-investit automatiquement, à hauteur de 30 % maximum du tour, aux mêmes conditions que le chef de file — sans nouveau dossier ni comité de sélection.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>La version initiale prévoyait que l'engagement soit réputé accordé si l'administration ne répondait pas dans les 15 jours (« le silence vaut accord »). Le premier débat a jugé cela incompatible avec les règles budgétaires de l'Union, qui exigent une vérification avant tout engagement de fonds publics — un principe simple : personne ne peut engager de l'argent public « par défaut », sans que quelqu'un l'ait vérifié. La proposition a été reconstruite pour remplacer le silence par un délai garanti de 10 jours ouvrables de vérification automatisée mais réelle.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur indépendant confirme que cette correction règle bien le problème du silence — mais relève un défaut bien plus grave que ni la fiche initiale ni le débat n'avaient repéré : <strong>l'enveloppe annuelle prévue (4 milliards d'euros, soit 28 milliards sur sept ans) est deux fois et demie plus grande que le compartiment entier du budget européen dans lequel elle est censée s'insérer</strong> (environ 11 milliards d'euros sur sept ans). C'est une erreur d'arithmétique budgétaire, pas une question d'opinion. Un second défaut, plus technique : la proposition prévoyait de déclarer automatiquement respectée une règle de participation privée minimale qui protège aussi les régimes d'aide nationaux — un effet de bord qui affaiblirait ces règles pour tout le monde, pas seulement pour ce dispositif.</p>
+        <h5>Verdict final</h5>
+        <p>Le principe (accréditation objective, vitesse garantie, pas de comité discrétionnaire) reste solide et utile. Mais l'enveloppe doit être redimensionnée à la taille réelle du compartiment budgétaire qui l'accueille avant que cette proposition puisse être présentée comme réaliste.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F4</div><div class="prop-title">Une option de rachat pour donner confiance aux premiers investisseurs institutionnels</div></div>
+    <div class="prop-badges"><span class="pill warn">Utile, à recalibrer</span></div></div>
+    <h4>Le problème</h4>
+    <p>Israël, dans les années 1990, a lancé son marché du capital-risque avec un programme (« Yozma ») où l'État co-investissait aux côtés de gestionnaires privés, en leur donnant une option de racheter la part publique à prix avantageux plus tard — ce qui réduisait le risque perçu d'entrer sur un marché jugé trop jeune. Mais le problème européen n'est pas le même qu'en Israël il y a trente ans : l'Europe ne manque pas de <em>gestionnaires</em> de fonds, elle manque de <em>souscripteurs</em> institutionnels (assureurs, fonds de pension) prêts à leur confier de l'argent.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Adapter l'idée en déplaçant l'option de rachat : ce ne sont plus les gestionnaires de fonds qui la reçoivent, mais les investisseurs privés (assureurs, fonds de pension) qui co-investissent aux côtés du budget européen dans un même fonds. Cela transforme leur première expérience dans cette classe d'actifs en un pari à risque plafonné et gain démultiplié.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a demandé d'ajouter une clause garantissant que le prix de l'option corresponde à ce qu'un investisseur privé exigerait dans les mêmes conditions (le test dit « de l'investisseur en économie de marché », utilisé pour vérifier qu'une intervention publique ne constitue pas une aide déguisée) et une méthode de calcul transparente de ce prix.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur relève une incohérence : ce test (« aide d'État », voir glossaire) ne s'applique en principe qu'aux ressources publiques <em>nationales</em> — pas aux fonds gérés directement par l'Union elle-même via la Banque européenne d'investissement. Le vrai cadre de référence est différent : les règles budgétaires de l'Union interdisent qu'elle assume un risque disproportionné par rapport aux autres investisseurs, ce qui exige de chiffrer et publier à l'avance « l'équivalent-subvention » de l'opération. Sur le prix lui-même : un remboursement au coût majoré de seulement 5 % par an est probablement inférieur à ce qu'exigerait un investisseur en capital-risque pour ce niveau de risque — soit il faut relever ce taux, soit réduire la part publique de 40 % à 25-30 %.</p>
+        <h5>Verdict final</h5>
+        <p>L'idée reste bonne — c'est la seule proposition de tout le dossier qui organise sa propre sortie plutôt que d'augmenter indéfiniment la part publique dans l'écosystème. Mais le prix de l'option et la référence juridique doivent être recalculés.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F5</div><div class="prop-title">Réformer la charge en capital des assureurs pour le capital-risque</div></div>
+    <div class="prop-badges"><span class="pill warn">Le principe tient, le chiffre était faux</span></div></div>
+    <h4>Le problème</h4>
+    <p>C'est, en ordre de grandeur, le levier le plus puissant de tout ce dossier (voir Partie 1). Le régime actuel (49 % de charge en capital hors régime spécial, 22 % avec le régime LTEI — voir glossaire) fonctionne comme un tout-ou-rien : soit l'actif remplit toutes les conditions du régime spécial, soit il retombe intégralement au régime le plus coûteux, sans aucune gradation entre les deux. Autre défaut : rien d'équivalent n'existe pour les actions <em>cotées</em> de croissance, ce qui pousse en pratique les assureurs à préférer que les entreprises restent privées plutôt que d'entrer en bourse.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Remplacer le tout-ou-rien par un barème progressif selon la durée réelle de détention (moins de 2 ans : 49 % inchangé ; 2 à 3 ans : 39 % ; 3 à 5 ans : 30 % ; 5 ans et plus : 22 % inchangé), et créer une nouvelle catégorie à 17 % pour les « actions d'innovation européennes », qui engloberait aussi, pour la première fois, certaines actions cotées.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a jugé la base de preuve solide (extension logique d'une réforme déjà décidée) et a demandé un avis préalable du régulateur des assurances (EIOPA) avant l'entrée en vigueur.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur montre que la nouvelle catégorie à 17 % pose deux problèmes distincts et plus profonds qu'un simple avis préalable ne résout pas. D'abord, un problème de procédure : une charge à 17 % dépasse probablement ce que la Commission peut décider seule par une simple modification technique — il faudrait repasser par le Parlement et le Conseil, une procédure plus lourde. Ensuite, et c'est le point le plus intéressant : <strong>la fiche affirmait, à tort, que les actions cotées relevaient aujourd'hui du même taux que les actions non cotées (49 %)</strong>. En réalité, sous le droit actuel, les actions cotées sur un marché réglementé européen relèvent déjà d'un taux inférieur (39 %). L'écart réel entre coté et non coté existe bien, mais il est deux fois plus petit que ce que la proposition affirmait — ce qui veut dire que le changement proposé est en réalité beaucoup plus ambitieux (39 % vers 17 %, pas 49 % vers 17 %) que ce qui a été présenté pour examen.</p>
+        <h5>Verdict final</h5>
+        <p>Le principe (remplacer un couperet par une progressivité réelle) reste le levier le plus prometteur du dossier entier. Mais les chiffres précis (17 %, et les paliers intermédiaires) doivent être recalculés par une étude technique du régulateur avant d'être présentés comme un objectif chiffré, et non l'inverse.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F6</div><div class="prop-title">Convertir une garantie publique en réduction directe de charge prudentielle</div></div>
+    <div class="prop-badges"><span class="pill bad">Retirée</span></div></div>
+    <h4>Le problème</h4>
+    <p>Aujourd'hui, les garanties publiques européennes servent à réduire le <em>risque économique</em> d'un investissement (elles couvrent une partie des pertes). Mais l'obstacle documenté à l'entrée des assureurs n'est pas d'abord le risque économique — c'est la <em>charge en capital réglementaire</em> qu'ils doivent mettre de côté (voir F5). Autrement dit, le budget européen finance aujourd'hui la mauvaise variable.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Créer une garantie budgétaire qui couvrirait les 10 premiers pourcents de perte sur un portefeuille d'actions d'innovation détenu par un assureur, en échange d'une réduction directe de sa charge en capital réglementaire (de 49 % ou 22 % jusqu'à 10 %) sur ce même portefeuille — transformant un euro de budget en points de charge en capital économisés plutôt qu'en investissement « mobilisé ».</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>C'est l'idée que les deux niveaux d'examen ont qualifiée de « la plus originale de tout le dossier ». Le premier débat l'a rejetée pour un motif de cohérence : le budget européen finance déjà, par d'autres propositions de ce même dossier, une partie des entreprises que cette garantie couvrirait — le garant et le garanti seraient donc trop liés l'un à l'autre pour que le régulateur des assurances accepte de reconnaître cette garantie comme une vraie réduction de risque.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur confirme le rejet, mais pour une raison plus fondamentale, de pure arithmétique : <strong>une couverture qui protège seulement contre les 10 premiers pourcents de perte ne peut pas justifier une réduction de charge à 10 %</strong>. La charge en capital réglementaire est calibrée pour mesurer un risque extrême, très au-delà de 10 % de perte — c'est précisément la partie du risque qu'une couverture de 10 % laisse de côté qui est la plus lourde à mesurer. Une garantie qui protège seulement le premier niveau de pertes, les plus probables et les moins graves, n'a donc quasiment aucun effet sur le risque qui détermine réellement la charge en capital.</p>
+        <h5>Verdict final</h5>
+        <p>Retirée. La vérification propose une version très différente qui pourrait, elle, fonctionner : une garantie couvrant une tranche <em>intermédiaire</em> de pertes (par exemple de 10 % à 40 %, pas de 0 % à 10 %), avec une réduction de charge <em>calculée</em> mathématiquement à partir de cette couverture plutôt que fixée arbitrairement — la seule version qu'un régulateur pourrait accepter.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F7</div><div class="prop-title">Un label « Épargne productive européenne », sans obligation d'y souscrire</div></div>
+    <div class="prop-badges"><span class="pill warn">Utile, mais fragile politiquement</span></div></div>
+    <h4>Le problème</h4>
+    <p>Les fonds de pension européens allouent en moyenne 0,01 % de leurs actifs au capital-risque — dix fois moins que les Américains, déjà jugés en retard. Mais toute tentative d'<em>imposer</em> une allocation minimale se heurte à une opposition déjà bien documentée : les fédérations de fonds de pension allemande et italienne ont explicitement rejeté un seuil pourtant non contraignant de 2 %, proposé par un eurodéputé, au nom de la prudence et de la diversification.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Ne pas imposer d'allocation. À la place, créer un label « Épargne productive européenne » réservé aux produits d'épargne dont au moins 10 % des encours vont vers des actifs productifs européens de long terme. Seuls les produits labellisés pourraient utiliser une dénomination faisant référence à l'Europe et bénéficier d'un passeport de distribution simplifié — un avantage conditionné à l'allocation, plutôt qu'une allocation imposée.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé le principe (conditionner un avantage plutôt qu'imposer une obligation, une technique juridique différente et beaucoup moins vulnérable) et a demandé un contrôle indépendant périodique pour éviter les abus d'étiquetage.</p>
+        <h5>Ce que la vérification indépendante a confirmé</h5>
+        <p>L'auditeur juridique confirme que le mécanisme est solide juridiquement (des précédents existent déjà : les labels ELTIF, EuVECA, obligations vertes européennes). Le cartographe politique, lui, maintient un doute réel côté acceptation : même sans obligation légale, les fédérations qui ont déjà rejeté un seuil non contraignant de 2 % pourraient percevoir ce mécanisme « se conformer ou s'expliquer » comme une pression fonctionnellement équivalente, malgré la différence juridique réelle entre les deux.</p>
+        <h5>Verdict final</h5>
+        <p>Juridiquement solide, mais politiquement fragile : à défendre activement dès la présentation du texte, en insistant explicitement sur le fait qu'aucune conséquence de supervision ne peut découler du seuil de 10 %.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F8</div><div class="prop-title">Une retraite paneuropéenne automatique pour les salariés des entreprises « EU Inc. »</div></div>
+    <div class="prop-badges"><span class="pill bad">Retirée</span></div></div>
+    <h4>Le problème</h4>
+    <p>L'Europe manque d'un investisseur institutionnel de long terme véritablement paneuropéen — les fonds de pension actuels relèvent de 27 systèmes nationaux distincts, avec un engagement moyen bien inférieur à celui des fonds américains.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Toute entreprise adoptant le futur statut européen « EU Inc. » affilierait automatiquement ses salariés à un plan de retraite paneuropéen (sauf refus exprès du salarié), avec une cotisation par défaut incluant une part patronale obligatoire.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a rejeté la proposition en raisonnant sur « l'objet principal » du texte : puisque son but réel est la protection sociale, elle ne peut pas s'appuyer sur une base légale de marché intérieur, quel que soit le véhicule (une forme de société optionnelle) utilisé pour la porter.</p>
+        <h5>Ce que la vérification indépendante a ajouté</h5>
+        <p>L'auditeur indépendant cite le texte exact qui tranche la question sans même avoir besoin de ce raisonnement indirect : <strong>l'article 114, paragraphe 2, du traité exclut explicitement de son champ les dispositions « relatives aux droits et intérêts des travailleurs salariés »</strong> — et une cotisation patronale obligatoire en est l'exemple même. Ce n'est donc pas une question d'appréciation ou d'interprétation ; c'est écrit noir sur blanc dans le texte du traité. Second problème, indépendant du premier : imposer une obligation sociale coûteuse sur une forme de société qui est censée rester <em>optionnelle</em> créerait une incitation directe à ne pas adopter ce nouveau statut — l'inverse de l'objectif recherché par tout le reste du dossier.</p>
+        <h5>Verdict final</h5>
+        <p>Retirée, sans ambiguïté. Ce qui peut survivre : une offre de retraite d'entreprise paneuropéenne strictement facultative, sans aucune obligation de cotisation patronale, et un renforcement de la portabilité des droits à la retraite pour les travailleurs mobiles (un texte européen existant déjà sur ce sujet).</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F9</div><div class="prop-title">Créer le marché secondaire privé qui manque en Europe</div></div>
+    <div class="prop-badges"><span class="pill warn">Utile, mécanisme à reconstruire</span></div></div>
+    <h4>Le problème</h4>
+    <p>Aux États-Unis, un marché organisé de plus de 120 milliards de dollars par an permet aux salariés et aux investisseurs historiques d'une startup de revendre leurs parts avant l'introduction en bourse. Rien d'équivalent n'existe en Europe — ce qui dégrade l'attractivité des stock-options pour les salariés (ils ne peuvent rien monétiser), pousse les entreprises à payer davantage en cash plutôt qu'en actions, et prive les fonds de capital-risque d'un moyen de rendre de l'argent à leurs propres investisseurs avant la fin de vie du fonds.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Une nouvelle catégorie de plateforme de négociation, agréée par le régulateur européen des marchés (ESMA), fonctionnant par fenêtres périodiques (pas en continu) pour des titres non cotés de sociétés européennes établies depuis moins de vingt ans. Dans sa version initiale, toute entreprise « EU Inc. » de plus de 250 salariés serait <em>obligée</em> d'organiser une fenêtre de liquidité si ses salariés le demandent.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a jugé l'architecture globalement cohérente avec les règles existantes (Prospectus, abus de marché, dépositaires centraux), et a demandé de transformer l'obligation de fenêtre en simple avantage incitatif plutôt qu'une obligation pure, pour respecter la liberté d'entreprendre.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur montre que l'affirmation de cohérence du premier débat était en réalité fausse sur un point central : <strong>une règle du droit européen des marchés financiers (article 1, paragraphe 7, de la directive MiFID II) impose que tout système qui met en relation plusieurs acheteurs et plusieurs vendeurs fonctionne obligatoirement comme un marché réglementé ou l'une des deux catégories existantes de plateforme</strong> — une disposition insérée précisément pour empêcher la création d'une « quatrième catégorie » non régulée, ce que cette proposition ferait pourtant. La bonne construction juridique est différente : un sous-régime allégé mais rattaché aux catégories existantes, sur le modèle de ce qui existe déjà pour les petits marchés de croissance PME. Deuxième défaut non vu : le règlement européen sur les titres dématérialisés (invoqué pour résoudre le problème du transfert de propriété) ne règle en réalité pas les formalités de droit national qui s'appliquent aux parts de certaines formes de société (acte notarié obligatoire pour transférer des parts de GmbH allemande, par exemple) — la plateforme ne peut donc fonctionner correctement, au départ, que pour les formes de société à titres librement cessibles, comme la future EU Inc.</p>
+        <h5>Verdict final</h5>
+        <p>Le besoin reste réel et bien documenté, mais le mécanisme juridique doit être reconstruit comme un sous-régime des catégories de plateformes de négociation qui existent déjà, et non comme une catégorie entièrement nouvelle.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F10</div><div class="prop-title">Un investisseur public qui amorce chaque introduction en bourse européenne</div></div>
+    <div class="prop-badges"><span class="pill bad">Écartée, part utile récupérable</span></div></div>
+    <h4>Le problème</h4>
+    <p>Le vrai obstacle à la cotation en Europe n'est pas le coût administratif (déjà réduit par un texte récent, le « Listing Act ») — c'est l'absence d'un socle d'investisseurs institutionnels prêts à acheter des actions de sociétés de taille moyenne au moment de leur entrée en bourse. Sans repreneurs, le carnet d'ordres reste peu profond, ce qui décourage encore plus les investisseurs suivants — un cercle qui s'auto-entretient.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Un fonds public qui s'engage automatiquement, sur simple demande de l'émetteur, à souscrire jusqu'à 15 % de toute introduction en bourse européenne dans une fourchette de taille donnée, au prix final fixé par le marché — sans aucune appréciation sur la qualité de l'opération, précisément pour éviter le reproche de « choisir les gagnants ».</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a traité le sujet uniquement sous l'angle du risque d'aide d'État déguisée, et a demandé une procédure de notification préalable simplifiée auprès de la Commission ainsi qu'un plafond de fréquence par marché.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur montre que ce cadrage passait à côté du vrai problème — <strong>un défaut économique, pas seulement juridique</strong>. Puisque le fonds public s'engage automatiquement et sans appréciation, il sera systématiquement sollicité par les émetteurs dont le carnet d'ordres se remplit mal (ceux qui ont le plus besoin d'un souscripteur de secours) et jamais par ceux dont l'opération est déjà sursouscrite. La caractéristique même qui protège juridiquement l'instrument (l'absence de choix discrétionnaire) garantit donc, mécaniquement, que son portefeuille sera de moins bonne qualité que la moyenne du marché. Deuxième défaut : annoncer publiquement, dès le départ, que la participation publique sera revendue progressivement sur cinq ans crée un poids connu d'avance que les investisseurs intègrent dans le prix dès l'introduction — l'instrument peut donc, paradoxalement, faire baisser le prix de l'opération qu'il est censé soutenir. Enfin, l'enveloppe prévue (10 milliards d'euros) dépasse, là aussi, la taille du compartiment budgétaire qui devait l'accueillir.</p>
+        <h5>Verdict final</h5>
+        <p>Écartée sous cette forme. Un élément de la proposition survit et convainc les deux niveaux d'examen : conditionner tout soutien public à l'engagement, par l'émetteur, de financer pendant trois ans une vraie couverture analytique indépendante — cela répond directement au vrai problème identifié (absence de suivi par les analystes pour les moyennes capitalisations), sans le défaut économique de l'antisélection.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F11</div><div class="prop-title">Adapter automatiquement le budget de financement quand le marché se retourne</div></div>
+    <div class="prop-badges"><span class="pill warn">Un volet solide, un volet toujours bloqué</span></div></div>
+    <h4>Le problème</h4>
+    <p>Deux problèmes distincts, réunis dans une même proposition. D'abord, un taux unique appliqué à toute la garantie budgétaire du futur fonds européen ne tient pas compte du fait que certains types de portefeuilles (garanties PME) ont historiquement des pertes bien inférieures à d'autres (opérations dans des pays tiers) — un taux différencié libérerait plus de capacité de financement à budget constant. Ensuite, un problème plus subtil : quand un tiers des investisseurs d'un marché sont des acteurs publics, le cycle du capital-risque devient partiellement calé sur le cycle budgétaire — qui, historiquement, se resserre justement au moment où les marchés privés se retournent. Un investisseur public censé stabiliser le marché finit par l'amplifier.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>D'une part, calibrer le taux de provisionnement par type de portefeuille selon les pertes réellement observées plutôt qu'un taux uniforme. D'autre part, un « stabilisateur automatique » : si la collecte de capital-risque européenne chute significativement, le plafond annuel de déploiement du budget public serait relevé automatiquement de 50 %, sans nouvelle décision du Conseil ou du Parlement.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé le premier volet (taux différencié) et rejeté le déclenchement totalement automatique du second, en le convertissant en une « décision d'exécution » de la Commission avec un délai contraint de 10 jours — une procédure plus rapide qu'une négociation budgétaire classique, mais toujours formellement décidée par quelqu'un.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>L'auditeur montre que cette correction ne règle pas le vrai problème : une « décision d'exécution » sert, par nature, à mettre en musique des règles déjà votées — elle <strong>ne peut pas</strong> servir à ouvrir par avance des crédits appartenant à des exercices budgétaires futurs. Ce pouvoir reste, dans les traités, exclusivement réservé au Parlement et au Conseil ensemble, chaque année. La bonne construction serait un droit de reprofilage <em>préautorisé</em> et plafonné à l'avance dans le texte lui-même, activé par une procédure accélérée où l'autorité budgétaire garde un droit d'objection dans un délai bref plutôt que d'être totalement absente. Second défaut, jamais soulevé : l'indicateur censé déclencher le mécanisme (la collecte de capital-risque européenne, mesurée conjointement par deux institutions) n'a, à ce jour, aucune définition juridique ni méthode d'audit précise — un mécanisme budgétaire fondé sur un indicateur mal défini est manipulable.</p>
+        <h5>Verdict final</h5>
+        <p>Le volet « taux différencié par type de portefeuille » est solide et peut avancer indépendamment. Le volet « stabilisateur automatique » reste à retravailler autour d'un droit de reprofilage préautorisé avec objection rapide, plutôt qu'une automaticité totale — et l'indicateur déclencheur doit être défini juridiquement avant toute entrée en vigueur.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F12</div><div class="prop-title">Recycler la garantie budgétaire européenne par la titrisation</div></div>
+    <div class="prop-badges"><span class="pill bad">Le calcul central est faux</span></div></div>
+    <h4>Le problème</h4>
+    <p>Chaque euro de garantie publique accordé aujourd'hui « immobilise » une provision correspondante — l'idée était de transformer ces garanties déjà accordées en un produit financier qui pourrait être revendu à des investisseurs, libérant de la provision pour accorder de nouvelles garanties.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>La Banque européenne d'investissement structurerait chaque année un produit financier découpant son portefeuille de garanties en tranches : l'Union garderait les 8 premiers pourcents de pertes (la tranche la plus risquée), et vendrait le reste à des investisseurs institutionnels — l'idée étant qu'un euro provisionné puisse ainsi « soutenir trois générations successives » de nouvelles garanties.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé la proposition sans aucune réserve, en la jugeant « bien articulée sur une négociation déjà en cours au niveau européen ».</p>
+        <h5>Ce que la vérification indépendante a changé — c'est le désaccord jugé le plus important de tout le dossier</h5>
+        <p>L'auditeur montre que <strong>le raisonnement financier central est inversé</strong>. Le montant qu'il faut provisionner pour une garantie dépend de la perte <em>la plus probable et attendue</em> — et cette perte attendue se concentre presque toujours dans la tranche la plus risquée, celle des premiers pourcents de perte. Or c'est précisément cette tranche que la proposition prévoit de <strong>garder</strong>, en vendant les tranches plus sûres. Résultat : l'Union conserve l'essentiel du risque qui détermine sa provision, et ne libère donc quasiment rien. L'affirmation « chaque euro soutient trois générations de garantie » ne tient pas : pour que le recyclage fonctionne réellement, il faudrait faire l'inverse — vendre la tranche la plus risquée (ou une tranche intermédiaire) et garder une tranche plus sûre.</p>
+        <h5>Verdict final</h5>
+        <p>Le principe général (utiliser la titrisation pour démultiplier l'effet d'une garantie publique) reste valable, mais le découpage doit être inversé pour produire l'effet annoncé. Point additionnel : un mécanisme technique très proche existe déjà dans le droit européen actuel pour ce type exact de portefeuille — créer une nouvelle catégorie dédiée fait donc en partie doublon avec un outil déjà disponible.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F13</div><div class="prop-title">Sanctuariser une part du budget pour le financement de l'innovation</div></div>
+    <div class="prop-badges"><span class="pill bad">Juridiquement impossible en l'état</span></div></div>
+    <h4>Le problème</h4>
+    <p>Le compartiment « fonds propres et garanties » du futur budget européen ne représente que 2,7 % du fonds qui doit l'accueillir — dans toute négociation budgétaire à venir, c'est typiquement le genre de ligne technique, petite et sans électorat direct, qui sert de variable d'ajustement en cas de coupe. Toute proposition qui repose sur cette ligne budgétaire est donc fragile par construction.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Réserver juridiquement, dans la décision créant une nouvelle ressource propre pour le budget européen, une part fixe (15 %) de son produit annuel, exclusivement destinée à ce compartiment, année après année, sans possibilité de réaffectation.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a rejeté la proposition en tant que texte de droit, principalement au motif que la décision créant une nouvelle ressource propre nécessite l'unanimité des 27 États et une ratification par chaque parlement national — un obstacle très difficile. Il l'a maintenue comme simple « position de négociation » plutôt que comme texte proposé pour adoption.</p>
+        <h5>Ce que la vérification indépendante a précisé</h5>
+        <p>L'auditeur confirme le rejet, mais identifie un motif encore plus fondamental que l'unanimité : <strong>le principe d'universalité budgétaire</strong> (voir glossaire) interdit, en tant que règle de base des finances de l'Union, de « flécher » une recette précise vers une dépense précise — sauf pour des catégories très étroites qui ne couvrent pas ce cas de figure. Même si l'unanimité était obtenue, ce type de fléchage resterait, par nature, incompatible avec les règles budgétaires actuelles de l'Union. Second point, arithmétique : 15 % du produit attendu des nouvelles ressources propres à partir de 2028 (plusieurs dizaines de milliards d'euros par an, une bonne partie servant à rembourser l'emprunt commun contracté pendant la pandémie) représenterait un montant bien supérieur à ce que le compartiment est censé simplement « sanctuariser ».</p>
+        <h5>Verdict final</h5>
+        <p>Impossible comme texte de droit. Ce qui peut réellement survivre, et que la vérification juge être « la meilleure idée de la fiche » : inscrire dans le règlement du futur fonds lui-même des crédits d'engagement pluriannuels non soumis à l'annualité budgétaire classique — une mesure de prévisibilité pour les investisseurs, permise par les règles budgétaires actuelles, sans passer par la voie bloquée des ressources propres.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F14</div><div class="prop-title">Un guichet unique pour les rachats d'entreprises transfrontaliers</div></div>
+    <div class="prop-badges"><span class="pill warn">Une moitié solide, une moitié impossible</span></div></div>
+    <h4>Le problème</h4>
+    <p>43 % des investisseurs citent l'absence de rachats (fusions-acquisitions) comme leur première contrainte de financement — et une part de ce blocage vient d'un problème très concret : un acquéreur d'une entreprise présente dans huit pays européens peut devoir déposer jusqu'à huit dossiers distincts de contrôle (anti-concentration, filtrage des investissements étrangers), avec des délais et des critères non harmonisés. Ce coût fixe, disproportionné pour des opérations de taille moyenne, se répercute en amont : un fonds qui anticipe une sortie compliquée paie moins cher dès le premier tour.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Un dépôt unique auprès de la Commission européenne, remplaçant toutes les notifications nationales, pour toute acquisition d'une entreprise de moins de 100 millions d'euros de chiffre d'affaires — avec un délai ferme de décision (45 jours) et une voie accélérée (20 jours) réservée aux acquéreurs déjà établis dans l'Union.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a distingué deux volets très différents dans la proposition : le contrôle anti-concentration (déjà une compétence de l'Union) et le filtrage des investissements étrangers pour raison de sécurité nationale (une compétence que les traités réservent explicitement aux États membres). Il a validé le premier volet en le scindant du second.</p>
+        <h5>Ce que la vérification indépendante a confirmé et enrichi</h5>
+        <p>Elle confirme cette analyse et ajoute un élément positif que ni la fiche ni le débat n'avaient identifié : un guichet unique pour le seul contrôle anti-concentration répond en réalité à un vrai vide juridique révélé par une décision récente de la Cour de justice de l'Union, qui a fermé une voie de renvoi qu'utilisaient auparavant certaines petites opérations. Sur le second volet (le filtrage pour raison de sécurité), la vérification confirme le rejet et ajoute un point important : la proposition prévoyait une « autorisation automatique en cas de silence » de l'administration — un mécanisme qu'aucun État membre n'acceptera jamais pour des questions de sécurité nationale, et qu'il serait d'ailleurs imprudent d'accepter.</p>
+        <h5>Verdict final</h5>
+        <p>Le guichet unique pour le contrôle anti-concentration est solide et répond à un vrai vide juridique — à garder tel quel. Le volet sécurité nationale doit être entièrement reconstruit autour d'un dossier de dépôt commun (simple point d'entrée administratif) mais avec des décisions qui restent nationales, sans jamais de silence valant autorisation.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">F15</div><div class="prop-title">Un filet de sécurité transversal contre la concentration des risques</div></div>
+    <div class="prop-badges"><span class="pill ok">Solide</span></div></div>
+    <h4>Le problème</h4>
+    <p>Cette proposition n'existait pas dans le jeu initial — elle est née d'une exigence posée par l'auditeur lui-même en cours de débat. Constat : la base factuelle documente six sources de concentration de risque qui se recoupent (l'intelligence artificielle représente déjà plus de 60 % de la valeur des transactions de capital-risque européennes ; les sorties sont ultra-concentrées sur un très petit nombre d'opérations géantes ; une seule institution publique joue le rôle de pivot du réseau d'investisseurs transfrontalier). Aucune des propositions précédentes de ce dossier ne comportait de limite de concentration ni de suivi consolidé — chacune, prise isolément, semble raisonnable, mais leur somme augmente une exposition que personne ne surveille dans son ensemble.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Ajouter, comme condition attachée à plusieurs des propositions précédentes (celles qui touchent aux assureurs, à la liquidité secondaire, à l'ancrage boursier), des limites de concentration sectorielle publiées régulièrement, un partage consolidé des expositions croisées entre les institutions publiques concernées, des outils de gestion de liquidité obligatoires pour tout produit ouvert au grand public, et un suivi renforcé de la condition de détention longue pour le régime LTEI.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé la proposition, en la présentant comme la condition de recevabilité de tout le reste du compartiment financement plutôt que comme une option parmi d'autres.</p>
+        <h5>Ce que la vérification indépendante a confirmé</h5>
+        <p>Elle confirme que le besoin est réel et documenté par une institution officielle (un rapport conjoint de la Banque centrale et du régulateur de stabilité financière européens, publié en février 2026, appelait déjà explicitement à ce type de mécanisme). Une seule correction de proportionnalité : plutôt que de créer un organe entièrement nouveau, il vaut mieux loger ce suivi dans une structure dédiée du régulateur de stabilité financière qui existe déjà — et surtout, imposer une vraie obligation légale de déclaration aux institutions publiques concernées, qui aujourd'hui ne sont soumises à aucune règle de reporting prudentiel sur ce sujet précis. Sans cette obligation, le mécanisme se réunirait sans données à examiner.</p>
+        <h5>Verdict final</h5>
+        <p>Solide, avec une seule correction : s'appuyer sur une structure existante plutôt que d'en créer une nouvelle, et rendre obligatoire la transmission des données.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="rentabilite" class="wrap wide">
+  <p class="kicker">Toujours le premier tour</p>
+  <h2>Axe 2 — La rentabilité</h2>
+  <div class="axis-intro">
+    <p>Sept propositions (R1 à R7) attaquent un problème différent de l'axe précédent : une fois financée, une entreprise européenne paie-t-elle plus cher que sa concurrente américaine pour la même activité ? La base factuelle répond oui, et précise où : la fiscalité des stock-options, le coût du capital de dette, le coût de friction de chaque levée de fonds successive, et la charge de conformité réglementaire rapportée à la taille de l'entreprise plutôt qu'en valeur absolue.</p>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">R1</div><div class="prop-title">Unifier la fiscalité des stock-options dans toute l'Union (« EU-ESOP »)</div></div>
+    <div class="prop-badges"><span class="pill warn">Deux volets, deux destins différents</span></div></div>
+    <h4>Le problème</h4>
+    <p>La base factuelle est catégorique sur ce point : le futur statut « EU Inc. » manquerait l'essentiel de son objet s'il ne traitait pas ce sujet, parce que le droit des sociétés n'est <em>pas</em> le principal poste de coût qui pousse les entreprises à préférer d'autres juridictions. Le vrai problème est double : plusieurs États membres imposent les stock-options au moment de leur attribution ou de leur exercice plutôt qu'à leur revente — obligeant un salarié à payer un impôt sur un titre qu'il ne peut pas encore vendre — et les charges sociales patronales rendent leur attribution coûteuse pour l'employeur, indépendamment de toute liquidité.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Une directive imposant, dans toute l'Union, une imposition uniquement au moment de la revente des titres, une exonération de charges sociales patronales à l'attribution, et la portabilité des droits en cas de mobilité du salarié entre pays.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a demandé de scinder la proposition en deux, en distinguant ce qui relève de la fiscalité (unanimité requise) de ce qui n'en relève pas.</p>
+        <h5>Ce que la vérification indépendante a précisé</h5>
+        <p>Elle confirme la nécessité de scinder, mais montre que la fiche confondait deux obstacles bien plus différents qu'il n'y paraît. Le moment de l'imposition relève effectivement de la fiscalité (unanimité, article 115). Mais <strong>l'exonération de charges sociales patronales n'est pas, juridiquement, une question fiscale</strong> — les cotisations sociales relèvent d'une autre base légale (article 153 du traité), qui protège explicitement l'équilibre financier des régimes nationaux de sécurité sociale. C'est un obstacle différent, et plus dur, pas la même difficulté sous un autre nom. Autre point : le texte officiel créant le futur statut « EU Inc. » comporte déjà, depuis mars 2026, un volet sur ce sujet précis — cette proposition doit donc se présenter comme un amendement à ce texte existant, pas comme un instrument entièrement nouveau, sous peine de faire double emploi.</p>
+        <h5>Verdict final</h5>
+        <p>Ce qui peut avancer sans unanimité (le séquestre agréé des titres, la non-déchéance en cas de départ du salarié, la portabilité contractuelle) est solide. Le moment de l'imposition et l'exonération de charges sociales restent chacun bloqués par une unanimité différente.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">R2</div><div class="prop-title">Un « QSBS » européen — exonération de plus-value pour l'investisseur providentiel</div></div>
+    <div class="prop-badges"><span class="pill bad">À ne pas déposer sous cette forme</span></div></div>
+    <h4>Le problème</h4>
+    <p>Les États-Unis exonèrent d'impôt une bonne partie de la plus-value réalisée sur des actions de petites entreprises détenues plusieurs années (le régime « QSBS »), avec un barème dégressif et une indexation automatique. Rien d'équivalent unifié n'existe en Europe : chaque pays a son propre régime national (souvent réservé, en pratique, aux investissements dans des entreprises du même pays), ce qui crée une vraie barrière à l'investissement transfrontalier, indépendamment de la question de la compétitivité face aux États-Unis.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Une directive imposant à chaque État membre un plancher minimal d'exonération dégressive de plus-value pour les investissements dans de jeunes entreprises innovantes, avec une clause obligeant chaque État à étendre son propre régime national aux investissements faits dans d'autres pays européens.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a repéré, comme point fort de la proposition, que la clause de non-discrimination entre investissement domestique et transfrontalier est probablement déjà obtenable devant les tribunaux, sans nouvelle loi, par la voie de la libre circulation des capitaux — mais il a maintenu le reste du texte (barème, plafond, indexation) comme une proposition législative à conserver, sous condition.</p>
+        <h5>Ce que la vérification indépendante a tranché</h5>
+        <p>Elle est d'accord sur le point central (la clause de non-discrimination) mais tire une conclusion différente pour le reste : ce « reste » n'est pas un texte à corriger, c'est un texte à ne pas déposer. Contrairement à un précédent souvent cité en exemple (une directive qui évite la double imposition d'un même flux d'argent entre filiales d'un même groupe, dans une logique d'intégration économique classique), un plancher d'exonération de plus-value pour des personnes physiques est une <em>dépense fiscale</em> nette et immédiate pour chaque budget national, sans la même justification d'intégration — ce qui rend l'unanimité requise hors d'atteinte pour la raison la plus simple qui soit : aucun gouvernement ne signe volontiers un texte qui réduit ses propres recettes fiscales sans contrepartie claire.</p>
+        <h5>Verdict final</h5>
+        <p>À ne pas déposer comme texte législatif. La bonne stratégie, selon les deux niveaux d'examen : faire valoir la clause de non-discrimination devant les tribunaux (elle est probablement déjà exigible), et transformer les bons éléments de conception (barème dégressif, indexation automatique) en recommandations non contraignantes plutôt qu'en obligation légale.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">R3</div><div class="prop-title">Une prime européenne versée directement à toute levée de fonds propres</div></div>
+    <div class="prop-badges"><span class="pill warn">Bonne idée, il manque une règle de rationnement</span></div></div>
+    <h4>Le problème</h4>
+    <p>La Commission avait proposé un texte (« DEBRA ») pour corriger un biais fiscal ancien qui favorise partout la dette par rapport aux fonds propres — pénalisant justement les entreprises en forte croissance qui ne sont pas encore rentables. Ce texte vient d'être retiré, faute de soutien suffisant au Conseil. Résultat : le système fiscal continue de favoriser la dette pendant que, dans le même temps, les nouvelles règles prudentielles (F5) commencent à favoriser les fonds propres — une contradiction de politique publique documentée et non résolue.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Puisque la voie fiscale est bloquée, reproduire le même effet économique par un versement direct du budget européen : 8 % du montant de toute augmentation de capital en numéraire réalisée par une jeune entreprise éligible, versé automatiquement dans les 30 jours suivant l'enregistrement de l'opération, sans comité de sélection.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé le raisonnement juridique (un versement direct du budget européen géré par la Commission n'est pas une « ressource d'État », donc pas soumis aux règles d'aide d'État — voir glossaire) et a demandé une règle de non-cumul avec les aides nationales existantes, pour éviter un double financement du même besoin.</p>
+        <h5>Ce que la vérification indépendante a ajouté</h5>
+        <p>Elle confirme le raisonnement juridique et précise même le point technique exact qui le rend valide : le texte doit explicitement montrer que le montant versé dépend du <em>capital souscrit</em>, une grandeur économique neutre, et non d'une grandeur fiscale — c'est cette distinction précise qui permet d'éviter l'exclusion prévue par les traités pour les mesures « contenant des dispositions fiscales » (voir la proposition N1 plus bas, qui échoue précisément parce qu'elle ne respecte pas cette distinction). Mais elle relève un défaut que personne n'avait chiffré : au rythme actuel des levées de fonds propres en Europe, l'enveloppe annuelle prévue (environ 850 millions d'euros) serait épuisée en quelques mois seulement — ce qui recréerait exactement la file d'attente administrative que le versement automatique, sans comité, était censé éviter.</p>
+        <h5>Verdict final</h5>
+        <p>Le mécanisme juridique est solide et bien conçu. Il manque une règle explicite de rationnement (par exemple des fenêtres de versement plafonnées, avec réduction proportionnelle si la demande dépasse l'enveloppe) pour que l'automaticité promise soit tenable dans la durée.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">R4</div><div class="prop-title">Simplifier chaque levée de fonds successive (la « bande de capital »)</div></div>
+    <div class="prop-badges"><span class="pill ok">La proposition la plus solide du dossier</span></div></div>
+    <h4>Le problème</h4>
+    <p>Dans la plupart des pays européens, chaque augmentation de capital d'une société exige une décision d'assemblée générale et, souvent, un acte notarié distinct — un coût de friction, en temps et en argent, qui rend structurellement non rentables les petits tours de financement (moins de 250 000 euros) et pousse vers des levées plus grosses et plus tardives. Aux États-Unis, un instrument standardisé (le « SAFE ») permet de boucler un tour d'amorçage en deux à trois semaines sans cette lourdeur.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Reprendre une réforme suisse entrée en vigueur en 2023 : l'assemblée générale peut autoriser à l'avance son conseil d'administration, pour une durée de cinq ans, à faire varier le capital de la société de plus ou moins 50 %, sans nouvelle décision collective ni acte notarié à chaque opération. Complété par un instrument convertible standardisé, intégré directement au futur statut « EU Inc. ».</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a salué la proposition comme la plus solide de tout le dossier et a demandé une seule correction : ajouter un droit d'opposition des créanciers avant toute réduction de capital dans cette « bande » — une protection que le modèle suisse original comporte, et que la fiche avait omis de reprendre.</p>
+        <h5>Ce que la vérification indépendante a confirmé et affiné</h5>
+        <p>Elle confirme entièrement le jugement favorable et la correction demandée, en ajoutant une précision technique utile : un texte européen existant sur les modifications de capital ne s'applique en réalité qu'aux sociétés anonymes classiques, pas à la future forme « EU Inc. » (une forme de droit européen à part entière) — ce qui veut dire que cette réforme n'a besoin d'aucune dérogation à ce texte existant, elle peut être écrite directement dans le nouveau statut sans complication supplémentaire.</p>
+        <h5>Verdict final</h5>
+        <p>Solide, avec une seule correction mineure déjà identifiée par les deux niveaux d'examen : le droit d'opposition des créanciers.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">R5</div><div class="prop-title">Inverser la charge de la preuve pour l'accès au marché unique</div></div>
+    <div class="prop-badges"><span class="pill bad">Une bonne idée, un mécanisme illégal sur deux points</span></div></div>
+    <h4>Le problème</h4>
+    <p>Entrer sur un nouveau marché national européen — même à l'intérieur du marché unique — exige souvent un nouvel enregistrement, une adaptation contractuelle, parfois un agrément sectoriel spécifique. La Banque centrale européenne évalue ce frottement, pour les services, à l'équivalent d'un droit de douane de 95 % — le frottement le plus élevé de tous les secteurs mesurés, largement supérieur à celui, déjà connu, sur les biens physiques.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Une autorisation obtenue dans un pays européen deviendrait automatiquement valable dans un autre après 60 jours si ce second pays n'a pas refusé explicitement (le « silence vaut accord »), avec un recours accéléré devant la Commission assorti d'une astreinte en cas de blocage prolongé, et un passeport automatique pour les autorisations obtenues dans les « bacs à sable » réglementaires nationaux (des zones test permettant d'expérimenter une activité sous un cadre allégé).</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a repéré un vrai problème et l'a corrigé : le « silence vaut accord » existe déjà en droit européen pour les services classiques, mais un texte spécifique exclut explicitement la banque, l'assurance et la santé de ce mécanisme — la proposition a donc été recadrée pour exclure ces trois secteurs, exactement comme le texte existant le fait déjà.</p>
+        <h5>Ce que la vérification indépendante a ajouté</h5>
+        <p>Elle salue cette correction, bien vue, mais identifie <strong>deux défauts indépendants, jamais soulevés</strong>, qui restent entiers même après cette correction. D'abord, l'astreinte prévue contre un État membre récalcitrant : la Commission n'a tout simplement pas ce pouvoir en dehors d'une procédure judiciaire complète devant la Cour de justice, avec un arrêt préalable — c'est exactement pourquoi le mécanisme européen équivalent déjà existant (« SOLVIT ») n'est, aujourd'hui, jamais contraignant. Ensuite, le passeport automatique pour les « bacs à sable » : ces dispositifs sont, par construction actuelle, strictement nationaux et sans validité transfrontalière — et dans le secteur financier en particulier, l'architecture actuelle « passeporte » des agréments complets, jamais de simples dérogations expérimentales. Faire reconnaître automatiquement, dans 26 autres pays, une dérogation accordée par un seul régulateur reviendrait à créer une brèche que l'architecture actuelle n'a jamais permise.</p>
+        <h5>Verdict final</h5>
+        <p>Ce qui survit et convainc les deux examens : des délais maximaux contraignants avec statistiques publiées, l'obligation de motiver précisément tout refus, et des bacs à sable <em>conjoints</em> entre régulateurs plutôt qu'une reconnaissance automatique unilatérale. L'astreinte et le passeport automatique doivent être abandonnés.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">R6</div><div class="prop-title">Un test « toute nouvelle règle doit prouver qu'elle ne casse pas les petites entreprises »</div></div>
+    <div class="prop-badges"><span class="pill warn">Le diagnostic est juste, un des deux outils ne marche pas</span></div></div>
+    <h4>Le problème</h4>
+    <p>Un coût de conformité de 500 000 euros par an est négligeable pour un grand groupe et représente 10 % du chiffre d'affaires d'une scale-up de 5 millions d'euros. C'est ce <strong>ratio</strong>, pas le montant en valeur absolue, qui détermine si une entreprise en croissance doit sacrifier de la R&D ou du commercial pour rester en conformité — et 70 % des fondateurs européens jugent aujourd'hui l'environnement réglementaire restrictif.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Deux outils. D'abord, obliger toute nouvelle règle européenne à chiffrer son coût de conformité en pourcentage du chiffre d'affaires d'une entreprise de référence (50 salariés, 10 millions d'euros de chiffre d'affaires), et pas seulement en valeur absolue agrégée. Ensuite, une « clause de caducité » : toute obligation dont le coût dépasse un certain seuil deviendrait automatiquement caduque pour les petites entreprises après cinq ans, sauf renouvellement explicite.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a jugé le diagnostic juste et a demandé d'exclure de la clause de caducité automatique toute obligation touchant à la santé, la sécurité, l'environnement ou les droits fondamentaux — pour éviter qu'une règle protectrice ne disparaisse simplement faute d'avoir été renouvelée à temps.</p>
+        <h5>Ce que la vérification indépendante a montré</h5>
+        <p>Elle va plus loin : ce n'est pas seulement une question de <em>quel</em> type d'obligation exclure, c'est que la clause de caducité automatique ne peut, par construction, <strong>fonctionner pour aucune obligation</strong>, quel que soit son sujet — un principe juridique de base veut qu'un texte plus ancien ne puisse pas rendre caduc, par avance, un texte plus récent adopté par les mêmes institutions. La clause ne produirait un effet que dans le seul cas où un texte futur la reprendrait lui-même explicitement — c'est-à-dire précisément le cas où elle serait devenue inutile. Autre défaut, de forme cette fois : un règlement qui imposerait à la Commission le contenu précis de ses futures analyses d'impact empiète sur son droit propre d'initiative législative, garanti par les traités — la bonne voie est un accord entre les institutions elles-mêmes (ce qui existe déjà, et qu'il suffirait de compléter), pas une loi qui s'imposerait à la Commission de l'extérieur.</p>
+        <h5>Verdict final</h5>
+        <p>La clause de caducité automatique ne peut pas fonctionner juridiquement, sous aucune forme, et doit être remplacée par une obligation de réexamen périodique. En revanche, l'élément jugé « le plus utile et le moins contesté » par les deux niveaux d'examen — un inventaire biennal du coût <em>cumulé</em> de toutes les règles existantes, et pas seulement de chaque nouvelle règle prise isolément — reste solide et mérite d'avancer seul.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">R7</div><div class="prop-title">Une catégorie bancaire allégée pour prêter aux jeunes entreprises innovantes</div></div>
+    <div class="prop-badges"><span class="pill bad">Écartée, en grande partie déjà résolue ailleurs</span></div></div>
+    <h4>Le problème</h4>
+    <p>Prêter à une jeune entreprise sans garantie tangible ni notation coûte très cher en capital réglementaire pour une banque classique — ce qui explique que la dette de croissance (« venture debt ») en Europe soit fournie par des fonds spécialisés à 10-14 % d'intérêt, plutôt que par des banques à 7-9 % comme aux États-Unis, où existent des banques spécialisées dans ce type de financement.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Trois volets : une nouvelle catégorie d'exposition bancaire « entreprise innovante » avec une charge en capital réduite ; une réduction supplémentaire quand le prêt est garanti par le Fonds européen d'investissement ; et une licence bancaire allégée (capital minimal réduit de 5 à 1 million d'euros), réservée aux prêteurs qui ne collectent pas de dépôts du grand public, pour recréer l'équivalent d'une banque spécialisée américaine du financement de l'innovation.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a demandé une démonstration chiffrée que la charge en capital réduite reste compatible avec le plancher prudentiel international (« Bâle III »), et une clarification du régime de résolution applicable à la nouvelle licence bancaire allégée en cas de faillite.</p>
+        <h5>Ce que la vérification indépendante a ajouté — et c'est un cas où elle change complètement la conclusion</h5>
+        <p>Elle relève quatre défauts distincts. D'abord, une catégorie similaire pour les PME existe déjà dans le droit bancaire européen — et les études officielles n'ont <strong>jamais démontré</strong> qu'elle avait effectivement augmenté l'offre de crédit aux PME ; ajouter une troisième catégorie sans preuve d'efficacité de la première ne passerait pas un examen d'impact sérieux. Ensuite, un défaut de double comptage : la réduction supplémentaire prévue en cas de garantie publique compte en réalité deux fois le même effet, une réduction équivalente existant déjà mécaniquement dès qu'une garantie de ce type est en place. Ensuite, un point technique : reconnaître un simple « engagement de réinvestissement » des actionnaires comme garantie contredit une règle bancaire de base qui exige qu'une garantie soit financée et juridiquement exécutoire. Enfin et surtout, le plus important : <strong>un texte européen récent (« AIFMD II »), entré en application en avril 2026, a déjà créé un régime harmonisé permettant à des fonds d'octroyer eux-mêmes des prêts, avec passeport européen</strong> — ni la proposition ni le premier débat ne le mentionnent. La nouvelle licence bancaire allégée que R7 veut créer fait donc, en grande partie, doublon avec un outil déjà disponible depuis quelques mois.</p>
+        <h5>Verdict final</h5>
+        <p>Écartée dans sa forme actuelle. Ce qui reste utile sans réserve : une obligation de déclaration harmonisée sur la dette de croissance auprès des régulateurs européens — un vrai vide aujourd'hui (les estimations de la taille de ce marché varient d'un facteur cinq selon la source, signe qu'il n'existe même pas de définition commune). Pour le reste, la meilleure voie est d'étendre explicitement aux nouveaux fonds de capital-risque (F1) la capacité d'octroyer des prêts déjà ouverte par AIFMD II, plutôt que de créer un nouveau type de licence bancaire.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="demande" class="wrap wide">
+  <p class="kicker">Toujours le premier tour</p>
+  <h2>Axe 3 — La demande</h2>
+  <div class="axis-intro">
+    <p>Six propositions (D1 à D6) attaquent un troisième problème, souvent oublié dans le débat sur le financement : même bien financée, une jeune entreprise européenne a-t-elle un marché pour vendre ? La commande publique représente environ 14 % du PIB de l'Union — un contrat public gagné vaut, pour une startup, bien plus qu'un euro de fonds propres équivalent : il est non dilutif, et il réduit le risque perçu par les investisseurs suivants. Mais c'est aussi l'axe où les deux niveaux d'examen ont trouvé les obstacles juridiques les plus lourds et les moins anticipés.</p>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">D1</div><div class="prop-title">Un « SBIR européen » — une part du budget de recherche réservée aux jeunes entreprises</div></div>
+    <div class="prop-badges"><span class="pill warn">Utile si strictement limitée au budget de l'Union</span></div></div>
+    <h4>Le problème</h4>
+    <p>Aux États-Unis, chaque agence fédérale dont le budget de recherche externe dépasse 100 millions de dollars doit, par la loi, réserver une part de ce budget à des marchés de recherche accordés directement à des petites entreprises — plus de 8 milliards de dollars en 2025. Rien d'équivalent, sous forme d'obligation légale, n'existe en Europe : le lien entre commande publique et innovation reste diffus, réparti entre plusieurs appels à projets sans obligation de réservation.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Réserver au moins 3 % du budget de recherche de chaque grand programme européen à des marchés « avant-commercialisation » réservés aux entreprises de moins de 500 salariés, avec un mécanisme clé emprunté au modèle américain : une fois qu'une entreprise a été sélectionnée pour développer un prototype, l'acheteur public peut lui passer directement le marché de production qui suit, sans nouvel appel d'offres — c'est souvent ce dernier point, absent des dispositifs européens actuels, qui fait toute la valeur du modèle (sans lui, l'entreprise finance un prototype et perd quand même le marché final).</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé le principe pour la partie qui touche au seul budget géré directement par l'Union, mais a demandé de retirer le volet qui étendait l'obligation aux dépenses nationales cofinancées par des fonds européens — un sujet déjà sensible et documenté par ailleurs (voir la friction sur la « centralisation » des plans nationaux évoquée dans la cartographie politique).</p>
+        <h5>Ce que la vérification indépendante a ajouté — un obstacle qui touche presque tout l'axe demande</h5>
+        <p>Elle confirme le recentrage, mais révèle un problème plus profond, qu'aucune des deux versions ne traitait : <strong>le mécanisme de « passage direct au marché de production » dépasse les seuils autorisés par l'accord international sur les marchés publics</strong> (voir glossaire, AMP/GPA). Le modèle américain n'est légal chez eux que parce que les États-Unis ont explicitement inscrit, dans leur liste d'engagements internationaux, une exclusion pour les marchés réservés aux petites entreprises — une exclusion que l'Union européenne n'a jamais inscrite pour elle-même. Tant que cette asymétrie n'est pas corrigée (ce qui suppose de renégocier l'accord avec l'accord des autres pays signataires, un horizon de plusieurs années), ce mécanisme doit se limiter aux marchés qui restent en dessous des seuils couverts par cet accord international.</p>
+        <h5>Verdict final</h5>
+        <p>Utile et praticable si strictement limité au budget propre de l'Union et aux marchés sous les seuils de l'accord international sur les marchés publics — un périmètre plus étroit que l'ambition initiale, mais un vrai point de départ.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">D2</div><div class="prop-title">Objectifs de commande publique et suppression des critères qui excluent les jeunes entreprises</div></div>
+    <div class="prop-badges"><span class="pill warn">Deux blocs, deux destins très différents</span></div></div>
+    <h4>Le problème</h4>
+    <p>La commande publique est, en théorie, un levier énorme (voir l'introduction de cette section) mais elle reste, en pratique, quasiment inaccessible à une jeune entreprise : exigence d'un chiffre d'affaires historique qui exclut mécaniquement une société de trois ans, garanties financières disproportionnées, délais de paiement qui transforment un contrat gagné en risque de faillite pour une société sans trésorerie.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Deux blocs de mesures. <strong>Bloc 1</strong> : un objectif chiffré et contraignant (15 % de la valeur des marchés publics pour les PME, 3 % pour les entreprises de moins de dix ans), avec une sanction (perte d'accès à certains financements européens) en cas de non-respect répété — inspiré d'un modèle coréen qui impose un objectif bien plus élevé (50 %) à ses institutions publiques. <strong>Bloc 2</strong> : interdire les exigences de chiffre d'affaires disproportionnées, imposer un découpage des gros marchés en lots plus petits, et garantir un paiement à 30 jours avec avance de trésorerie pour les jeunes entreprises.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a rejeté le Bloc 1 tel que rédigé (un quota assorti d'une sanction entre en tension avec le principe d'égalité de traitement entre tous les candidats d'un marché public) et l'a reconstruit en un simple objectif <em>indicatif</em>, publié mais non sanctionné. Il a validé le Bloc 2 sans réserve.</p>
+        <h5>Ce que la vérification indépendante a confirmé, avec une nuance</h5>
+        <p>Elle confirme entièrement ce diagnostic sur le Bloc 1, en ajoutant que le mécanisme de sanction (perte d'accès aux financements européens) posait un problème supplémentaire : il reliait deux politiques publiques sans lien logique entre elles (la commande publique et le financement de la cohésion territoriale), une construction plus fragile qu'une conditionnalité rattachée directement à la protection du propre budget de l'Union. Sur le Bloc 2, elle confirme le jugement favorable en ajoutant une seule réserve technique : la garantie publique censée couvrir le risque supplémentaire pris par l'acheteur public (en échange de garanties financières réduites pour les jeunes entreprises) doit être explicitement plafonnée et chiffrée — un engagement de ce type ne peut pas rester sans limite précise.</p>
+        <h5>Verdict final</h5>
+        <p>Le Bloc 2 est solide et devrait avancer sans attendre. Le Bloc 1, dans sa version reconstruite (objectif publié, sans sanction), reproduit une bonne partie de l'effet de redevabilité recherché — ce qui montre que ce qui faisait vraiment fonctionner le modèle coréen n'était probablement pas le chiffre du quota lui-même, mais le simple fait de <strong>mesurer et publier</strong> les résultats chaque année, acheteur par acheteur.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">D3</div><div class="prop-title">Une centrale d'achat européenne, avec assurance pour l'acheteur public qui prend un risque</div></div>
+    <div class="prop-badges"><span class="pill warn">L'idée la plus originale de cet axe, à corriger</span></div></div>
+    <h4>Le problème</h4>
+    <p>Gagner un marché public à Rotterdam n'aide pas à en gagner un à Lyon — chaque nouveau pays est un coût fixe complet à supporter à nouveau. Mais un problème plus profond, souvent négligé, bloque en amont : un fonctionnaire qui choisit une jeune entreprise plutôt qu'un fournisseur établi prend, personnellement, un risque professionnel en cas d'échec du projet — un frein comportemental que ni le droit ni le prix ne suffisent à lever.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Trois briques : une centrale d'achat de niveau européen, à laquelle tout acheteur public national ou local peut adhérer pour bénéficier automatiquement d'un marché déjà attribué au niveau européen sans conduire sa propre procédure ; un label de précertification technique, valable dans toute l'Union, attestant qu'une solution répond déjà à certaines exigences ; et — l'élément le plus original — une assurance publique protégeant tout acheteur qui choisit un fournisseur précertifié de moins de dix ans, en cas de défaillance d'exécution.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a salué le troisième volet (l'assurance de l'acheteur) comme la meilleure idée de tout l'axe demande, et a demandé que les critères de précertification restent ouverts à tout opérateur remplissant les conditions, sans quota de labels délivrés.</p>
+        <h5>Ce que la vérification indépendante a ajouté</h5>
+        <p>Elle confirme cette appréciation très positive et ajoute deux corrections techniques. D'abord, une lacune de droit applicable : le texte européen qui autorise le recours à une centrale d'achat située dans un autre État membre a été écrit en désignant, en cas de litige, le droit de <em>cet</em> État — mais une centrale véritablement européenne n'a pas de pays de rattachement, donc la question de savoir quel droit et quelle juridiction s'appliqueraient en cas de recours doit être tranchée explicitement, ce qui n'est pas fait aujourd'hui. Ensuite, une précertification « réputée automatiquement satisfaire » toutes les exigences techniques va trop loin : le droit européen des marchés publics impose d'accepter tout autre moyen de preuve pertinent — la présomption doit rester réfutable, pas absolue.</p>
+        <h5>Verdict final</h5>
+        <p>L'intuition centrale (assurer le risque personnel de l'acheteur plutôt que de réglementer autour de lui) reste, aux yeux des deux niveaux d'examen, l'idée la plus originale de tout l'axe demande. Deux corrections techniques précises restent à apporter avant qu'elle soit prête.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">D4</div><div class="prop-title">Une préférence européenne pour les logiciels et services numériques</div></div>
+    <div class="prop-badges"><span class="pill bad">Techniquement recevable, politiquement très fragile</span></div></div>
+    <h4>Le problème</h4>
+    <p>Un texte européen récent (l'« Industrial Accelerator Act ») introduit une préférence pour l'origine européenne dans certains marchés publics — mais uniquement pour l'industrie lourde (acier, ciment, aluminium, automobile). Les logiciels, le cloud et les services numériques — le cœur de métier de la plupart des startups technologiques — en sont exclus, pour une raison simple : les règles d'origine utilisées, conçues pour des biens physiques, n'ont tout simplement pas de sens appliquées à un logiciel.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Créer un nouveau critère de « valeur ajoutée numérique européenne » (localisation des équipes de développement, propriété des droits, capacité à opérer la solution sans dépendre d'un pays tiers, réversibilité des données), non pas comme condition d'exclusion mais comme une pondération valant 20 % de la note dans les marchés publics de solutions numériques stratégiques.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé la technique employée (une pondération plutôt qu'une exclusion pure est juridiquement plus solide) et a demandé que les garanties déjà prévues par la fiche (limiter la mesure aux marchés non couverts par l'accord international sur les marchés publics) deviennent des conditions contraignantes du texte, et non de simples déclarations d'intention.</p>
+        <h5>Ce que la vérification indépendante a corrigé — un point technique dont dépend une autre proposition</h5>
+        <p>Elle confirme que la technique de la pondération est la bonne intuition, mais montre qu'elle ne « sauve » pas n'importe quel critère : le droit européen distingue strictement les critères qui évaluent une <em>offre</em> de ceux qui évaluent un <em>candidat</em> (voir glossaire). Sur les quatre critères proposés, deux (la localisation des effectifs de l'entreprise, la propriété des droits par une entité européenne) sont en réalité des caractéristiques du candidat, pas de l'offre — illégaux comme critères de notation tels que rédigés. Les deux autres (la capacité à opérer la solution sans dépendre d'un pays tiers, la réversibilité des données) sont bien des propriétés de l'offre livrée, et restent valides. La correction est simple : reformuler les deux premiers critères pour qu'ils portent sur le <em>personnel affecté à l'exécution de ce marché précis</em> plutôt que sur l'entreprise dans son ensemble — une reformulation que le droit autorise déjà explicitement.</p>
+        <h5>Verdict final</h5>
+        <p>Techniquement recevable une fois les deux critères corrigés et les garanties AMP rendues contraignantes. Politiquement, en revanche, c'est la proposition qui affronte l'opposition la mieux organisée et la mieux financée de tout le dossier — les grands fournisseurs de cloud non européens et plusieurs dizaines de groupes industriels ont déjà bloqué avec succès un texte très proche par le passé (une certification de cybersécurité européenne). Le cartographe indépendant estime que cette opposition économique, documentée et déjà victorieuse une fois sur un sujet quasi identique, rend la faisabilité politique de cette proposition très faible, quel que soit son niveau de solidité juridique.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">D5</div><div class="prop-title">Livrer les normes techniques en même temps que le texte de loi</div></div>
+    <div class="prop-badges"><span class="pill ok">Diagnostic excellent, mécanisme à ajuster</span></div></div>
+    <h4>Le problème</h4>
+    <p>Chaque nouvelle règle européenne (cybersécurité, IA, reporting environnemental) crée en théorie un nouveau marché — mais en pratique, il s'écoule 18 à 36 mois entre l'adoption du texte et la publication de ses normes techniques précises. Pendant ce délai, seuls les acteurs déjà installés, capables d'absorber l'incertitude, peuvent continuer à opérer — ce qui inverse complètement l'avantage de « premier entrant » que la réglementation était censée créer pour les fournisseurs européens.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Interdire qu'une obligation entre en application avant que ses normes techniques soient publiées, avec un report automatique de la date d'application en cas de retard ; et financer un « atelier » produisant des outils de conformité en logiciel libre, gratuits pour toute entreprise.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a salué le diagnostic comme « excellent et rarement formulé », et a demandé une clause d'exception pour les échéances fixées par un accord international, que la version initiale ne prévoyait pas.</p>
+        <h5>Ce que la vérification indépendante a changé</h5>
+        <p>Elle confirme la qualité du diagnostic mais identifie deux défauts plus profonds que la simple clause d'exception. D'abord, un problème de hiérarchie des normes (déjà vu ailleurs dans ce dossier) : un texte général adopté aujourd'hui ne peut pas décider, par avance, de reporter automatiquement l'application d'un texte plus spécifique adopté plus tard — et pire, un tel mécanisme crée une incitation perverse évidente : tout opposant à un nouveau texte aurait intérêt à ralentir la production des normes techniques pour en retarder l'application. Ensuite, une contradiction interne : financer des outils <em>gratuits</em> de mise en conformité, disponibles pour tous, tout en affirmant vouloir « ouvrir un marché » aux entreprises européennes spécialisées dans la conformité, revient à détruire d'une main ce que l'autre construit — ces deux objectifs ne peuvent pas coexister.</p>
+        <h5>Verdict final</h5>
+        <p>Le diagnostic reste l'un des meilleurs de tout le dossier. Le mécanisme doit changer : remplacer le report automatique par une obligation, inscrite dans les règles interinstitutionnelles, de lancer la production des normes techniques dès la proposition du texte (plutôt qu'après son adoption) ; et limiter le financement public aux éléments techniques neutres (schémas de données, jeux de test) qui ne concurrencent aucun fournisseur privé, en laissant les outils applicatifs complets au marché.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">D6</div><div class="prop-title">L'Union s'engage à acheter, à l'avance, un produit qui n'existe pas encore</div></div>
+    <div class="prop-badges"><span class="pill warn">Bonne idée, budget mal calculé</span></div></div>
+    <h4>Le problème</h4>
+    <p>Pour des technologies très coûteuses en capital et à la courbe d'apprentissage marquée (semi-conducteurs, stockage d'électricité, informatique quantique), le vrai blocage n'est pas seulement le capital — c'est l'absence d'un marché prévisible : un investisseur ne peut pas modéliser un chiffre d'affaires qui dépend de l'adoption future, incertaine, d'une technologie qui n'existe pas encore.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>L'Union s'engagerait à acheter, à un prix garanti et pour une durée d'au moins trois ans, une quantité donnée d'un produit répondant à une spécification de performance déjà publiée — mais qui reste à développer. Le paiement n'intervient qu'à la livraison, pas en amont, ce qui distingue le mécanisme d'une subvention classique.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat a dit</h5>
+        <p>Il a validé la proposition en quelques lignes, en la jugeant bien précédée (l'Union a déjà utilisé ce type d'instrument, par exemple pour les vaccins pendant la pandémie) et en présentant le choix technologique par la puissance publique comme un choix d'opportunité politique légitime plutôt qu'un défaut juridique.</p>
+        <h5>Ce que la vérification indépendante a changé — le désaccord le plus contre-intuitif du dossier</h5>
+        <p>Elle relève une erreur de raisonnement budgétaire, à première vue surprenante : la fiche présentait le coût budgétaire comme « contingent à la réussite », comme si c'était un facteur de modération. C'est l'inverse. Un engagement d'achat anticipé <strong>paie précisément quand le dispositif fonctionne</strong> — le scénario de paiement n'est pas un scénario d'échec qu'on provisionne prudemment, c'est le scénario de <em>succès</em>, qui est justement l'objectif recherché. Provisionner cet engagement comme s'il s'agissait d'un simple passif éventuel improbable, à hauteur d'un tiers de son montant, sous-estime donc largement le besoin réel de crédits si le dispositif atteint son but. Deuxième défaut : une clause obligeant le fournisseur à rembourser rétroactivement l'Union si jamais il vendait moins cher à un autre client dissuade en réalité ce fournisseur d'accorder des rabais à d'autres acheteurs européens — l'inverse de l'objectif de diffusion recherché. Troisième défaut, jamais signalé : réserver l'accès du dispositif aux seuls fournisseurs remplissant des critères d'origine européenne est une <em>exclusion</em>, pas une simple pondération — l'exposition à l'accord international sur les marchés publics y est en réalité plus forte que pour la proposition D4, alors que D4 seule avait été examinée sous cet angle.</p>
+        <h5>Verdict final</h5>
+        <p>Le mécanisme reste solide sur le fond (précédent juridique éprouvé, bon ciblage technologique) mais doit être rebudgété en crédits d'engagement dissociés plutôt qu'en garantie provisionnée à un tiers, la clause de remboursement rétroactif doit être remplacée par un partage du rendement excédentaire, et l'exposition à l'accord international sur les marchés publics doit être traitée avec le même sérieux que pour D4.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="tour2" class="wrap wide">
+  <p class="kicker">Partie 5</p>
+  <h2>Le second tour : six idées nées du débat lui-même</h2>
+  <div class="axis-intro">
+    <p>Après les débats sur les 27 premières propositions, l'agent d'innovation a relu l'intégralité des échanges — pas pour défendre ses propositions initiales, mais pour chercher ce que la confrontation avait rendu visible et qu'il n'avait pas vu au premier tour. Trois motifs récurrents ont produit six idées nouvelles : une technique de contournement juridique inventée pour un seul cas (R3) transposée à un autre problème voisin ; une opposition politique documentée traitée, pour la première fois, à sa <em>cause</em> plutôt que par un contournement ; et une technique validée dans un coin du dossier (la pondération de D4) jamais réappliquée là où elle aurait pu sauver une proposition proche.</p>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">N1</div><div class="prop-title">FERGIL — reproduire l'effet d'un « QSBS » européen par un versement budgétaire</div></div>
+    <div class="prop-badges"><span class="pill bad">Bonne intuition, mal calibrée</span></div></div>
+    <h4>D'où vient cette idée</h4>
+    <p>R3 avait réussi à reproduire l'effet économique d'un avantage fiscal (pour l'<em>entreprise</em>) sans passer par la fiscalité, grâce à un versement direct du budget européen. R2, qui cherchait à faire la même chose pour l'<em>investisseur</em>, avait échoué en passant par la voie fiscale classique. Cette idée : et si on appliquait la technique de R3 au problème de R2 ?</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Un versement direct de l'Union à tout investisseur européen ayant réalisé une plus-value sur des actions de jeunes entreprises détenues plus de trois ans, calculé comme 25 % de l'impôt effectivement payé sur cette plus-value.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat (rejoué sur cette nouvelle idée) a dit</h5>
+        <p>Il a repéré que calculer le versement en fonction de l'impôt payé créait un risque de requalification en mesure fiscale déguisée, et a proposé de calculer plutôt le versement en fonction du montant de la plus-value elle-même.</p>
+        <h5>Ce que la vérification indépendante a montré — pourquoi la technique de R3 ne se transpose pas aussi facilement qu'il y paraît</h5>
+        <p>Elle montre que même cette correction ne suffit pas. Le texte du traité qui sert de base à ce type de versement (article 173, sur la politique industrielle) exclut, dans son propre texte, toute mesure « contenant des dispositions fiscales » — ce n'est pas un risque d'appréciation, c'est une phrase écrite noir sur blanc. Or un versement dont le montant dépend, même indirectement, d'un impôt effectivement payé reste trop proche d'une mesure fiscale au sens de cette exclusion — c'est exactement la différence avec R3, dont le montant dépend du <em>capital souscrit</em>, une grandeur totalement neutre au regard de la fiscalité. Deuxième défaut, jamais soulevé : le dispositif traiterait différemment des investisseurs européens selon leur pays de résidence — un investisseur résidant dans un pays qui taxe lourdement les plus-values recevrait un versement bien supérieur à un investisseur résidant dans un pays qui les exonère déjà, ce dernier ne recevant rien du tout. Le budget européen financerait donc le plus là où la politique publique en a, en un sens, le moins besoin.</p>
+        <h5>Verdict final</h5>
+        <p>À reconstruire complètement : la vérification recommande de calculer le versement en fonction du <em>montant souscrit et détenu</em> (pas de la plus-value réalisée, et encore moins de l'impôt payé) — c'est la seule assiette qui reproduit vraiment, sans aucun défaut, la technique qui avait fonctionné pour R3.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">N2</div><div class="prop-title">Un marché de croissance unifié entre six grands pays, plutôt qu'à 27</div></div>
+    <div class="prop-badges"><span class="pill bad">Séduisant, mais juridiquement impossible tel quel</span></div></div>
+    <h4>D'où vient cette idée</h4>
+    <p>La cartographie politique avait déjà identifié une coalition précise et documentée : l'Allemagne, la France, l'Italie, l'Espagne, les Pays-Bas et la Pologne poussent déjà ensemble pour une supervision financière plus centralisée au niveau européen, contre la résistance de l'Irlande et du Luxembourg. L'idée : utiliser cette coalition existante pour créer un marché de cotation unifié entre ces six pays seulement, en contournant le blocage des deux pays réticents grâce à la « coopération renforcée » (voir glossaire).</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Un règlement commun d'admission et de cotation, applicable seulement aux six pays volontaires, avec un carnet d'ordres consolidé entre eux et une supervision directe du régulateur européen — les autres pays restant libres de rejoindre le dispositif plus tard.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat (rejoué) a dit</h5>
+        <p>Il a demandé de d'abord proposer le dispositif aux 27 pays, et de n'utiliser la coopération renforcée qu'en cas d'échec confirmé de cette première tentative — une question de séquence.</p>
+        <h5>Ce que la vérification indépendante a montré — pourquoi ce n'est pas une question de séquence</h5>
+        <p>Elle montre que le problème n'est pas de calendrier mais de nature juridique : <strong>la coopération renforcée permet à un groupe d'États de créer de nouvelles règles entre eux ; elle ne permet jamais d'écarter, pour ce groupe seulement, des règles qui existent déjà et s'appliquent aux 27</strong>. Or un « règlement commun de cotation » pour six pays déroge nécessairement à des règles européennes de marché financier déjà en vigueur pour tous — aucun séquencement, même en attendant un échec à 27, ne changerait cette impossibilité structurelle. Second défaut : le problème de fragmentation du carnet d'ordres que cette proposition cherchait à résoudre est déjà, en grande partie, traité par un texte européen récent (une réforme de 2024 créant un système consolidé de publication des transactions, applicable à tous les 27) que ni la fiche ni le débat n'avaient mentionné.</p>
+        <h5>Verdict final</h5>
+        <p>À écarter sous cette forme. La même ambition (harmoniser vraiment les règles de cotation des marchés de croissance) doit être poursuivie à 27, en s'appuyant sur les textes déjà en cours de négociation, et non par un sous-groupe de pays.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">N3</div><div class="prop-title">Un outil public de valorisation des actifs non cotés</div></div>
+    <div class="prop-badges"><span class="pill ok">La proposition la mieux notée du second tour</span></div></div>
+    <h4>D'où vient cette idée</h4>
+    <p>Les fédérations de fonds de pension allemande et italienne justifient leur opposition à tout mécanisme d'allocation vers le capital-risque par « la prudence et la diversification ». Mais la base factuelle montre que le coût réel derrière ce discours est souvent très concret : évaluer la valeur d'un actif non coté, difficile à standardiser, coûte le même travail à un fonds de pension que d'évaluer un gérant obligataire classique, pour une mise vingt fois plus petite. Aucune proposition du premier tour n'attaquait ce motif précis — toutes le contournaient.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Un organisme conjoint des régulateurs européens des marchés et des assurances, publiant chaque trimestre des méthodologies de référence pour valoriser les fonds de capital-risque non cotés, gratuites pour tout assureur ou fonds de pension.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat (rejoué) a dit</h5>
+        <p>Il a validé le principe et demandé de préciser que la protection juridique accordée à un investisseur qui utilise cette méthodologie porte sur le fait d'avoir bien suivi la méthode, et non sur la garantie que le résultat de la valorisation soit exact.</p>
+        <h5>Ce que la vérification indépendante a ajouté</h5>
+        <p>Elle confirme cette correction et en ajoute une plus subtile : la responsabilité de la valorisation appartient légalement au gestionnaire du fonds, pas à un organisme externe — la protection promise doit donc rester une présomption de bonne pratique, jamais un abri juridique complet. Elle signale aussi un risque que personne n'avait vu : si <em>tous</em> les investisseurs institutionnels européens utilisent exactement la même méthodologie unique, leurs erreurs de valorisation deviennent corrélées entre elles — en cas de choc de marché, tout le monde se tromperait dans le même sens au même moment, ce qui amplifierait plutôt qu'atténuerait un risque systémique. La correction : publier des fourchettes de valorisation plutôt que des chiffres uniques.</p>
+        <h5>Verdict final</h5>
+        <p>C'est, aux yeux des deux niveaux d'examen indépendants, la seule proposition de tout le dossier — sur les 33 — qui traite la <em>cause</em> déclarée d'une opposition politique documentée plutôt que de la contourner par un artifice juridique. Solide, sous réserve des deux corrections techniques ci-dessus.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">N4</div><div class="prop-title">Faire compter l'innovation dans la note de tous les marchés publics technologiques</div></div>
+    <div class="prop-badges"><span class="pill bad">Hérite directement du problème de D4</span></div></div>
+    <h4>D'où vient cette idée</h4>
+    <p>La proposition D4 (préférence numérique européenne) avait été validée sur le principe de la « pondération plutôt que l'exclusion ». L'idée : réutiliser cette même technique pour un problème voisin — la commande publique reste en pratique fermée aux jeunes entreprises même hors sujet de souveraineté numérique.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Réserver 20 % de la note d'évaluation, dans tout marché public de fournitures ou services technologiques, à un critère « jeune entreprise et intensité de R&D » (ancienneté, part du chiffre d'affaires en recherche).</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat (rejoué) a dit</h5>
+        <p>Il a écrit explicitement que « la technique reprise de D4 est valide en soi » et a demandé seulement de restreindre le périmètre à quelques secteurs où l'intensité de jeunes entreprises est déjà forte.</p>
+        <h5>Ce que la vérification indépendante a montré — l'erreur qui se propage d'une proposition à l'autre</h5>
+        <p>C'est le désaccord que l'auditeur indépendant qualifie lui-même de « plus lourd de conséquences » de tout le second tour, parce qu'il révèle que la validation de D4 elle-même contenait une erreur (voir la fiche D4 plus haut) qui, une fois recopiée ici sans vérification supplémentaire, condamne cette proposition dans son intégralité. Les critères retenus — l'ancienneté de l'entreprise, la part de son chiffre d'affaires en R&D — sont des caractéristiques du <em>candidat</em>, pas de l'<em>offre</em> (voir glossaire, critères de sélection vs d'attribution). Contrairement à D4, où deux des quatre critères pouvaient être reformulés pour porter sur l'offre plutôt que sur l'entreprise, ici la totalité du mécanisme repose sur ce type de critère — restreindre le périmètre géographique ou sectoriel, comme le demandait le premier débat, ne corrige rien : le problème n'est pas où on l'applique, c'est ce qu'on mesure. Second défaut : un texte européen existe déjà, très peu utilisé, conçu exactement pour cet objectif (le « partenariat d'innovation ») — une proposition sérieuse devrait d'abord expliquer pourquoi cet outil existant ne fonctionne pas, avant d'en proposer un nouveau qui ferait doublon.</p>
+        <h5>Verdict final</h5>
+        <p>À écarter sous cette forme, quel que soit le périmètre retenu. Ce qui peut survivre : une pondération portant sur des critères qui, eux, sont bien des propriétés de l'offre — la nouveauté technique de la solution proposée par rapport à l'état de l'art, ou des critères de cycle de vie du produit — combinée à l'obligation de mesure et de publication déjà recommandée pour D2.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">N5</div><div class="prop-title">Un comité permanent de suivi des risques financiers de tout le dispositif</div></div>
+    <div class="prop-badges"><span class="pill ok">Solide, à intégrer dans une structure existante</span></div></div>
+    <h4>D'où vient cette idée</h4>
+    <p>L'exigence de cohérence macroprudentielle posée par l'auditeur (voir F15) avait été traitée proposition par proposition — une liste de garde-fous accrochés ici et là. L'idée : créer, en plus, le lieu où toutes ces informations se rencontrent réellement, plutôt que de les laisser dispersées entre plusieurs institutions qui ne se parlent pas forcément entre elles.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Un comité réunissant trimestriellement la Commission, la Banque européenne d'investissement, le régulateur des assurances, le régulateur des marchés et le régulateur de stabilité financière, avec un pouvoir d'alerte publique si un seuil de concentration de risque est franchi.</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat (rejoué) a dit</h5>
+        <p>Il a validé le principe, en le jugeant peu risqué politiquement.</p>
+        <h5>Ce que la vérification indépendante a précisé</h5>
+        <p>Elle confirme le besoin, mais recommande de ne pas créer un organe entièrement nouveau : le régulateur européen de stabilité financière dispose déjà, aujourd'hui, du mandat légal et de la structure nécessaires pour ce type de suivi — mieux vaut y loger ce comité comme une structure dédiée plutôt que de multiplier les organismes. Elle ajoute un point décisif que le premier passage n'avait pas formulé : la seule partie qui exige réellement un texte de loi nouveau est l'obligation, pour la Banque européenne d'investissement et les banques nationales de développement, de transmettre leurs données — aujourd'hui, elles ne sont soumises à <em>aucune</em> obligation de ce type. Sans cette obligation légale, le comité se réunirait sans données à examiner, et resterait purement symbolique.</p>
+        <h5>Verdict final</h5>
+        <p>Solide, à condition de l'intégrer à une structure existante plutôt que d'en créer une nouvelle, et surtout de créer la seule vraie nouveauté nécessaire : l'obligation légale de transmission des données.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="prop">
+    <div class="prop-head"><div><div class="prop-id">N6</div><div class="prop-title">Un couloir de retour pour les entreprises déjà parties</div></div>
+    <div class="prop-badges"><span class="pill bad">Le problème qu'elle résout est déjà résolu ailleurs</span></div></div>
+    <h4>D'où vient cette idée</h4>
+    <p>Ce n'est pas une réponse à un point du débat — c'est un constat fait en relisant la liste complète des 27 premières propositions : toutes, sans exception, cherchent à <em>empêcher</em> une entreprise de partir. Aucune ne s'adresse aux entreprises et fondateurs déjà partis — alors que la base factuelle chiffre ce stock à environ 30 % des licornes européennes et 10 % des scale-ups, dont 85 % vers les États-Unis.</p>
+    <h4>Le mécanisme proposé</h4>
+    <p>Une fenêtre de cinq ans permettant à une entreprise déjà relocalisée hors de l'Union de « revenir » sous le futur statut EU Inc., avec report d'imposition sur les plus-values latentes que ce retour ferait apparaître, frais d'immatriculation supprimés, et accès prioritaire aux instruments de financement les plus demandés du dossier (F3, F10).</p>
+    <details>
+      <summary>Voir le débat complet</summary>
+      <div class="debate-block">
+        <h5>Ce que le premier débat (rejoué) a dit</h5>
+        <p>Il a repéré deux vrais problèmes — le texte européen invoqué comme base juridique ne couvre en réalité pas ce cas de figure précis, et l'imposition de sortie prélevée par le pays de départ (souvent les États-Unis) ne peut pas être neutralisée par l'Union — mais en a tiré une simple demande de reformulation plutôt qu'un rejet.</p>
+        <h5>Ce que la vérification indépendante a montré — pourquoi ces deux problèmes, ensemble, vident complètement l'instrument</h5>
+        <p>Elle montre que ces deux constats, pris ensemble et poussés jusqu'au bout, ne laissent plus rien à sauver. D'abord, <strong>le problème que cette proposition prétend résoudre à l'intérieur de l'Union est déjà résolu</strong> : une règle anti-évasion fiscale déjà en vigueur (une clause d'ATAD) oblige le pays d'arrivée à retenir la valeur fiscale établie par le pays de départ lorsqu'une imposition de sortie a déjà été prélevée à l'intérieur de l'Union. Ensuite, le vrai coût qui bloque réellement les entreprises parties (l'imposition de sortie américaine sur le transfert d'actifs incorporels) reste, comme la fiche elle-même le reconnaît, totalement hors de portée de l'Union — elle continue pourtant comme si l'instrument restait utile malgré cet aveu. Il ne reste alors que l'exonération de frais d'immatriculation (un montant négligeable) et l'accès prioritaire aux instruments de financement — ce qui pose un problème différent, repéré par le cartographe : cela avantage objectivement les entreprises qui sont parties par rapport à celles qui sont restées, un signal exactement inverse de l'esprit de tout le reste du dossier.</p>
+        <h5>Verdict final</h5>
+        <p>À écarter. Ce qui peut en être retenu, de façon non préférentielle : un droit ouvert à toute société de pays tiers, sans lien avec une relocalisation antérieure, de se convertir en EU Inc. — utile, non discriminatoire, et juridiquement propre.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="bilan" class="wrap wide">
+  <p class="kicker">Partie 6 — Pour finir</p>
+  <h2>Le bilan complet, sans rien cacher</h2>
+
+  <p>Voici les 33 propositions, dans un seul tableau, avec le verdict final à retenir — celui de la vérification indépendante quand elle diverge du débat auto-rédigé, puisque c'est elle qui a examiné chaque dossier en formant un avis propre avant de comparer.</p>
+
+  <div class="table-wrap">
+  <table>
+    <tr><th>Statut</th><th>Propositions</th><th>Effectif</th></tr>
+    <tr><td><span class="pill ok">Solides</span></td><td>R4 (bande de capital), N3 (outil de valorisation), D5 (normes livrées avec le texte), D2 bloc 2 (critères non-excluants), F15, N5 (garde-fous et suivi macroprudentiel)</td><td>6</td></tr>
+    <tr><td><span class="pill warn">Utiles, correctifs identifiés et actionnables</span></td><td>F1, F4, F5, F7, F9, F11 (volet provisionnement), F14 (volet concentrations), R1 (volet non fiscal), R3, R6 (volet inventaire des coûts), D1 (volet budget UE), D3, D4 (sous réserve politique), D6</td><td>14</td></tr>
+    <tr><td><span class="pill bad">Écartées — motif de droit, part utile réduite mais réelle</span></td><td>F2, F6, F8, F10, F13, R2, R5, R7, N1, N2, N4, N6</td><td>12</td></tr>
+    <tr><td><span class="pill bad">Reconstruite en version beaucoup plus modeste</span></td><td>D2 bloc 1</td><td>1</td></tr>
+  </table>
+  </div>
+
+  <h3>Ce que ce bilan veut dire, concrètement</h3>
+  <p>Sur 33 idées poussées délibérément au-delà de ce qui semblait raisonnable au départ, aucune ne passe aujourd'hui l'examen sans aucune réserve — et c'est un résultat normal, pas un échec du mandat de départ. Un tiers échoue nettement, pour des motifs de droit précis et vérifiables (une exclusion écrite dans un traité, un calcul financier qui ne fonctionne pas, une jurisprudence méconnue). Mais la moitié survit sous une forme utile et actionnable, souvent après une correction technique précise plutôt qu'un abandon.</p>
+
+  <p>Le fait le plus important à retenir n'est peut-être pas le contenu d'une proposition en particulier, mais la méthode elle-même : un débat mené par un seul agent jouant tous les rôles à la fois, même sérieux et bien informé, a changé de verdict sur <strong>20 des 33 dossiers</strong> une fois soumis à un vrai regard extérieur, indépendant, qui n'avait pas lu ce qui avait déjà été écrit. C'est la différence entre se relire soi-même et être relu par quelqu'un d'autre — les deux sont utiles, mais ils ne trouvent pas les mêmes erreurs.</p>
+
+  <h3>Trois vérifications à faire avant toute présentation officielle</h3>
+  <p>Ce sont les trois recommandations posées par l'auditeur indépendant lui-même, dans l'ordre où il recommande de les traiter — parce qu'elles portent sur des faits vérifiables, pas sur des opinions à débattre :</p>
+  <ol>
+    <li><strong>Refaire le calcul financier</strong> des propositions qui reposaient sur une arithmétique fausse (F6, F12, D6) et vérifier que les enveloppes budgétaires (F3, F10, R3) correspondent bien à la taille réelle du compartiment qui doit les accueillir.</li>
+    <li><strong>Revérifier les critères de marchés publics</strong> de D4 et N4 au regard de la distinction entre critères de sélection et d'attribution, et vérifier systématiquement l'exposition à l'accord international sur les marchés publics pour D1, D2, D4, D6 et N4 — un point absent de toute la base factuelle initiale.</li>
+    <li><strong>Chercher les doublons avec le droit déjà entré en vigueur en 2024-2026</strong> (le nouveau régime de fonds prêteurs AIFMD II, la réforme du système de publication des transactions boursières, une clause déjà existante de l'AIFMD) — une recherche qui n'a été faite, avant ce rapport, pour aucune des 33 propositions.</li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h4>Documents sources</h4>
+    <p>Ce rapport condense douze documents complets, conservés dans <code>eu-financial-policy-claude-code/policy/</code> du dépôt de travail :</p>
+    <ul class="filelist">
+      <li>current-regulation.md, micro-analysis.md, macro-analysis.md, benchmarking.md, stakeholder-map.md — base factuelle</li>
+      <li>proposals.md (27 propositions), round2-proposals.md (6 propositions) — texte intégral des mécanismes</li>
+      <li>impact-debate.md, feasibility-debate.md, round2-debate.md — premier débat contradictoire, auto-rédigé</li>
+      <li>impact-verification.md, feasibility-verification.md — vérification indépendante par deux sous-agents distincts</li>
+      <li>final-report.md — synthèse intermédiaire condensée (la version courte de ce rapport)</li>
+    </ul>
+    <p style="margin-top:20px;">Exercice de prospective produit par un pipeline d'agents ; ne se substitue pas à une analyse d'impact officielle, un avis du service juridique du Conseil, ou une consultation réelle des parties prenantes.</p>
+  </div>
+</footer>

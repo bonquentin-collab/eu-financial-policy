@@ -1,0 +1,491 @@
+<!doctype html>
+<title>Financer les fonds propres — ce qui tient dans le budget européen</title>
+<meta name="description" content="Quels mécanismes de financement en fonds propres des startups et scale-ups européennes peuvent réellement vivre dans le budget de l'Union — le compartiment fonds propres du futur Fonds européen pour la compétitivité, au sein du CFP 2028-2034.">
+<style>
+  :root{
+    --bg:#EEF1F0; --surface:#FFFFFF; --surface-2:#E3E9E7; --surface-3:#DCE3E1;
+    --ink:#172023; --ink-soft:#4B5A5C; --ink-faint:#7C8B8C;
+    --accent:#1F6F6B; --accent-ink:#0E3D3B; --accent-soft:#DCEDEA;
+    --gold:#9C6F28; --gold-soft:#F1E4CC;
+    --line:#D6DCDA; --line-soft:#E4E9E7;
+    --ok:#2E7D4F; --ok-soft:#DCEEE0;
+    --warn:#9C6F28; --warn-soft:#F1E4CC;
+    --bad:#A63A31; --bad-soft:#F5DFDB;
+    --neutral:#5C6B6C; --neutral-soft:#E3E9E7;
+    --p1:#1F6F6B; --p1-soft:#DCEDEA;
+    --p2:#5A5490; --p2-soft:#E6E4F2;
+    --p3:#9C6F28; --p3-soft:#F1E4CC;
+    --chart-surface:#FCFCFB;
+    --serif: Iowan Old Style, "Palatino Linotype", Palatino, Georgia, "Noto Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11161A; --surface:#181F23; --surface-2:#1F2A2D; --surface-3:#263133;
+      --ink:#E7EDEB; --ink-soft:#AEBCBA; --ink-faint:#7E8E8D;
+      --accent:#5CC2B8; --accent-ink:#9BE0D6; --accent-soft:#1C3634;
+      --gold:#D8AE6C; --gold-soft:#3A2F1B;
+      --line:#2B3639; --line-soft:#212B2E;
+      --ok:#68C88A; --ok-soft:#173425;
+      --warn:#D8AE6C; --warn-soft:#3A2F1B;
+      --bad:#E28378; --bad-soft:#3B211E;
+      --neutral:#8CA0A0; --neutral-soft:#212B2E;
+      --p1:#5CC2B8; --p1-soft:#1C3634;
+      --p2:#A79EDB; --p2-soft:#2A2740;
+      --p3:#D8AE6C; --p3-soft:#3A2F1B;
+      --chart-surface:#181F23;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11161A; --surface:#181F23; --surface-2:#1F2A2D; --surface-3:#263133;
+    --ink:#E7EDEB; --ink-soft:#AEBCBA; --ink-faint:#7E8E8D;
+    --accent:#5CC2B8; --accent-ink:#9BE0D6; --accent-soft:#1C3634;
+    --gold:#D8AE6C; --gold-soft:#3A2F1B;
+    --line:#2B3639; --line-soft:#212B2E;
+    --ok:#68C88A; --ok-soft:#173425;
+    --warn:#D8AE6C; --warn-soft:#3A2F1B;
+    --bad:#E28378; --bad-soft:#3B211E;
+    --neutral:#8CA0A0; --neutral-soft:#212B2E;
+    --p1:#5CC2B8; --p1-soft:#1C3634;
+    --p2:#A79EDB; --p2-soft:#2A2740;
+    --p3:#D8AE6C; --p3-soft:#3A2F1B;
+    --chart-surface:#181F23;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased;}
+  a{color:var(--accent-ink);}
+  a:focus-visible, summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
+  .wrap{max-width:800px; margin:0 auto; padding:0 24px 40px;}
+  .wide{max-width:1080px;}
+
+  header.masthead{border-bottom:1px solid var(--line); padding:52px 24px 36px; background:var(--surface);}
+  .masthead-inner{max-width:800px; margin:0 auto;}
+  .eyebrow{font-family:var(--mono); font-size:12.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent-ink); display:flex; align-items:center; gap:10px; margin-bottom:16px;}
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--accent);}
+  h1{font-family:var(--serif); font-weight:600; font-size:clamp(26px,4.2vw,40px); line-height:1.12; margin:0 0 14px; text-wrap:balance; letter-spacing:-.01em;}
+  .subtitle{font-size:16.5px; color:var(--ink-soft); max-width:72ch; margin:0; text-wrap:pretty;}
+
+  nav.toc{background:var(--surface-2); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; backdrop-filter:blur(6px);}
+  .toc-inner{max-width:1080px; margin:0 auto; padding:0 24px; display:flex; gap:18px; overflow-x:auto; scrollbar-width:none;}
+  .toc-inner::-webkit-scrollbar{display:none;}
+  nav.toc a{font-size:12px; color:var(--ink-soft); text-decoration:none; padding:11px 0; white-space:nowrap; border-bottom:2px solid transparent; font-weight:600;}
+  nav.toc a:hover{color:var(--accent-ink); border-bottom-color:var(--accent);}
+
+  section{padding:44px 0; border-bottom:1px solid var(--line-soft);}
+  section:last-of-type{border-bottom:none;}
+  .kicker{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); margin:0 0 8px;}
+  h2{font-family:var(--serif); font-size:clamp(22px,3vw,29px); font-weight:600; margin:0 0 14px; text-wrap:balance;}
+  h3{font-family:var(--serif); font-size:19px; font-weight:600; margin:26px 0 8px;}
+  h4{font-family:var(--sans); font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.02em; color:var(--accent-ink); margin:20px 0 7px;}
+  p{margin:0 0 14px; max-width:76ch;}
+  .lede{font-size:16.5px; color:var(--ink-soft); max-width:72ch;}
+  ul,ol{margin:0 0 14px; padding-left:22px;}
+  li{margin-bottom:6px; max-width:72ch;}
+  code{font-family:var(--mono); font-size:.88em; background:var(--surface-2); padding:1px 5px; border-radius:4px;}
+  em.term{font-style:normal; font-weight:700; color:var(--accent-ink); border-bottom:1px dotted var(--accent);}
+
+  .stat-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:24px 0;}
+  .stat{background:var(--surface); padding:18px 16px;}
+  .stat .n{font-family:var(--serif); font-size:26px; font-weight:600; line-height:1; color:var(--ink); font-variant-numeric:tabular-nums;}
+  .stat .l{font-size:12px; color:var(--ink-faint); margin-top:6px;}
+
+  .glossary{display:grid; grid-template-columns:1fr; gap:2px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:20px 0;}
+  .term{background:var(--surface); padding:14px 18px;}
+  .term dt{font-family:var(--serif); font-weight:700; font-size:15px; color:var(--accent-ink); margin-bottom:3px;}
+  .term dd{margin:0; font-size:14px; color:var(--ink-soft);}
+
+  .axis-head{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin:0 0 6px;}
+  .axis-head h2{margin:0;}
+  .axis-intro{font-size:15.5px; color:var(--ink-soft); background:var(--surface-3); border-radius:10px; padding:16px 20px; margin:14px 0 30px;}
+
+  .reform{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:26px 28px; margin:0 0 24px;}
+  .reform-head{display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:6px;}
+  .reform-id{font-family:var(--mono); font-size:13px; color:var(--accent-ink); font-weight:700;}
+  .reform-title{font-family:var(--serif); font-weight:700; font-size:21px; margin:3px 0 0; text-wrap:balance;}
+  .pill{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; font-weight:700; padding:4px 10px; border-radius:20px; white-space:nowrap;}
+  .pill.p1{background:var(--p1-soft); color:var(--p1);}
+  .pill.p2{background:var(--p2-soft); color:var(--p2);}
+  .pill.p3{background:var(--p3-soft); color:var(--p3);}
+  .pill.ok{background:var(--ok-soft); color:var(--ok);}
+  .pill.warn{background:var(--warn-soft); color:var(--warn);}
+  .pill.bad{background:var(--bad-soft); color:var(--bad);}
+
+  .callout{background:var(--accent-soft); border-radius:10px; padding:16px 20px; margin:16px 0;}
+  .callout.gold{background:var(--gold-soft);}
+  .callout.bad{background:var(--bad-soft);}
+  .callout p:last-child{margin-bottom:0;}
+  .callout p{font-size:14.5px;}
+
+  table{border-collapse:collapse; width:100%; margin:14px 0; font-size:13.5px;}
+  th,td{text-align:left; padding:7px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{font-family:var(--mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-faint); font-weight:600;}
+  .table-wrap{overflow-x:auto; margin:14px 0;}
+  .table-wrap table{margin:0;}
+
+  /* Stacked bar — allocation du compartiment */
+  .chart-card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:24px 26px 22px; margin:22px 0;}
+  .chart-title{font-family:var(--sans); font-size:13px; font-weight:700; color:var(--ink); margin:0 0 3px;}
+  .chart-sub{font-size:12.5px; color:var(--ink-faint); margin:0 0 20px;}
+  .stackbar{display:flex; width:100%; height:34px; border-radius:6px; overflow:hidden; background:var(--chart-surface);}
+  .seg{position:relative; height:100%; display:flex; align-items:center; justify-content:center; cursor:default;}
+  .seg + .seg{margin-left:2px;}
+  .seg:first-child{border-top-left-radius:4px; border-bottom-left-radius:4px;}
+  .seg:last-child{border-top-right-radius:4px; border-bottom-right-radius:4px;}
+  .seg.f3{background:var(--p1);}
+  .seg.r3{background:var(--p2);}
+  .seg.reste{
+    background-image:repeating-linear-gradient(135deg, var(--gold) 0, var(--gold) 5px, var(--gold-soft) 5px, var(--gold-soft) 10px);
+    border:1px solid var(--gold);
+  }
+  .seg .seg-label{font-family:var(--mono); font-size:11px; font-weight:700; color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.25); white-space:nowrap;}
+  .seg.reste .seg-label{color:var(--gold); text-shadow:none;}
+  .seg .tip{
+    position:absolute; bottom:calc(100% + 8px); left:50%; transform:translateX(-50%);
+    background:var(--ink); color:var(--bg); font-size:12px; font-family:var(--sans);
+    padding:7px 11px; border-radius:8px; white-space:nowrap; opacity:0; pointer-events:none;
+    transition:opacity .12s ease; z-index:5; box-shadow:0 4px 14px rgba(0,0,0,.18);
+  }
+  .seg .tip::after{content:""; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:5px solid transparent; border-top-color:var(--ink);}
+  .seg:hover .tip, .seg:focus-visible .tip{opacity:1;}
+  .seg:focus-visible{outline:2px solid var(--ink); outline-offset:2px;}
+  .chart-legend{display:flex; flex-wrap:wrap; gap:18px; margin-top:18px;}
+  .legend-item{display:flex; align-items:flex-start; gap:9px; font-size:13px; max-width:280px;}
+  .swatch{width:11px; height:11px; border-radius:3px; margin-top:4px; flex:none;}
+  .swatch.f3{background:var(--p1);}
+  .swatch.r3{background:var(--p2);}
+  .swatch.reste{background-image:repeating-linear-gradient(135deg, var(--gold) 0, var(--gold) 2px, var(--gold-soft) 2px, var(--gold-soft) 4px); border:1px solid var(--gold);}
+  .legend-item .lt{font-weight:700; color:var(--ink);}
+  .legend-item .ld{color:var(--ink-soft); font-size:12.5px;}
+  .chart-note{font-size:12.5px; color:var(--ink-faint); margin-top:16px; border-top:1px dashed var(--line); padding-top:14px;}
+
+  .cond-list{list-style:none; margin:10px 0 0; padding:0; display:grid; gap:8px;}
+  .cond-list li{margin:0; padding:10px 14px; background:var(--surface-3); border-radius:8px; font-size:14px; max-width:none;}
+  .cond-list li::before{content:"◦ "; color:var(--accent-ink); font-weight:700;}
+  .cond-list li.blocking{background:var(--bad-soft);}
+  .cond-list li.blocking::before{content:"▲ "; color:var(--bad);}
+
+  footer{padding:44px 24px 60px; background:var(--surface-2); border-top:1px solid var(--line);}
+  footer .wrap{padding-bottom:0;}
+  footer h4{font-family:var(--serif); font-size:16px; margin:0 0 10px; color:var(--ink); text-transform:none; letter-spacing:0;}
+  footer p{font-size:13.5px; color:var(--ink-soft);}
+  .filelist{list-style:none; margin:0; padding:0; font-family:var(--mono); font-size:12.5px; color:var(--ink-soft); display:grid; gap:6px;}
+  .filelist li::before{content:"› "; color:var(--accent-ink);}
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="eyebrow"><span class="dot"></span>Analyse dédiée — financement en fonds propres</div>
+    <h1>Financer les fonds propres, avec ce que le budget européen peut réellement porter</h1>
+    <p class="subtitle">Sur les 33 propositions déjà examinées pour l'accès des startups et scale-ups au financement, celle-ci se concentre sur un seul angle, en profondeur : les mécanismes d'<em class="term">equity</em> — capital, pas dette — qui vivent structurellement à l'intérieur du budget pluriannuel de l'Union (le futur Fonds européen pour la compétitivité, au sein du CFP 2028-2034). Six mécanismes étaient déjà validés. Cette note en ajoute quatre, reconstruits à partir d'échecs déjà documentés et testés par un nouveau tour de vérification indépendante — et découvre, en les additionnant à l'ensemble, un problème que personne n'avait encore vu : le compartiment qui doit tous les financer est trop petit pour les porter tous à l'échelle où chacun est aujourd'hui envisagé.</p>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#glossaire">Glossaire</a>
+    <a href="#perimetre">Le périmètre</a>
+    <a href="#etat-des-lieux">État des lieux</a>
+    <a href="#deja-valides">Déjà validés</a>
+    <a href="#reconstructions">Quatre reconstructions</a>
+    <a href="#arbitrage">L'arbitrage des enveloppes</a>
+    <a href="#hors-perimetre">Hors périmètre</a>
+    <a href="#bilan">Bilan</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="glossaire" class="wrap">
+  <p class="kicker">Avant de commencer</p>
+  <h2>Le vocabulaire de cette note</h2>
+  <p class="lede">Cette note suppose que le lecteur n'a lu aucun des documents précédents du dossier. Le vocabulaire technique qui revient est expliqué ici une fois, en langage courant.</p>
+
+  <dl class="glossary">
+    <div class="term"><dt>Le compartiment fonds propres et garanties du FEC</dt><dd>À l'intérieur du futur Fonds européen pour la compétitivité (FEC, ~409 Md€ avec Horizon Europe, l'instrument budgétaire central du CFP 2028-2034 pour l'innovation), une ligne spécifiquement consacrée aux prises de participation et aux garanties liées à l'<em>equity</em> — environ <strong>11 Md€ sur les sept ans</strong>, soit 2,7 % du total FEC. C'est le chiffre de référence de toute cette note : chaque mécanisme décrit ci-dessous doit y trouver sa place, aux côtés de tous les autres.</dd></div>
+    <div class="term"><dt>Article 173 TFUE</dt><dd>La base légale pour la politique industrielle de l'Union — vote à la <em>majorité qualifiée</em> (voir plus bas), pas besoin de l'unanimité des 27. Son paragraphe 3 exclut expressément toute mesure « contenant des dispositions fiscales ». Un mécanisme peut s'appuyer sur cet article pour produire un effet économique proche d'un avantage fiscal <em>sans en être un</em> juridiquement — à condition que son montant dépende d'une grandeur neutre (le capital souscrit, par exemple) et jamais d'une grandeur fiscale (un impôt payé, une plus-value réalisée). Un des quatre mécanismes de cette note (N1bis) est construit précisément autour de cet équilibre, avec une incertitude non résolue sur sa portée exacte.</dd></div>
+    <div class="term"><dt>Aide d'État (article 107 TFUE)</dt><dd>Interdiction, en principe, des aides publiques qui faussent la concurrence — mais elle ne s'applique qu'aux aides financées par des « ressources d'État » (un gouvernement national). Un versement fait <em>directement</em> par le budget de l'Union, ou <em>indirectement</em> via le Groupe BEI, n'est pas une « ressource d'État » — donc hors du champ de cette interdiction. C'est ce qui permet à plusieurs mécanismes de cette note d'exister sans notification à la Commission au titre des aides d'État.</dd></div>
+    <div class="term"><dt>Majorité qualifiée</dt><dd>Le mode de vote normal du Conseil de l'Union : au moins 55 % des États membres (15 sur 27), représentant au moins 65 % de la population de l'Union. Beaucoup plus facile à atteindre que l'unanimité, où un seul pays peut tout bloquer — c'est pour cette raison que la plupart des mécanismes de cette note évitent soigneusement toute base juridique qui exigerait l'unanimité.</dd></div>
+    <div class="term"><dt>Principe d'universalité budgétaire (article 310 TFUE)</dt><dd>Une règle de droit budgétaire européen qui interdit, sauf exceptions strictement énumérées, d'affecter une recette précise à une dépense précise — tout l'argent de l'Union entre dans un même pot avant d'être redistribué selon le budget voté. C'est ce principe qui a fait échouer une première tentative de « sanctuariser » le compartiment fonds propres en lui réservant une part d'une future ressource propre (F13, abandonnée), et qui a obligé à trouver une autre voie (F13bis, dans cette note).</dd></div>
+    <div class="term"><dt>Annualité budgétaire (article 314 TFUE)</dt><dd>Le principe selon lequel le budget de l'Union est voté chaque année, par le Parlement et le Conseil ensemble : aucun engagement de crédits d'un exercice futur ne peut être automatique ou soustrait à cette procédure annuelle. C'est ce principe qui limite fortement toute promesse d'« argent garanti d'avance » sur plusieurs années, même pour un instrument aussi utile qu'un compartiment de capital-risque public.</dd></div>
+    <div class="term"><dt>Crédits d'engagement pluriannuels</dt><dd>Une exception reconnue à l'annualité stricte, déjà admise par le règlement financier de l'Union pour les instruments financiers et les garanties budgétaires : un montant peut être engagé pour plusieurs années d'un coup, sans devoir être revoté chaque exercice — mais cela ne retire jamais au Parlement et au Conseil leur pouvoir final d'arbitrage budgétaire annuel, seulement la nécessité de le réexercer systématiquement.</dd></div>
+    <div class="term"><dt>Solvabilité II et le SCR</dt><dd>Le cadre prudentiel des assureurs européens. Le <em>SCR</em> (<em>Solvency Capital Requirement</em>) est le montant de fonds propres qu'un assureur doit mettre de côté pour chaque actif détenu, selon son risque — calculé pour couvrir une perte extrême, statistiquement attendue une fois tous les 200 ans (à 99,5 %). Détenir des actions non cotées coûte, par défaut, 49 % de leur valeur en capital de réserve.</dd></div>
+    <div class="term"><dt>Tranche de première perte, tranche mezzanine</dt><dd>Quand un portefeuille d'actifs risqués est garanti ou titrisé, on peut découper le risque en tranches empilées : la <em>première perte</em> absorbe les pertes en premier — c'est la plus risquée, et donc la plus chère à provisionner. La <em>tranche mezzanine</em> vient juste après : elle n'est touchée que si les pertes dépassent un premier seuil, et jusqu'à un second — un risque intermédiaire, avec une perte statistiquement attendue nettement inférieure à celle de la première perte, sur le même portefeuille.</dd></div>
+    <div class="term"><dt>EIOPA</dt><dd>L'autorité européenne de supervision des assurances et des retraites professionnelles. C'est elle qui doit valider, par une méthode technique publiée, toute nouvelle façon de calculer une réduction de charge en capital pour un assureur — une garantie publique ne peut pas décréter sa propre efficacité prudentielle, elle doit la faire calculer par la méthode qu'EIOPA reconnaît.</dd></div>
+    <div class="term"><dt>IORP</dt><dd>Un fonds de pension professionnel (<em>Institution for Occupational Retirement Provision</em>), régi par une directive européenne dédiée (IORP II) qui, à la différence de Solvabilité II pour les assureurs, n'impose <em>aucune</em> exigence de capital harmonisée de type SCR — les règles prudentielles des IORP restent nationales. C'est une différence qui a des conséquences directes sur ce qu'un mécanisme adossé au SCR peut, ou ne peut pas, leur offrir.</dd></div>
+    <div class="term"><dt>Cornerstone investor et clause <em>pari passu</em></dt><dd>Un « investisseur d'ancrage » (<em>cornerstone</em>) est un investisseur de référence qui s'engage tôt et publiquement dans une introduction en bourse, ce qui rassure les autres souscripteurs. <em>Pari passu</em> (« d'un pas égal ») désigne une clause qui oblige deux investisseurs à entrer aux mêmes conditions économiques, sans avantage de prix ou de rang pour l'un par rapport à l'autre — utilisée dans cette note pour empêcher qu'un investissement public serve uniquement les opérations que le marché privé refuse.</dd></div>
+    <div class="term"><dt>Provisionnement et perte attendue</dt><dd>Quand l'Union émet une garantie budgétaire, elle doit mettre de côté (« provisionner ») une fraction du montant garanti, pour couvrir les pertes qu'elle anticipe statistiquement en moyenne — sa <em>perte attendue</em>. Plus le taux de provisionnement est élevé, moins un même euro de crédit budgétaire permet de garantir de montant réel.</dd></div>
+    <div class="term"><dt>InvestEU</dt><dd>Le programme de garanties budgétaires actuellement en vigueur (CFP 2021-2027), absorbé à partir de 2028 dans le futur FEC. Son évaluation à mi-parcours (218 Md€ d'investissement mobilisé, 90 % de la garantie déjà allouée) sert de référence à toute la suite du dossier — y compris la mise en garde de la Cour des comptes européenne sur la façon dont ce chiffre est calculé (voir §2 ci-dessous).</dd></div>
+  </dl>
+</section>
+
+<section id="perimetre" class="wrap">
+  <p class="kicker">Cadrage</p>
+  <h2>Ce que « faisable au sein du CFP » veut dire, précisément</h2>
+  <p class="lede">Le dossier complet sur le financement des startups européennes couvrait trois familles de leviers : des réformes réglementaires sans aucune ligne budgétaire (le régime des fonds de capital-risque, la fiscalité, le droit des sociétés, la charge prudentielle des assureurs), des instruments budgétaires structurés comme des compartiments du futur FEC, et quelques mécanismes hybrides. Cette note ne retient que la deuxième catégorie, et la partie budgétaire de la troisième — les mécanismes qui engagent, structurent ou conditionnent une dépense ou une garantie du budget de l'Union, et qui à ce titre vivent ou meurent avec l'issue de la négociation du CFP elle-même.</p>
+
+  <p>Un mécanisme purement réglementaire n'est « au sein du CFP » dans aucun sens utile, même s'il sert exactement le même objectif d'accès aux fonds propres : il suit son propre calendrier législatif, indépendant du sommet européen où se négocie le budget. Ces leviers réglementaires restent nécessaires — un point de réallocation des bilans d'assurance européens (via Solvabilité II) pèse, à lui seul, un ordre de grandeur de plus que tout le compartiment fonds propres du FEC réuni. Ils sont déjà traités ailleurs dans le dossier complet et rappelés brièvement en fin de cette note (§7), pour que leur absence ici ne se lise pas comme un oubli.</p>
+
+  <p>Second critère, cumulatif avec le premier : le mécanisme doit viser des <em class="term">fonds propres</em> — une augmentation de capital, une part de fonds de capital-risque, une action — ou l'écosystème qui les distribue, et non de la dette, même bonifiée. Un mécanisme de titrisation du portefeuille de garanties existant, par exemple, reste utile mais relève de la dette de croissance, pas de l'<em>equity</em> : il est explicitement écarté de cette note pour cette raison.</p>
+
+  <div class="stat-grid">
+    <div class="stat"><div class="n">10</div><div class="l">mécanismes revendiquent le même compartiment budgétaire</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">déjà validés par un tour de vérification indépendante complet</div></div>
+    <div class="stat"><div class="n">4</div><div class="l">reconstruits ici à partir d'échecs déjà documentés, puis re-testés</div></div>
+    <div class="stat"><div class="n">~11 Md€</div><div class="l">taille du compartiment qui doit tous les porter, sur sept ans</div></div>
+  </div>
+</section>
+
+<section id="etat-des-lieux" class="wrap">
+  <p class="kicker">Où en est-on aujourd'hui</p>
+  <h2>Ce qui existe déjà dans le budget de l'Union</h2>
+  <p class="lede">Avant de proposer quoi que ce soit de nouveau, un état des lieux sourcé — sans aucun chiffre inventé, chacun reprend une source déjà établie dans le dossier factuel.</p>
+
+  <ul>
+    <li><strong>InvestEU</strong>, le programme de garanties actuellement en vigueur : son évaluation à mi-parcours (étude indépendante ICF SA, données à fin 2023) affiche <strong>218 Md€ d'investissement mobilisé</strong>, avec <strong>90 % de la garantie de l'Union déjà allouée</strong> à cette date. C'est ce bilan qui justifie à la fois son renforcement transitoire et son absorption complète dans le futur FEC plutôt que sa reconduction comme programme autonome.</li>
+    <li><strong>Un pont avant la bascule de 2028</strong> : la Commission propose, en attendant l'entrée en vigueur du FEC, d'augmenter la garantie InvestEU actuelle de 2,5 Md€ (1 Md€ de provisionnement additionnel), pour mobiliser environ 50 Md€ supplémentaires sur ce qui reste du budget 2021-2027.</li>
+    <li><strong>Le Fonds pour l'innovation</strong>, à la mi-2025 : <strong>332 M€ seulement</strong> avaient été effectivement payés, pour un budget visé de l'ordre de 40 Md€ jusqu'en 2030 — un signal de lenteur d'exécution qui a directement inspiré la conception du guichet miroir (F3, voir §4).</li>
+    <li><strong>Le Conseil européen de l'innovation, volet prises de participation (EIC Fund)</strong> : 149 startups en attente de décision, retard qualifié de « revers majeur » par son propre conseil de gestion.</li>
+    <li><strong>Le futur FEC</strong> : budget combiné avec Horizon Europe de 409 Md€, soit environ 21 % de l'enveloppe totale du CFP proposé. En son sein, le compartiment fonds propres et garanties — celui qui nous occupe dans toute cette note — pèse environ <strong>11 Md€ sur les sept ans</strong>, 2,7 % du total FEC.</li>
+  </ul>
+
+  <div class="callout gold">
+    <p><strong>Un point de calendrier qui domine tout le reste.</strong> Au moment de la rédaction, aucun accord politique n'existe encore sur le CFP 2028-2034 : le Conseil européen de juin 2026 a échoué à conclure, et l'objectif d'accord est repoussé à la fin de l'année, avant le sommet d'octobre. Trois blocs restent ouverts — taille globale du budget, architecture des fonds de cohésion, nouvelles ressources propres. Tout ce qui suit dans cette note est donc conditionnel à l'issue de cette négociation d'ensemble, un risque documenté depuis le début de ce dossier et non spécifique à l'<em>equity</em>.</p>
+  </div>
+</section>
+
+<section id="deja-valides" class="wrap">
+  <p class="kicker">Ce qui tenait déjà</p>
+  <h2>Six mécanismes déjà validés par un tour de vérification indépendante</h2>
+  <p class="lede">Le dossier complet a soumis 33 propositions à un audit d'impact réglementaire et un audit de faisabilité politique menés par de vrais examinateurs indépendants, formant leur propre jugement avant toute comparaison avec le débat précédent — une méthode qui a révélé que le premier débat, mené par un seul agent jouant tous les rôles, était systématiquement trop indulgent. Parmi les propositions qui passent ce filtre, six sont à la fois budgétaires au sens du §2 et directement <em>equity</em>. Le détail complet de rédaction (texte à écrire, calendrier, acteurs) existe déjà pour chacune ; cette note ne le duplique pas.</p>
+
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">F3</span><h3 class="reform-title" style="margin-top:3px;">Guichet miroir — co-investissement automatique</h3></div><span class="pill ok">Validé</span></div>
+    <p>Le FEC co-investit automatiquement, <em>pari passu</em>, jusqu'à 30 % de tout tour de table d'au moins 15 M€ mené par un investisseur privé accrédité selon des critères objectifs et publics — décision sur simple vérification documentaire en 10 jours ouvrables, jamais un silence valant accord. Enveloppe corrigée : environ 300-400 M€/an (2,1 à 2,8 Md€ sur 7 ans) — la version initiale, 4 Md€/an, dépassait 2,5 fois le compartiment entier qui devait l'accueillir.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">F4</span><h3 class="reform-title" style="margin-top:3px;">Instrument d'amorçage à option de rachat</h3></div><span class="pill ok">Validé</span></div>
+    <p>Adaptation du modèle israélien Yozma : le Groupe BEI souscrit jusqu'à 40 % des parts d'un fonds de capital-risque européen de 1<sup>re</sup>/2<sup>e</sup> génération. À la différence du modèle original, ce ne sont pas les gérants qui reçoivent une option de rachat de la part publique, mais les <strong>investisseurs institutionnels privés</strong> du même fonds — parce que le déficit européen porte sur les souscripteurs, pas sur les gérants.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">R3</span><h3 class="reform-title" style="margin-top:3px;">Prime européenne d'apport en fonds propres</h3></div><span class="pill ok">Validé</span></div>
+    <p>Un versement automatique et non dilutif de 8 % de toute augmentation de capital en numéraire souscrite par une entreprise éligible, payé sous 30 jours, sans comité de sélection — <strong>6 Md€ sur les sept ans</strong>. Un fonds de l'Union en gestion directe n'est pas une « ressource d'État » : le dispositif échappe donc à la qualification d'aide d'État. Condition posée par la vérification indépendante : une règle de rationnement doit être ajoutée avant dépôt, l'enveloppe telle que dimensionnée s'épuiserait en quelques mois face à un marché du capital-risque européen de 40 à 50 Md€ par an.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">F11</span><h3 class="reform-title" style="margin-top:3px;">Provisionnement différencié par compartiment</h3></div><span class="pill ok">Validé (volet retenu)</span></div>
+    <p>Remplace le taux uniforme de provisionnement (50 %) par un taux fixé selon la perte réellement observée par compartiment, entre 25 % et 60 %. C'est le paramètre qui détermine, à budget constant, combien les autres mécanismes de cette liste peuvent réellement financer avec le même euro. Le volet « stabilisateur automatique » de la proposition d'origine a, lui, échoué juridiquement — un acte de comitologie ne peut pas ouvrir par avance des crédits d'exercices futurs (articles 310 et 314 TFUE) — et a été retiré.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">N3</span><h3 class="reform-title" style="margin-top:3px;">Utilité européenne de valorisation des actifs privés</h3></div><span class="pill ok">Validé</span></div>
+    <p>Un organisme conjoint ESMA/EIOPA, financé par le FEC, publie des méthodologies de référence pour valoriser les actifs privés (parts de fonds de capital-risque, ELTIF) — avec un effet libératoire partiel pour l'investisseur institutionnel qui les applique. Traite directement la cause déclarée de la résistance des fédérations de fonds de pension (le coût de la valorisation), plutôt que de la contourner par une conditionnalité.</p>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head"><div><span class="reform-id">N5</span><h3 class="reform-title" style="margin-top:3px;">Collège permanent de stabilité financière de l'innovation</h3></div><span class="pill ok">Validé</span></div>
+    <p>Réunion trimestrielle de la Commission, du Groupe BEI, d'EIOPA, de l'ESMA et du CERS, chargée de suivre l'exposition agrégée de l'ensemble du dispositif européen aux risques de concentration déjà identifiés — pouvoir d'alerte non contraignant. C'est l'organe auquel cette note elle-même renvoie plusieurs risques de corrélation nouveaux (voir §5).</p>
+  </div>
+</section>
+
+<section id="reconstructions" class="wrap">
+  <p class="kicker">Ce que cette note ajoute</p>
+  <h2>Quatre reconstructions — des échecs documentés, réparés puis re-testés</h2>
+  <p class="lede">Sur les 33 propositions déjà examinées, plusieurs mécanismes budgétaires et <em>equity</em> avaient échoué — mais l'auditeur indépendant avait, fiche par fiche, identifié un noyau techniquement recevable sans jamais le rédiger sous sa forme corrigée. Cette note reprend précisément ces quatre noyaux, les rédige, puis les fait auditer une seconde fois — impact réglementaire et faisabilité politique, chacun par un examinateur indépendant qui n'avait jamais vu la version corrigée. <strong>Verdict des quatre : aucune n'échoue, aucune ne passe sans réserve.</strong> Chacune corrige effectivement son défaut d'origine, et chacune porte au moins une condition non cosmétique à traiter avant toute rédaction législative.</p>
+
+  <div class="reform">
+    <div class="reform-head">
+      <div><span class="reform-id">F6bis</span><h3 class="reform-title" style="margin-top:3px;">Garantie mezzanine du compartiment fonds propres</h3></div>
+      <span class="pill p3">Nouveau · sous conditions techniques</span>
+    </div>
+    <h4>Le problème et l'échec initial</h4>
+    <p>L'idée d'origine (F6) était séduisante : convertir un euro de budget en réduction de la charge en capital qu'un assureur doit provisionner pour détenir des actions de capital-risque — au lieu de simplement réduire le risque économique, ce qui est ce que fait la plupart des garanties publiques. Elle a échoué pour une raison purement arithmétique : elle promettait de couvrir les 10 premiers pourcents de perte d'un portefeuille et d'en déduire, en échange, une réduction de charge à 10 % — mais la charge en capital réglementaire (le SCR) mesure une perte extrême, bien plus large qu'une tranche aussi étroite. La garantie retirait précisément la part du risque que le SCR ne mesure pas.</p>
+    <h4>Ce que corrige cette version</h4>
+    <p>F6bis abandonne la tranche de première perte pour une <em class="term">tranche mezzanine</em>, de 10 % à 40 % de perte — l'assureur garde le risque le plus fréquent (0-10 %) et le risque le plus extrême (au-delà de 40 %), la garantie ne couvrant que la tranche intermédiaire. Surtout, la réduction de charge n'est plus décrétée dans le texte : elle est <strong>calculée par l'assureur lui-même</strong>, selon la méthode technique qu'EIOPA doit publier pour ce cas précis. La proposition s'ouvre par une phase pilote de trois ans, à une échelle nettement réduite, avec clause de revue obligatoire avant toute extension.</p>
+    <h4>Ce que le nouveau tour de vérification a trouvé</h4>
+    <p>La correction fonctionne sur le motif d'échec initial — les deux audits le confirment. Mais l'audit d'impact a trouvé trois défauts que la reconstruction n'avait pas anticipés : un risque de double comptage si le même portefeuille bénéficie déjà d'une charge réduite par ailleurs (l'escalier de durée de détention, un autre mécanisme du dossier) <em>et</em> de cette garantie ; une incohérence de périmètre, puisque le mécanisme corrigé ne peut techniquement s'appliquer qu'aux assureurs — pas aux fonds de pension professionnels que la fiche visait aussi, leur cadre prudentiel n'ayant pas d'équivalent du SCR ; et une marge de tarification qui reste à préciser explicitement, faute de quoi la question laissée sans réponse par la version initiale (une subvention déguisée en actuariat) resterait ouverte.</p>
+    <div class="callout">
+      <p><strong>Faisabilité politique : moyenne.</strong> Aucune opposition organisée n'est documentée — un vrai atout — mais l'issue dépend du silence d'EIOPA, dont la méthodologie n'existe pas encore, et d'un risque de concentration (le FEC finance déjà une partie du même écosystème via d'autres lignes) que le collège de stabilité (N5) devra traiter avant la fin de la phase pilote.</p>
+    </div>
+    <h4>Conditions avant tout dépôt</h4>
+    <ul class="cond-list">
+      <li>Préciser explicitement si la prime intègre une marge, pour couper court au soupçon de subvention déguisée</li>
+      <li>Corriger la référence au portefeuille éligible — l'ancrer sur l'escalier de durée de détention validé, pas sur le sous-module invalidé par ailleurs</li>
+      <li>Mandater EIOPA pour traiter explicitement la non-duplication entre les deux mécanismes appliqués au même portefeuille</li>
+      <li>Restreindre le périmètre des bénéficiaires aux entités relevant de Solvabilité II, ou construire un mécanisme séparé pour les fonds de pension professionnels</li>
+      <li>Documenter, par une étude EIOPA, la perte réellement observée sur une tranche mezzanine avant de fixer un taux de provisionnement</li>
+    </ul>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head">
+      <div><span class="reform-id">F10bis</span><h3 class="reform-title" style="margin-top:3px;">Cornerstone discrétionnaire du Groupe BEI pour les introductions en bourse</h3></div>
+      <span class="pill p1">Nouveau · le plus mûr des quatre</span>
+    </div>
+    <h4>Le problème et l'échec initial</h4>
+    <p>L'idée d'origine (F10) voulait garantir un socle d'investisseurs pour les introductions en bourse européennes de taille moyenne (200 M€ à 5 Md€) — un segment documenté comme structurellement sous-financé depuis que la recherche financière a été dégroupée sous MiFID II. Le mécanisme souscrivait automatiquement 15 % de chaque opération, sans aucune appréciation. C'était précisément le problème : les émetteurs dont le carnet d'ordres se remplissait mal seraient les seuls à demander cette souscription automatique, et un calendrier de sortie publiquement annoncé sur cinq ans se serait retrouvé intégré dans le prix dès le premier jour — la facilité aurait pu faire baisser le produit de l'émission qu'elle prétendait soutenir. À quoi s'ajoutait une enveloppe (10 Md€) arithmétiquement incompatible avec la taille du compartiment tout entier.</p>
+    <h4>Ce que corrige cette version</h4>
+    <p>F10bis rend la souscription <strong>discrétionnaire</strong> — le Groupe BEI décide selon son propre processus d'investissement, comme pour n'importe quelle prise de participation directe existante — mais seulement <strong>à la condition qu'un investisseur privé de référence souscrive un montant au moins égal, aux mêmes conditions</strong>. C'est la même logique que le guichet miroir (F3) : la sélection est externalisée au marché plutôt que confiée à une règle automatique. Le montant est réduit (8 % au lieu de 15 %, plafond de 60 M€ par opération), et le calendrier de sortie n'est plus public — seul un rapport annuel agrégé, non daté opération par opération, est publié.</p>
+    <h4>Ce que le nouveau tour de vérification a trouvé</h4>
+    <p>C'est la reconstruction la mieux notée des quatre, sur les deux plans. Les trois défauts d'origine sont chacun traités par un mécanisme distinct et cohérent — pas un ajustement cosmétique. Le seul point que l'audit d'impact élève au rang de condition bloquante, et non de simple risque résiduel : la fiche reconnaît elle-même qu'un émetteur pourrait structurer un engagement privé de façade pour déclencher artificiellement la participation du Groupe BEI, mais ne rédige pas la clause anti-abus qui l'en empêcherait — alors qu'une clause directement transposable existe déjà ailleurs dans le dossier pour un problème structurellement identique.</p>
+    <div class="callout ok">
+      <p><strong>Faisabilité politique : élevée.</strong> Soutien direct des bourses européennes et des scale-ups, aucune opposition nommément documentée, et une architecture — discrétion totale, plafond par opération, obligation de co-investissement privé égal — qui la place hors d'atteinte de l'objection de « chèque en blanc budgétaire » la plus dure et la mieux documentée de tout le dossier. Seule vraie réserve : le Groupe BEI lui-même n'a jamais exprimé de position documentée sur ce rôle élargi.</p>
+    </div>
+    <h4>Conditions avant tout dépôt</h4>
+    <ul class="cond-list">
+      <li class="blocking">Rédiger la clause anti-abus du co-investisseur privé avant tout dépôt — durée de détention minimale, exclusion des parties liées à l'émetteur, interdiction de garantie de rachat croisée</li>
+      <li>Documenter, même informellement, la position du Groupe BEI sur sa propre appétence pour ce mandat élargi</li>
+      <li>Publier une ventilation géographique légère des participations, pour répondre par avance à une friction latente entre écosystèmes matures et pays de cohésion</li>
+    </ul>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head">
+      <div><span class="reform-id">F13bis</span><h3 class="reform-title" style="margin-top:3px;">Crédits d'engagement pluriannuels et indicateur de décaissements effectifs</h3></div>
+      <span class="pill p3">Nouveau · sous clarification juridique</span>
+    </div>
+    <h4>Le problème et l'échec initial</h4>
+    <p>Le compartiment fonds propres, à 2,7 % seulement du FEC, est une cible commode dans toute négociation budgétaire de dernière minute — petit, technique, sans circonscription électorale à défendre. L'idée d'origine (F13) voulait le mettre à l'abri en lui affectant, par avance, une part fixe d'une future ressource propre de l'Union. Elle a échoué sur un motif que le débat précédent n'avait même pas identifié comme le plus grave : le <em class="term">principe d'universalité budgétaire</em> interdit, sauf exceptions limitativement énumérées, de lier une recette précise à une dépense précise — et une ressource propre affectée n'en fait pas partie.</p>
+    <h4>Ce que corrige cette version</h4>
+    <p>F13bis abandonne complètement la logique d'affectation d'une recette. La protection se déplace du côté de la <strong>dépense</strong> : des crédits d'engagement pluriannuels non annualisables, inscrits directement dans le texte de base du règlement FEC — une possibilité que le règlement financier de l'Union reconnaît déjà pour les instruments financiers et les garanties budgétaires, sans toucher en rien au système des ressources propres ni requérir d'unanimité additionnelle. En miroir, un indicateur unique et public de <strong>décaissements effectifs aux bénéficiaires finaux établis dans l'Union</strong> remplace l'indicateur d'« investissement mobilisé » que la Cour des comptes européenne a déjà jugé surestimé d'environ 26 %.</p>
+    <h4>Ce que le nouveau tour de vérification a trouvé</h4>
+    <p>Le déplacement de la protection — de la recette vers le rythme de la dépense — est juridiquement la bonne clé pour échapper à l'objection d'origine, et les deux audits le confirment. Le point non résolu : la fiche ne cite aucun article précis du règlement financier à l'appui du terme « non annualisable », alors que c'est le point techniquement le plus chargé de toute la reconstruction — sans cette précision, elle risque de retomber dans l'objection qui a fait échouer, ailleurs dans le dossier, un mécanisme de « stabilisateur automatique » pourtant construit dans un esprit voisin.</p>
+    <div class="callout">
+      <p><strong>Faisabilité politique : moyenne.</strong> C'est la fiche au soutien institutionnel le plus solide des quatre — elle répond presque littéralement à une critique déjà publiée de la Cour des comptes européenne, et au grief de transparence déjà exprimé par les rapporteurs du Parlement sur le FEC. Mais c'est aussi celle qui s'approche le plus, par son objet même, du point de friction budgétaire le plus dur et le mieux financé politiquement de tout le dossier : le refus des pays dits « frugaux » et de l'Allemagne de toute rigidification du budget européen. Cette résistance est réelle, mais non bloquante juridiquement — le mécanisme ne requiert pas l'unanimité et ne touche pas à la taille de l'enveloppe.</p>
+    </div>
+    <h4>Conditions avant tout dépôt</h4>
+    <ul class="cond-list">
+      <li>Citer l'article précis du règlement financier de l'Union fondant le régime de crédits pluriannuels non annualisables pour ce compartiment</li>
+      <li>Recalibrer la formulation de la portée du mécanisme pour qu'elle ne heurte pas le principe d'annualité budgétaire</li>
+      <li>Articuler explicitement ce mécanisme avec le mécanisme de reprofilage contracyclique déjà validé par ailleurs (F11)</li>
+      <li>Ajouter une clause de réexamen calée sur la révision à mi-parcours du CFP, pour désamorcer l'objection « plus jamais de contrôle »</li>
+    </ul>
+  </div>
+
+  <div class="reform">
+    <div class="reform-head">
+      <div><span class="reform-id">N1bis</span><h3 class="reform-title" style="margin-top:3px;">Soutien à la souscription en fonds propres de long terme</h3></div>
+      <span class="pill bad">Nouveau · condition bloquante non levée</span>
+    </div>
+    <h4>Le problème et l'échec initial</h4>
+    <p>La prime européenne d'apport en fonds propres (R3, déjà validée) verse à l'<strong>entreprise</strong> qui lève du capital. L'idée d'origine de ce mécanisme (N1, surnommé FERGIL) cherchait à appliquer le même raisonnement du côté de l'<strong>investisseur</strong> : rétrocéder une part de l'impôt qu'il paie sur sa plus-value, pour reproduire l'effet d'un régime fiscal favorable sans passer par la voie fiscale classique, bloquée par l'unanimité. Elle a échoué sur un texte exprès et non une simple appréciation : l'article de base invoqué (173 TFUE) exclut, dans son propre paragraphe 3, toute mesure « contenant des dispositions fiscales » — et indexer un versement sur l'impôt effectivement payé par l'investisseur en est une, aussi indirecte soit-elle.</p>
+    <h4>Ce que corrige cette version</h4>
+    <p>N1bis change d'assiette : le versement dépend désormais du seul <strong>montant souscrit et détenu sans interruption</strong> par l'investisseur — jamais de sa plus-value, jamais de l'impôt qu'il a payé, jamais de son pays de résidence fiscale. Un barème dégressif selon la durée de détention (sur le modèle déjà conçu ailleurs dans le dossier) remplace l'indexation sur la fiscalité nationale. Ce changement supprime, par construction, les deux défauts secondaires de la version d'origine : l'inégalité de traitement entre investisseurs selon leur pays de résidence, et l'incitation à choisir artificiellement le moment de la vente pour maximiser le versement.</p>
+    <h4>Ce que le nouveau tour de vérification a trouvé</h4>
+    <p>Les trois défauts de fond de la version d'origine sont bien réparés, et de façon vérifiable point par point — les deux audits convergent sur ce constat. Mais un point, que la fiche elle-même classait comme un simple « risque résiduel », a été élevé par l'audit d'impact au rang de <strong>condition bloquante</strong> : rien, dans aucun texte ni aucune jurisprudence disponible, n'établit que l'article 173 TFUE — qui vise expressément les <em>entreprises</em> — puisse servir de base à un versement dont le bénéficiaire final est une <strong>personne physique</strong>. Ce n'est pas une exclusion écrite comme celle qui condamnait la version précédente : c'est une incertitude d'interprétation, qui doit être tranchée par un service juridique avant tout arbitrage politique, plutôt que présumée favorablement.</p>
+    <div class="callout bad">
+      <p><strong>Faisabilité politique : moyenne, mais conditionnelle — pas graduée comme les trois autres.</strong> Le profil de parties prenantes est favorable (les mêmes fédérations qui soutiennent R3), et aucune opposition organisée n'est documentée. Mais la faisabilité réelle de ce mécanisme n'est pas une variable continue : si l'article 173 TFUE s'avère indisponible pour un particulier, N1bis retombe intégralement sur les bases les plus fragiles de tout le dossier source — celles, à l'article 115 TFUE et à l'unanimité, qui avaient déjà fait juger un mécanisme voisin comme le moins praticable de l'ensemble.</p>
+    </div>
+    <h4>Conditions avant tout dépôt</h4>
+    <ul class="cond-list">
+      <li class="blocking">Faire trancher, par le service juridique de la Commission et en priorité absolue, la disponibilité de l'article 173 TFUE pour un bénéficiaire personne physique</li>
+      <li>Documenter, sans attendre cette réponse, une voie de repli qui préserve la même assiette (montant souscrit et détenu) via un véhicule d'investissement plutôt qu'un versement direct au particulier</li>
+      <li>Documenter le mécanisme opérationnel de vérification d'une détention continue par des personnes physiques, potentiellement pendant plusieurs années</li>
+      <li>Publier par avance une estimation de l'effet d'aubaine et une note d'impact distributif — qui bénéficie réellement du versement</li>
+    </ul>
+  </div>
+</section>
+
+<section id="arbitrage" class="wrap wide">
+  <p class="kicker">Le constat le plus important de cette note</p>
+  <h2>Personne ne sommait les enveloppes — et la somme ne tient pas</h2>
+  <p class="lede" style="max-width:76ch;">Chacune des dix fiches qui revendiquent le compartiment fonds propres et garanties du FEC se discipline, individuellement, contre le plafond de 11 Md€. C'est exactement ce qui avait fait échouer le guichet miroir (F3) dans sa version d'origine : une enveloppe 2,5 fois trop grande pour le compartiment qui devait l'accueillir. Le nouveau tour de vérification indépendante a trouvé la même erreur — mais cette fois <strong>distribuée sur plusieurs fiches simultanément plutôt que concentrée sur une seule</strong>, ce qui la rend invisible fiche par fiche. Aucun des documents produits jusqu'ici, y compris celui-ci avant cette section, ne faisait la somme.</p>
+
+  <div class="chart-card">
+    <p class="chart-title">Le compartiment fonds propres et garanties du FEC — 11 Md€ sur sept ans</p>
+    <p class="chart-sub">En ne comptant que les deux lignes déjà chiffrées avec précision</p>
+    <div class="stackbar" role="img" aria-label="Répartition illustrative du compartiment de 11 milliards d'euros : F3 environ 2,8 milliards, R3 6 milliards, solde disponible environ 2,2 milliards pour sept autres mécanismes non encore chiffrés.">
+      <div class="seg f3" style="flex:2.8 1 0%;" tabindex="0">
+        <span class="seg-label">F3</span>
+        <span class="tip">F3 — guichet miroir · ≈ 2,8 Md€</span>
+      </div>
+      <div class="seg r3" style="flex:6 1 0%;" tabindex="0">
+        <span class="seg-label">R3 · 6 Md€</span>
+        <span class="tip">R3 — prime d'apport en fonds propres · 6 Md€</span>
+      </div>
+      <div class="seg reste" style="flex:2.2 1 0%;" tabindex="0">
+        <span class="seg-label">≈ 2,2 Md€</span>
+        <span class="tip">Solde restant pour F4, F6bis, F10bis, F13bis, N1bis, N3, N5</span>
+      </div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><span class="swatch f3"></span><div><div class="lt">F3 — guichet miroir</div><div class="ld">2,1 à 2,8 Md€ déjà validés</div></div></div>
+      <div class="legend-item"><span class="swatch r3"></span><div><div class="lt">R3 — prime d'apport en fonds propres</div><div class="ld">6 Md€ déjà validés, rationnement à ajouter</div></div></div>
+      <div class="legend-item"><span class="swatch reste"></span><div><div class="lt">Solde restant, non encore arbitré</div><div class="ld">Doit couvrir F4, F6bis, F10bis, F13bis, N1bis, N3 et N5 réunis</div></div></div>
+    </div>
+    <p class="chart-note">F3 et R3, à elles seules, consomment déjà <strong>75 à 85 % du compartiment total</strong>. Sept autres lignes doivent se répartir le solde — et si <em>une seule</em> d'entre elles (N1bis, « à plafonner comme R3 » selon sa propre fiche) atteignait une échelle seulement comparable à R3, le compartiment serait dépassé à lui seul, avant même de compter F4, F6bis, F10bis, F13bis, N3 et N5.</p>
+  </div>
+
+  <h3>Une logique de séquencement, pas un arbitrage à la place du législateur</h3>
+  <p>Cette note ne peut pas trancher combien chaque ligne doit peser — c'est un arbitrage politique, pas un calcul. Elle propose une logique de séquencement fondée sur deux critères objectifs déjà établis par les deux audits : la maturité juridique de chaque mécanisme, et le poids déjà engagé par les lignes validées en amont.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Ordre</th><th>Mécanisme</th><th>Logique</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>F3, R3</td><td>Déjà budgétées — 75 à 85 % du compartiment, un tour de vérification complet déjà passé</td></tr>
+        <tr><td>2</td><td>F13bis, N3, N5</td><td>Coût de déploiement quasi nul — architecture budgétaire et gouvernance, pas de capital à déployer</td></tr>
+        <tr><td>3</td><td>F10bis</td><td>La plus mûre des lignes de capital nouvelles — une seule condition bloquante, déjà bien identifiée et rédigeable rapidement ; la moins coûteuse par construction</td></tr>
+        <tr><td>4</td><td>F6bis, N1bis</td><td>Chacune porte une précondition (étude EIOPA, avis juridique) qui doit de toute façon être levée avant qu'un chiffre puisse être arrêté sérieusement — leur séquencement naturel est postérieur</td></tr>
+        <tr><td>—</td><td>F4</td><td>Coût réel dépendant du taux de rachat encore à calculer — non positionnable dans cet ordre avant ce calcul</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout gold">
+    <p><strong>Recommandation opérationnelle unique de cette note :</strong> avant tout dépôt législatif consolidé, DG BUDG et DG ECFIN doivent produire une table de réconciliation officielle des dix lignes. C'est la condition de crédibilité de l'ensemble du dossier <em>equity</em> face à la Cour des comptes européenne, dont la vigilance documentée porte précisément sur la gouvernance et le contrôle financier d'instruments consolidés.</p>
+  </div>
+</section>
+
+<section id="hors-perimetre" class="wrap">
+  <p class="kicker">Pour que rien ne passe pour un oubli</p>
+  <h2>Ce qui reste hors périmètre — et où le trouver</h2>
+  <p class="lede">Des leviers <em>equity</em> réels existent en dehors du budget de l'Union. Ils ne sont pas ignorés — ils sont déjà traités, en détail, dans le dossier complet, sous une forme qui suit son propre calendrier législatif indépendant du CFP.</p>
+  <ul>
+    <li><strong>Le régime des fonds de capital-risque européens</strong> et sa fiscalité — remplacement d'EuVECA, passeport de gestion, transparence fiscale transfrontalière.</li>
+    <li><strong>La charge prudentielle Solvabilité II</strong> — l'escalier continu de charge en capital selon la durée de détention, dont le volet le plus ambitieux (un sous-module à 17 %) a d'ailleurs été invalidé par la vérification indépendante pour excès d'habilitation déléguée.</li>
+    <li><strong>Le droit des sociétés et la fiscalité de l'actionnariat salarié</strong> — bande de capital et instrument convertible européens, régime EU-ESOP.</li>
+    <li><strong>Les plateformes de liquidité pré-IPO et le guichet unique de sortie</strong> — infrastructure de marché sous supervision de l'ESMA, hors budget par construction.</li>
+    <li><strong>La titrisation du portefeuille de garanties existant</strong> — un mécanisme réel et déjà validé ailleurs dans le dossier, mais dont l'effet porte sur la dette de croissance, pas sur les fonds propres : le document source le dit lui-même, le présenter comme une réponse à l'écart de financement en capital serait « analytiquement malhonnête ».</li>
+  </ul>
+  <p>Le dossier complet sur ces leviers reste le point de départ pour toute vue d'ensemble sur le financement des startups et scale-ups européennes, au-delà du seul angle budgétaire de cette note.</p>
+</section>
+
+<section id="bilan" class="wrap">
+  <p class="kicker">En résumé</p>
+  <h2>Dix mécanismes, deux niveaux de maturité</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Mécanisme</th><th>Statut</th><th>Ce qui reste à faire</th></tr></thead>
+      <tbody>
+        <tr><td>F3, F4, R3, F11, N3, N5</td><td>Validés, feuille de route complète disponible</td><td>Rédaction législative — R3 doit encore recevoir sa règle de rationnement</td></tr>
+        <tr><td>F10bis</td><td>Validé sous condition</td><td>Rédiger la clause anti-abus du co-investisseur privé</td></tr>
+        <tr><td>F13bis</td><td>Validé sous condition</td><td>Citer la base juridique précise du règlement financier</td></tr>
+        <tr><td>F6bis</td><td>Validé sous conditions techniques fortes</td><td>Consultation EIOPA — l'étape la plus longue des quatre</td></tr>
+        <tr><td>N1bis</td><td>Validé sous condition bloquante</td><td>Avis juridique sur l'article 173 TFUE — condition de survie du mécanisme lui-même</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Six mécanismes sont prêts pour une rédaction législative immédiate. Quatre nécessitent une étape préalable avant de l'être — un travail technique de quelques mois pour trois d'entre eux (F10bis, F13bis, F6bis), et pour la quatrième (N1bis), une incertitude dont l'issue n'est, à ce stade, pas garantie. Et pour l'ensemble des dix : un arbitrage d'enveloppe que cette note documente sans pouvoir le trancher à la place du législateur.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h4>Documents de ce dossier</h4>
+    <p>Analyse produite dans <code>eu-financial-policy-claude-code/policy/equity-financing-mff/</code>, en continuité du dossier complet sur le financement des startups et scale-ups européennes (<code>policy/mff-startup-funding/</code>).</p>
+    <ul class="filelist">
+      <li>00-cadrage-et-inventaire.md — périmètre, état des lieux, les six mécanismes déjà validés</li>
+      <li>01-reconstructions-proposees.md — les quatre fiches complètes (F6bis, F10bis, F13bis, N1bis)</li>
+      <li>02a-verification-impact.md — audit d'impact réglementaire indépendant</li>
+      <li>02b-verification-faisabilite.md — audit de faisabilité politique indépendant</li>
+      <li>03-synthese-et-arbitrage.md — synthèse, réconciliation des enveloppes, portefeuille final</li>
+    </ul>
+  </div>
+</footer>
