@@ -1430,3 +1430,498 @@ Le dossier a changé de nature entre le round 1 et le round 3. Il ne repose plus
 - [Commission européenne, *Regional Innovation Scoreboard 2025*](https://op.europa.eu/en/publication-detail/-/publication/7f4bfd8b-6382-11f0-bf4e-01aa75ed71a1/language-en) et [page institutionnelle du RIS](https://research-and-innovation.ec.europa.eu/statistics/performance-indicators/regional-innovation-scoreboard_en) — **241 régions ; 38 / 69 / 74 / 60 ; Estonie *Strong Innovator*, 11e rang ; Lettonie *Emerging Innovator*, 25e rang ; EE, LV, CY, LU, MT traités au niveau national.** Vérification du round 2 confirmée exactement
 - [ESMA, Q&A et orientations sur les articles 3(3)(d) et 24 de l'AIFMD](https://www.esma.europa.eu/document/guidelines-reporting-obligations-under-articles-33d-and-241-2-and-4-aifmd) — le régime des gestionnaires sous seuil est largement laissé aux autorités nationales ; le registre de l'ESMA couvre les gestionnaires **agréés**
 - [FEI, *European Angels Fund*](https://www.eif.org/what_we_do/equity/eaf/index.htm) — volume supérieur à 800 M€, plus de 330 M€ engagés auprès de plus de 120 business angels, plus de 800 co-investissements ; **aucune donnée publiée sur le taux de tirage effectif des CFA signés**
+
+---
+
+# ROUND 4 — Réponse de `policy-innovator` au deuxième stress-test Better Regulation
+
+> **Note de continuité — à lire avant tout.** Ce fichier est la **suite directe** de `policy/coinvestment-business-angels/impact-debate.md`, qui contient le round 1 (`impact-assessment-auditor`), le round 2 (`policy-innovator`) et le round 3 (`impact-assessment-auditor`). Il est écrit séparément pour la même raison technique qu'aux rounds précédents — éviter la réécriture intégrale d'un fichier de plus de 1 400 lignes que je ne dois pas altérer. **Le contenu ci-dessous est destiné à être concaténé à la fin de `impact-debate.md`** (`cat impact-debate-round4.md >> impact-debate.md && rm impact-debate-round4.md`). Aucun des trois rounds précédents n'a été modifié.
+
+**Agent :** `policy-innovator`
+**Round :** 4 (réponse au round 3 de l'`impact-assessment-auditor`)
+**Date :** 2 septembre 2026
+**Documents révisés :** `proposals.md` (11 propositions initiales), tel que déjà amendé par le round 2
+
+---
+
+## 0. Posture : je choisis « plus simple », et je le rends visible
+
+Le round 3 se termine par un arbitrage que je ne peux pas éviter : « soit le dispositif est plus grand, soit il est plus simple ». **Je choisis plus simple, sans réserve et sans compensation.** Un instrument dont la souscription n'est pas établie n'a pas le droit de demander une taille plus grande pour améliorer son ratio de coût : ce serait résoudre CT8 en aggravant CT4. La seule voie honnête est de réduire l'appareillage jusqu'à ce qu'il soit proportionné au capital que le dispositif déploie réellement dans son scénario **bas**, et non dans son scénario central.
+
+Ce que cela coûte, en une liste, pour que l'arbitrage ne soit pas noyé dans le détail :
+
+1. **P10' est retirée.** Les deux motifs du round 3 sont exacts et le premier m'incombe entièrement : il contredit ma propre concession sur P5, faite dans le même document. Je la remplace par un mécanisme contractuel qui n'emprunte aucun rail passeporté (§1).
+2. **L'autorisation d'engagement de la cohorte 1 passe de 30 M€ à 21 M€**, voie A seulement, la voie B et sa part d'enveloppe étant intégralement reportées en phase 2 et conditionnées à une gâchette. Cela corrige aussi l'incohérence §3/§4 que le round 3 relève en note d'équité.
+3. **Le budget d'évaluation devient un escalier à trois paliers indexé sur le nombre de CFA signés**, dont le premier palier coûte 60 à 100 k€ au lieu de 1,5 à 2,5 M€. C'est le poste qui faisait exploser le ratio dans les scénarios où le dispositif fonctionne le moins bien.
+4. **Le bon de structuration devient conditionnel et plafonné en agrégat**, de sorte que son coût ne dépend plus d'une hypothèse dont je n'ai pas la preuve.
+5. **Je scinde P9** — que le round 3 n'a pas contestée sur ce point — parce qu'en construisant la borne de proportionnalité de CT8 je découvre que la ligne de coordination, à 15-20 M€ sur sept ans, dépasse le capital que le dispositif déploie. Je le signale moi-même et je le corrige (§8).
+6. **Le taux de déploiement disparaît comme paramètre libre.** Il est remplacé par un modèle ascendant dont le seul ancrage publié est celui du FEI (§4).
+
+Deux points sur lesquels je ne cède pas, et où je produis un contre-argument plutôt qu'une reformulation :
+
+- **M46 (dégressivité du ratio) :** le correctif proposé par l'auditeur est **arithmétiquement identique** à la règle qu'il remplace — il déplace le coude au même endroit. Je le démontre en §6, j'accepte l'exigence de publication, et je défends la dégressivité par deux justifications indépendantes, dont l'une tient à la théorie du changement de P2 (§6).
+- **M45 (prémisse de P6(c)) :** j'identifie le régime national demandé — **PFR Biznest**, en Pologne, financé sur fonds de l'Union en gestion partagée — mais la vérification me conduit à **réduire moi-même la portée de P6(c)** plutôt qu'à la sauver : la marge créée par la réduction de moitié des taux rend l'effet pervers improbable au stade amorçage. J'abaisse la demande d'un amendement de texte à une clarification dans le guide pratique de la Commission (§5).
+
+---
+
+## 1. P10' — retrait, et reconstruction hors de tout rail passeporté
+
+### 1.1 Le retrait, et pourquoi le motif 1 m'incombe plus que le motif 2
+
+**P10' est retirée.** Les deux motifs du round 3 sont indépendants et chacun suffit.
+
+Le **motif 2** (l'article 25 de l'ECSPR interdit qu'un tableau d'affichage constitue un système d'appariement interne exécutant les ordres sur une base multilatérale, sauf agrément distinct d'entreprise d'investissement ou de marché réglementé) est une vérification que je n'avais pas faite et que j'accepte telle quelle. Des fenêtres périodiques, à règle de prix d'exécution publiée ex ante et exécution au prorata, sont la définition d'un système multilatéral. J'avais lu l'article 25 comme une habilitation ; il est une habilitation **bornée**, et la borne tombe exactement sur ce que je proposais.
+
+Le **motif 1** est plus grave parce qu'il ne demandait aucune vérification externe : **il était démontrable à l'intérieur de mon propre document du round 2.** Sous P5, je concède expressément qu'aucun fonds n'est constitué, qu'aucune part n'est souscrite et qu'aucune commercialisation n'a lieu. Quarante paragraphes plus loin, je construis un mécanisme dont la condition d'existence est un instrument unique et fongible doté d'une valeur liquidative. Le round 3 a raison de qualifier cela de répétition de la faute que j'avais reconnue sur P5 : **j'ai emprunté un mécanisme à un régime voisin sans vérifier la propriété du régime d'origine dont il dépend.** Sur P5 la propriété manquante était l'architecture de protection au niveau du produit ; sur P10' c'est la fongibilité des parts. C'est la même erreur, commise deux fois, dans le même document, la seconde fois après avoir écrit que je l'avais comprise.
+
+J'en tire une règle de méthode que j'inscris dans le dossier plutôt que de la promettre : **avant tout emprunt à un régime voisin, énoncer explicitement la propriété structurelle du régime d'origine qui fait fonctionner le mécanisme, et vérifier qu'elle existe dans l'architecture d'accueil.** Cette règle aurait tué P10' en trois lignes et aurait tué la doctrine du seuil de P5 au round 1.
+
+### 1.2 Ce que je conserve du round 3 sans y ajouter
+
+- **La limite structurelle sur la friction 7 reste l'acquis principal** et elle est déjà écrite dans l'architecture générale (round 2, P10). Elle n'est pas modifiée. Le dispositif agit sur les coûts de transaction et sur la sélection ; il n'agit ni sur la profondeur du marché de sortie, ni sur l'exposition de change non couverte à 7-10 ans.
+- **Le tableau d'affichage conforme à l'article 25**, sans appariement : annonce d'intérêt, formation du prix et conclusion hors plateforme entre les parties. Je le maintiens **et j'accepte la requalification du round 3** : c'est une fonction d'information, pas un mécanisme de liquidité, et il ne doit jamais être décrit autrement dans aucun document du dispositif.
+- **L'engagement de non-intervention du FEI** (aucune préférence, aucune contrepartie) est conservé.
+
+### 1.3 P10'' — le paquet minoritaire opposable et la faculté d'accompagnement de cession
+
+Je ne remplace pas P10' par un second mécanisme de marché. Je propose deux **clauses contractuelles** qui n'empruntent aucun rail réglementé, ne créent aucun système, ne garantissent aucun prix et ne consomment aucun budget. Elles ne créent pas de liquidité — je l'écris d'emblée — mais elles agissent sur la seule dimension de la friction 7 qu'un co-investisseur minoritaire peut atteindre par contrat : **ne pas être bloqué quand la liquidité survient, et être d'une taille qui intéresse un acheteur.**
+
+**(a) Paquet minoritaire opposable, condition d'éligibilité du tirage.**
+
+Le tirage sur le CFA Corridor n'est éligible que si le pacte d'associés de la société cible comporte, au bénéfice de **tous** les co-investisseurs minoritaires du tour sans condition de résidence :
+
+- un **droit de sortie conjointe (tag-along)** proportionnel, exerçable sur toute cession d'un bloc de contrôle ou emportant changement de contrôle ;
+- un **droit d'information** sur tout projet de cession de titres au-delà d'un seuil, avec délai permettant l'exercice du tag-along ;
+- l'interdiction qu'une clause d'entraînement (**drag-along**) soit exercée à un prix inférieur à celui offert aux bénéficiaires du tag-along ;
+- un **droit de participation proportionnelle (pro rata) aux tours suivants**, seul mécanisme qui empêche la dilution silencieuse d'un premier chèque sur cinq à sept ans.
+
+*Instrument porteur :* clause de CFA, aucun texte, aucun rail. **Cadre UE connecté :** ce paquet est exactement le contenu que la documentation standardisée de P9 doit produire — et il donne à P9 une fonction opérationnelle qu'elle n'avait pas. La documentation cesse d'être un objet de convergence culturelle pour devenir le véhicule d'une condition d'éligibilité vérifiable sur pièces. C'est aussi ce qui rend P9(a) défendable après la scission de §8 : elle porte désormais un effet direct sur le rendement espéré de l'investisseur, pas seulement sur la coordination des réseaux.
+
+*Coût administratif :* nul en marginal. Le paquet se lit dans le pacte d'associés, document que le FEI obtient de toute façon avec la table de capitalisation exigée par la règle d'assiette. Même régime déclaratif, même contrôle par échantillon, même clause de restitution en cas de fausse déclaration.
+
+*Effet micro :* il ne rend pas la participation liquide ; il supprime le scénario dans lequel le co-investisseur étranger, minoritaire et non représenté au conseil, reste au capital quand les fondateurs et le lead sortent. Le brief micro identifie l'asymétrie d'information et l'absence de représentation comme les deux faiblesses structurelles de la position transfrontalière ; le paquet traite la seconde.
+
+*Effet macro :* aucun à court terme. À moyen terme, la généralisation d'un standard minimal de protection minoritaire dans les pacte d'associés des pays cibles est exactement le type d'effet institutionnel que P3 et P9 recherchent, et il est mesurable (part des tours Corridor dont le pacte comporte le paquet complet avant intervention, et après).
+
+**(b) Faculté d'accompagnement de cession minoritaire de l'Union.**
+
+> Lorsqu'un ou plusieurs co-investisseurs privés d'un tour Corridor offrent leur participation minoritaire à la cession, le FEI **peut**, sans y être jamais tenu, offrir sa propre participation *pari passu* dans le même bloc, aux mêmes termes et au même prix.
+
+*Le problème que cela traite, et il est précis.* Le round 3 a raison de dire qu'un mécanisme d'appariement ne crée pas d'acheteurs. Mais la friction observée sur ce segment n'est pas seulement l'absence d'acheteurs : c'est que **la taille du bloc offert est inférieure au seuil d'intérêt d'un acquéreur**. Une position d'angel de 25 000 à 55 000 € ne justifie pas, pour un fonds entrant au tour suivant, le coût de négociation, de *due diligence* juridique sur le pacte et de documentation de transfert. Deux positions agrégées à 55-110 000 €, oui — c'est l'ordre de grandeur des rachats secondaires effectivement observés lors des tours de série A.
+
+*Pourquoi c'est propre au regard de tout ce que le round 1 et le round 3 ont établi :*
+
+| Objection formulée contre P10 / P10' | Statut ici |
+|---|---|
+| Différence de traitement fondée sur la résidence | **Aucune** : ouvert à tous les co-investisseurs privés du tour, résidents et non résidents |
+| Garantie de prix / subvention au rendement (base de preuve négative, K5) | **Aucune** : aucun plancher, aucune décote, aucune règle de prix ; le prix est celui négocié entre le cédant et l'acquéreur |
+| Exposition budgétaire non provisionnée | **Aucune** : l'Union cède, elle n'acquiert rien ; l'opération est un produit, pas une dépense |
+| Système d'appariement multilatéral (art. 25 ECSPR) | **Sans objet** : aucune réunion d'intérêts acheteurs et vendeurs, aucune exécution, aucune règle de prix ex ante ; c'est une décision de gestion de portefeuille bilatérale |
+| Fongibilité requise (art. 19 §2 bis ELTIF) | **Sans objet** : aucun instrument fongible n'est supposé ; chaque cession porte sur les titres d'une société déterminée |
+| Horizon de lecture postérieur à la décision | Lisible dès la 3<sup>e</sup> année, sur un indicateur simple (nombre de cessions accompagnées, part du bloc apportée par l'Union) |
+
+*Deux garde-fous que je pose moi-même, parce qu'ils sont nécessaires.* Premièrement, la faculté est **discrétionnaire et doit le rester** : le CFA doit énoncer qu'aucune attente n'est créée et qu'aucun co-investisseur ne peut se prévaloir d'un refus. À défaut, la faculté deviendrait une option de vente implicite et l'on reconstruirait P10 par la coutume. Deuxièmement, la faculté ne doit pas devenir un canal de sortie anticipée de l'Union : la décision relève de la politique de portefeuille normale du FEI, et le nombre de cessions accompagnées par cohorte est publié, ce qui permet de détecter une dérive.
+
+*Ce que cela ne fait pas, et je le dis pour ne pas répéter la faute de P10' :* cela n'organise aucune liquidité, ne garantit aucun acheteur, et ne corrige pas la troncature de la queue droite. **La limite structurelle énoncée sous P10 reste la position du dossier sur la friction 7.** P10'' est une amélioration marginale de la position du minoritaire, pas une réponse à la friction.
+
+---
+
+## 2. CT8 — Le chiffrage refait au bon dénominateur, avec ajustement du dispositif
+
+Le round 3 a raison sur les trois points qui composent CT8 : le dénominateur employé était l'autorisation d'engagement et non le capital déployé ; le bon de structuration était absent du chiffrage alors que c'est une subvention ; et la ligne d'évaluation, largement fixe, dégrade le ratio exactement dans les scénarios où le dispositif fonctionne le moins bien. Je ne conteste aucun de ces trois points.
+
+Je ne me contente pas non plus de recalculer : **je modifie le dispositif sur quatre points, dont trois réduisent une dépense et un corrige une incohérence que l'auditeur avait signalée en note.**
+
+### 2.1 Les quatre modifications, et pourquoi chacune est fondée
+
+**(i) Le périmètre de la cohorte 1 est ramené à la voie A seulement, et l'autorisation d'engagement de 30 M€ à 21 M€.**
+Le §3 du round 2 place la voie B en phase 2 (2028) ; le §4 chiffrait néanmoins l'accréditation et le reporting de la voie B dans la cohorte 1. Le round 3 demande de trancher « dans un sens ou dans l'autre ». Je tranche dans le sens de la phase 1 : **la voie B, ses coûts d'accréditation d'entité, son reporting deal par deal et sa part d'enveloppe (5 à 12 M€) sortent intégralement de la cohorte 1** et sont conditionnés à la gâchette G2 de §3. Cohorte 1 = 60 CFA voie A × 350 k€ = **21 M€** d'autorisation, libérés par vagues.
+
+**(ii) L'évaluation devient un escalier à trois paliers indexé sur le nombre de CFA signés.**
+C'est la modification qui emporte le résultat, et c'est l'option que le round 3 qualifie lui-même d'évidente sous M51. Le point que j'ajoute est que le palier bas coûte beaucoup moins qu'on ne le croit, pour une raison propre à ce dispositif : **la règle d'assiette impose déjà la collecte de la table de capitalisation de chaque tour**, c'est-à-dire du jeu de données central de toute évaluation. La collecte est un sous-produit du contrôle d'éligibilité, pas une dépense d'évaluation.
+
+| Palier | Déclencheur | Contenu | Coût |
+|---|---|---|---|
+| **1** | < 40 CFA signés | Pré-enregistrement du protocole ; exploitation des données administratives déjà collectées ; suivi descriptif ; **aucune randomisation** (la puissance n'existe pas) | **60 – 100 k€** |
+| **2** | 40 – 99 CFA signés | Palier 1 + ligne de base, randomisation du bras de test, infrastructure de données, appariement d'un groupe de comparaison | **300 – 450 k€** |
+| **3** | ≥ 100 CFA cumulés (cohortes 1+2) et borne de coût de §2.3 respectée | Évaluation contrefactuelle complète jusqu'à t+7 | 1,2 – 1,8 M€, **imputés à la cohorte qui déclenche le palier**, non à la cohorte 1 |
+
+**Synergie qui réduit le coût plutôt que de le déplacer :** la conception et l'analyse du palier 3 sont confiées au **Competence Centre on Microeconomic Evaluation du Centre commun de recherche (JRC)**, qui conduit des évaluations d'impact contrefactuelles pour les services de la Commission depuis 2016 (héritier du CRIE, JRC Ispra), plutôt qu'à un marché externe dédié. Le dossier gagne sur trois plans : le coût marginal d'une évaluation conduite par une capacité interne existante est inférieur à celui d'un marché ; la crédibilité méthodologique ne dépend plus du titulaire du marché ; et la contrainte macro C6 (aucune évaluation contrefactuelle d'un dispositif de co-investissement angel n'existe) est traitée par l'entité dont c'est précisément le mandat. La ligne de base historique (portefeuille de l'EIF WP 2020/62) et les données du FEI (P11, M35) sont les deux intrants.
+
+**(iii) Le bon de structuration devient conditionnel, plafonné par opération et plafonné en agrégat.**
+Le round 3 impute 2 500 € × 400 opérations = 1,0 M€. L'imputation est correcte au regard de ce que le round 2 écrivait ; l'hypothèse sous-jacente ne l'est pas, et c'est ma faute de ne pas l'avoir énoncée : **le bon neutralise le coût d'un véhicule, or toutes les opérations n'en requièrent pas un.** Là où deux ou trois souscripteurs non résidents entrent directement à la table de capitalisation — ce que permettent la plupart des droits des sociétés pour un nombre restreint de souscripteurs — il n'y a ni SPV, ni coût, ni bon. Le véhicule est requis lorsque le syndicat est large, c'est-à-dire essentiellement sur le rail ECSPR.
+
+Plutôt que de défendre un taux d'usage que je ne peux pas établir, je rends le paramètre **non porteur** :
+
+- le bon n'est dû que sur présentation d'une facture de constitution ou d'administration d'un véhicule effectivement interposé ;
+- le bon ne peut excéder **5 % du tirage public de l'opération qu'il sert** (2 500 € sur un tirage de 55 000 € = 4,5 % : la borne mord sur les petites opérations, où le bon serait disproportionné) ;
+- l'enveloppe agrégée des bons d'une cohorte est plafonnée à **3 % du capital public déployé de cette cohorte**, réputée close lorsqu'elle est atteinte.
+
+Quel que soit le taux d'usage réel, le coût des bons est donc borné à 3 % du capital déployé. Mon hypothèse de travail est un taux d'usage de 40 %, mais **le ratio de CT8 ne dépend plus de sa justesse.**
+
+**Base budgétaire (réponse à M42), et c'est une synergie et non une création :** le bon est une subvention et il ne peut pas être imputé sur l'enveloppe de capital d'un instrument financier. Il relève de la logique d'**opération de mixage** et son support naturel existe déjà — l'**InvestEU Advisory Hub**, établi par l'article 25 du règlement (UE) 2021/523, dont l'objet est précisément l'appui au développement, à la structuration et à la mise en œuvre de projets d'investissement et le renforcement de capacités des intermédiaires. C'est le bon véhicule budgétaire, il a une gouvernance, il a un point d'entrée central géré par la Commission, et son usage évite de créer une ligne ad hoc. **Je ne prétends pas que ce reclassement diminue le coût pour l'Union — il ne le diminue pas — et je continue donc à compter les bons dans le ratio de CT8.** Ce qu'il apporte est une base juridique propre, en remplacement de l'imputation sur les plafonds de l'article 21 du RGEC qui tombe avec l'abandon du cadre RGEC.
+
+**(iv) Le coût non récurrent de conception du CFA type est amorti, non imputé en totalité à la cohorte 1.**
+150 à 250 k€ de conception et de négociation du CFA type Corridor servent l'ensemble du programme (cohortes 1 à 3, dix ans). Les imputer intégralement à la première cohorte est un artefact comptable. Un tiers est imputé à la cohorte 1 : **50 à 85 k€**.
+
+### 2.2 Le chiffrage refait
+
+Le modèle de déploiement sous-jacent est reconstruit en §4 ; je n'en reprends ici que les sorties. Les coûts sont exprimés **sur la vie de la cohorte** (sept ans, durée d'un CFA) et **sur la fenêtre de trois ans**, parce que le round 3 a raison de dire qu'une autorisation non consommée ne finance aucune entreprise — mais il faut ajouter que **les coûts fixes du dispositif sont des coûts de cycle de vie, pas des coûts de trois ans.** Comparer un coût fixe intégral à un déploiement tronqué à trois ans surestime le ratio d'un facteur voisin du rapport des horizons. Les deux colonnes sont donc données, et la borne de proportionnalité porte sur les deux.
+
+**Coûts, cohorte 1, voie A seulement (en k€) :**
+
+| Poste | Bas (27 CFA) | Central (60 CFA) | Haut (93 CFA) |
+|---|---|---|---|
+| Conception CFA type, quote-part cohorte 1 | 50 – 85 | 50 – 85 | 50 – 85 |
+| Accréditation voie A (1 000 – 1 600 €/CFA) | 27 – 43 | 60 – 96 | 93 – 149 |
+| Vérification par tour (150 – 200 €/op., sur la vie) | 12 – 16 | 45 – 60 | 75 – 100 |
+| Contrôle par échantillon (35 €/op.) | 3 | 11 | 18 |
+| Bons de structuration (plafonnés à 3 % du capital déployé) | 81 | 300 | 500 |
+| Évaluation, palier déclenché | 60 – 100 (palier 1) | 300 – 450 (palier 2) | 300 – 450 (palier 2) |
+| **Total sur la vie de la cohorte** | **233 – 328** | **766 – 1 002** | **1 036 – 1 302** |
+| **Total imputable aux 3 premières années** | 191 – 284 | 606 – 835 | 769 – 1 024 |
+
+**Rapport au capital public effectivement déployé :**
+
+| Scénario | Capital déployé, 3 ans | Capital déployé, vie de la cohorte | **Coût / capital déployé, 3 ans** | **Coût / capital déployé, vie** |
+|---|---|---|---|---|
+| **Bas** (27 CFA, 3 op./CFA) | 2,45 M€ | 4,45 M€ | **7,8 % – 11,6 %** | **5,2 % – 7,4 %** |
+| **Central** (60 CFA, 5 op./CFA) | 9,1 M€ | 16,5 M€ | **6,7 % – 9,2 %** | **4,6 % – 6,1 %** |
+| **Haut** (93 CFA, 6 op./CFA) | 15,1 M€ | 27,5 M€ | **5,1 % – 6,8 %** | **3,8 % – 4,7 %** |
+
+Comparaison avec le chiffrage du round 3, pour que l'écart soit lisible et attribuable :
+
+| | Round 3 (central) | Round 4 (central, 3 ans) | Écart attribuable à |
+|---|---|---|---|
+| Capital public déployé | 9,5 M€ | 9,1 M€ | Modèle ascendant (§4), quasi inchangé |
+| Administration | 0,6 – 1,0 M€ | 0,14 – 0,22 M€ | Retrait de la voie B (–0,07 à –0,16) ; amortissement du CFA type (–0,10 à –0,17) ; correction du nombre d'opérations, 400 → 165 sur 3 ans (M50) |
+| Évaluation | 1,5 – 2,5 M€ | 0,30 – 0,45 M€ | Escalier de paliers (M51) + JRC CC-ME |
+| Bons | 1,0 M€ | 0,17 M€ | Conditionnalité au véhicule effectif + plafond agrégé de 3 % |
+| **Ratio** | **33 % – 47 %** | **6,7 % – 9,2 %** | |
+
+**Ce que je ne masque pas.** L'essentiel de l'amélioration vient de trois décisions que le round 3 a lui-même désignées : l'escalier d'évaluation (M51), le retrait de la voie B de la cohorte 1 (note d'équité) et la correction du nombre d'opérations (M50). Une seule modification est de mon initiative — la conditionnalité et le plafonnement des bons — et elle a été construite pour que le ratio ne dépende plus d'une hypothèse que je ne peux pas prouver. **Le ratio du round 2 n'était pas défendable ; celui-ci l'est parce que le dispositif a été allégé, pas parce que le dénominateur a été choisi plus favorablement.**
+
+### 2.3 La borne de proportionnalité, avec sa conséquence automatique
+
+> **Borne.** La somme des coûts d'administration, d'évaluation et de bons de structuration d'une cohorte ne peut excéder **12 % du capital public déployé attendu sur la vie de la cohorte**, ni **15 % du capital public effectivement déployé au terme des trois premières années**.
+>
+> **Conséquence automatique en cas de franchissement au point d'étape de 24 mois :** aucune vague d'accréditation nouvelle n'est ouverte ; le palier d'évaluation est ramené au palier immédiatement inférieur ; l'enveloppe de bons est close ; la cohorte est menée à terme sur les CFA existants ; et la revue de mandat statue sur la poursuite du programme. **Aucune de ces conséquences ne requiert de décision discrétionnaire.**
+
+Une borne sans conséquence est un vœu. Celle-ci se déclenche sur une donnée que le dispositif produit de toute façon (capital déployé, dépenses engagées) et elle agit sur les trois postes qui la composent.
+
+Les trois scénarios respectent la borne avec marge, y compris le scénario bas — ce que le round 3 exigeait explicitement. Le point de tension résiduel est le scénario bas sur la fenêtre de trois ans (11,6 % contre une borne de 15 %) : la marge est de 3,4 points et elle est absorbée par la seule dérive du poste d'accréditation.
+
+---
+
+## 3. CT9 — Le point de non-lancement reconstruit en quatre gâchettes distinctes
+
+Le round 3 a raison sur les deux branches : le repli renvoyait à ce qui est devenu la phase 1, et le seuil exigeait six agrégateurs de voie B pour lancer une phase qui n'en comporte pas. La révision d'architecture du §3 du round 2 a vidé la garantie du §2.4 sans que je le voie. Je reconstruis, en appliquant le principe que le round 3 énonce : **le point d'arrêt doit être placé là où un coût fixe irrécupérable est engagé.**
+
+| Gâchette | Moment | Condition | **Ce qu'elle conditionne réellement** |
+|---|---|---|---|
+| **G0** — bifurcation d'architecture | T1 2027, avant tout engagement | Vérification auprès du FEI : le compartiment paneuropéen existant peut-il être re-mandaté et son enveloppe Corridor isolée comptablement ? | **Oui** → phase 1 = re-mandat, coût fixe quasi nul, G1bis suffit. **Non** → la phase 1 suppose la création d'un compartiment, donc un coût fixe irrécupérable dès l'origine : dans cette branche, **G2 devient le point de non-lancement** et ses conditions doivent être satisfaites *avant* toute création |
+| **G1** — dimensionnement | Continu | L'autorisation libérée par vague est fonction du nombre de CFA **effectivement signés**, jamais d'intentions. Vague 1 : 15 CFA, 5,25 M€. Vague *n+1* ouverte lorsque 80 % de la vague *n* est signée | Le montant affiché. Aucune enveloppe n'est publiée avant d'être plaçable — ce qui supprime le reproche adressé à l'EAF sur ses 41 % |
+| **G1bis** — arrêt de continuation de la phase 1 | 12 mois après l'ouverture | **< 12 CFA Corridor signés** | Arrêt des accréditations ; aucune vague nouvelle ; évaluation ramenée au palier 1 ; cohorte menée à terme sur les CFA existants ; la revue de mandat statue. **C'est ce qui rend la phase 1 arrêtable**, ce que le round 2 ne prévoyait pas |
+| **G2** — point d'arrêt principal, entrée en phase 2 | Au plus tôt 24 mois après l'ouverture | **Cumulativement** : (i) ≥ 40 CFA voie A signés ; (ii) ≥ 60 % de l'autorisation des vagues ouvertes tirée ou affectée à un *pipeline* identifié ; (iii) recensement achevé identifiant **≥ 10 agrégateurs qualifiés au titre de B2 ou B3 dans ≥ 4 États membres cibles** ; (iv) ratio de coût à 3 ans ≤ 15 % du capital déployé (borne de §2.3) ; (v) coût d'accréditation en pays sans présence du FEI estimé avec l'opérateur | **Voie B, présence locale, compartiment distinct** — c'est-à-dire l'intégralité du coût fixe irrécupérable du dispositif. À défaut : le dispositif demeure indéfiniment un compartiment paneuropéen re-mandaté, voie A seulement. **C'est une issue stable, pas un échec** |
+| **G3** — cohorte 2 et évaluation lourde | Fin de la cohorte 1 | ≥ 100 CFA cumulés (cohortes 1+2) **et** borne de §2.3 respectée | Palier 3 d'évaluation et prétention causale. À défaut, la prétention causale est abandonnée et le protocole descriptif pré-enregistré est ce qui est publié |
+
+Trois corrections précises par rapport au round 2 :
+
+1. **La condition « 6 agrégateurs voie B » quitte le point de lancement et migre en G2**, où elle est le critère pertinent, où elle porte sur des agrégateurs **qualifiés** au titre de B2 ou B3 (et non auto-déclarés), et où elle est établie par le recensement (M10) et non par le test de marché.
+2. **Les intentions non contraignantes ne conditionnent plus rien.** Elles informent le dimensionnement de la vague 1 ; les gâchettes portent sur des CFA signés et sur du capital tiré. Le round 3 a raison : une intention non contraignante n'est pas une garantie.
+3. **G0 est une vraie bifurcation d'architecture** et non un préalable de vérification. Si le compartiment paneuropéen ne peut pas être re-mandaté, l'option la plus légère n'existe pas, la phase 1 devient elle-même coûteuse, et le point de non-lancement doit remonter à l'origine. C'est l'endroit exact où la réponse à CT5 et la réponse à CT4 se rejoignent, et le round 2 ne l'avait pas articulé.
+
+---
+
+## 4. CT4(b) — Le taux de déploiement disparaît comme paramètre libre
+
+Le round 3 a raison, et le reproche est humiliant parce qu'il est exact : j'ai corrigé la confusion entre taux d'engagement et taux de souscription à un étage, et je l'ai réimportée à l'étage suivant en calant le taux de déploiement sur les mêmes 41 %. **Je retire ce paramètre.**
+
+Le déploiement n'est plus un pourcentage posé : il est le produit de deux grandeurs, dont l'une a un ancrage publié et l'autre est dérivée de la règle d'assiette. Cela répond en même temps à M50.
+
+**(a) Nombre d'opérations par CFA sur la vie du CFA — *k*.**
+Le seul ancrage publié du dossier est le FEI lui-même : plus de **800 co-investissements** réalisés avec plus de **120 business angels** accrédités, soit **≈ 6,7 opérations par CFA** sur la vie de l'instrument. C'est une donnée publiée, sur la population exacte que la voie A sollicite, dans l'instrument exact dont le CFA Corridor est dérivé. Je la retiens comme plafond et je l'escompte, parce qu'une opération corridor est plus difficile à réunir qu'une opération domestique : ***k* = 3 (bas) / 5 (central) / 6 (haut).**
+
+**(b) Ticket public par opération — *t*.**
+Il n'est plus posé : il est **déduit de la règle d'assiette**. Le tirage public vaut *r* × *A*, où *A* est l'assiette non résidente du tour et *r* le ratio d'appariement. Deux souscripteurs non résidents au voisinage du plancher de 20 000 € donnent *A* ≈ 45 000 € ; avec un mélange d'échelons de base et bonifiés, *r* ≈ 1,2. **Ticket public de référence : *t* ≈ 55 000 €.** Le tour correspondant est d'environ 185 000 € (part publique ≈ 29 %, conformément à l'hypothèse de §1.3 du round 2), ce qui est cohérent avec l'investissement médian de premier tour observé à l'EAF (≈ 128 000 €) et avec la distribution des tours angels (67 % ≤ 1 M€).
+
+**(c) Sorties du modèle.**
+
+| Scénario | CFA | *k* | Opérations, vie | Capital déployé, vie | Part de l'engagement | Opérations, 3 ans | Capital déployé, 3 ans |
+|---|---|---|---|---|---|---|---|
+| Bas | 27 | 3 | 81 | 4,45 M€ | 47 % | 45 | 2,45 M€ |
+| **Central** | **60** | **5** | **300** | **16,5 M€** | **79 %** | **165** | **9,1 M€** |
+| Haut | 93 | 6 | 500 | 27,5 M€ | 85 % | 275 | 15,1 M€ |
+
+Le profil temporel retenu est de **55 % des opérations sur les trois premières années** (montée en charge en année 1, régime en années 2-3). C'est une hypothèse et je l'énonce comme telle ; elle n'a d'effet que sur la répartition entre les deux colonnes de CT8, pas sur le total.
+
+Le chiffre central de capital déployé à 3 ans (9,1 M€) reproduit à 4 % près celui du round 2 (9,5 M€). **La correction n'est donc pas un artifice destiné à améliorer CT8 : elle remplace un paramètre sans source par une construction ancrée, et elle tombe au même endroit.** Ce qui change est qu'elle est désormais falsifiable : si le FEI observe un *k* de 2 sur les premiers CFA Corridor, le modèle est réfuté et G1bis se déclenche.
+
+**Sensibilité à deux sens, et elle est instructive (réponse complète à M50).** Le ticket public *t* est le paramètre qui arbitre entre proportionnalité du coût et puissance statistique, dans des directions opposées :
+
+| Hypothèse sur *t* | Opérations (central, vie) | Capital déployé | **Ratio de coût, vie** | **MDE, cohorte 1 seule** |
+|---|---|---|---|---|
+| *t* = 55 k€ (déduit de la règle d'assiette) | 300 | 16,5 M€ | 4,6 – 6,1 % | ≈ 19 points |
+| *t* = 128 k€ (ticket EAF observé) | 162 | 20,7 M€ | **3,1 – 4,3 %** | **≈ 24 points** |
+
+Un ticket plus élevé améliore la proportionnalité du coût et dégrade la puissance ; un ticket plus faible fait l'inverse. La borne de §2.3 tient aux deux extrémités. La prétention causale, elle, ne tient à aucune des deux sur la cohorte 1 seule — ce qui était déjà la position du round 2 (analyse principale poolée cohortes 1+2) et que cette sensibilité confirme plutôt qu'elle ne l'aggrave.
+
+---
+
+## 5. M44 et P6(c) — Correction de la référence, identification du régime, et réduction de la demande
+
+**M44 — accepté sans réserve. La référence correcte est l'article 8, paragraphe 2, du RGEC**, l'article 8 §1 posant la règle générale de prise en compte du montant total d'aide. Toutes les occurrences de « article 8 §1 » dans mon round 2, y compris dans l'argumentaire de §1.1 sur la base juridique et dans l'énoncé de P6(c), doivent se lire « article 8, paragraphe 2 ». Le round 3 a raison de dire que ce n'est pas anodin : une demande adressée à DG COMP dont l'objet même est la portée exacte d'un paragraphe ne peut pas citer le paragraphe voisin. La substance de mon argument — la neutralisation existe mais son champ est expressément borné aux seuils de notification et aux intensités ou montants d'aide maximaux — n'est pas affectée, et le round 3 la confirme par vérification indépendante.
+
+**M45 — le régime national demandé existe, et je le nomme : PFR Biznest.**
+
+PFR Biznest est un programme polonais de co-investissement avec des business angels, opéré par PFR Ventures, dans lequel le programme apporte jusqu'à 50 % de la capitalisation de véhicules de co-investissement gérés par des équipes de VC, les business angels apportant l'autre moitié, pour des investissements en amorçage et pre-seed en participations minoritaires. Il a été financé au titre du programme opérationnel Intelligent Development (POIR 2014-2020) et se poursuit sous **FENG 2021-2027** (*Fundusze Europejskie dla Nowoczesnej Gospodarki*), programme national polonais financé sur fonds de l'Union, géré par PFR Ventures avec BGK pour le compte du ministère des Fonds et de la Politique régionale.
+
+C'est exactement le profil recherché : **un régime d'un pays cible, au niveau du co-investissement avec des angels, financé sur fonds de l'Union en gestion partagée — donc constitutif d'une aide d'État et relevant du financement des risques au sens de l'article 21 du RGEC.** C'est aussi l'acteur que le brief micro identifie comme le contre-modèle d'architecture de la voie B (micro §5.2), ce qui rend l'interaction concrète : un tour Corridor réunissant le FEI et un véhicule soutenu par Biznest est une configuration réaliste, pas une hypothèse d'école.
+
+**Mais la vérification me conduit à réduire ma propre demande, et je le fais plutôt que de la sauver.** Le mécanisme pervers que P6(c) décrit suppose que la présence du FEI au dénominateur fasse passer le taux de participation privée sous le minimum exigé. Or les régimes bénéficiant de fonds de l'Union **en gestion partagée** sont précisément ceux auxquels l'article 21 §12 accorde la réduction de moitié des taux de participation privée. Biznest en bénéficie donc, et le minimum applicable au stade amorçage est de l'ordre de 20 % et non de 40 %. Dans un tour où le FEI apporte 29 à 37 %, où le véhicule Biznest apporte une fraction elle-même à moitié privée, et où la règle d'assiette impose par ailleurs des souscripteurs privés non résidents, **la part privée reste très au-dessus de 20 %.** L'effet pervers existe en droit ; il ne mord pas dans la configuration la plus probable.
+
+**Conséquence : P6(c) est réduite d'un amendement de texte à une demande de clarification administrative.**
+
+> **Demande révisée.** Faire préciser, dans le **guide pratique / FAQ du RGEC publié par la Commission** — c'est-à-dire dans l'instrument que DG COMP maintient déjà et que les rounds 1 et 3 citent tous deux comme source de référence — que la neutralisation de l'article 8, paragraphe 2, du financement de l'Union géré centralement s'étend, ou ne s'étend pas, aux conditions de participation privée de l'article 21. La demande d'amendement du texte du RGEC 2027-2034 n'est présentée **qu'à titre subsidiaire**, dans le cas où la réponse serait négative **et** où un régime concret serait effectivement affecté.
+
+Cette réduction coûte peu et gagne trois choses : elle ne consomme aucun créneau de négociation législative ; elle est délivrable en quelques mois au lieu d'un cycle de révision ; et elle est proportionnée à un rendement que je viens moi-même d'établir comme faible. Elle reste hors chemin critique, ce qui était déjà sa position.
+
+*Réserve maintenue, et le round 3 a raison de la souligner :* la prémisse juridique — l'exclusion de la BEI et du FEI de la définition de l'investisseur privé indépendant à l'article 2, point 72 — n'a pu être vérifiée sur texte consolidé par aucun des trois agents en six tentatives indépendantes. **La demande de clarification doit donc porter aussi sur ce point**, ce qui la rend d'autant plus adaptée au véhicule « FAQ » : on demande à l'auteur du texte ce que le texte dit, sur un point que trois agents n'ont pas pu établir sur source publique. Cette lacune documentaire, à six échecs, mérite d'être signalée pour elle-même : l'inaccessibilité pratique du texte consolidé d'un règlement d'exemption invoqué quotidiennement par les administrations nationales est un problème de qualité de la réglementation qui dépasse ce dossier.
+
+---
+
+## 6. M46 — Défense, avec démonstration que le correctif proposé est identique à la règle qu'il remplace
+
+C'est le seul point de ce round où je ne suis pas d'accord sur le fond, et je le développe parce qu'une simple réaffirmation ne vaudrait rien.
+
+### 6.1 Le correctif proposé ne corrige rien : il est arithmétiquement la même règle
+
+Le round 3 propose d'« exprimer le plafond comme une **fraction du capital privé** plutôt que du tour total (par exemple : le tirage public ne peut excéder 96 % du capital privé du tour, ce qui équivaut à 49 % du tour à ratio 1:1 et **supprime la dégressivité**) ».
+
+Or les deux formulations sont la même inéquation.
+
+- Règle actuelle : *T* ≤ 0,49 · (*P* + *T*) ⟺ 0,51 · *T* ≤ 0,49 · *P* ⟺ **_T_ ≤ 0,9608 · _P_**.
+- Règle proposée : **_T_ ≤ 0,96 · _P_**.
+
+À l'échelon bonifié, *T* = 1,5 · *A*. Le coude se situe donc :
+- sous la règle actuelle, à 1,5 · *A* ≤ 0,9608 · *P*, soit ***A* ≤ 0,64 · *P*** ;
+- sous la règle proposée, à 1,5 · *A* ≤ 0,96 · *P*, soit ***A* ≤ 0,64 · *P***.
+
+**Le coude est au même endroit, à 0,08 % près.** Le correctif ne supprime pas la dégressivité : il la réécrit. Le round 3 le pressent d'ailleurs en proposant l'alternative « ou assumer et publier la dégressivité comme un choix » — c'est la branche opérante, et c'est celle que je retiens.
+
+### 6.2 Deux justifications indépendantes de la dégressivité
+
+**Première justification — la dégressivité *est* la contrainte de non-éviction, elle n'en est pas un effet de bord.** Le plafond de participation publique n'est pas un paramètre de confort : c'est l'expression opératoire de l'exigence d'additionnalité et de non-éviction du financement privé posée par l'article 209 du règlement financier et par l'annexe V section A du règlement InvestEU — les fondements mêmes sur lesquels le round 2 a reconstruit P7 après l'abandon du RGEC, et que le round 3 valide. Un tour dont l'assiette non résidente vaudrait 100 % du capital privé et qui serait apparié à 1,5:1 serait financé à **60 % par l'Union**. L'Union en serait le financeur majoritaire. On ne peut pas revendiquer la non-éviction comme discipline de substitution et demander simultanément à en être dispensé sur les tours où elle mord. **La dégressivité est le prix de la discipline que j'ai moi-même proposée au round 2 ; y renoncer reviendrait à retirer la seule borne opposable que P7 possède.**
+
+**Seconde justification, indépendante de la première et propre à ce dispositif — la dégressivité protège la théorie du changement de P2.** Si *A* > 0,64 · *P*, alors les résidents de l'État membre de la cible détiennent **moins de 36 % du capital privé du tour**. Or toute la théorie du changement du dossier repose sur le lead local : c'est lui qui absorbe le sourcing, le screening et le suivi pour le compte de l'investisseur étranger, et c'est la concentration de **son** exposition personnelle qui borne l'aléa moral de la délégation (P2, argument d'agence tiré de l'Angel CoFund). Un tour financé à plus des deux tiers depuis l'étranger n'est pas la configuration que l'instrument cherche à maximiser : c'est un tour où l'ancrage local se dilue vers le seuil auquel la propriété de sélection cesse d'opérer.
+
+Autrement dit, la dégressivité **tarifie la perte d'ancrage local**. Ce n'est pas un défaut de conception que je découvre après coup : c'est la cohérence entre P2 et P7, et je remercie le round 3 de l'avoir fait apparaître, car elle n'était pas écrite.
+
+**Troisième élément, pratique.** Le coude est à 64 % de capital non résident. L'hypothèse de travail du modèle est de 40 % ; le plancher de la voie B est de 30 %. Le coude se situe donc **très en dehors de la distribution modélisée** et il ne mordra qu'exceptionnellement.
+
+### 6.3 Ce que j'accepte de M46 : la publication
+
+Le round 3 a raison sur un point qui n'est pas mineur : « en l'état, elle n'est ni vue ni annoncée ». Une discipline non publiée n'est pas une discipline — c'est ce que j'ai écrit moi-même sous M22, et cela s'applique ici. Le barème effectif est donc **publié dans la documentation du produit**, sous la forme suivante :
+
+| Assiette non résidente / capital privé du tour (*A*/*P*) | Part publique du tour, échelon bonifié | Ratio effectif public : assiette |
+|---|---|---|
+| 30 % | 31,0 % | 1,50 |
+| 40 % | 37,5 % | 1,50 |
+| 50 % | 42,9 % | 1,50 |
+| **64 % (coude)** | **49,0 %** | **1,50** |
+| 80 % | 49,0 % | 1,20 |
+| 100 % | 49,0 % | 0,96 |
+
+À l'échelon de base (1:1), le coude est à *A*/*P* = 96 % et ne mord pratiquement jamais.
+
+**Formulation retenue dans la documentation :** « le tirage public ne peut excéder 49 % du montant total du tour ; au-delà de 64 % de capital privé non résident, cette borne devient contraignante et le ratio effectif décroît. Cette décroissance est voulue : elle traduit l'exigence de non-éviction du financement privé et le maintien d'un ancrage local majoritaire au sein du capital privé. »
+
+---
+
+## 7. Les autres modifications du round 3
+
+### P1 — M36 : accepté, le critère RIS passe de la bonification à l'éligibilité
+
+Le round 3 a raison et l'argument est le bon : macro C4 demande que l'objectif pays cible soit une **condition d'éligibilité**, pas un résultat espéré, et j'avais déplacé le critère vers l'endroit le moins mordant. Un plafond de concentration de 25 % autorise l'Estonie à absorber un quart du capital public d'une cohorte, dans un instrument destiné aux écosystèmes les moins matures.
+
+> **Éligibilité révisée de la cible.** Est éligible l'entreprise dont le siège ou l'établissement principal se situe, à la date du premier investissement, soit **(i)** dans une région relevant de l'article 107(3)(a) TFUE au titre de la carte des aides à finalité régionale 2022-2027, soit **(ii)** dans un **Widening country** au sens d'Horizon Europe **et** dans une région **non classée *Strong Innovator* ni *Innovation Leader*** au Regional Innovation Scoreboard.
+
+Même donnée, même gouvernance, aucun coût administratif supplémentaire, et l'Estonie sort du périmètre de l'instrument — non seulement de la bonification. Les angels estoniens y demeurent pleinement éligibles comme investisseurs non résidents dans les autres pays cibles, ce qui est cohérent avec le principe reformulé de §1.2 du round 2 : l'instrument définit le champ de sa dépense par la géographie de la cible, il n'exclut personne comme investisseur.
+
+**Plafond de concentration — accepté aussi, et corrigé dans le sens indiqué.** Le round 3 relève à juste titre que le plafond de 25 % mordra d'abord sur la Pologne (39 % de la valeur investie en CEE, 29 % des sociétés financées) et poussera le déploiement vers des marchés plus minces, où la conjonction des conditions de P2 est la moins probable — donc vers le non-déploiement. Le plafond devient une **cible de gestion révisable en cours de cohorte** au vu du déploiement effectif, assortie d'une **borne dure à 40 %** qui, elle, n'est pas révisable. La cible de gestion est publiée, sa révision est motivée et publiée.
+
+### P2 — M37 : accepté, avec une valeur par défaut qui ne peut que monter
+
+Le round 3 a raison : le paramètre qui déclenche l'éligibilité de tout tirage n'existe pas à la date d'ouverture, puisqu'il dépend d'un recensement non commencé.
+
+> **Valeur par défaut.** À défaut de barème publié, le seuil d'engagement du lead local est de **10 000 €** — c'est-à-dire le plancher absolu déjà défini sous P2. Le barème issu du recensement ne peut, pour un État membre donné, que **relever** ce seuil, jamais l'abaisser ; il s'applique aux tours dont la lettre d'intention est postérieure à sa publication.
+
+Cette asymétrie règle le problème de rétroactivité : aucun tour éligible sous la valeur par défaut ne peut devenir inéligible par l'effet du barème. Elle permet une ouverture en 2027 sans attendre le recensement, tout en conservant l'indexation sur le marché cible comme correction ultérieure.
+
+### P3 — M38 : accepté, la ligne MiFID de la voie B3 est écrite dans l'accréditation
+
+Le round 3 a raison : « présenter les leads locaux » est à un pas d'une recommandation personnalisée portant sur un instrument financier déterminé, laquelle est un service d'investissement au sens de MiFID II, et la frontière est franchie par la pratique et non par le contrat. La ligne suivante est inscrite dans l'accréditation de voie B3, avec obligation de conformité continue et clause de retrait de l'accréditation :
+
+1. B3 diffuse une information **identique et simultanée** à l'ensemble des angels accrédités qui lui sont rattachés ; aucune diffusion sélective ;
+2. B3 ne formule **aucune recommandation personnalisée** — au sens de la définition du conseil en investissement de MiFID II et des orientations de l'ESMA sur la distinction entre information générale et recommandation personnelle — et ne procède à aucune adéquation entre un dossier et un investisseur déterminé ;
+3. B3 ne perçoit **aucune rémunération liée à la réalisation d'un investissement déterminé** (ni *carried interest*, ni *success fee*, ni commission d'apport) ; sa rémunération est forfaitaire et adossée à la ligne de coordination ;
+4. B3 ne **reçoit ni ne transmet aucun ordre** et n'intervient à aucun moment dans la chaîne de règlement.
+
+Les points 2 et 3 sont les deux qui comptent : c'est la rémunération liée au résultat qui transforme un guichet en intermédiaire, et c'est la personnalisation qui transforme une information en conseil.
+
+### P3 — M39 : accepté, et l'estimation de coût du recensement est corrigée
+
+Le round 3 a raison : le régime des gestionnaires sous seuil est largement laissé aux autorités nationales, le registre de l'ESMA couvre les gestionnaires **agréés**, et la publicité des registres d'enregistrement varie selon les États membres. La source reste bonne mais suppose 27 démarches et non une extraction. **Elle est budgétée comme telle** dans l'action de mesure, et elle est reséquencée : d'abord les deux sources centralisées et gratuites — le **registre ECSPR tenu par l'ESMA** (254 plateformes début 2026) et les réseaux affiliés à EBAN et Business Angels Europe — puis, seulement dans les États membres où le résultat est insuffisant, la démarche auprès de l'autorité nationale. Une troisième source à coût marginal quasi nul est ajoutée : les points de contact nationaux du **Enterprise Europe Network** et les référents nationaux de l'écosystème (Startup Nations Standard), qui disposent d'un recensement des réseaux d'investisseurs informels dans la plupart des États membres cibles.
+
+### P4 — M40 : accepté, et la conséquence est structurante
+
+Le round 3 a raison et l'erreur est nette : l'annexe II de l'ECSPR exige **au moins deux des trois critères** pour une personne physique, et le troisième — dix opérations de taille significative par trimestre sur les marchés de capitaux — décrit un comportement de négociateur, pas d'investisseur providentiel. **La population visée sera majoritairement classée non avertie.** Ma réponse du round 2 traitait la duplication de collecte et laissait la qualification entière.
+
+Je repars donc de l'hypothèse inverse, comme le round 3 le demande : **le dispositif doit fonctionner avec des investisseurs non avertis sur le rail ECSPR.** Trois conséquences de conception :
+
+1. **Le rail ECSPR est un canal parmi d'autres, jamais le canal obligatoire.** Lorsque le tour réunit un nombre restreint de souscripteurs — configuration typique d'un tour Corridor : un lead local, trois personnes physiques, deux souscripteurs non résidents — l'entrée directe à la table de capitalisation est possible dans la plupart des droits des sociétés et **ne relève pas de l'ECSPR du tout** : il n'y a pas d'offre de financement participatif. Le rail ECSPR, avec ses protections, sert les tours à syndicat large. C'est aussi ce qui justifie l'hypothèse de §2.1(iii) : le bon de structuration n'est dû que là où un véhicule est effectivement interposé.
+2. **Sur le rail ECSPR, les protections de l'investisseur non averti s'appliquent et sont assumées** : test d'entrée de connaissances, simulation de capacité à supporter les pertes, avertissement, et délai de réflexion de l'article 22. Ce ne sont pas des obstacles à contourner : ce sont les protections dont le dossier ne demande la levée pour personne.
+3. **La collecte de pièces à l'accréditation est maintenue** — elle supprime une duplication réelle — mais elle est présentée pour ce qu'elle est : une facilité administrative, sans aucune présomption de qualification, la classification demeurant de la responsabilité exclusive du prestataire.
+
+### P4 — M41 : accepté, et la correction est de calendrier de tirage, pas de closing
+
+Le round 3 identifie une friction d'exécution que je n'avais pas vue : l'article 22 de l'ECSPR ménage un **délai de réflexion précontractuel de quatre jours calendaires**, pendant lequel l'offre peut être révoquée sans motif ni pénalité, aucun fonds ne pouvant être collecté ni transféré au porteur de projet avant son expiration.
+
+La correction est simple et sans coût, et elle protège l'argent public plutôt que le calendrier :
+
+> **La demande de tirage sur le CFA Corridor est déposée après l'expiration du délai de l'article 22**, sur la base de l'assiette non résidente **définitive** après purge des révocations. Le tirage public n'est jamais calculé sur des souscriptions révocables.
+
+Effet : une révocation individuelle réduit l'assiette **avant** que le montant public ne soit déterminé, au lieu de créer un trop-perçu à récupérer après coup. Le calendrier de closing intègre les quatre jours comme une étape standard entre la confirmation des souscriptions et l'appel de fonds unique. Le coût est un délai, pas un aléa.
+
+### P4 — M42 : traité en §2.1(iii) — base budgétaire InvestEU Advisory Hub, plafond par opération et plafond agrégé, et intégration au chiffrage de CT8.
+
+**Sur le test de K4 au niveau où la contrainte a été posée** (observation du round 3, sans objection formelle) : le round 3 a raison de dire que K4 a été énoncée au niveau de l'angel et que j'ai testé le forfait au niveau du tour. Test refait au bon niveau : pour un angel souscrivant 20 000 € dans un tour de 80 000 €, la quote-part de charge résiduelle passe d'environ 200 € (round 1) à environ **625 €** (forfait fixe). K4 pose « quelques centaines d'euros » : on est à la borne haute, pas au-delà. Deux éléments la rendent acceptable et je les écris plutôt que de les laisser implicites : la charge n'est due que sur les tours utilisant effectivement un véhicule (§2.1(iii)) ; et les conditions de syndication de P2 rendent le tour à 80 000 € très improbable — sur le tour de référence de 185 000 € construit en §4, la quote-part du même angel est d'environ 270 €. **Le point de tension est le petit tour à véhicule, et il est réel ;** le plafond de 5 % du tirage public par opération le borne.
+
+### P5 — M43 : accepté, et l'alternative moins coûteuse existe déjà en droit de l'Union
+
+Le round 3 a raison de demander que le dépositaire obligatoire soit testé en proportionnalité et pas seulement en cohérence : greffer un dépositaire de plein exercice sur un régime dont la raison d'être est l'enregistrement allégé peut annuler l'intérêt de la dérogation, ce que je pressentais sans aller au bout.
+
+**L'alternative moins coûteuse existe et elle est déjà écrite dans l'acquis, ce qui évite d'inventer une garantie sur mesure.** L'AIFMD permet aux États membres d'autoriser, pour les fonds **sans droit de rachat exerçable pendant cinq ans à compter de l'investissement initial** et qui n'investissent généralement pas en actifs conservables, la désignation comme dépositaire d'une entité exerçant des fonctions de dépositaire dans le cadre de ses activités professionnelles, sans être un établissement de crédit. Plusieurs États membres ont ouvert cette catégorie — au Luxembourg, le **dépositaire professionnel d'actifs autres que des instruments financiers**, régi par la loi du 5 avril 1993 sur le secteur financier, et dont la CSSF confirme l'éligibilité aux AIF sous cette condition de blocage de cinq ans.
+
+Or un fonds EuVECA de co-investissement angel a exactement ce profil : fermé, sans rachat, investi en titres non cotés non conservables, pour lesquels la fonction de dépositaire se réduit essentiellement à la **vérification de propriété et à la tenue de registre** — l'exercice le moins coûteux de la fonction.
+
+> **Garantie compensatoire révisée de P5.** Pour les fonds usant de la dérogation, l'obligation n'est pas un dépositaire de plein exercice mais **une fonction de dépositaire limitée à la vérification de propriété et à la tenue de registre, exercée par une entité éligible au sens du régime allégé de l'AIFMD**, avec blocage des rachats pendant cinq ans — condition qui correspond de toute façon à la nature du véhicule. S'y ajoute le plafond patrimonial de 10 % déjà proposé.
+
+**Et la mesure demandée par M43 est conservée telle quelle :** la preuve de demande (M17) doit inclure l'ordre de grandeur du coût annuel des deux options de dépositaire pour un fonds de la taille visée. **Si le coût annule l'intérêt de la dérogation, P5 tombe** — ce qui reste sans conséquence pour le dispositif, qui n'en dépend pas.
+
+### P7 — M47 : accepté, règle de millésime et régime transitoire
+
+> **Millésime.** Le classement RIS applicable est celui de l'**édition en vigueur à la date du premier investissement** dans la société cible, par symétrie exacte avec la règle d'appréciation de l'éligibilité déjà posée sous P1 point 3. L'édition applicable est nommée dans chaque décision de tirage.
+>
+> **Régime transitoire.** Une région qui perd le classement *Emerging Innovator* (ou qui sort du périmètre d'éligibilité au titre de M36) conserve le bénéfice acquis pendant **24 mois** à compter de la publication de la nouvelle édition, pour les tours dont la lettre d'intention est antérieure à cette publication et pour les **investissements de suivi** dans des sociétés déjà en portefeuille. Aucun investissement de suivi ne peut être privé de l'appariement par un reclassement postérieur au premier chèque.
+
+La seconde phrase est la plus importante : sans elle, une reclassification transformerait un premier chèque en position orpheline, ce qui est exactement le risque de dilution que P10'' cherche par ailleurs à borner.
+
+### P9 — M48 : accepté, et le correctif retire le FEI **et** le veto du pays source
+
+Le round 3 a raison sur les deux branches : une fonction de co-évaluation confiée au FEI contredit la logique de délégation sur laquelle reposent l'EAF, K4 et le chiffrage de §2.2, et elle place le co-investisseur en position de sélectionneur des dossiers qu'il finance ensuite.
+
+> **Clause de sauvegarde révisée.** Si aucun appariement avec un réseau de pays source n'est trouvé dans le délai imparti, l'appariement est recherché **entre réseaux de pays cibles** (co-évaluation croisée cible-cible) ; à défaut, l'accréditation est prononcée à l'expiration d'un **délai de carence, sans aucune fonction de co-évaluation transitoire**. Le FEI n'intervient à aucun stade dans l'évaluation des dossiers.
+
+Le jumelage cible-cible n'est pas un pis-aller : il supprime structurellement le résidu de veto du pays source que M29 avait déjà réduit sans l'éliminer, il met en relation des réseaux qui partagent la même contrainte de marché, et il coûte le même prix qu'une convention source-cible sur la ligne de coordination. Il aurait dû figurer dans la réponse au round 1.
+
+### P11 — M49 : accepté, unité de randomisation déplacée au tour, avec une règle non manipulable
+
+Le round 3 a raison, et il a raison aussi de dire que sa propre suggestion du round 1 était incomplète : un plancher défini au niveau du tour, randomisé au niveau du CFA, produit une interférence entre unités et contamine le bras de contrôle.
+
+> **Unité de randomisation : le tour.** À l'enregistrement d'un tour dans le *pipeline* Corridor — étape qui précède nécessairement le tirage, puisque l'attestation du lead y est déposée — le plancher d'engagement du lead applicable (haut ou bas, à l'intérieur de la fourchette 10 000 – 25 000 €) est déterminé par une **règle déterministe pré-enregistrée et non rejouable** : parité d'un condensat du numéro d'immatriculation national de la société cible. Le plancher tiré est opposable à **tous** les tirages Corridor de ce tour, quel que soit le titulaire du CFA.
+
+Trois propriétés : la règle est fixée avant tout enregistrement et ne peut pas être rejouée ; elle s'attache à la cible et non à l'investisseur, donc l'interférence entre CFA disparaît ; et elle est vérifiable ex post par un tiers, ce qu'un tirage au sort administratif ne serait pas.
+
+**Le risque résiduel est l'attrition** — un tour qui découvre son plancher et renonce à s'enregistrer. Il est traité par une analyse en **intention de traiter** sur les tours enregistrés, par la mesure et la publication du taux d'abandon post-tirage par bras, et par la position de repli suivante : **si le taux d'abandon différentiel dépasse 10 points entre les bras, le bras est abandonné** au profit d'un bras sans interférence — la randomisation, au niveau de l'angel, de l'intensité de l'appui de jumelage de P9 (introductions de flux par le réseau apparié), dont le résultat s'observe au niveau de l'angel et non du tour.
+
+### P11 — M50 : traité en §4 (nombre d'opérations par CFA ancré sur la donnée FEI publiée, ticket public déduit de la règle d'assiette, sensibilité à double sens affichée).
+
+### P11 — M51 : traité en §2.1(ii) (escalier de trois paliers, palier lourd déclenché par G3, recours au JRC CC-ME).
+
+### M52 — Paragraphe de comparabilité, avec le précédent institutionnel
+
+Le round 3 demande un paragraphe, pas une objection. Le voici, destiné à figurer dans l'exposé du principe de conception :
+
+> **Sur la comparabilité.** Il sera objecté qu'un angel polonais investissant en Pologne est traité moins favorablement qu'un angel allemand investissant en Pologne dans la même société. La réponse n'est pas que la différence est faible : elle est que **les deux situations ne sont pas comparables au regard de l'objectif de l'instrument.** Cet objectif n'est pas de financer des sociétés — d'autres instruments le font — mais de faire franchir une frontière à un capital qui ne la franchit pas : 12 % de part transfrontalière à l'EAF, 8 % sous ECSPR. Un investisseur qui investit dans son propre État ne réalise pas l'opération que l'instrument a pour objet de susciter, et il bénéficie par ailleurs, en tant que lead local, d'une condition qui lui est **réservée** et qui est le fait générateur de tout tirage. Le précédent institutionnel est établi et ancien : dans la **coopération territoriale européenne (Interreg)**, le caractère transfrontalier du partenariat est depuis plus de trente ans une condition d'éligibilité de la dépense de l'Union, et non une discrimination entre bénéficiaires. Un instrument dont l'objet est le franchissement d'une frontière définit nécessairement son champ par référence à la localisation des parties ; ce qu'il ne peut pas faire, et que le présent dispositif s'interdit expressément, est de faire varier son **taux** ou d'attribuer des **droits économiques inégaux** à l'intérieur d'un même tour selon la résidence.
+
+---
+
+## 8. Un problème de proportionnalité que le round 3 n'a pas soulevé, et que je corrige moi-même
+
+En construisant la borne de §2.3, je me suis aperçu qu'elle condamne une proposition que le round 3 valide.
+
+**P9 demande 15 à 20 M€ sur sept ans de ligne de coordination.** Le dispositif déploie 4,45 à 27,5 M€ de capital public sur la même période. Dans le scénario central, **la ligne de coordination représente 90 à 120 % du capital déployé**. Elle n'apparaît pas dans CT8 parce qu'elle est portée par une autre ligne budgétaire — Programme pour le marché unique ou EIC Ecosystem — mais c'est de l'argent de l'Union, engagé au service du même objectif, et je ne peux pas poser une borne de proportionnalité sur un périmètre et l'ignorer sur l'autre. Le round 3 ne l'a pas relevé ; la borne que je viens d'accepter l'exige.
+
+**Correctif : P9 est scindée en deux, et sa partie lourde suit le sort de la voie B.**
+
+| | **P9a — Documentation standardisée** | **P9b — Jumelage de réseaux** |
+|---|---|---|
+| Contenu | Production et maintenance de la documentation standardisée, incluant le **paquet minoritaire opposable de P10''** dont elle devient le véhicule ; entité responsable identifiée, gouvernance de versions, régime de responsabilité | 20 à 25 conventions de jumelage, comités de co-évaluation, secrétariat, événements et formation inter-réseaux |
+| Phase | **Phase 1** | **Phase 2**, conditionnée à **G2** |
+| Coût | ≈ **1,5 M€ sur 7 ans** (production initiale 400-600 k€, maintenance 150 k€/an) | 13 – 18 M€ sur 7 ans |
+| Justification | Elle porte désormais une **condition d'éligibilité du tirage** (le paquet minoritaire) et non plus seulement une convergence de pratiques : elle est fonctionnellement nécessaire dès le premier tour | Elle sert la voie B et l'accréditation de réseaux dans les pays cibles, qui n'existent pas en phase 1 |
+
+En phase 1, l'appareillage de coordination passe donc de 15-20 M€ à **≈ 0,6 M€ effectivement dépensés sur trois ans**, ce qui le ramène dans l'ordre de grandeur de la borne. P9b n'est engagée que si G2 est franchie — c'est-à-dire si le dispositif a démontré une souscription de 40 CFA et un déploiement de 60 %, moment où un capital déployé de l'ordre de 15 à 25 M€ peut porter une ligne de coordination de 13 à 18 M€ sans absurdité, à condition qu'elle serve alors plusieurs cohortes.
+
+Cette scission a un effet secondaire que je juge positif : elle **oblige P9 à démontrer son utilité par la documentation avant de demander le financement du jumelage**. Le brief de benchmarking relève que la standardisation contractuelle est un levier distinct de l'incitation fiscale et peut être mise en œuvre indépendamment d'elle ; la scission est la traduction budgétaire de cette observation.
+
+---
+
+## 9. Récapitulatif des décisions du round 4
+
+| Objet du round 3 | Décision | Nature |
+|---|---|---|
+| **CT8** — coût rapporté au capital déployé | **Accepté et traité par ajustement du dispositif** : voie B retirée de la cohorte 1 (autorisation 30 → 21 M€), escalier d'évaluation à trois paliers, bons conditionnels et doublement plafonnés, amortissement du CFA type. Ratio ramené à **6,7-9,2 % (3 ans) / 4,6-6,1 % (vie)** au scénario central et **7,8-11,6 % / 5,2-7,4 %** au scénario bas. Borne de proportionnalité à 15 % / 12 % avec conséquence automatique | Ajustement lourd |
+| **CT9** — point de non-lancement | **Accepté** : quatre gâchettes distinctes (G0 bifurcation d'architecture, G1 dimensionnement sur CFA signés, G1bis arrêt de continuation à 12 mois, G2 point d'arrêt principal à l'entrée de la phase 2, G3 évaluation lourde). Condition « 6 agrégateurs » migrée en G2 et durcie | Reconstruction |
+| **P10'** — appariement de transferts | **Retirée.** Les deux motifs sont acceptés ; le premier m'incombe entièrement (contradiction interne avec ma propre concession sur P5). Remplacée par **P10''** : paquet minoritaire opposable + faculté d'accompagnement de cession, tous deux contractuels, hors de tout rail passeporté | Abandon + substitution |
+| **M44** — citation RGEC | **Corrigé** : article 8, **paragraphe 2** | Correction |
+| **M45** — prémisse de P6(c) | **Régime identifié (PFR Biznest, Pologne, FENG 2021-2027)** ; mais la vérification établit que la réduction de moitié de l'art. 21 §12 rend l'effet pervers improbable au stade amorçage. **P6(c) réduite** d'un amendement de texte à une clarification dans le guide pratique RGEC | Réduction volontaire |
+| **M46** — dégressivité du ratio | **Défendue** : le correctif proposé est arithmétiquement identique à la règle qu'il remplace (coude à *A* ≤ 0,64·*P* dans les deux cas) ; la dégressivité est justifiée par la non-éviction et par la protection de l'ancrage local de P2. **Exigence de publication acceptée**, barème effectif publié | Défense + concession partielle |
+| M36 (P1) | Accepté : critère RIS porté à l'éligibilité ; plafond de concentration en cible de gestion révisable, borne dure à 40 % | Ajustement |
+| M37 (P2) | Accepté : valeur par défaut de 10 000 €, le barème ne peut que relever | Ajustement |
+| M38 (P3) | Accepté : ligne MiFID en quatre points écrite dans l'accréditation B3 | Ajustement |
+| M39 (P3) | Accepté : 27 démarches budgétées, reséquencement des sources, ajout du réseau EEN | Correction |
+| M40 (P4) | Accepté : deux critères sur trois ; le dispositif est reconçu pour fonctionner avec des investisseurs **non avertis**, le rail ECSPR devenant un canal parmi d'autres | Ajustement structurant |
+| M41 (P4) | Accepté : le tirage est demandé **après** expiration du délai de l'article 22, sur assiette définitive | Ajustement |
+| M42 (P4) | Accepté : base budgétaire **InvestEU Advisory Hub** (art. 25, règlement 2021/523), double plafond, intégration à CT8 | Ajustement |
+| M43 (P5) | Accepté : dépositaire de plein exercice remplacé par la **fonction allégée de vérification de propriété et tenue de registre** ouverte par l'AIFMD pour les fonds fermés à cinq ans ; coût à mesurer avec la preuve de demande | Ajustement |
+| M47 (P7) | Accepté : millésime à la date du premier investissement, transition de 24 mois, protection des investissements de suivi | Ajustement |
+| M48 (P9) | Accepté : FEI retiré du circuit de sélection ; jumelage **cible-cible** en sauvegarde, puis carence sans co-évaluation | Ajustement |
+| M49 (P11) | Accepté : randomisation au niveau du **tour**, règle déterministe pré-enregistrée, analyse en intention de traiter, position de repli sur l'attrition | Ajustement |
+| M50 (P11) | Accepté : *k* ancré sur la donnée FEI publiée (≈ 6,7 op./CFA, escomptée à 3/5/6), ticket public déduit de la règle d'assiette (55 k€), sensibilité à double sens publiée | Ajustement |
+| M51 (P11) | Accepté : escalier de paliers, JRC CC-ME | Ajustement |
+| M52 (CT1) | Accepté : paragraphe de comparabilité écrit, précédent **Interreg** | Ajout |
+| **P9 (non soulevé au round 3)** | **Scindée de ma propre initiative** : P9a documentation en phase 1 (1,5 M€), P9b jumelage en phase 2 conditionné à G2 (13-18 M€) | Auto-correction |
+
+---
+
+## 10. Ce qui reste non résolu au terme de l'exercice
+
+L'inventaire du round 2 est repris et actualisé. Trois points en sortent, deux y entrent.
+
+1. **La faisabilité de la conjonction des conditions de P2 dans les pays cibles reste non établie.** Aucun round n'a pu la lever ; seul le recensement le peut. C'est, au terme de quatre rounds, la première dépendance du dossier, et le fait qu'elle survive à trois stress-tests indique qu'elle n'est pas levable par l'argumentation.
+2. **Le taux de signature *s* reste une hypothèse.** Il est désormais borné par des gâchettes qui conditionnent effectivement quelque chose (§3), et non plus par un repli circulaire. Mais il reste une hypothèse et le test de marché reste le seul moyen de la lever.
+3. **Le nombre d'opérations par CFA en configuration corridor n'est pas observé.** Il est désormais ancré sur la seule donnée publiée du FEI et escompté, ce qui le rend falsifiable ; il n'est pas pour autant établi. G1bis est la conséquence pratique de cette incertitude.
+4. **La friction 7 (profondeur de sortie) n'est pas traitée et ne le sera pas par ce dispositif.** P10'' améliore la position du minoritaire ; il ne crée aucune liquidité. La limite structurelle énoncée sous P10 reste la position du dossier, et c'est la bonne.
+5. **Les frictions 6 (devise) et 2 (jugement humain à distance) restent hors d'atteinte**, en connaissance de cause.
+6. **Le calibrage de l'écart entre les deux échelons de P7 demeure conventionnel.** Quatre rounds n'y ont rien changé et je n'ai toujours pas de dérivation à proposer. C'est un paramètre à réviser sur données.
+7. **Le texte consolidé du RGEC n'a jamais pu être récupéré, en six tentatives par trois agents.** Cela ne bloque plus le produit — c'est l'acquis du round 2 — et cela ne bloque plus que la formulation de P6(c), désormais réduite à une demande de clarification adressée précisément à l'auteur du texte. Je signale néanmoins ce fait comme un constat de qualité réglementaire qui dépasse le dossier.
+
+**Ce qui est sorti de l'inventaire :** le coût d'accréditation en pays sans présence du FEI (désormais une condition explicite de G2, donc traité plutôt qu'ignoré) ; le rapport coût/capital (traité en §2) ; et l'absence de point d'arrêt réel (traité en §3).
+
+---
+
+## 11. Sources des vérifications conduites au round 4
+
+- [PFR Ventures, *PFR Biznest*](https://pfrventures.pl/en/program-dla-vc/pfr-biznest) et [PFR Ventures, investissements sous le programme FENG](https://pfrventures.pl/en/artykul/pfr-ventures-invests-first-vc-funds-under-feng-program) — programme polonais de co-investissement avec business angels, apport jusqu'à 50 % de la capitalisation de véhicules gérés par des équipes de VC, investissements pre-seed/seed en participations minoritaires ; poursuite sous FENG 2021-2027, programme national financé sur fonds de l'Union, géré par PFR Ventures avec BGK pour le ministère des Fonds et de la Politique régionale. **Régime identifié en réponse à M45**
+- [PFR Ventures, investissements sous le POIR](https://pfrventures.pl/en/program-dla-vc/investments-pfr-ventures-under-sgop) — antériorité du programme sous le programme opérationnel Intelligent Development 2014-2020, en gestion partagée
+- [Règlement (UE) 2021/523 établissant le programme InvestEU, article 25 — InvestEU Advisory Hub](https://eur-lex.europa.eu/eli/reg/2021/523/oj) et [InvestEU Advisory Hub, point d'entrée central](https://investeu.europa.eu/investeu-programme/investeu-advisory-hub/central-entry-point-terms-and-conditions_en) — mécanisme d'appui consultatif au développement, à la structuration et à la mise en œuvre de projets d'investissement et au renforcement de capacités des intermédiaires ; point d'entrée central géré par la Commission. **Base budgétaire proposée pour le bon de structuration (M42)**
+- [Commission européenne, JRC, *Competence Centre on Microeconomic Evaluation* (CC-ME)](https://microeconomicevaluation.jrc.ec.europa.eu/) et [formation CIE 2025, JRC Ispra](https://knowledge4policy.ec.europa.eu/event/2025-training-counterfactual-impact-evaluation-cie-methods_en) — centre de compétence fondé en 2016, héritier du CRIE (JRC / DG EMPL, 2013), conduisant des évaluations d'impact contrefactuelles en appui des services de la Commission. **Opérateur proposé pour le palier 3 d'évaluation (M51, CT8)**
+- [CSSF, page *Depositary*](https://www.cssf.lu/en/depositary-bank/) et [CSSF, *FAQ — Loi du 12 juillet 2013 relative aux gestionnaires de fonds d'investissement alternatifs*](https://www.cssf.lu/wp-content/uploads/FAQ-AIFMD_200525.pdf) — éligibilité des dépositaires professionnels d'actifs autres que des instruments financiers (loi du 5 avril 1993 relative au secteur financier) pour les AIF sans droit de rachat exerçable pendant cinq ans à compter de l'investissement initial ; pour les actifs non conservables, la fonction se réduit à la vérification de propriété et à la tenue de registre. **Alternative proportionnée au dépositaire de plein exercice (M43)**
+- [FEI, *European Angels Fund*](https://www.eif.org/what_we_do/equity/eaf/index.htm) — plus de 800 co-investissements réalisés avec plus de 120 business angels accrédités, soit ≈ 6,7 opérations par CFA sur la vie de l'instrument. **Seul ancrage publié du paramètre *k* (M50, CT4(b))**
+- Vérifications reprises du round 3 et non refaites, l'auditeur les ayant conduites de façon indépendante et concluante : article 8 §2 du RGEC ; article 25 et annexe II de l'ECSPR ; article 22 de l'ECSPR ; article 19 §2 bis du règlement ELTIF et règlement délégué (UE) 2024/2759 ; Regional Innovation Scoreboard 2025 ; registres AIFMD sous seuil
+
+---
+
+*Fin du round 4. Le plafond de trois rounds côté `impact-assessment-auditor` étant atteint après la vérification de ce document, les paramètres qui subsistent comme hypothèses — taux de signature, nombre d'opérations par CFA, faisabilité de la conjonction des conditions de P2 — ne seront pas levés par un round supplémentaire. Ils le seront par le test de marché et le recensement, que le séquençage place, sans exception, avant tout engagement.*
