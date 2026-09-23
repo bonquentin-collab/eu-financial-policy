@@ -153,3 +153,93 @@ C'est le point sur lequel je veux insister le plus fortement pour ce round de fa
 5. **Recommandation stratégique — assumer explicitement, dans la communication politique du dossier, l'absence de bénéfice de capital immédiat plutôt que de la minimiser.** Le paquet lui-même le fait déjà honnêtement dans ses documents techniques (`proposals.md` H.4). Le porter politiquement sur un registre de « lisibilité, sécurité juridique et données, avec un chemin crédible vers un allègement futur fondé sur la preuve » plutôt que de laisser une attente de facilitation immédiate se former dans la coalition de compétitivité (Commission, ECON PPE/Renew, écosystème start-up) réduit le risque d'une déception publique au moment de l'adoption — un risque de crédibilité plus dommageable à moyen terme qu'un enthousiasme mesuré dès le départ.
 
 **En synthèse : ni rejet ni adoption garantie. Le paquet a été conçu, avec un succès technique réel, pour minimiser l'opposition frontale au prix d'un enthousiasme mobilisateur réduit. Sa faisabilité dépend moins, à ce stade, de la capacité à convaincre un opposant déterminé que de la capacité à lui trouver, et à lui garder, une place dans un agenda législatif 2027 disputé — un problème de portage politique, non de fond.**
+
+---
+
+## Réponse du policy-innovator
+
+**Date :** 23 septembre 2026
+**Objet :** suites données aux recommandations d'ajustement n° 1 et n° 2 du verdict (§4). L'essentiel figure dans `proposals.md`, révisé au round 3. Le journal placé en tête de ce document (« Round 3 : réponse à la faisabilité politique ») précise chaque modification et son emplacement. Cette réponse ne rouvre aucun désaccord réglé au cours de l'évaluation d'impact.
+**Vérifications propres (round 3) :** art. 462(2)-(3), 143(3) et 47b(2) CRR ; art. 85(2) EMIR et règlement délégué (UE) 2022/1855 (sources en fin de section).
+
+### 1. Recommandation n° 1 — R-5 tranchée vers l'option restreinte : adoptée, sur le fond et pas seulement par tactique
+
+**Ce qui est inscrit (`proposals.md` P1(8)).**
+- Une VDQ **non conforme** ne peut pas être classée en clientèle de détail.
+- Une VDQ **conforme** de moins de 1 M€ qui remplit les conditions de l'art. 123 y reste, à environ 57 % : c'est le statu quo.
+- Toutes les VDQ portent l'identifiant de reporting, quelle que soit leur classe d'exposition.
+- La primauté complète devient une hypothèse du rapport à 3 ans (P10, point 6(g)), testée selon le test de parité corrigé par R-2.
+
+**Pourquoi je suis d'accord sur le fond.**
+- **L'argument juridique de l'auditeur est juste.** L'art. 123(1)(c) vise la granularité, non l'absence de facteur commun : mon fondement ne tenait pas.
+- **La cohérence du paquet est rétablie.** La primauté complète était la seule entorse au principe « aucun durcissement ni allègement de pilier 1 sans données ».
+- **La fonction anti-arbitrage est intégralement préservée.** L'incitation inversée relevée au round 1 tenait à la sortie des structures **non conformes** vers la clientèle de détail. Cette sortie reste fermée. Le fondement devient la cohérence interne de la définition, et non plus un risque systématique seulement inféré.
+
+**Ce que cela coûte.** Un trou de périmètre **prudentiel** : les petits tickets conformes échappent à l'article dédié. Il est sans effet au lancement, puisque les traitements sont neutres. Il est aussi sans effet statistique, puisque le reporting ne dépend pas de la classe d'exposition. Il ne compterait que pour un recalibrage futur du palier P ; d'où l'inscription de la primauté complète au mandat du rapport à 3 ans.
+
+**Effet sur la carte.**
+- La prise identifiée au §1.5 (« le paquet renchérit le financement des plus petites start-up ») et au §1.8 (S&D, Verts/ALE) disparaît.
+- H.4 devient exact **sans exception** : aucune exposition conforme ne voit sa pondération augmenter au lancement.
+- Un superviseur pourrait plaider pour la primauté complète. La réponse figure dans le paquet : le pilier 2 (P8, P9), puis le test sur données.
+
+### 2. Recommandation n° 2 — R-1 à R-4 intégrées avant la négociation
+
+| Réserve | Défaut | Correction inscrite | Où |
+|---|---|---|---|
+| R-1 | Désactivation impossible : l'habilitation expirait avant le premier test, et sa caducité n'éteignait pas un élément activé | Deux habilitations : activation (8 ans) ; désactivation et reconduction (durée indéterminée, précédent de l'art. 462(2) CRR). Test annuel. **Durée d'application de 5 ans** pour tout élément activé, caduc de plein droit sauf reconduction sur critères de risque (précédent de l'art. 85(2) EMIR) | P4, points 3, 4 et 4 bis |
+| R-2 | Test de la pire année incohérent avec le 99,9 % du modèle ASRF, et biaisé vers moins de capital | Parité de la pondération effective avec la formule IRB de l'art. 153(1), sur paramètres de l'Union ; pire année en *backtesting* ; mêmes exigences de données pour durcir que pour alléger | §0.6(b) ; P2(5) ; P4(2)(d) ; P10 |
+| R-3 | Catégorie 2 VDQ-C active sans données, cumulable avec le facteur PME, et non réexaminable à 3 ans | Non-cumul ; catégorie **dormante** à activation accélérée sur les données de la phase 0, décidée avec le RTS ; reconduction à 5 ans sur critères complets | P3(3) ; P4(2 bis) ; P10(6)(e) |
+| R-4 | Règle transitoire plus favorable que l'approche PD pour une VDQ-C faible (115 % contre 158 à 172 %) | Dérogations dures inscrites au niveau 1 dès la transition ; VDQ non conforme en catégorie 4 ; **option transitoire soumise à autorisation**, réservée aux établissements sans estimations de PD conformes | P3(4) ; P5(3) |
+
+Trois points vont au-delà d'une application mécanique.
+
+**R-1 : je vais plus loin que l'option (i) de l'auditeur.**
+- **Le problème résiduel.** Avec la seule dissociation des habilitations, la réversibilité dépendait encore d'un acte de la Commission et de l'absence d'objection du Parlement ou du Conseil. Une lecture sceptique en trilogue le relèverait aussitôt : ceux qui bénéficient d'une catégorie activée ont intérêt à retarder sa désactivation.
+- **L'inversion de la charge.** La durée d'application de 5 ans fait de l'extinction la valeur par défaut. L'inaction, une objection ou une révocation ne peuvent qu'abréger l'application d'un élément, jamais la prolonger sans preuve.
+- **Pourquoi pas l'option (ii) seule.** Une extinction en bloc à date fixe, sauf nouvelle codécision, parierait sur la bande passante législative que ce document désigne lui-même comme la ressource rare (§3.3).
+- **Pas de réouverture.** La reconduction ne dépend que de critères de risque : le désaccord 2 réglé au round 2 (pas d'extinction fondée sur l'offre) n'est pas rouvert.
+
+**R-4 : une précision sur la formulation de la recommandation.**
+- **La nature de l'incitation.** L'auditeur ne relève pas une incitation à **rester** en règle transitoire plus longtemps que nécessaire : la fin de la transition dépend du RTS, pas des banques. Il relève l'incitation à **opter** pour le *slotting* pendant la transition quand le portefeuille VDQ-C est faible.
+- **Les limites des dérogations dures.** Elles ne ferment que la queue la plus dégradée. Un profil faible mais non dégradé (PD de 8 à 10 %, runway de 9 à 12 mois) n'en déclenche aucune.
+- **Le complément.** J'ajoute une autorisation préalable, sur le modèle de l'art. 143(3)(a) CRR et dans la logique de repli de l'art. 153(5). Avec elle, un éventuel retard du RTS ne crée plus d'avantage exploitable.
+
+**R-2 : une conséquence que je préfère écrire moi-même.**
+- **Le test corrigé est plus exigeant.** Pour un profil *early stage* de PD 10 % et de LGD 45 %, la formule donne environ 146 % avec l'ajustement de taille, contre 76 % aujourd'hui.
+- **L'issue probable.** Si les données de l'Union ressemblent aux données américaines, le rapport à 3 ans conclura plus probablement à un **durcissement** du palier P qu'au statu quo. `proposals.md` le dit désormais explicitement (P2, point 5 ; P13, point 8).
+- **Le lien avec la recommandation n° 5.** C'est sa mise en œuvre : assumer plutôt que minimiser, dans les deux sens.
+
+### 3. Effet net sur la carte des coalitions
+
+- **Améliorés :**
+  - l'écosystème start-up et les groupes S&D et Verts/ALE de l'ECON (R-5) ;
+  - les superviseurs : la réversibilité est désormais effective (R-1), le test n'est plus biaisé vers moins de capital (R-2) et la transition n'est plus exploitable (R-4).
+- **Légèrement dégradés :**
+  - les banques IRB spécialisées de type HSBC Innovation Banking (§1.1). Leur seul élément favorable, la catégorie 2 VDQ-C, n'est plus acquis au RTS : il dépend des données de la phase 0 (R-3) ;
+  - les groupes PPE et Renew de l'ECON, qui attendent une activation plus rapide. Le régime accéléré de la catégorie 2 leur répond, mais sur preuve.
+- **Inchangé :** le risque dominant, l'abandon faute de portage (§3.3).
+  - Ces corrections retirent des prises aux opposants ; elles ne créent pas de champion.
+  - Je ne propose pas de réintroduire un allègement non fondé pour mobiliser les banques : cela recréerait exactement les défauts qui viennent d'être corrigés.
+  - La réponse reste la séparabilité de la phase 0 et le registre de communication de la recommandation n° 5, désormais inscrit en P13, point 8.
+
+### 4. Autres points intégrés, et ce qui reste ouvert
+
+- **Intégrés au passage, à coût nul :**
+  - R-6 (critère C1(v) repris tel quel dans la définition d'insolvabilité, P12) ;
+  - R-7 (« cessions subies » limitées aux cessions réellement imposées, P7.2) ;
+  - les observations non bloquantes du round 2 de vérification : facteur PME combiné, référence bâloise de 85 % pour les PME, art. 47b(2)(a), (b) et (e), Q&A sur l'*unitranche*, borne et sensibilité de P11, coût de la collecte rétrospective, calendrier des Q&A ;
+  - le point de vigilance des fonds de dette sur la trajectoire après 2031 (§1.4), inscrit au mandat du rapport à 3 ans (P10, point 6(j)) ;
+  - la résistance procédurale possible à la cartographie de l'insolvabilité (§1.9), inscrite dans les risques de P12.
+- **Ouverts pour `legal-drafter` (`proposals.md` H.5) :**
+  - le texte verbatim de l'art. 153(5) CRR après CRR3, sur lequel repose l'autorisation transitoire ; la page consultée ne l'a pas restitué ;
+  - l'articulation de cette autorisation avec le régime des changements importants des systèmes IRB ;
+  - l'application de l'art. 501 en *slotting*, dont l'enjeu est désormais réduit par le non-cumul ;
+  - la jurisprudence C-355/10 et C-286/14, toujours non re-vérifiée.
+
+**Sources vérifiées au round 3**
+- [Art. 462 CRR (texte consolidé) — judict.eu](https://judict.eu/en/hla/32013R0575-X/article-462) : habilitation « pour une durée indéterminée », y compris pour l'art. 461a ; révocable à tout moment.
+- [Art. 143 CRR (texte consolidé) — judict.eu](https://judict.eu/en/hla/32013R0575-X/article-143) : autorisation préalable des changements importants du champ d'application d'un système de notation.
+- [Art. 47b CRR (texte consolidé) — judict.eu](https://judict.eu/en/hla/32013R0575-X/article-47B) : paragraphe 2, points (a) à (g).
+- [Règlement délégué (UE) 2022/1855 — EUR-Lex](https://eur-lex.europa.eu/eli/reg_del/2022/1855/oj/eng) ; [Macfarlanes — Pension scheme arrangements clearing exemption extended to 2022](https://blog.macfarlanes.com/post/102h2j3/pension-scheme-arrangements-clearing-exemption-extended-to-2022) ; [Global Regulation Tomorrow — Clearing obligation for pension scheme arrangements: the 18 June 2023 deadline](https://www.regulationtomorrow.com/eu/clearing-obligation-for-pension-scheme-arrangements-differing-eu-and-uk-approaches-to-the-18-june-2023-deadline/) : art. 85(2) EMIR, prorogations par acte délégué, fin de plein droit de l'exemption le 19 juin 2023.
+
+*Fin de la réponse du policy-innovator au round 1 de faisabilité.*

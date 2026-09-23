@@ -1,14 +1,44 @@
 # Propositions — Compartiment prudentiel bancaire dédié à la « venture debt » dans le cadre CRR/CRD
 
 **Agent :** `policy-innovator` — dossier `policy/venture-debt/`
-**Version :** **révisée à l'issue du round 1 de l'`impact-assessment-auditor`** (round 2 du débat d'impact). La réponse argumentée, point par point, figure dans `impact-debate.md`, section « Round 2 — Réponse du policy-innovator ». Ce document est **autoportant** : il se lit sans avoir à recouper le débat.
-**Date :** 22 septembre 2026 (version initiale et révision)
-**Entrées lues intégralement :** `current-regulation.md`, `micro-analysis.md`, `macro-analysis.md`, `benchmarking.md`, `stakeholder-map.md`, `impact-debate.md` (round 1), tous dans `policy/venture-debt/`.
+**Version :** **révisée au round 3**, en réponse au round 1 de faisabilité politique (`feasibility-debate.md`) et aux réserves R-1 à R-7 du round 2 de vérification de l'`impact-assessment-auditor` (`impact-debate.md`, V.8). Les révisions du round 2 sont justifiées dans `impact-debate.md`, section « Round 2 — Réponse du policy-innovator » ; celles du round 3, dans le journal ci-dessous et dans `feasibility-debate.md`, section « Réponse du policy-innovator ». Ce document est **autoportant** : il se lit sans avoir à recouper les débats.
+**Date :** 22 septembre 2026 (version initiale et révision du round 2) ; 23 septembre 2026 (révision du round 3)
+**Entrées lues intégralement :** `current-regulation.md`, `micro-analysis.md`, `macro-analysis.md`, `benchmarking.md`, `stakeholder-map.md`, `impact-debate.md` (round 1, réponse du round 2 et vérification du round 2), `feasibility-debate.md` (round 1), tous dans `policy/venture-debt/`.
 **Statut :** propositions de politique publique argumentées. Ce document ne contient **aucune rédaction législative**. Les références d'articles et les paramètres chiffrés servent à rendre les propositions opérationnelles. Ils restent indicatifs et devront être repris par `legal-drafter` si cette étape est déclenchée.
 
 ---
 
-## Journal des révisions (round 2)
+## Journal des révisions — Round 3 : réponse à la faisabilité politique
+
+**Origine.** Le round 1 de faisabilité (`feasibility-debate.md`, §4) juge le paquet politiquement viable, sous deux ajustements à faire **avant** tout dépôt :
+- **recommandation n° 1** : trancher R-5 vers l'option restreinte ;
+- **recommandation n° 2** : intégrer R-1 à R-4 avant la négociation plutôt que pendant.
+
+Le motif est d'éviter qu'un défaut de mécanique juridique soit découvert en trilogue, comme l'erreur de l'art. 234 CRR sur la garantie plafonnée a failli l'être.
+
+**Principe de ce round.** Les cinq corrections sont intégrées **dans le texte**, et pas seulement déclarées. Aucun désaccord réglé aux rounds précédents de l'évaluation d'impact n'est rouvert.
+
+| Réserve | Décision | Ce qui change | Où |
+|---|---|---|---|
+| **R-5** (choix politique) | **Adoptée** : option restreinte | La primauté sur la clientèle de détail est limitée à deux éléments : (i) la définition de reporting, indépendante de la classe d'exposition ; (ii) l'exclusion des seules VDQ **non conformes**. Le fondement de l'art. 123(1)(c) est abandonné au profit d'un motif anti-arbitrage. Une VDQ conforme de moins de 1 M€ garde le statu quo (57 %). La primauté complète devient une hypothèse du rapport à 3 ans. **Aucune exposition conforme ne voit plus sa pondération augmenter au lancement.** | P1(2), P1(8) ; P2 ; P10(6)(g) ; P13 ; H.1 à H.4 |
+| **R-1** | **Adoptée** : option (i) de l'auditeur, **renforcée** | Deux habilitations. L'habilitation à activer reste de 8 ans ; celle à désactiver et à reconduire est à durée indéterminée (précédent de l'art. 462(2) CRR). Test de désactivation **annuel**, sur une fenêtre glissante de 5 ans qui peut inclure des années antérieures à l'activation. **Ajout** : tout élément activé s'applique pour **5 ans** et s'éteint de plein droit, sauf reconduction sur critères de risque (précédent de l'art. 85(2) EMIR). | P4, points 3, 4 et 4 bis ; §0.3 ; P10 ; P13 |
+| **R-2** | **Adoptée** | Test principal : la pondération **effective** doit être au moins égale à celle que donne la formule IRB de l'art. 153(1) CRR (99,9 %) avec les paramètres de l'Union. La pire année observée sert de *backtesting*. Les exigences de données sont les mêmes pour un durcissement que pour un allègement ; en deçà, seul un signal de pilier 2 est possible. | §0.6(b) ; P2(5) ; P4(2)(d) ; P10(5)-(6) |
+| **R-3** | **Adoptée**, avec un complément | Catégorie 2 VDQ-C non cumulable avec l'art. 501. Elle devient un élément **dormant**, à activation **accélérée** sur les données de la phase 0 : critères (b), (c) et (d), avec une conclusion de l'EBA transmise avec le projet de RTS. L'argument de l'« utilisabilité », fondé sur une lecture inexacte du fact-base, est retiré. **Complément** : la reconduction à 5 ans exige les critères **complets** (a) à (e). | P3(1), P3(3) ; P4(1), P4(2 bis) ; P9 ; P10 ; P13 ; H.1 |
+| **R-4** | **Adoptée**, avec deux compléments | Dérogations dures inscrites au niveau 1, applicables dès la période transitoire et aux deux paliers. **Compléments** : (a) une VDQ non conforme est classée en catégorie 4 pendant la transition ; (b) l'option transitoire pour le *slotting* est soumise à **autorisation préalable** (modèle de l'art. 143(3)(a) CRR). Elle est réservée aux établissements dont les estimations de PD ne sont pas conformes (logique de l'art. 153(5)). | P3(4), P3(8), P3(9) ; P5(3) |
+| R-6, R-7 (rédactionnelles) | Intégrées, au-delà de la demande, à coût nul | P12 : le critère C1(v) est repris tel quel dans la définition autonome. P7.2 : les « cessions subies » sont limitées aux cessions réellement imposées. | P12 ; P7.2 ; H.1 |
+| Observations non bloquantes (V.8) | Intégrées | Facteur PME **combiné** (et non marginal). Référence bâloise de 85 % pour les PME. Traitement au-delà du plafond de P9. P5 : art. 47b(2)(a), (b) et (e). P6 : la Q&A vise aussi l'*unitranche*. P11 : borne de l'exposition, sensibilité, additionnalité par rapport à la BEI. H.6 : coût de la collecte rétrospective. Calendrier des Q&A (P7.8). Compléments du rapport à 3 ans. | Propositions concernées |
+| Recommandation n° 5 de faisabilité | Intégrée | Registre de communication : « lisibilité, sécurité juridique, données, chemin vers un allègement fondé sur la preuve ». | P13(8) |
+
+**Trois précisions.**
+1. **R-4 : de quelle incitation il s'agit.** La réserve de l'auditeur ne porte pas sur une incitation à **rester** en période transitoire : celle-ci prend fin avec l'application du RTS, que les banques ne contrôlent pas. Elle porte sur l'incitation à **opter** pour le *slotting* pendant la transition quand le portefeuille VDQ-C est faible (115 % par défaut, contre environ 158 à 172 % en approche PD). Or les dérogations dures ne corrigent que la queue la plus dégradée. Un profil faible mais non dégradé (PD de 8 à 10 %, runway de 9 à 12 mois) n'en déclenche aucune. C'est pourquoi l'autorisation préalable s'ajoute. Avec elle, un éventuel retard du RTS ne crée plus d'avantage exploitable.
+2. **R-2 : une conséquence à assumer.** Le test corrigé est **plus exigeant** que celui du round 2. Si les données de l'Union ressemblent aux données américaines, le rapport à 3 ans conclura plus probablement à un **durcissement** du palier P qu'au statu quo (P2, point 5). C'est la contrepartie honnête de la neutralité au lancement.
+3. **R-3 et R-1 : un coût pour les banques, accepté.** La catégorie 2 VDQ-C n'est plus acquise à l'application du RTS. Le seul élément favorable du socle pour les banques IRB spécialisées dépend désormais des données (`feasibility-debate.md` §1.1). Je l'accepte : une préférence active sans données de l'Union contredisait l'objectif du §0.2, ce qui en faisait précisément une prise pour un opposant.
+
+---
+
+## Journal des révisions — Round 2 : réponse au round 1 de l'impact-assessment-auditor
+
+*Ce journal est conservé tel quel à titre d'historique. Plusieurs de ses entrées sont modifiées par le round 3 : P1 (primauté sur la clientèle de détail), P3 (catégorie 2 VDQ-C, règle transitoire), P4 (habilitation, désactivation, durée d'application).*
 
 | # | Verdict du round 1 | Révision apportée |
 |---|---|---|
@@ -70,7 +100,7 @@ La venture debt se rembourse par un **événement de financement futur** : tour 
 - le traitement prudentiel n'explique pas l'écart transatlantique (§5.1) ;
 - un compartiment n'est « ni nécessaire ni suffisant » (§5.3).
 
-L'objectif retenu est le suivant : **rendre le traitement prudentiel de la venture debt bancaire lisible, mesurable et sensible au risque, et lever les frictions non capitalistiques documentées, sans créer d'allègement en capital qui ne soit fondé sur des données de pertes européennes.** La facilitation passe par la sécurité juridique, le pilier 2 et le partage des risques budgété. Elle ne passe pas par les pondérations.
+L'objectif retenu est le suivant : **rendre le traitement prudentiel de la venture debt bancaire lisible, mesurable et sensible au risque, et lever les frictions non capitalistiques documentées, sans créer d'allègement ni de durcissement de pilier 1 qui ne soit fondé sur des données de pertes européennes.** La facilitation passe par la sécurité juridique, le pilier 2 et le partage des risques budgété. Elle ne passe pas par les pondérations.
 
 **Logique d'intervention : chaque problème appelle l'instrument le moins lourd qui le traite.**
 
@@ -100,12 +130,12 @@ L'objectif retenu est le suivant : **rendre le traitement prudentiel de la ventu
 
 | Garde-fou (`macro-analysis.md` §6) | Traduction dans ce jeu de propositions |
 |---|---|
-| 1. Neutralité de calibrage : aucune pondération standard sous 100 % sans série de pertes européenne validée par l'EBA ; à défaut, un compartiment « à visée statistique et de supervision » | **P2** : toutes les pondérations de l'article standard dédié valent 100 % au lancement. Le facteur PME préexistant reste cumulable pour les expositions conformes : c'est le statu quo, pas un allègement nouveau. **P3** : en IRB, tout élément plus favorable que la catégorie « satisfaisant » est dormant, à **une exception motivée et bornée**, la catégorie 2 VDQ-C (P3, point 3). **P4** : activation sur critères objectifs. |
+| 1. Neutralité de calibrage : aucune pondération standard sous 100 % sans série de pertes européenne validée par l'EBA ; à défaut, un compartiment « à visée statistique et de supervision » | **P2** : toutes les pondérations de l'article standard dédié valent 100 % au lancement. Le facteur PME préexistant reste cumulable pour les expositions conformes : c'est le statu quo, pas un allègement nouveau. **P3** : en IRB, **tout** élément plus favorable que la catégorie « satisfaisant » est dormant. La catégorie 2 VDQ-C bénéficie d'un régime d'activation **accéléré** sur les données de la phase 0 (P4, point 2 bis), mais ne s'applique plus sans données (round 3). **P4** : activation sur critères objectifs, dont un test de parité avec la formule IRB à 99,9 % (§0.6(b)). |
 | 2. Plafond de concentration, sur le modèle de l'art. 133(5) (10 % des fonds propres) | **P9** : éléments préférentiels plafonnés à 10 % des fonds propres, avec imputation au prorata. Présomption de revue de pilier 2 au-delà de 5 %. |
 | 3. Volet liquidité obligatoire (concentration des dépôts de l'écosystème VC) | **P9** : suivi ALMM et ILAAP, proportionné par des seuils ; Q&A sur les dépôts « opérationnels ». |
 | 4. Pas de sortie automatique des lignes directrices BCE sur l'effet de levier | **§0.1(ii)** : catégorie sui generis. **P8** : substitution conditionnelle, présentée comme **recommandation** à la BCE. |
 | 5. Composante contracyclique (sSyRB activable, ou calibrage à travers le cycle) | **P5** : hystérésis symétrique ; aucune dégradation fondée sur les **seuls** indicateurs agrégés. **P9** : sous-ensemble sSyRB préidentifié. |
-| 6. Clause de revoyure et extinction faute d'effet d'offre | **P10** : rapports EBA à 3 et 5 ans ; P10 devient le préalable du paquet. **P4** : désactivation automatique fondée sur les pertes, caducité de l'habilitation, et revue de l'effet d'offre par rapport de la Commission. L'écart par rapport à la lettre du garde-fou (pas d'extinction automatique d'une **catégorie de risque** pour absence d'effet d'offre) est motivé en P4, point 6. |
+| 6. Clause de revoyure et extinction faute d'effet d'offre | **P10** : rapports EBA à 3 et 5 ans ; P10 devient le préalable du paquet. **P4** (révisé au round 3) : tout élément activé s'applique pour **5 ans** et s'éteint de plein droit, sauf reconduction sur critères de risque ; test **annuel** de désactivation fondé sur les pertes ; habilitation de désactivation et de reconduction à durée indéterminée ; revue de l'effet d'offre par un rapport de la Commission. L'écart par rapport à la lettre du garde-fou (pas d'extinction automatique d'une **catégorie de risque** pour absence d'effet d'offre) est motivé en P4, point 6. |
 | 7. Priorité aux canaux budgétés et plafonnés | **P11** : mesure **autonome** de partage des risques, justifiée par ses propres mérites. Elle n'est plus présentée comme la contrepartie d'une surcharge. |
 
 ### 0.4 Glossaire minimal (pour le lecteur non spécialiste)
@@ -116,10 +146,11 @@ L'objectif retenu est le suivant : **rendre le traitement prudentiel de la ventu
   - **PD** : probabilité de défaut ;
   - **LGD** : perte en cas de défaut ;
   - la variante « fondation » (F-IRB) utilise des LGD réglementaires.
+- **Formule IRB / modèle ASRF** : la formule de l'art. 153(1) CRR repose sur le modèle de Bâle à facteur de risque unique (*asymptotic single risk factor*). Elle calibre le capital pour couvrir la perte inattendue à **99,9 % sur un an**. Elle sert ici de référence commune pour juger de l'adéquation de toute pondération (§0.6(b)).
 - **Slotting** : méthode IRB simplifiée. L'exposition est classée dans une catégorie qualitative (solide, bon, satisfaisant, faible, défaut) à pondération fixe. Elle est conçue pour les actifs dont l'historique de défauts est trop mince pour estimer une PD.
 - **EL / UL** : perte attendue (*expected loss*), absorbée par les provisions et la marge ; perte inattendue (*unexpected loss*), couverte par les fonds propres.
 - **Output floor** : plancher. Les RWA calculés en IRB ne peuvent descendre sous 72,5 % (à partir de 2030) des RWA calculés en approche standard.
-- **Facteur de soutien (supporting factor)** : coefficient réducteur appliqué **après** le calcul des RWA. Il vaut 0,7619 ou 0,85 pour les PME (art. 501) et 0,75 pour les infrastructures (art. 501a).
+- **Facteur de soutien (supporting factor)** : coefficient réducteur appliqué **après** le calcul des RWA. Il vaut 0,7619 ou 0,85 pour les PME (art. 501) et 0,75 pour les infrastructures (art. 501a). Pour une exposition PME de plus de 2,5 M€, le facteur **combiné** (0,7619 jusqu'à 2,5 M€, 0,85 au-delà) vaut 0,78 à 3 M€, 0,81 à 5 M€, 0,82 à 8,25 M€ et 0,84 à 25 M€.
 - **Runway** : nombre de mois de trésorerie avant épuisement.
 - **LTER** : dette financière totale de l'emprunteur rapportée au cash d'equity effectivement versé sur 24 mois (définition révisée, P1).
 - **VDQ conforme / non conforme** : VDQ qui remplit, ou non, les critères de qualité Q1 à Q5 (P1).
@@ -131,12 +162,12 @@ L'objectif retenu est le suivant : **rendre le traitement prudentiel de la ventu
 | # | Titre | Instrument / niveau | Cadres connectés principaux | Phase |
 |---|---|---|---|---|
 | **A. Le compartiment de pilier 1 (socle réduit)** |||||
-| P1 | Définition sui generis « VDQ » : caractérisation et qualité, deux paliers | Niveau 1 (art. 147) ; définition de reporting par ITS dès la phase 0 | AIFMD (art. 3(2), 6, 42), EuVECA, ELTIF, InvestEU ; art. 123, 153(4), 430 CRR | 0 (reporting), puis 1 |
-| P2 | Volet standard : article dédié à pondérations neutres ; 130 % renvoyé au rapport sur données | Niveau 1 | Art. 122a, 128, 501, 465 CRR | 1 |
-| P3 | Volet IRB : *slotting* dédié optionnel, règle transitoire, EL au niveau 1 | Niveau 1 + nouveau RTS | Art. 153, 158 CRR ; règlement délégué (UE) 2021/598 ; EBA/CP/2026/09 ; Bâle CRE33 | 1 (RTS vers 2031) |
-| P4 | Catégories dormantes fondées sur le risque, sans facteur de soutien ; activation et désactivation sur données | Niveau 1 + acte délégué (art. 290 TFUE) | Art. 122a (analogue PF 80 %), CRE33 ; art. 290 TFUE | 1 puis 2 |
+| P1 | Définition sui generis « VDQ » : caractérisation et qualité, deux paliers | Niveau 1 (art. 147) ; définition de reporting par ITS dès la phase 0 | AIFMD (art. 3(2), 6, 42), EuVECA, ELTIF, InvestEU ; art. 123, 147(5), 153(4), 430 CRR | 0 (reporting), puis 1 |
+| P2 | Volet standard : article dédié à pondérations neutres ; 130 % renvoyé au rapport sur données | Niveau 1 | Art. 122a, 123, 128, 501, 465 CRR ; formule de l'art. 153(1) comme référence d'adéquation | 1 |
+| P3 | Volet IRB : *slotting* dédié optionnel, règle transitoire encadrée, EL au niveau 1 | Niveau 1 + nouveau RTS | Art. 143(3), 150, 153, 158 CRR ; règlement délégué (UE) 2021/598 ; EBA/CP/2026/09 ; Bâle CRE33 | 1 (RTS vers 2031) |
+| P4 | Catégories dormantes fondées sur le risque, sans facteur de soutien ; activation, durée d'application limitée, reconduction et désactivation sur données | Niveau 1 + actes délégués (art. 290 TFUE), deux habilitations | Art. 122a (analogue PF 80 %), CRE33 ; art. 290 TFUE ; art. 462(2) CRR ; art. 85(2) EMIR | 1 puis 2 |
 | **B. Covenants, séniorité, tranches** |||||
-| P5 | Covenants, migrations, *forbearance* dans les limites de l'art. 47b | Q&A, orientations EBA, RTS | Art. 47b, 47c, 178 CRR ; EBA/GL/2016/07 ; EBA/GL/2018/06 | 0 puis 1 |
+| P5 | Covenants, migrations, *forbearance* dans les limites de l'art. 47b | Q&A, orientations EBA, RTS ; dérogations dures au niveau 1 | Art. 47b, 47c, 178 CRR ; EBA/GL/2016/07 ; EBA/GL/2018/06 | 0 puis 1 |
 | P6 | Séniorité et facilités distinctes ; frontière avec la titrisation par Q&A | Q&A (EBA / Comité mixte) + RTS | Art. 128, 161, 194 CRR ; règlement (UE) 2017/2402, art. 2(1) ; AIFMD II ; ELTIF 2.0 | 0 puis 1 |
 | **C. Warrants** |||||
 | P7 | Warrants : qualification et 250 % par Q&A ; conversion dette-actions | Q&A ; niveau 1 seulement pour codifier | Art. 133, 36, 44-46, 89-91 CRR ; IFRS 9 ; directives 2019/1023 et 2026/799 | 0 (niveau 1 conditionnel) |
@@ -154,14 +185,16 @@ L'objectif retenu est le suivant : **rendre le traitement prudentiel de la ventu
 **Phases (reséquencement retenu, voir P13) :**
 - **Phase 0 (fin 2026 à 2028), cœur du paquet et solution de repli autonome.** Mesures sans modification du niveau 1 : collecte de données (P10), orientations, Q&A, recommandation à la BCE, programmation InvestEU/FEC, cartographie de l'insolvabilité.
 - **Phase 1 : socle de niveau 1 réduit.** Proposition dans le paquet législatif du T1 2027 issu de COM(2026) 615 ; adoption vers 2028 ; application vers 2029-2030 ; RTS de *slotting* applicable vers 2031.
-- **Phase 2 (à partir de 2031) : paramètres de pilier 1.** Rapport de l'EBA à 3 ans après l'entrée en vigueur, fondé sur les données de la phase 0 ; décisions d'activation (acte délégué) ou de recalibrage (voie législative).
+- **Phase 2 (à partir de 2031) : paramètres de pilier 1.** Rapport de l'EBA à 3 ans après l'entrée en vigueur, fondé sur les données de la phase 0. Décisions d'activation, de désactivation ou de reconduction (acte délégué), ou de recalibrage (voie législative). La catégorie 2 VDQ-C peut être activée dès l'application du RTS si les données de la phase 0 le permettent (P4, point 2 bis).
 
 ### 0.6 Conventions de fiabilité et de calcul
 
 **Fiabilité.** Les constats repris des cinq rapports conservent leur qualification d'origine (documenté, calculé ou inféré). Les éléments ajoutés par ce document sont signalés ainsi :
 - **[vérifié]** : vérifié par recherche lors de la version initiale ;
-- **[vérifié, round 2]** : vérifié lors de la révision, à savoir le texte des art. 47b, 123 et 150 CRR et l'échéance de l'art. 33 de la directive 2019/1023 ;
-- **[vérifié-auditeur]** : vérifié par l'`impact-assessment-auditor` au round 1 ;
+- **[vérifié, round 2]** : vérifié lors de la révision du round 2, à savoir le texte des art. 47b, 123 et 150 CRR et l'échéance de l'art. 33 de la directive 2019/1023 ;
+- **[vérifié, round 3]** : vérifié lors de la révision du round 3, à savoir le texte des art. 462(2)-(3), 143(3) et 47b(2) CRR, et l'art. 85(2) EMIR avec sa dernière mise en œuvre (règlement délégué (UE) 2022/1855) ;
+- **[vérifié-auditeur]** : vérifié par l'`impact-assessment-auditor` (rounds 1 et 2) ;
+- **[calcul auditeur]** / **[calcul PI, round 3]** : calcul par la formule IRB bâloise (entreprises, 99,9 %, M = 2,5, LGD indiquée). Ce sont des ordres de grandeur ;
 - **[à vérifier]** : non vérifié.
 
 Les sources figurent en fin de document.
@@ -169,10 +202,18 @@ Les sources figurent en fin de document.
 **Deux grandeurs distinctes, une convention unique pour chacune.** La version initiale mélangeait deux choses. Elle justifiait un paramètre avec un capital à 8 % comparé à une perte **totale**, et en chiffrait le coût avec un capital à 13 % (round 1, P2). La version révisée sépare deux questions qui ne doivent jamais être croisées.
 
 - **(a) Coût d'un paramètre pour la banque (tous les chiffres en pb de ce document).** Coût annuel ≈ pondération × 13 % (exigence cible de fonds propres) × 8 points (surcoût des fonds propres), soit **1,04 pb par point de pondération** (`macro-analysis.md` §4.4). `micro-analysis.md` §5.2 utilise une convention voisine (0,9 pb par point) ; elle n'est pas reprise ici. Ce sont des ordres de grandeur.
-- **(b) Adéquation prudentielle d'un paramètre (tests de couverture, P2, P4 et P10).** Deux comparaisons séparées :
-  - la **perte inattendue** (perte de l'année défavorable moins l'EL) est comparée à l'exigence **minimale** de pilier 1 (8 % × pondération) ;
-  - la **perte attendue** est comparée aux provisions IFRS 9 et à la marge.
-  
+- **(b) Adéquation prudentielle d'un paramètre (tests de couverture : P2, P4 et P10), révisée au round 3 (réserve R-2).** Trois éléments :
+  - **Test principal : parité avec la formule IRB à 99,9 %.** Le minimum de pilier 1 est calibré pour couvrir la perte inattendue à 99,9 % sur un an (modèle ASRF). Le test compare donc la pondération **effective** du paramètre examiné, après facteur PME lorsque celui-ci est cumulé, à la pondération que produit la formule IRB de l'art. 153(1) CRR. Celle-ci est calculée **sans** facteur de soutien, mais avec l'ajustement de corrélation de l'art. 153(4) lorsque l'emprunteur y est éligible. Les paramètres sont les suivants :
+    - la PD de long terme et la LGD de ralentissement, estimées sur les données de l'Union (P10) ;
+    - la corrélation réglementaire, ou la corrélation estimée au titre du critère (e) de P4 si elle est plus élevée ;
+    - la maturité effective observée, ou 2,5 ans à défaut.
+    
+    Le paramètre est jugé adéquat si sa pondération effective est au moins égale à la pondération IRB ainsi calculée. Le test réutilise une formule existante du CRR ; il n'en crée aucune.
+  - **Contrôle a posteriori (*backtesting*).** La perte de l'année la plus défavorable observée, diminuée de l'EL, est comparée à 8 % × la pondération effective. Si elle la dépasse, la sous-capitalisation est établie indépendamment de tout modèle. Dans le cas inverse, rien n'est établi. Une mauvaise année observée sur 5 à 10 ans n'est pas l'année à 99,9 % : pour un profil *early stage*, une année à 9,7 % de pertes se situe vers le 94e centile de la distribution ASRF [calcul auditeur]. C'est le défaut de la version du round 2, qui faisait de la pire année le test principal et biaisait donc toute conclusion vers moins de capital.
+  - **Perte attendue.** Elle est comparée aux provisions IFRS 9 et à la marge.
+
+  **Symétrie de la preuve.** Les exigences de données sont les **mêmes pour un durcissement que pour un allègement** : celles des critères (a) et (b) de P4. En deçà, le rapport conclut explicitement à l'insuffisance des données, et aucun paramètre de pilier 1 n'est modifié, ni dans un sens ni dans l'autre. **La prudence asymétrique passe par le pilier 2, pas par le pilier 1.** Un *backtesting* défaillant sur des données partielles est transmis aux autorités compétentes comme signal de SREP (art. 97 et 104 CRD) ; il peut aussi conduire la Commission à avancer le réexamen.
+
   Le minimum de pilier 1 est la bonne référence, car c'est lui que le législateur calibre ; les coussins sont utilisables et l'exigence de pilier 2 est propre à chaque banque. Aucun chiffre de ce document ne compare une perte **totale** à un capital.
 
 ---
@@ -201,13 +242,13 @@ Elle exclut explicitement les financements adossés à des actifs. Les critères
 
 **Mécanisme.**
 1. **Emplacement.** Un nouveau paragraphe de l'art. 147 CRR (numérotation à arrêter, par exemple 147(8a)) crée, **dans la classe « entreprises » mais hors *specialised lending***, la sous-catégorie VDQ. Elle est répliquée dans l'approche standard par un nouvel article placé à la suite de l'art. 122a (voir P2).
-2. **Critères de caractérisation.** Est une VDQ toute exposition sur une entreprise (hors établissements, entreprises d'assurance et de réassurance, entreprises d'investissement et organismes de placement collectif) qui remplit les trois critères suivants. Le classement est **obligatoire**.
+2. **Critères de caractérisation.** Est une VDQ toute exposition sur une entreprise (hors établissements, entreprises d'assurance et de réassurance, entreprises d'investissement et organismes de placement collectif) qui remplit les trois critères suivants. Le classement est **obligatoire** pour toute exposition de la classe « entreprises ». Le seul classement concurrent admis est celui d'une VDQ **conforme** en clientèle de détail, dans les conditions de l'art. 123 (point 8, révisé au round 3).
    - **(C1) Soutien d'un investisseur professionnel qualifié.** Dans les 18 mois précédant l'octroi, l'emprunteur a réalisé un tour de fonds propres dans lequel un investisseur qualifié a souscrit **au moins 25 % du montant du tour, ou la part la plus élevée**. L'investisseur qualifié est défini **par renvoi** :
      - (i) un FIA géré par un gestionnaire agréé au titre de l'art. 6 AIFMD ;
      - (ii) un fonds EuVECA (règlement (UE) n° 345/2013) ;
      - (iii) un ELTIF (règlement (UE) 2015/760 modifié par 2023/606) ;
      - (iv) le groupe BEI (dont le Fonds EIC et le FEI), ou une banque ou institution nationale de développement éligible comme partenaire chargé de la mise en œuvre d'InvestEU ;
-     - (v) **critère objectivé** : un fonds de pays tiers dont le gestionnaire remplit **deux** conditions. D'une part, il est agréé ou enregistré auprès d'une autorité de surveillance d'un pays tiers couvert par un accord de coopération au titre de l'art. 42(1)(b) AIFMD, ou il y dépose des déclarations réglementaires périodiques ; ce second cas couvre notamment les conseillers américains relevant du statut d'*exempt reporting adviser*, qui déposent le formulaire ADV. D'autre part, ses encours gérés atteignent au moins **100 M€**, seuil **repris de l'art. 3(2)(a) AIFMD**, utilisé ici comme indicateur objectif de taille institutionnelle. [à vérifier : présence de la SEC parmi les autorités signataires des accords de coopération AIFMD]
+     - (v) **critère objectivé** : un fonds de pays tiers dont le gestionnaire remplit **deux** conditions. D'une part, il est agréé ou enregistré auprès d'une autorité de surveillance d'un pays tiers partie à un accord de coopération conclu au titre de l'art. 42(1)(b) AIFMD avec **au moins une** autorité compétente de l'Union, ou il y dépose des déclarations réglementaires périodiques ; ce second cas couvre notamment les conseillers américains relevant du statut d'*exempt reporting adviser*, qui déposent le formulaire ADV. D'autre part, ses encours gérés atteignent au moins **100 M€**, seuil **repris de l'art. 3(2)(a) AIFMD**, utilisé ici comme indicateur objectif de taille institutionnelle. [vérifié-auditeur : en juillet 2013, la SEC a conclu des protocoles d'accord AIFMD, négociés par l'ESMA, avec 25 autorités de l'UE et 3 de l'EEE]
 
      Le point (v) est indispensable : plus de 4 opérations de scale-up sur 5 dans l'UE ont un chef de file étranger (`macro-analysis.md` §1.1). Il s'applique à partir de registres publics, sans appréciation du prêteur.
    - **(C2) Dépendance au financement externe.** L'emprunteur présente, sur les 12 derniers mois, un **EBITDA négatif ou un flux de trésorerie disponible avant service de la dette négatif**. Ces deux grandeurs sont tirées de ses comptes et ne dépendent pas de la structure du prêt. Le critère de la version initiale (« le dossier de crédit identifie à l'octroi un financement futur comme source de remboursement ») est **retiré de la définition**. Il dépendait du prêteur ; il devient une exigence de documentation de pilier 2 (P8).
@@ -222,8 +263,9 @@ Elle exclut explicitement les financements adossés à des actifs. Les critères
    - **(Q5) Sûretés.** Sûreté de premier rang sur l'ensemble des actifs, y compris la PI, **ou** *negative pledge* sur la PI. Un *split-lien* avec un prêteur ABL/RCF est admis sous accord inter-créanciers.
 4. **Traitement de la VDQ non conforme** (échec à un ou plusieurs des critères Q1 à Q5) :
    - **approche standard :** 100 %, **sans** application du facteur PME de l'art. 501 (P2) ;
-   - ***slotting* :** classement plafonné à la catégorie 3 et abaissé d'un cran par rapport au résultat de la grille (P3) ;
-   - **approche PD :** facteur PME non applicable.
+   - ***slotting* :** classement plafonné à la catégorie 3 et abaissé d'un cran par rapport au résultat de la grille ; pendant la période transitoire, catégorie 4 (P3) ;
+   - **approche PD :** facteur PME non applicable ;
+   - **clientèle de détail :** classement exclu (point 8).
    
    **La dette subordonnée n'est pas une VDQ non conforme.** Elle relève de l'art. 128 (150 %), plus lourd, qui prime (voir P6). Il n'y a donc pas de sortie favorable.
 5. **Exclusions explicites (anti-arbitrage) :**
@@ -236,18 +278,21 @@ Elle exclut explicitement les financements adossés à des actifs. Les critères
    - les facilités *unitranche* avec accord entre prêteurs (P6). Si elles ne sont pas des positions de titrisation, elles reçoivent le traitement « non conforme », afin que l'exclusion ne constitue pas une sortie favorable.
 6. **Paliers.** VDQ-P si les revenus des 12 derniers mois sont inférieurs à 5 M€ ; VDQ-C au-delà. La migration de P vers C intervient après deux trimestres consécutifs au-dessus du seuil. La frontière SVB est à 5 M$, soit environ 4,4 M€ à 1,13 $/€. Le seuil retenu de 5 M€ est **aussi la borne basse de l'intervalle de chiffre d'affaires de l'ajustement de corrélation PME de l'art. 153(4) CRR** : c'est un point d'ancrage existant du CRR. L'écart avec 4,4 M€ est inférieur à la précision des données ; il est réexaminé à 3 ans.
 7. **Sortie par le haut.** L'exposition sort vers le *corporate* générique à la revue suivante si le critère C2 n'est plus rempli pendant **quatre trimestres consécutifs** : EBITDA **et** flux de trésorerie disponible positifs. Sans facteur de soutien propre à la VDQ, la sortie ne pénalise plus la rentabilité : une VDQ conforme et une exposition *corporate* PME reçoivent le même traitement.
-8. **Primauté sur la clientèle de détail.** Une exposition qui remplit les critères de caractérisation ne peut pas être classée en clientèle de détail (art. 123 et 147(5)).
-   - **Justification.** L'art. 123(1)(c) CRR subordonne ce classement à l'appartenance à « un nombre significatif d'expositions présentant des caractéristiques similaires, de sorte que les risques associés […] sont substantiellement réduits » [vérifié, round 2]. Or les VDQ partagent un facteur systématique dominant, le cycle VC (`macro-analysis.md` §2.2 ; `micro-analysis.md` §3.4), qui contredit cette réduction du risque.
-   - **Coût.** Pour un ticket de moins de 1 M€, la pondération passe de 57 % à 76 %, soit **+20 pb** (au plus 2 000 €/an pour 1 M€). C'est la seule hausse de pondération pour une VDQ **conforme** au lancement. Elle est affichée en H.1.
-   - **Option pour les colégislateurs.** Si ce coût est jugé disproportionné, la primauté peut être limitée à la définition de reporting. Il faudrait accepter un trou de périmètre : les plus petits tickets, les plus risqués, resteraient hors de l'article dédié.
+8. **Primauté sur la clientèle de détail : limitée aux VDQ non conformes (révisé au round 3, réserve R-5).**
+   - **Règle.** Une VDQ **non conforme** ne peut pas être classée en clientèle de détail. Cela suppose de modifier l'art. 123 pour l'approche standard et l'art. 147(5) pour l'IRB. Une VDQ **conforme** qui remplit les conditions de l'art. 123(1) (dont le plafond de 1 M€ dû par le client ou le groupe de clients liés, et la diversification) peut rester classée en clientèle de détail, comme aujourd'hui : 75 %, soit environ 57 % après facteur PME.
+   - **Reporting.** Toutes les VDQ portent l'identifiant VDQ dans le reporting (P10), y compris celles classées en clientèle de détail. La ventilation par ITS au titre de l'art. 430 est indépendante de la classe d'exposition : le périmètre **statistique** reste étanche.
+   - **Fondement : l'anti-arbitrage, et non plus l'art. 123(1)(c).** La version du round 2 invoquait le critère de réduction du risque par le nombre d'expositions, au motif que les VDQ partagent un facteur systématique, le cycle VC. **Ce fondement est abandonné.** Ce critère vise la diversification du risque **idiosyncratique**. Tout portefeuille de détail PME partage un facteur systématique, le cycle économique, sans cesser pour autant d'être éligible (round 2 de vérification, V.6(c)). La règle retenue a un autre objet. Pour les petits tickets, elle ferme la sortie par la clientèle de détail qui permettrait à une structure non conforme d'échapper à son traitement (point 4). C'est une condition de **cohérence interne** de la définition, « inévitable par structuration » ; ce n'est pas la correction d'un risque inféré. Restreindre le classement en clientèle de détail est une super-équivalence, sans écart bâlois.
+   - **Coût.** Nul pour une VDQ conforme. Pour une VDQ non conforme de moins de 1 M€ : 57 % → 100 %, soit +45 pb. C'est le coût, évitable, de la discipline des critères de qualité (P2).
+   - **La primauté complète devient une hypothèse soumise au rapport à 3 ans.** L'exclusion de **toutes** les VDQ de la clientèle de détail n'est pas inscrite. Le rapport de l'EBA la teste (P10, point 6(g)) selon le test de parité de §0.6(b). Si la pondération effective de 57 % est inférieure à celle que produit la formule IRB avec les paramètres de l'Union pour ces tickets, la Commission présente une proposition législative. Comme le 130 %, elle n'est pas inscrite comme élément dormant activable, pour les mêmes raisons (P2, point 5).
+   - **Pourquoi l'option est tranchée plutôt que laissée aux colégislateurs.** Selon le round de faisabilité, la primauté complète était le **seul** durcissement de pilier 1 appliqué au lancement à une exposition conforme. Elle reposait sur un fondement juridique fragile et frappait le segment le plus visible pour l'écosystème start-up (`feasibility-debate.md` §2.6). La laisser ouverte comme option revenait à offrir un amendement prêt à l'emploi.
 9. **Clause d'antériorité.** Les expositions octroyées avant la date d'application conservent leur traitement jusqu'à échéance. La demi-vie étant d'environ 2 ans (`micro-analysis.md` §2.1), l'extinction du stock est rapide.
-10. **Définition de reporting dès la phase 0.** Les critères C1 à C3 et la distinction entre paliers servent, **avant tout niveau 1**, de définition de reporting : collecte au titre de l'art. 35 du règlement EBA et ventilation par ITS au titre de l'art. 430 (P10). Ils sont objectifs et indépendants du prêteur, et peuvent donc être repris tels quels par le produit de garantie (P11) et, sous forme adaptée, par le volet insolvabilité (P12).
+10. **Définition de reporting dès la phase 0.** Les critères C1 à C3 et la distinction entre paliers servent, **avant tout niveau 1**, de définition de reporting : collecte au titre de l'art. 35 du règlement EBA et ventilation par ITS au titre de l'art. 430 (P10). Cette définition s'applique quelle que soit la classe d'exposition, y compris aux VDQ conformes classées en clientèle de détail. Les critères sont objectifs et indépendants du prêteur. Ils peuvent donc être repris tels quels par le produit de garantie (P11) et, sous forme adaptée, par le volet insolvabilité (P12).
 
 **Cadres connectés et synergies.**
 - **AIFMD (art. 3(2)(a), 6 et 42), EuVECA, ELTIF, InvestEU.** Le critère C1 **réutilise** des statuts réglementaires et un seuil existants au lieu de créer un label ad hoc.
 - **Art. 153(4) CRR.** Le seuil de 5 M€ coïncide avec la borne basse de l'ajustement de taille.
-- **Art. 123(1)(c) CRR.** Fondement de la primauté sur la clientèle de détail.
-- **Art. 430 CRR / règlement EBA, art. 35.** Définition de reporting en phase 0.
+- **Art. 123 et 147(5) CRR.** Exclusion des seules VDQ non conformes de la clientèle de détail, pour un motif anti-arbitrage. L'art. 123(1)(c) n'est plus invoqué comme fondement.
+- **Art. 430 CRR / règlement EBA, art. 35.** Définition de reporting en phase 0, indépendante de la classe d'exposition.
 - **EU Inc (COM(2026) 321).** La proposition définit une « start-up innovante » [vérifié] : dépenses de R&D ≥ 10 % des coûts d'exploitation ou ≥ 5 % du chiffre d'affaires, moins de 100 salariés, chiffre d'affaires ≤ 10 M€, moins de 10 ans d'existence. Cette définition **ne remplace pas** la frontière des paliers, qui est une frontière de **risque**, alors que celle d'EU Inc est une frontière de **politique**.
 
 **Bénéfices attendus.**
@@ -255,9 +300,9 @@ Elle exclut explicitement les financements adossés à des actifs. Les critères
   - fin de l'incertitude de classement ;
   - une définition inévitable par structuration ;
   - une discipline des structures par les critères de qualité, au coût modéré de la perte du facteur PME ;
-  - la suppression de l'arbitrage par la classe « clientèle de détail ».
+  - la fermeture de la sortie par la clientèle de détail pour les structures non conformes, **sans renchérir les petits tickets conformes**.
 - **Macro :**
-  - un périmètre étanche, donc des données de calibrage propres (`micro-analysis.md` §1.2) ;
+  - un périmètre **statistique** étanche, y compris pour les VDQ conformes classées en clientèle de détail, donc des données de calibrage propres (`micro-analysis.md` §1.2) ;
   - une ligne de reporting identifiable **dès la phase 0**, soit le « gain net pour la surveillance macroprudentielle » quelle que soit la pondération (`macro-analysis.md` §2.6).
 
 **Risques et limites.**
@@ -267,20 +312,21 @@ Elle exclut explicitement les financements adossés à des actifs. Les critères
 - (iv) Les emprunteurs à EBITDA négatif **non** soutenus par un investisseur qualifié restent en *corporate* générique. Cette frontière est sans effet au lancement, où les traitements sont identiques. Elle devra être examinée avant tout recalibrage du palier P (P2, point 5).
 - (v) Toute définition propre à l'UE est une divergence vis-à-vis de Bâle, traitée en P13.
 - (vi) L'articulation de la nouvelle sous-catégorie avec les classes d'exposition de l'approche standard post-CRR3 reste à vérifier par `current-regulation-analyst` [à vérifier].
+- (vii) **Trou de périmètre prudentiel, assumé (round 3).** Les VDQ conformes de moins de 1 M€ classées en clientèle de détail échappent à l'article dédié (P2). C'est sans effet au lancement, où les traitements sont neutres. Ce trou ne compterait que pour un recalibrage futur du palier P ; c'est pourquoi la primauté complète figure parmi les hypothèses du rapport à 3 ans.
 
 ---
 
 ### P2 — Volet approche standard : un article dédié à pondérations neutres au lancement ; calibrage renvoyé aux données
 
 **Résumé exécutif.** Créer en approche standard un article dédié, placé à la suite de l'art. 122a. Il sert de **réceptacle** : sans lui, l'output floor neutralise tout paramètre IRB, et aucun recalibrage futur n'aurait de support. Ses pondérations sont **neutres au lancement** :
-- **VDQ conforme (P ou C) : 100 %, cumulable avec l'art. 501.** C'est le statu quo effectif : 76 % jusqu'à 2,5 M€ et environ 85 % au-delà pour une PME, 100 % sinon ;
-- **VDQ non conforme : 100 %, sans facteur PME** ;
+- **VDQ conforme (P ou C) : 100 %, cumulable avec l'art. 501.** C'est le statu quo effectif : 76 % jusqu'à 2,5 M€ pour une PME, 78 à 84 % au-delà (facteur combiné), 100 % pour un emprunteur non PME. Une VDQ conforme de moins de 1 M€ peut rester en clientèle de détail (environ 57 %, P1(8)) ;
+- **VDQ non conforme : 100 %, sans facteur PME**, et jamais en clientèle de détail ;
 - **VDQ-C « haute qualité » : 80 %, dormante** (P4), non cumulable avec l'art. 501.
 
 **Le 130 % du stade précoce de la version initiale est retiré du texte.** Il devient une **hypothèse de calibrage**. Le rapport de l'EBA à 3 ans (P10) doit la tester selon une méthode fixée à l'avance. Si elle est confirmée, la voie est législative.
 
 **Problème et ancrage factuel.**
-- **L'approche standard ne distingue pas les stades.** Une start-up non notée reçoit 100 %, soit 76 à 85 % avec le facteur PME (`micro-analysis.md` §5.1).
+- **L'approche standard ne distingue pas les stades.** Une start-up non notée reçoit 100 %, soit 76 à 84 % avec le facteur PME (`micro-analysis.md` §5.1).
 - **Le « sous-capital » de l'*early stage* n'est pas établi.** La version initiale le déduisait d'un « test de suffisance » : le capital minimal (8 % × pondération) était comparé à la perte nette d'une année de stress (9,7 %). **Ce test est retiré.** Il comparait le capital, qui couvre la perte **inattendue**, à une perte **totale**, qui inclut la perte attendue. Or cette dernière est absorbée par les provisions (8,71 % de l'encours *early stage* chez First Citizens) et par une marge de 5 à 10 points (`micro-analysis.md` §3.2, §2.1).
 - **Deux autres défauts du test.** Il reposait sur une convention de capital différente de celle du chiffrage des coûts (§0.6). Il s'ancrait sur un seul prêteur survivant, en une seule année de stress, ce que `micro-analysis.md` §8.4 qualifie lui-même d'« actuariellement faux ».
 - **La sélection adverse vers l'*early stage* est inférée [I], non observée dans l'Union.** La part bancaire est inconnue (`macro-analysis.md` §1.4). Les banques universelles se concentrent sur la famille (c) (`micro-analysis.md` §5.5). Le pilier 2 est disponible : limites par stade (P8), stress « gel VC » et présomption de revue (P9).
@@ -292,9 +338,10 @@ Elle exclut explicitement les financements adossés à des actifs. Les critères
 
    | Sous-catégorie | Pondération | Art. 501 | Pondération effective | Statut |
    |---|---|---|---|---|
-   | VDQ conforme, P ou C | **100 %** | Cumulable | 76 % (≤ 2,5 M€), ≈ 85 % (au-delà), 100 % (non PME) | Actif : statu quo |
-   | VDQ non conforme | **100 %** | **Non cumulable** | 100 % | Actif |
-   | VDQ-C « haute qualité » | **80 %** | Non cumulable ; la plus favorable des deux options s'applique | 80 % (non PME ou ticket > 2,5 M€) | **Dormant** (P4) |
+   | VDQ conforme, P ou C | **100 %** | Cumulable | 76 % (≤ 2,5 M€) ; 78 à 84 % au-delà (facteur combiné : 0,78 à 3 M€, 0,81 à 5 M€, 0,84 à 25 M€) ; 100 % (non PME) | Actif : statu quo |
+   | VDQ conforme de moins de 1 M€ en clientèle de détail (art. 123) | 75 % | Cumulable | ≈ 57 % | Inchangé : statu quo (P1(8)) |
+   | VDQ non conforme | **100 %** | **Non cumulable** | 100 % ; jamais en clientèle de détail | Actif |
+   | VDQ-C « haute qualité » | **80 %** | Non cumulable ; la plus favorable des deux options s'applique | 80 % ; pour une PME, sans effet sous un ticket d'environ 4,4 M€ | **Dormant** (P4) |
    | Venture debt subordonnée | — | — | 150 % (art. 128) | Inchangé |
 
 2. **Choix politique documenté : cumul ou non-cumul du facteur PME pour la VDQ-P conforme.**
@@ -305,31 +352,34 @@ Elle exclut explicitement les financements adossés à des actifs. Les critères
    | Sans cumul | 100 %, +25 pb | Lecture la plus stricte du garde-fou n° 1 | Surcharge fondée sur une inférence ; coût politique ; les limites par stade du pilier 2 visent le même risque de façon ciblée | Écartée au lancement ; soumise au rapport à 3 ans |
 
    Le garde-fou n° 1 vise les pondérations **du compartiment**, qui valent toutes 100 %. Le facteur PME est une mesure horizontale préexistante : le compartiment ne la crée pas et ne l'étend pas.
-3. **Art. 501 : modification ciblée.** Le facteur PME n'est pas applicable aux VDQ non conformes. C'est le levier de discipline des critères de qualité (P1(4)). Il ne crée aucune pondération nouvelle ni non calibrée. Il **retire** un écart bâlois favorable là où la structure s'écarte des standards de marché.
+3. **Art. 501 : modification ciblée.** Le facteur PME n'est pas applicable aux VDQ non conformes. C'est le levier de discipline des critères de qualité (P1(4)). Il ne crée aucune pondération nouvelle ni non calibrée. Il **retire** un écart bâlois favorable là où la structure s'écarte des standards de marché. Pour une PME, les 100 % dépassent même la référence bâloise de 85 % pour une PME non notée (CRE20 [vérifié-auditeur]) : c'est une super-équivalence, sans risque au regard du RCAP.
 4. **Output floor.** Ces pondérations servent de base au plancher. Pour une VDQ conforme, la base reste celle d'aujourd'hui.
-5. **Hypothèse de 130 % (non inscrite) : protocole fixé à l'avance pour le rapport de l'EBA à 3 ans (P10).**
+5. **Hypothèse de 130 % (non inscrite) : protocole fixé à l'avance pour le rapport de l'EBA à 3 ans (P10), révisé au round 3 (R-2).**
    - (a) Données de l'Union au niveau du prêt, de la phase 0 et du reporting, hors famille (c), avec correction du biais de survie.
-   - (b) Test de couverture selon §0.6(b) : UL comparée à 8 % × pondération, EL comparée aux provisions et à la marge, sans jamais comparer une perte totale à un capital.
-   - (c) Coûts exprimés selon la convention §0.6(a).
-   - (d) Examen de la frontière avec les emprunteurs à EBITDA négatif non soutenus par un investisseur qualifié (P1, risque (iv)), pour éviter qu'une surcharge ne rouvre une incitation inversée.
-   - (e) Conclusion sur trois options : 100 % avec cumul, 100 % sans cumul, 130 % sans cumul.
+   - (b) **Test de parité** selon §0.6(b). La pondération effective, soit 76 % avec cumul, 100 % sans cumul ou 130 % sans cumul, est comparée à la pondération que produit la formule IRB de l'art. 153(1) (99,9 %). Cette formule est appliquée avec la PD de long terme et la LGD de ralentissement de l'Union, et l'ajustement de corrélation de l'art. 153(4) pour les PME. Le *backtesting* se fait sur la pire année observée ; l'EL est comparée aux provisions et à la marge.
+   - (c) **Exigences de données identiques à celles d'un allègement** : critères (a) et (b) de P4. En deçà, le rapport conclut à l'insuffisance des données et ne recommande aucun recalibrage de pilier 1. Un *backtesting* défaillant sur données partielles est un signal de pilier 2 (§0.6(b)).
+   - (d) Coûts exprimés selon la convention §0.6(a).
+   - (e) Examen de la frontière avec les emprunteurs à EBITDA négatif non soutenus par un investisseur qualifié (P1, risque (iv)), pour éviter qu'une surcharge ne rouvre une incitation inversée.
+   - (f) **Conclusion.** Le rapport indique la pondération qu'implique le test de parité et classe les options : 100 % avec cumul, 100 % sans cumul, 130 % sans cumul, ou une valeur **supérieure** si le test l'implique. Il examine en même temps la primauté complète sur la clientèle de détail (P1(8)).
 
    Si le rapport conclut à une surcharge, la Commission présente une proposition législative ciblée (clause de revoyure, P10).
 
+   **Conséquence assumée de la correction du test (R-2).** Le test corrigé est plus exigeant que celui du round 2. Pour un profil *early stage* de PD 10 % et de LGD 45 %, la formule IRB donne environ 146 % avec l'ajustement de taille et 193 % sans [calcul auditeur], soit bien plus que 76 %. Ces paramètres ne sont pas connus pour l'Union : établir ces paramètres est l'objet même du rapport. Mais le paquet doit le dire clairement : si les données de l'Union ressemblent aux données américaines, la conclusion probable du rapport sera un **durcissement** du palier P, et non le statu quo. La neutralité au lancement n'est pas une promesse de neutralité durable ; c'est un refus de décider sans preuve, dans un sens comme dans l'autre.
+
    **Pourquoi le 130 % n'est pas inscrit comme élément dormant activable**, à la différence des catégories d'allègement de P4 :
-   - (i) Il se situe **au-dessus** de la référence bâloise (100 % pour une entreprise non notée) : l'Union peut toujours décider une super-équivalence, sans risque RCAP, donc sans besoin de pré-engagement.
+   - (i) Il se situe **au-dessus** de la référence bâloise : 100 % pour une entreprise non notée, 85 % pour une PME non notée (CRE20 [vérifié-auditeur]). L'Union peut toujours décider une super-équivalence, sans risque RCAP, donc sans besoin de pré-engagement.
    - (ii) Il suppose de retirer le facteur PME à une catégorie de PME. C'est un choix politique horizontal sur l'art. 501, qui relève des colégislateurs, et un élément essentiel au sens de l'art. 290 TFUE.
    - (iii) Une surcharge « suspendue » créerait un effet d'annonce sur le segment où l'objectif est la facilitation.
 6. **Pas de montée en charge.** Le calendrier 100/115/130 % de la version initiale disparaît avec le 130 %. Il était d'ailleurs incohérent avec la montée de l'output floor : le 130 % aurait été atteint en 2031-2032, après la pleine application du plancher en 2030.
 
-**Cadres connectés.** Art. 122a (gabarit), 123 (primauté), 128 (cohérence senior/junior), 501 (modification ciblée), 465 (plancher).
+**Cadres connectés.** Art. 122a (gabarit), 123 et 147(5) (exclusion des VDQ non conformes de la clientèle de détail), 128 (cohérence senior/junior), 501 (modification ciblée), 465 (plancher), 153(1) (formule servant au test de parité).
 
 **Bénéfices attendus.**
 - **Micro** (convention §0.6(a)) :
-  - VDQ conforme : **neutre** (79 pb jusqu'à 2,5 M€ ; 88 pb au-delà pour une PME ; 104 pb pour un emprunteur non PME) ;
-  - tickets de moins de 1 M€ aujourd'hui classables en clientèle de détail : **+20 pb** (57 % → 76 %) ;
+  - VDQ conforme : **neutre** (79 pb jusqu'à 2,5 M€ ; 81 à 87 pb au-delà pour une PME ; 104 pb pour un emprunteur non PME) ;
+  - VDQ conformes de moins de 1 M€ classées en clientèle de détail : **neutre** (57 %, 59 pb) ;
   - VDQ non conforme : **+25 pb**, ou +45 pb depuis la clientèle de détail. Le coût de la discipline porte sur les seules structures atypiques ;
-  - avec le produit InvestEU « Innovation & Digitalisation » (I&D) non plafonné existant (80 %) : **inchangé** pour une VDQ conforme, à 16 pb.
+  - avec le produit InvestEU « Innovation & Digitalisation » (I&D) non plafonné existant (80 %) : **inchangé** pour une VDQ conforme, à 16 pb (12 pb en clientèle de détail).
 - **Macro :**
   - identification statistique ;
   - discipline des structures sans signal de durcissement sur l'*early stage* ;
@@ -339,20 +389,20 @@ Elle exclut explicitement les financements adossés à des actifs. Les critères
 - (i) **Le compartiment est « vide » en capital au lancement.** C'est assumé : c'est la configuration par défaut du garde-fou n° 1 et la condition de crédibilité de toute activation ultérieure.
 - (ii) Si une sélection adverse apparaît avant le rapport à 3 ans, les outils de pilier 2 sont disponibles : présomption de revue au-delà de 5 % des fonds propres (P9) et exigence au titre de l'art. 104 CRD. Ils sont propres à chaque banque et plus rapides qu'une révision législative.
 - (iii) Si le rapport confirme une surcharge, la voie législative ajoute 3 à 4 ans. C'est le prix de la preuve.
-- (iv) La hausse de 20 pb sur les tickets de moins de 1 M€ est la seule hausse pour une exposition conforme ; elle est motivée en P1(8).
+- (iv) **Aucune exposition conforme ne voit sa pondération augmenter au lancement** (round 3). La primauté complète sur la clientèle de détail est renvoyée au rapport à 3 ans (P1(8)).
 
 ---
 
-### P3 — Volet IRB : *slotting* dédié et optionnel, règle transitoire, EL fixées au niveau 1
+### P3 — Volet IRB : *slotting* dédié et optionnel, règle transitoire encadrée, EL fixées au niveau 1
 
 **Résumé exécutif.** Ouvrir aux banques IRB un *slotting* propre à la venture debt, **optionnel** et choisi **au niveau du portefeuille**, avec deux grilles :
-- **VDQ-C : 70 / 90 / 115 / 250 %.** Catégorie 1 dormante. Catégorie 2 active, comme **exception motivée** et bornée, à compter de l'application du RTS.
+- **VDQ-C : 70 / 90 / 115 / 250 %.** Catégorie 1 dormante. Catégorie 2 **dormante à activation accélérée** : elle peut s'appliquer dès l'application du RTS si les données de la phase 0 remplissent les critères de P4, point 2 bis (révisé au round 3).
 - **VDQ-P : 95 / 120 / 140 / 250 %**, soit les poids HVCRE de Bâle. Catégories 1 et 2 **dormantes**.
 
 Les règles d'encadrement sont les suivantes :
 - aucune pondération préférentielle pour maturité courte ;
 - les EL sont fixées **au niveau 1** ;
-- une règle transitoire s'applique jusqu'au RTS, qui sera disponible vers 2031 ;
+- une règle transitoire **encadrée** s'applique jusqu'au RTS, qui sera disponible vers 2031 : option soumise à autorisation, catégories par défaut, dérogations dures inscrites au niveau 1 (révisé au round 3) ;
 - les critères sont définis par un **nouveau** RTS de l'EBA, qui réutilise la structure du règlement délégué (UE) 2021/598 tel que modifié à l'issue d'EBA/CP/2026/09.
 
 Au lancement, l'approche PD suit les **règles générales** des entreprises. Les hypothèses propres à VDQ-P de la version initiale (corrélation HVCRE, suppression de l'ajustement de taille, LGD de 50 %) sont **renvoyées au rapport à 3 ans**, pour la même raison que le 130 % de P2.
@@ -361,19 +411,23 @@ Au lancement, l'approche PD suit les **règles générales** des entreprises. Le
 - **Obstacle des données.** Un portefeuille de quelques centaines de prêts, qui migre beaucoup et fait défaut rarement, est « difficile à valider » comme modèle de PD. C'est « l'argument le plus solide en faveur d'un *slotting* » (`micro-analysis.md` §5.2 ; `current-regulation.md` §2.4, §3.3).
 - **Les banques IRB sont désavantagées.** Un modèle PD donne des pondérations de 100 à 130 % en *growth* et de 170 à 240 % en *early stage* sans ajustement de taille, soit **deux à trois fois plus qu'une banque en approche standard** (`micro-analysis.md` §5.2).
   - Une banque IRB pour laquelle la venture debt est non significative peut déjà appliquer l'approche standard à ce type d'expositions (utilisation partielle permanente, art. 150(1), second alinéa [vérifié, round 2]).
-  - Le problème se concentre donc sur les **banques IRB spécialisées**, pour lesquelles ce portefeuille est significatif.
-- **Sans catégorie 2 active, le *slotting* VDQ-C serait inutilisable.** La meilleure pondération disponible serait 115 % (catégorie 3). Pour un emprunteur non PME, c'est plus que les 100 % de l'approche standard. Pour une PME, c'est plus que les 85 % de l'approche standard avec facteur PME. `micro-analysis.md` §8.1(4) décrit exactement ce cas : la catégorie deviendrait « plus coûteuse pour les banques NI qui l'adopteraient que le statu quo SA, et ne serait pas utilisée ». Le problème (iv), seul à exiger le pilier 1 (§0.2), resterait sans réponse.
+  - Le problème se concentre donc sur les **banques IRB spécialisées**, pour lesquelles ce portefeuille est significatif ; l'utilisation partielle permanente leur est fermée [vérifié-auditeur].
+- **Ce que la catégorie 2 VDQ-C apporte, et ce qu'elle n'apporte pas (révisé au round 3).**
+  - **L'argument retiré.** La version du round 2 soutenait que, sans catégorie 2 active, le *slotting* VDQ-C serait inutilisé, en citant `micro-analysis.md` §8.1(4). Cette lecture était inexacte (round 2 de vérification, V.2, désaccord 1). Le fact-base y vise l'absence de volet standard discriminant, dont le remède est l'article dédié (P2).
+  - **Le bon contrefactuel.** Pour les banques IRB spécialisées, c'est leur modèle PD, soit environ 110 à 130 % en *growth stage* (`micro-analysis.md` §8.2). La catégorie 3 à 115 % se situe au milieu de cette fourchette. Le *slotting* reste donc utilisable sans catégorie 2, et il apporte son bénéfice principal : la levée de l'obstacle de validation (problème (iv)).
+  - **Conséquence.** La catégorie 2 n'ajoute qu'un **allègement** pour le meilleur quart. Elle suit donc la règle de tout allègement : pas sans données de l'Union.
 - **Les facteurs du *slotting* PF ne se transposent pas tels quels.** Deux se transposent bien (sponsor ; sûretés et contrôle). Deux sont à redéfinir (solidité financière ; caractéristiques de la transaction). Un se transpose partiellement (environnement juridique). **Quatre dimensions manquent** : dépendance au refinancement, cycle VC, concentration par sponsor, qualité de l'équipe (`micro-analysis.md` §7).
 - **Les pondérations de 50 et 70 % pour une maturité inférieure à 2,5 ans sont inadaptées**, puisque la maturité effective est d'environ 2 ans (`micro-analysis.md` §6 friction n° 11).
 - **L'analogue bâlois pertinent est la HVCRE** (95/120/140/250 %). Elle est **plus pénalisante**, pas plus favorable (`micro-analysis.md` §8.2 ; `macro-analysis.md` §2.2(3)).
 - **Risque de compression.** Un *slotting* à 70-115 % comprimerait la différenciation et attirerait les risques les plus élevés (`macro-analysis.md` §4.3(3)).
+- **Risque d'auto-sélection pendant la transition (round 2 de vérification, V.4 n° 18).** Avant le RTS, il n'y a pas de grille. Une VDQ-C faible non PME (PD de 8 à 10 %) reçoit environ 158 à 172 % en approche PD [calcul auditeur], contre 115 % en catégorie 3 par défaut. Sans encadrement, une banque dont le portefeuille VDQ-C est faible a intérêt à opter pour le *slotting* pendant la transition.
 
 **Mécanisme.**
 1. **Tableaux de *slotting* dédiés** (nouvel art. 153(5a)). Une colonne unique s'applique, quelle que soit la maturité résiduelle.
 
    | Palier | Cat. 1 « solide » | Cat. 2 « bon » | Cat. 3 « satisfaisant » | Cat. 4 « faible » | Cat. 5 « défaut » |
    |---|---|---|---|---|---|
-   | VDQ-C | *70 % — dormante (P4)* | **90 % — exception motivée** (point 3) | **115 %** | **250 %** | 0 % (EL, art. 158) |
+   | VDQ-C | *70 % — dormante (P4)* | *90 % — dormante, activation accélérée (point 3 ; P4, point 2 bis)* | **115 %** | **250 %** | 0 % (EL, art. 158) |
    | VDQ-P | *95 % — dormante (P4)* | *120 % — dormante (P4)* | **140 %** | **250 %** | 0 % (EL, art. 158) |
 
    Ancrage du calibrage (`micro-analysis.md` §8.2) :
@@ -381,36 +435,41 @@ Au lancement, l'approche PD suit les **règles générales** des entreprises. Le
    - *early stage* : la tendance est « faible », et « satisfaisant » ne vaut que pour les meilleurs profils. Rien ne soutient « bon » : d'où la dormance de la catégorie 2 VDQ-P.
 2. **Perte attendue, fixée au niveau 1** (nouvel art. 158(6a)). Pour les deux paliers : **0,4 / 0,8 / 2,8 / 8 / 50 %**.
    - **Ce qui est corrigé.** La version initiale demandait à l'EBA de « vérifier si l'EL de 8 % suffit » pour VDQ-P, parce que la perte de stress (9,7 %) la dépasse. Ce raisonnement reproduisait la confusion corrigée en P2 : une perte d'année de stress contient de la perte inattendue, couverte par la pondération. Pour VDQ-P catégorie 4, cette pondération est de 250 %, soit un minimum de 20 % de capital.
-   - **Pourquoi 8 %.** Une EL de 8 % reste cohérente avec les ordres de grandeur disponibles pour une catégorie qui regroupe les expositions les plus fragiles : 6 % de pertes annuelles moyennes en 2008-2010, période de stress ; environ 2 % par an de pertes réalisées sur l'ensemble des portefeuilles BDC de 2005 à 2022 (`micro-analysis.md` §3.1, §3.2).
+   - **Pourquoi 8 %.** C'est la valeur bâloise « *weak* » du SL et de la HVCRE, donc sans écart. Les paramètres de `micro-analysis.md` §8.2 (PD de 10 à 19 %, LGD de 45 à 60 %) donnent une EL de 4,5 à 11,4 %, centrée sur environ 8 % (round 2 de vérification, V.7). C'est aussi cohérent avec les ordres de grandeur disponibles : 6 % de pertes annuelles moyennes en 2008-2010, période de stress ; environ 2 % par an de pertes réalisées sur l'ensemble des portefeuilles BDC de 2005 à 2022 (`micro-analysis.md` §3.1, §3.2).
    - **Suite.** La valeur est fixée par le législateur. Elle figure parmi les paramètres du rapport à 3 ans ; toute modification passe par la voie législative.
-3. **Exception motivée : catégorie 2 VDQ-C à 90 %.**
-   - **Pourquoi l'exception.** Sans elle, le *slotting* VDQ-C est plus coûteux que l'approche standard pour les banques qui en ont besoin (voir ci-dessus).
-   - **Pourquoi elle est bornée.**
-     - 90 % reste **au-dessus** de la pondération standard effective d'une VDQ-C PME (≈ 85 %) et du plancher (72,5 %).
-     - 90 % est la valeur bâloise « *good* » du SL, sans préférence de maturité.
-     - Pour une PME de croissance (PD ≈ 3 %, LGD de 40 %, chiffre d'affaires proche de 5 M€), la formule IRB bâloise **avec** l'ajustement de taille donne déjà environ 87 % [calcul propre, formule ASRF, M = 2,5]. Pour ces emprunteurs, la catégorie 2 ne s'écarte donc pas matériellement d'un résultat conforme à Bâle.
-   - **Conditions d'application :**
-     - (a) **effective seulement à compter de l'application du RTS**, vers 2031. L'EBA calibre alors les critères d'accès à la catégorie 2 sur les données de la phase 0 (P10) ;
-     - (b) **comptée dans le plafond de 10 % des fonds propres** de P9, avec imputation au prorata ;
-     - (c) soumise à la **désactivation fondée sur les pertes** de P4, point 4 ;
-     - (d) le facteur PME s'applique comme aux autres expositions sur PME de la classe « entreprises » [à vérifier, H.5 point 2].
-4. **Règle transitoire jusqu'à l'application du RTS.** Les établissements IRB appliquent aux VDQ l'approche PD générale. S'ils optent pour le *slotting* avant le RTS :
-   - la catégorie 3 est la catégorie par défaut pour VDQ-C ;
-   - la catégorie 4 est la catégorie par défaut pour VDQ-P ;
-   - la catégorie 2 n'est pas accessible.
-   
-   Cette règle suit l'ancrage de `micro-analysis.md` §8.2 et la logique de la « catégorie 4 par défaut » de CP/2026/09. Elle n'est jamais plus favorable que l'approche PD pour les profils faibles.
-5. **Choix entre PD et *slotting* au niveau du portefeuille.** Le choix se fait par palier, pour l'ensemble des VDQ du palier, et reste stable au moins 3 ans, sauf accord du superviseur. Il ne se fait pas exposition par exposition, ce qui permettrait de choisir au cas par cas la pondération la plus basse. C'est la logique de l'art. 153(5) : le *slotting* s'applique faute de pouvoir démontrer des estimations de PD conformes.
+3. **Catégorie 2 VDQ-C à 90 % : élément dormant à activation accélérée (révisé au round 3, réserve R-3).**
+   - **Pourquoi un régime propre.** Le RTS calibre de toute façon les critères d'accès à la catégorie 2 sur les données de la phase 0 (point 7). Exiger en plus 2 ans de reporting réglementaire repousserait la décision vers 2033-2034, sans changer la nature de la question. Le régime accéléré permet d'en décider **en même temps que le RTS**, sur les données qui servent à l'écrire. S'il n'est pas satisfait, la catégorie reste dormante.
+   - **Conditions d'activation (P4, point 2 bis).** Le critère de phase basse (b), le critère de pertes (c) et le test de parité (d) doivent être établis sur les données de la phase 0, rétrospectives comprises, couvrant 2022-2024. Les 2 ans de reporting réglementaire ne sont pas exigés.
+   - **Conditions d'application, une fois la catégorie activée :**
+     - (a) **non cumulable avec l'art. 501**. La plus favorable des deux options s'applique : 90 % sans facteur PME, ou le traitement non préférentiel (catégorie 3, 115 %) avec le facteur PME le cas échéant. Pour une PME, la pondération retenue reste ainsi d'environ 90 %. Elle se situe au-dessus de la pondération standard effective d'une VDQ-C PME (78 à 84 %, facteur combiné) et du plancher (72,5 %) ;
+     - (b) comptée dans le **plafond de 10 % des fonds propres** de P9, avec imputation au prorata ;
+     - (c) **durée d'application de 5 ans**, avec test **annuel** de désactivation. La reconduction exige les critères **complets** (a) à (e) de P4 (P4, points 4 et 4 bis) : l'entrée par le régime accéléré est provisoire par construction.
+   - **Ancrage de la valeur.** 90 % est la valeur bâloise « *good* » du SL, sans préférence de maturité. Avec une LGD de 40 % et M = 2,5, la formule IRB (non PME) donne environ 82 % pour une PD de 1 % et 102 % pour une PD de 2 % [calcul auditeur]. La parité avec 90 % correspond à une PD de long terme d'environ 1,3 % [calcul PI, round 3]. Le test de parité n'activera donc la catégorie que si le meilleur quart des VDQ-C de l'Union présente une PD de cet ordre ou inférieure.
+   - **Si les données ne suffisent pas**, la catégorie reste dormante. Le *slotting* VDQ-C s'applique alors avec les catégories 3 et 4. Coût dans le pire cas : +26 pb pour le meilleur quart des VDQ-C non PME des banques IRB spécialisées (115 % au lieu de 90 %). Il reste à l'intérieur de leur fourchette actuelle en approche PD (round 2 de vérification, V.2).
+4. **Règle transitoire jusqu'à l'application du RTS (révisée au round 3, réserve R-4).** Les établissements IRB appliquent aux VDQ l'approche PD générale. L'option pour le *slotting* avant le RTS est encadrée par trois règles, **inscrites au niveau 1** :
+   - **(a) Autorisation préalable, dans la logique de l'art. 153(5).** L'option est soumise à l'autorisation préalable de l'autorité compétente, sur le modèle de l'art. 143(3)(a) CRR, qui soumet déjà à autorisation les changements importants du champ d'application d'un système de notation [vérifié, round 3]. L'autorisation n'est accordée que si l'établissement démontre que ses estimations de PD pour les VDQ du palier ne satisfont pas aux exigences du CRR. C'est la logique du *slotting* comme méthode de repli (art. 153(5)), déjà retenue au point 5. Un établissement dont le modèle PD est conforme ne peut donc pas basculer vers une catégorie par défaut parce qu'elle est moins coûteuse. L'autorisation peut être assortie de conditions, notamment le classement en catégorie 4 des expositions que le système de notation interne de l'établissement range dans ses échelons les plus faibles.
+   - **(b) Catégories par défaut.** La catégorie 3 s'applique à VDQ-C, la catégorie 4 à VDQ-P ; la catégorie 2 n'est pas accessible. Une VDQ **non conforme** est classée en catégorie 4, par application de P1(4) (abaissement d'un cran).
+   - **(c) Dérogations dures, applicables dès la période transitoire, aux deux paliers.** Classement immédiat en catégorie 4 si l'une des conditions objectives suivantes est remplie :
+     - runway inférieur à 6 mois sans *term sheet* signé ;
+     - impayé sur l'exposition (le défaut au sens de l'art. 178 entraîne la catégorie 5) ;
+     - juste valeur du warrant ramenée à zéro.
+     
+     Ces dérogations restent applicables après le RTS, qui ne peut pas les assouplir (P5, point 3).
+   - **Pourquoi ces trois règles.** La version du round 2 affirmait que la règle transitoire n'était « jamais plus favorable que l'approche PD pour les profils faibles ». C'était faux pour VDQ-C (voir « Problème »).
+     - **Les dérogations dures ne suffisent pas.** La règle (c) ne corrige que la queue la plus dégradée : une VDQ-C faible dont le runway est de 9 à 12 mois n'en déclenche aucune.
+     - **L'autorisation supprime l'auto-sélection.** Avec la règle (a), seuls peuvent opter les établissements qui ne disposent pas d'estimations de PD conformes, c'est-à-dire la cible du problème (iv). Pour eux, le contrefactuel n'est pas un modèle PD validé.
+     - **La durée de la fenêtre ne crée plus d'avantage.** La période transitoire prend fin avec l'application du RTS, que les établissements ne contrôlent pas. Avec la règle (a), un retard du RTS ne crée plus d'avantage exploitable.
+5. **Choix entre PD et *slotting* au niveau du portefeuille.** Le choix se fait par palier, pour l'ensemble des VDQ du palier, et reste stable au moins 3 ans, sauf accord du superviseur. Il ne se fait pas exposition par exposition, ce qui permettrait de choisir au cas par cas la pondération la plus basse. C'est la logique de l'art. 153(5) : le *slotting* s'applique faute de pouvoir démontrer des estimations de PD conformes. Avant le RTS, le choix est en outre soumis à l'autorisation du point 4(a).
 6. **Approche PD : règles générales au lancement.** Trois paramètres de la version initiale sont retirés du niveau 1 et deviennent des **hypothèses soumises au rapport à 3 ans** :
    - la corrélation HVCRE pour VDQ-P ;
    - la suppression de l'ajustement de taille PME (art. 153(4)) ;
    - une LGD F-IRB de 50 % pour VDQ-P.
    
-   Comme le 130 % de l'approche standard, ce sont des durcissements de pilier 1 fondés sur une inférence : la corrélation « non estimable avec les données publiques » et une LGD calculée à partir d'un seul prêteur (`micro-analysis.md` §3.4, §4.3, §9). Le *slotting* VDQ-P, **optionnel**, conserve les poids HVCRE.
+   Comme le 130 % de l'approche standard, ce sont des durcissements de pilier 1 fondés sur une inférence : la corrélation « non estimable avec les données publiques » et une LGD calculée à partir d'un seul prêteur (`micro-analysis.md` §3.4, §4.3, §9). Le *slotting* VDQ-P, **optionnel**, conserve les poids HVCRE ; ces poids figurent eux aussi parmi les paramètres testés à 3 ans (P10, point 6(h)).
 7. **Nouveau mandat de RTS** (nouvel art. 153(9a) ; il ne s'agit pas d'une extension de l'art. 153(9)).
    - **Contenu.** L'EBA précise les facteurs et leur pondération indicative, en **réutilisant la structure** du règlement délégué (UE) 2021/598 modifié. Elle reprend trois apports de CP/2026/09 : le sous-facteur « position dans la cascade de pertes », la suppression possible du plancher de 5 % pour un facteur non discriminant, et la catégorie 4 par défaut en cas de données manquantes.
    - **Frontière.** Le mandat inclut la **frontière** entre VDQ, OF/PF et famille (c), selon la source effective de remboursement. Cela évite un livrable distinct sous forme d'orientations (C.5 du round 1).
-   - **Calendrier.** Projet de RTS dans les 18 mois suivant l'entrée en vigueur ; application vers 2031.
+   - **Calendrier.** Projet de RTS dans les 18 mois suivant l'entrée en vigueur ; application vers 2031. L'EBA transmet avec le projet ses conclusions sur le régime accéléré de la catégorie 2 VDQ-C (P4, point 2 bis).
 
    | Facteur (réécrit) | Contenu (d'après `micro-analysis.md` §7 et §8.5) | Poids indicatif |
    |---|---|---|
@@ -420,36 +479,43 @@ Au lancement, l'approche PD suit les **règles générales** des entreprises. Le
    | Transaction et technologie | Stade (TRL, phase clinique), traction, risque homme-clé, redéployabilité de la PI | 10-20 % |
    | Environnement juridique | Opposabilité des sûretés sur la PI, lieu de détention de la PI, disponibilité du *pre-pack* (directive 2026/799), risque réglementaire sectoriel | 5-10 % |
 
-8. **Règles de migration anti-falaise** : revue trimestrielle, hystérésis symétrique et dérogations forcées (voir P5).
-9. **VDQ non conforme** (P1(4)) : classement plafonné à la catégorie 3 et abaissé d'un cran.
+8. **Règles de migration anti-falaise** : revue trimestrielle, hystérésis symétrique et dérogations dures inscrites au niveau 1 (point 4(c) ; P5).
+9. **VDQ non conforme** (P1(4)) : classement plafonné à la catégorie 3 et abaissé d'un cran ; pendant la période transitoire, catégorie 4 (point 4(b)).
 10. **Aucune imputation des warrants** en réduction de la LGD, de l'EL ou dans le classement (voir P7.4).
 11. **Propriété intellectuelle.** La PI n'est pas une sûreté éligible en F-IRB (`micro-analysis.md` §4.3 ; `macro-analysis.md` §3 point 4). Plutôt que de la rendre éligible, ce qui constituerait un écart à Bâle sans méthode de valorisation robuste, la PI est reconnue **comme sous-facteur du *slotting*** : inscription, redéployabilité, familles de brevets. L'EBA remettra un rapport, après la publication du cadre d'évaluation de la PI annoncé par la Commission (COM(2026) 615), sur l'opportunité d'une reconnaissance ultérieure en tant que « autre sûreté ».
 
-**Cadres connectés.** Art. 150, 153(4), 153(5), 153(9), 158(6) et 161 CRR ; règlement délégué 2021/598 ; EBA/CP/2026/09 ; Bâle CRE33 (HVCRE) ; directive (UE) 2026/799 (*pre-pack* comme élément du facteur juridique) ; COM(2026) 615 (évaluation de la PI).
+**Cadres connectés.** Art. 143(3), 150, 153(1), 153(4), 153(5), 153(9), 158(6) et 161 CRR ; règlement délégué 2021/598 ; EBA/CP/2026/09 ; Bâle CRE33 (HVCRE) ; directive (UE) 2026/799 (*pre-pack* comme élément du facteur juridique) ; COM(2026) 615 (évaluation de la PI).
 
 **Bénéfices attendus.**
 - **Micro :**
-  - **VDQ-C, emprunteur non PME, banque IRB non contrainte**, à partir de l'application du RTS : de 100-130 % (modèle PD) à 90 % pour le meilleur quart, soit **jusqu'à −42 pb/an** (130 % → 90 %). En catégorie 3 (115 %), l'effet va de +16 à −16 pb ;
-  - **VDQ-C, PME** : effet à peu près neutre, facteur PME compris ;
-  - **VDQ-P** : *slotting* de **140 à 250 %** au lancement, puisque les catégories 1 et 2 sont dormantes, et de 95 à 250 % après activation complète. Le *slotting* étant optionnel et choisi par portefeuille, aucune banque n'est contrainte de l'adopter ;
-  - l'obstacle de validation des modèles disparaît pour les banques spécialisées.
+  - **VDQ-C, emprunteur non PME, banque IRB spécialisée, si la catégorie 2 est activée** (au plus tôt avec le RTS, vers 2031). La pondération passe de 100-130 % (modèle PD) à 90 % pour le meilleur quart, soit **jusqu'à −42 pb/an** face à un modèle PD conservateur ou non validable. Face à un modèle validé, qui donnerait déjà 82 à 102 % pour ces profils, l'effet va d'environ +8 à −12 pb [calcul auditeur]. En catégorie 3 (115 %), l'effet va de +16 à −16 pb ;
+  - **VDQ-C, PME** : effet à peu près neutre ; la catégorie 2, non cumulable avec l'art. 501, donne environ 90 % ;
+  - **VDQ-P** : *slotting* de **140 à 250 % à compter du RTS**, les catégories 1 et 2 étant dormantes ; **250 % par défaut avant le RTS** ; de 95 à 250 % après activation complète. Le *slotting* étant optionnel et choisi par portefeuille, aucune banque n'est contrainte de l'adopter ;
+  - l'obstacle de validation des modèles disparaît pour les banques spécialisées, dès le RTS et sans condition de données.
 - **Macro :**
-  - la différenciation est préservée : pas de pondération à 50 ou 70 %, et le palier P est plus lourd ;
-  - la catégorie 4 par défaut rend la méthode conservatrice ;
-  - la seule préférence active est bornée par le plafond et désactivable.
+  - la différenciation est préservée : pas de pondération à 50 ou 70 %, et le palier P est plus lourd. Au lancement, cet avantage ne joue que dans le *slotting* optionnel : en approche standard comme en approche PD, la distinction entre paliers est une distinction de reporting et de classement, sans effet en capital ;
+  - la catégorie 4 par défaut rend la méthode conservatrice ; la transition ne peut plus être exploitée par auto-sélection ;
+  - **aucune préférence n'est active sans données**. La catégorie 2, si elle est activée, est plafonnée, limitée à 5 ans et désactivable chaque année.
 
 **Risques et limites.**
 - (i) Le *slotting* hors *specialised lending* est une divergence de **méthode** vis-à-vis de Bâle (P13).
-- (ii) La catégorie 2 VDQ-C est un écart de **paramètre** favorable, déclaré, borné et immatériel (P13).
+- (ii) La catégorie 2 VDQ-C est un écart de **paramètre** favorable **potentiel**, conditionné aux données, borné et immatériel (P13).
 - (iii) Le RTS est le principal livrable de niveau 2 de la phase 1 et s'ajoute à CP/2026/09 (`stakeholder-map.md` §4). La réutilisation de la structure existante et l'intégration de la frontière dans le même RTS limitent la charge.
 - (iv) Les poids des facteurs doivent être validés empiriquement (`micro-analysis.md` §8.3(5)).
 - (v) L'EL de 8 % pour la catégorie 4 VDQ-P repose sur des données minces ; elle est réexaminée à 3 ans.
+- (vi) L'autorisation préalable de la période transitoire ajoute une charge aux autorités compétentes. Elle ne concerne que les banques IRB spécialisées (moins de 20 dans l'Union, H.6) et une fenêtre d'un à deux ans.
 
 ---
 
-### P4 — Catégories dormantes fondées sur le risque, sans facteur de soutien : activation et désactivation sur données
+### P4 — Catégories dormantes fondées sur le risque, sans facteur de soutien : activation, durée d'application limitée, reconduction et désactivation sur données
 
-**Résumé exécutif.** Le niveau 1 inscrit, **inactives**, des catégories dont les valeurs sont des **analogues bâlois lisibles**. Elles ne s'activent, par acte délégué fixant leur date d'application, que si des **critères objectifs et exhaustifs** fixés par le législateur sont remplis. Elles se désactivent selon des critères symétriques. L'habilitation elle-même est limitée dans le temps. La revue de l'effet d'offre passe par un rapport de la Commission, et non par une extinction automatique.
+**Résumé exécutif.** Le niveau 1 inscrit, **inactives**, des catégories dont les valeurs sont des **analogues bâlois lisibles**. Elles ne s'activent, par acte délégué fixant leur date d'application, que si des **critères objectifs et exhaustifs** fixés par le législateur sont remplis. Ces critères comprennent un test de parité avec la formule IRB à 99,9 %.
+
+**Révisé au round 3 (réserve R-1).** Une fois activée, chaque catégorie s'applique pour une **durée limitée de 5 ans**. Elle s'éteint de plein droit, sauf reconduction sur les mêmes critères de risque. Elle peut aussi être désactivée **chaque année** si ses pertes se dégradent. Deux habilitations distinctes encadrent ces actes :
+- l'habilitation à **activer** est limitée à 8 ans ;
+- l'habilitation à **désactiver et reconduire** est à durée indéterminée.
+
+La revue de l'effet d'offre passe par un rapport de la Commission, et non par une extinction automatique.
 
 **Le facteur de soutien de 0,85 de la version initiale est retiré.** Il visait la falaise de 50 M€ de l'art. 501 pour VDQ-C. Il tombe pour cinq raisons (round 1, P4) :
 - il créait une **nouvelle** discontinuité propre à la venture debt ;
@@ -465,6 +531,7 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
 - **Aucune série de pertes européenne n'existe** (`micro-analysis.md` §8.3(7) ; `macro-analysis.md` §8.4 ; `benchmarking.md` §6).
 - **Risque de « calibrage de complaisance »** ouvrant la voie à d'autres dérogations (`macro-analysis.md` §4.5, conclusion).
 - **Un chemin plus court entre la preuve et la règle.** Sans catégories dormantes, chaque ajustement fondé sur les données exigerait une nouvelle codécision, soit 5 ans ou plus. L'inscription au niveau 1 de valeurs fixées par le législateur, avec des critères objectifs, ramène ce délai à celui d'un acte délégué.
+- **Un garde-fou qui ne fonctionnait pas (round 2 de vérification, V.2, désaccord 2).** Dans la version du round 2, la désactivation passait par la même habilitation de 8 ans que l'activation. Or l'activation n'est pas possible avant 2031-2032. Le premier test de désactivation, sur une fenêtre de 5 ans postérieure à l'activation, tombait donc vers 2036-2037, **après** l'échéance de l'habilitation. Aucune désactivation n'aurait pu être adoptée. La caducité de l'habilitation n'aurait pas non plus éteint un élément déjà activé. Un garde-fou présenté comme réversible ne l'était pas.
 
 **Comparaison des options (révisée).**
 
@@ -474,7 +541,7 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
 | **0+. Pilier 2 + reporting + correctifs ciblés** | P8, P9 (pilier 2), P10 (ITS, collecte), Q&A sur les warrants, la *forbearance* et la titrisation, InvestEU recentré | Couvre l'essentiel des problèmes documentés (i), (ii), (v) et (vii) de §0.2, sans codécision | Ne règle pas l'obstacle IRB (iv) ; aucun réceptacle pour un recalibrage futur | **Retenue comme phase 0 du paquet et comme solution de repli autonome** |
 | **A. Sixième sous-catégorie SL au sens strict** | Réécriture de l'art. 147(8) | Emprise de niveau 1 plus faible ; étiquette familière | Contamine le triple test ; le respect du garde-fou n° 4 dépend de la BCE ; collision avec la réserve de COM(2026) 615 | Écartée (§0.1) |
 | **B. Facteur de type 501a** | Par exemple 0,75 ou 0,85 | Simplicité | Subvention à plat ; schéma RCAP 2014 ; pas d'effet d'offre démontré | **Écartée**, y compris sous forme dormante |
-| **C. Socle réduit + catégories dormantes** (recommandé) | 0+ ; P1 à P3 à pondérations neutres ; catégories dormantes fondées sur le risque | Règle l'obstacle IRB ; réceptacle pour le recalibrage ; chemin court de la preuve à la règle | Emprise de niveau 1 ; allègement différé, peut-être jamais activé | **Recommandée, en complément de 0+** |
+| **C. Socle réduit + catégories dormantes** (recommandé) | 0+ ; P1 à P3 à pondérations neutres ; catégories dormantes fondées sur le risque, à durée d'application limitée | Règle l'obstacle IRB ; réceptacle pour le recalibrage ; chemin court de la preuve à la règle ; réversibilité effective | Emprise de niveau 1 ; allègement différé, peut-être jamais activé | **Recommandée, en complément de 0+** |
 
 **Mécanisme.**
 1. **Éléments dormants, avec des valeurs fixées au niveau 1 et sans marge de la Commission sur les niveaux :**
@@ -484,42 +551,66 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
      - rétention nette ≥ 100 % pour les revenus récurrents.
      
      Le critère « sponsors de premier rang » de la version initiale, non objectivable, est retiré ;
-   - ***slotting* : catégorie 1 VDQ-C (70 %), catégories 1 et 2 VDQ-P (95 % et 120 %)**, avec les EL de P3.
+   - ***slotting* : catégorie 1 VDQ-C (70 %), catégories 1 et 2 VDQ-P (95 % et 120 %)**, avec les EL de P3 ;
+   - ***slotting* : catégorie 2 VDQ-C (90 %)**, non cumulable avec l'art. 501, sous le régime d'activation accéléré du point 2 bis (round 3).
 2. **Critères d'activation, objectifs et exhaustifs (condition (ii) du round 1).** Ils s'apprécient pour chaque élément. Tous doivent être remplis :
    - **(a) Profondeur des données.** Au moins 5 ans de données de l'Union au niveau du prêt, hors famille (c), portant sur au moins 250 emprunteurs distincts relevant de l'élément visé. Au moins 2 de ces années doivent provenir du reporting réglementaire (P10), et non de la seule collecte rétrospective.
    - **(b) Couverture d'une phase basse.** La fenêtre d'observation comprend au moins une année où l'investissement VC dans l'Union a baissé d'au moins 30 % sur un an. L'indicateur est mesuré par la série de référence désignée au niveau 1 (P10), à titre indicatif −45,6 % en 2023.
    - **(c) Pertes attendues.** Le taux de perte annuel moyen réalisé sur la fenêtre est au plus égal à l'EL de la catégorie. Pour la catégorie standard à 80 %, la référence est l'EL de la catégorie 2 du *slotting* (0,8 %).
-   - **(d) Pertes inattendues.** Le taux de perte de l'année la plus défavorable, diminué de l'EL, ne dépasse pas l'exigence minimale de pilier 1 associée à la pondération (8 % × pondération). C'est le test §0.6(b).
+   - **(d) Parité avec la formule IRB et *backtesting* (révisé au round 3, réserve R-2 ; §0.6(b)).** Deux conditions :
+     - la pondération effective de l'élément est au moins égale à la pondération que produit la formule IRB de l'art. 153(1), soit 99,9 % à un an. Les paramètres sont la PD de long terme et la LGD de ralentissement estimées sur les expositions relevant de l'élément, avec la corrélation réglementaire ou, si elle est plus élevée, la corrélation estimée au titre du critère (e) ;
+     - la perte de l'année la plus défavorable, diminuée de l'EL, ne dépasse pas 8 % × la pondération.
+     
+     La version du round 2 retenait la seule seconde condition. Elle aurait été remplie par presque toute catégorie d'allègement.
    - **(e) Corrélation.** La volatilité interannuelle des taux de défaut ne dépasse pas celle que produit la corrélation de référence : 12-24 % pour VDQ-C et 12-30 % pour VDQ-P, selon la méthode fixée par l'EBA dans le RTS.
-3. **Instrument (conditions (i), (iii), (iv) et (v) du round 1).**
-   - **Objet de l'acte délégué.** La Commission **adopte** un acte délégué fixant la **date d'application** d'un élément dormant lorsque le rapport de l'EBA établit que les critères (a) à (e) sont remplis. Le rapport est un élément d'appréciation, non une décision, ce qui écarte la difficulté liée à la jurisprudence Meroni.
-   - **Contrôle des colégislateurs.** Le Parlement et le Conseil disposent des délais d'objection standard.
-   - **Durée de l'habilitation.** Elle est conférée pour **8 ans** à compter de l'entrée en vigueur, **sans reconduction tacite**. Un rapport de la Commission est dû 9 mois avant l'échéance.
-   - **Portée.** Le législateur fait le choix politique (valeurs et critères). La Commission constate et date, ce qui est un élément non essentiel (C-355/10 ; C-286/14 [non re-vérifié]).
-   - **Précédent.** L'art. 461a n'est **pas** invoqué comme précédent. Il servait à différer un durcissement et son habilitation est épuisée [vérifié-auditeur].
-4. **Désactivation symétrique (condition (vi) du round 1).** Si, sur une fenêtre glissante de 5 ans postérieure à l'activation, le critère (c) ou le critère (d) cesse d'être rempli, la Commission adopte selon la même procédure un acte délégué mettant fin à l'application de l'élément. Les expositions migrent à la revue suivante. L'indicateur (pertes réalisées issues du reporting de P10) est défini au niveau 1.
-5. **Plafond.** Les éléments activés, comme la catégorie 2 VDQ-C, ne s'appliquent que dans la limite du plafond de 10 % des fonds propres (P9).
+
+   **2 bis. Régime d'activation accéléré de la catégorie 2 VDQ-C (round 3, réserve R-3).**
+   - **Critères (b), (c) et (d)** : établis sur les données de la phase 0, rétrospectives comprises, qui doivent couvrir la phase basse de 2022-2024.
+   - **Critère (a) allégé.** La population d'estimation compte au moins 250 emprunteurs VDQ-C distincts. L'EBA y applique rétrospectivement les critères d'accès à la catégorie 2 du projet de RTS. Les 2 années de reporting réglementaire ne sont pas exigées.
+   - **Critère (e)** : non exigé à l'entrée, faute de série suffisante. Le test de parité (d) utilise alors la corrélation réglementaire.
+   - **Calendrier.** L'EBA transmet ses conclusions avec le projet de RTS (P3, point 7). La Commission peut adopter l'acte délégué d'activation en même temps que le RTS, de sorte que la catégorie s'applique dès le RTS, vers 2031, si les données le permettent. Sinon, elle reste dormante et relève du régime ordinaire du point 2.
+   - **Contrepartie.** La reconduction à l'échéance de la première durée d'application exige les critères **complets** (a) à (e) (point 4 bis). Une entrée sur données partielles ne peut donc durer plus de 5 ans sans preuve complète.
+3. **Instrument (conditions (i), (iii), (iv) et (v) du round 1 ; réserve R-1 du round 2 de vérification).**
+   - **Objet des actes délégués.** La Commission **adopte** un acte délégué fixant la **date d'application** d'un élément dormant lorsque le rapport de l'EBA établit que les critères du point 2, ou ceux du point 2 bis, sont remplis. Le rapport est un élément d'appréciation, non une décision, ce qui écarte la difficulté liée à la jurisprudence Meroni.
+   - **Deux habilitations distinctes (révisé au round 3).**
+     - **Habilitation à activer.** Elle est conférée pour **8 ans** à compter de l'entrée en vigueur, **sans reconduction tacite**. Un rapport de la Commission est dû 9 mois avant l'échéance. Après l'échéance, aucun élément dormant ne peut plus être activé sans nouvelle codécision.
+     - **Habilitation à désactiver et à reconduire.** Elle est conférée pour une **durée indéterminée**, comme le fait déjà le CRR pour les actes délégués visés à l'art. 462(2), dont celui de l'art. 461a [vérifié, round 3 ; vérifié-auditeur]. L'art. 290(1) TFUE exige une durée **définie**, pas une durée **limitée**. Son objet est strictement borné : mettre fin à l'application d'un élément activé (point 4) ou la prolonger (point 4 bis), sur les seuls critères fixés au niveau 1. Elle ne permet ni d'activer un élément, ni de modifier une valeur. Comme toute habilitation du CRR (art. 462(3)), elle peut être révoquée à tout moment par le Parlement ou par le Conseil. Sa révocation ne prolonge rien : les éléments activés s'éteignent alors à l'échéance de leur durée d'application.
+   - **Contrôle des colégislateurs.** Le Parlement et le Conseil disposent des délais d'objection standard pour tous ces actes.
+   - **Portée.** Le législateur fait le choix politique (valeurs et critères). La Commission constate, date, prolonge ou met fin, ce qui est un élément non essentiel (C-355/10 ; C-286/14 [non re-vérifié]).
+   - **Précédents.** L'art. 461a n'est **pas** invoqué comme précédent de fond : il servait à différer un durcissement, et son habilitation est épuisée [vérifié-auditeur]. Seule la clause d'habilitation de l'art. 462(2), commune à plusieurs articles, sert de précédent **de forme** pour la durée indéterminée.
+4. **Désactivation annuelle (révisé au round 3, réserve R-1).** Chaque année à compter de la première année d'application, l'EBA publie, pour chaque élément activé, les critères (c) et (d). Ils sont calculés sur une **fenêtre glissante de 5 ans**, qui peut inclure des années antérieures à l'activation (données de la phase 0 et du reporting). Si l'un d'eux cesse d'être rempli, la Commission **adopte**, dans les 6 mois, un acte délégué mettant fin à l'application de l'élément, au titre de l'habilitation à désactiver. La désactivation est donc possible **dès la première année d'application**. Les expositions migrent à la revue suivante. L'indicateur (pertes réalisées issues du reporting de P10) est défini au niveau 1.
+
+   **4 bis. Durée d'application limitée et reconduction sur critères de risque (round 3, réserve R-1).** L'acte d'activation fixe la date d'application ; l'élément s'applique ensuite pour **5 ans**. À l'échéance, il **cesse de s'appliquer de plein droit**, sauf reconduction pour une nouvelle période de 5 ans. La Commission peut le reconduire par un acte délégué adopté au titre de l'habilitation à reconduire, au vu d'un rapport de l'EBA établissant que les critères **complets** (a) à (e) restent remplis. Le nombre de reconductions n'est pas limité.
+   - **Pourquoi cette règle, en plus de l'option (i) de l'auditeur.** Avec la seule dissociation des habilitations, la réversibilité dépendrait encore d'une action de la Commission et de l'absence d'objection du Parlement ou du Conseil. Un acte de désactivation peut tarder, ou être bloqué sous la pression de ceux qui bénéficient de l'élément. Avec une durée d'application limitée, la valeur par défaut devient l'**extinction**. L'inaction, une objection ou la révocation de l'habilitation ne peuvent qu'**abréger** l'application d'un élément. Elles ne peuvent jamais la prolonger au-delà de 5 ans sans nouvelle preuve.
+   - **Pourquoi pas l'option (ii) de l'auditeur seule.** Cette option éteint tous les éléments à l'échéance de l'habilitation, sauf confirmation législative. Elle est fondée sur une date et non sur des pertes. Elle éteindrait en bloc, vers 2036, des catégories peut-être saines, sauf nouvelle codécision. Ce serait parier sur la bande passante législative, que le round de faisabilité désigne comme la ressource rare du dossier (`feasibility-debate.md` §3.3).
+   - **Précédent.** Le schéma retenu est celui de l'exemption de compensation des régimes de retraite, à l'art. 85(2) EMIR : un régime temporaire, prolongeable par acte délégué sur constat de conditions fixées au niveau 1, caduc à défaut. La Commission l'a prolongé par acte délégué, en dernier lieu par le règlement délégué (UE) 2022/1855. L'exemption a ensuite pris fin de plein droit le 19 juin 2023 [vérifié, round 3].
+   - **Cohérence avec le désaccord 2, réglé au round 2.** La reconduction dépend des **seuls** critères de risque (a) à (e). L'effet d'offre fait l'objet du rapport du point 6, remis avant la première échéance, mais il ne conditionne pas la reconduction.
+5. **Plafond.** Les éléments activés, y compris la catégorie 2 VDQ-C, ne s'appliquent que dans la limite du plafond de 10 % des fonds propres (P9).
 6. **Revue de l'effet d'offre, sans extinction automatique des catégories de risque.**
-   - **Rapport.** Cinq ans après une activation, la Commission rend compte de l'effet d'offre, le cas échéant avec une proposition législative. L'indicateur est officiel : l'encours bancaire VDQ issu du reporting COREP ou d'AnaCredit, rapporté à l'investissement VC dans l'Union selon la série de référence désignée au niveau 1 parmi les statistiques publiées par la BCE ou par le groupe BEI. Les données commerciales aux définitions hétérogènes sont ainsi écartées (`macro-analysis.md` §0(a)).
-   - **Écart motivé par rapport à la lettre du garde-fou n° 6.** Une catégorie activée parce que ses pertes sont compatibles avec son EL est un **paramètre de risque**. La supprimer faute d'effet d'offre ferait dépendre un paramètre de risque d'une métrique d'offre. C'est l'incohérence même que le round 1 reprochait au facteur 0,85 (« un facteur à plat n'est pas un paramètre de risque »).
-   - **Ce qui reste automatique.** Le garde-fou n° 6 vise les mesures de type subvention, à l'image de l'expérience du facteur PME ; le paquet révisé n'en contient plus. L'extinction automatique est remplacée par deux mécanismes : la désactivation fondée sur les pertes (point 4) et la caducité de l'habilitation (point 3).
+   - **Rapport.** Cinq ans après une activation, avant la première échéance de la durée d'application (point 4 bis), la Commission rend compte de l'effet d'offre, le cas échéant avec une proposition législative. L'indicateur est officiel : l'encours bancaire VDQ issu du reporting COREP ou d'AnaCredit, rapporté à l'investissement VC dans l'Union selon la série de référence désignée au niveau 1 parmi les statistiques publiées par la BCE ou par le groupe BEI. Les données commerciales aux définitions hétérogènes sont ainsi écartées (`macro-analysis.md` §0(a)).
+   - **Écart motivé par rapport à la lettre du garde-fou n° 6.** Une catégorie activée parce que ses pertes sont compatibles avec son EL est un **paramètre de risque**. La supprimer faute d'effet d'offre ferait dépendre un paramètre de risque d'une métrique d'offre. C'est l'incohérence même que le round 1 reprochait au facteur 0,85 (« un facteur à plat n'est pas un paramètre de risque »). L'auditeur a accepté ce point au round 2 de vérification.
+   - **Ce qui reste automatique.** Le garde-fou n° 6 vise les mesures de type subvention, à l'image de l'expérience du facteur PME ; le paquet révisé n'en contient plus. L'extinction automatique fondée sur l'offre est remplacée par trois mécanismes :
+     - la désactivation annuelle fondée sur les pertes (point 4) ;
+     - l'extinction **de plein droit** à l'échéance de la durée d'application, sauf reconduction sur critères de risque (point 4 bis) ;
+     - la caducité de l'habilitation à activer (point 3).
 7. **Option par défaut si les colégislateurs refusent de déléguer.** Le rapport de l'EBA oblige la Commission à présenter, le cas échéant, une proposition législative ciblée (clause de revoyure, P10). Les valeurs et critères du point 1 et du point 2 servent alors de référence.
 
-**Cadres connectés.** Art. 290 TFUE ; art. 122a (analogue PF 80 %) ; Bâle CRE33 (SL « *strong* » 70 % ; HVCRE 95 et 120 %) ; art. 501 (non-cumul).
+**Cadres connectés.** Art. 290 TFUE ; art. 462(2) et (3) CRR (habilitation à durée indéterminée, révocable) ; art. 85(2) EMIR et règlement délégué (UE) 2022/1855 (régime temporaire prolongeable par acte délégué) ; art. 153(1) CRR (formule du test de parité) ; art. 122a (analogue PF 80 %) ; Bâle CRE33 (SL « *strong* » 70 % et « *good* » 90 % ; HVCRE 95 et 120 %) ; art. 501 (non-cumul).
 
 **Bénéfices attendus (après activation éventuelle).**
 - **Micro :**
   - VDQ-C non PME en approche standard : 100 % → 80 %, soit **−21 pb/an** ;
-  - VDQ-C PME, ticket de plus de 2,5 M€ : ≈ 85 % → 80 %, soit −5 pb ;
+  - VDQ-C PME : sans effet sous un ticket d'environ 4,4 M€ ; au-delà, de 81-84 % (facteur combiné) à 80 %, soit au plus −4 pb ;
   - banque IRB contrainte par le plancher (VDQ-C non PME) : 72,5 % → 58 %, soit −15 pb. Ce chiffre est inconditionnel, car il s'agit d'une pondération standard et non d'un facteur ;
-  - *slotting* : catégorie 1 à 70 % (VDQ-C) et à 95 % (VDQ-P), catégorie 2 VDQ-P à 120 %.
-- **Macro :** l'allègement **suit la preuve** et **s'efface** si la preuve se retourne. Aucun facteur de soutien n'entre dans la trajectoire.
+  - *slotting* : catégorie 1 à 70 % (VDQ-C) et à 95 % (VDQ-P), catégorie 2 VDQ-P à 120 %, catégorie 2 VDQ-C à 90 % (P3).
+- **Macro :** l'allègement **suit la preuve**, **s'efface** si la preuve se retourne et **expire** si elle n'est pas renouvelée. Aucun facteur de soutien n'entre dans la trajectoire.
 
 **Risques et limites.**
 - (i) L'activation peut ne jamais intervenir. C'est assumé.
-- (ii) Une pression politique pour une activation anticipée est probable, y compris pendant la codécision. Des valeurs et critères fixés au niveau 1 la canalisent.
+- (ii) Une pression politique pour une activation anticipée est probable, y compris pendant la codécision. Des valeurs et critères fixés au niveau 1 la canalisent. Le régime accéléré de la catégorie 2 VDQ-C est la seule accélération admise, et elle est fondée sur des données.
 - (iii) Le conditionnement aux données **ne cure pas** une non-conformité au texte de Bâle : une catégorie activée reste un écart de méthode. Il en limite la matérialité et la rend défendable (P13).
-- (iv) Compte tenu de la condition (a), l'activation n'est pas possible avant 2031-2032 environ.
+- (iv) Compte tenu de la condition (a), l'activation des éléments du point 1 n'est pas possible avant 2031-2032 environ. Seule la catégorie 2 VDQ-C, par le régime accéléré, peut s'appliquer dès le RTS, vers 2031, si les données de la phase 0 le permettent.
+- (v) **Une durée d'application de 5 ans crée une incertitude sur la pérennité d'un élément activé.** Elle est voulue : la pérennité se gagne sur preuve. Les expositions en cours à l'échéance migrent à la revue suivante, comme en cas de désactivation.
 
 ---
 
@@ -530,7 +621,7 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
 **Résumé exécutif.** Les covenants de venture debt ne sont pas des tests de couverture de flux. Ce sont des **déclencheurs de contrôle**. La proposition :
 - (i) en fait un critère de qualité (P1, Q2) ;
 - (ii) les valorise dans le facteur « sûretés et contrôle » du *slotting* ;
-- (iii) neutralise leurs effets procycliques par trois règles de migration : hystérésis **symétrique**, dérogations dures limitées, et absence de dégradation fondée sur les **seuls** indicateurs agrégés ;
+- (iii) neutralise leurs effets procycliques par trois règles de migration : hystérésis **symétrique**, dérogations dures limitées et inscrites au niveau 1, et absence de dégradation fondée sur les **seuls** indicateurs agrégés ;
 - (iv) précise, **dans les limites de l'art. 47b CRR**, comment apprécier la condition de difficulté financière lorsqu'une renonciation à un covenant s'accompagne d'une injection d'equity **reçue**.
 
 **Problème et ancrage factuel.**
@@ -539,23 +630,30 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
 - **Falaise du *slotting*.** Quand le runway tombe sous 6 à 9 mois sans *term sheet*, la pondération double d'un coup (`micro-analysis.md` §6 friction n° 10). Un retournement ferait migrer simultanément de nombreuses expositions (`macro-analysis.md` §2.3).
 - **Migrations fréquentes.** Environ 17 à 34 % des portefeuilles BDC sont en grade 3 ou pire, même hors crise (`micro-analysis.md` §3.3).
 - **Précédent OCC.** Les covenants de liquidité résiduelle ne suffisent pas, seuls, à garantir le remboursement (`benchmarking.md` §2.3).
-- **L'art. 47b CRR définit la *forbearance* au niveau 1** [vérifié, round 2] : une concession accordée à un débiteur qui connaît ou risque de connaître des difficultés à honorer ses engagements. Son paragraphe 2 énumère des situations qui constituent une *forbearance*. Deux sont pertinentes ici : des conditions plus favorables que celles accordées à des débiteurs de profil de risque comparable (point (b)), et une exposition qui aurait été classée non performante sans la modification (point (c)). Une Q&A ou des orientations ne peuvent pas poser de présomption contraire à ce texte.
+- **L'art. 47b CRR définit la *forbearance* au niveau 1** [vérifié, round 2 ; paragraphe 2 vérifié, round 3] : une concession accordée à un débiteur qui connaît ou risque de connaître des difficultés à honorer ses engagements. Son paragraphe 2 énumère des situations qui constituent au moins une *forbearance*. Quatre sont pertinentes ici :
+  - (a) des conditions nouvelles plus favorables que les conditions antérieures, pour un débiteur en difficulté ;
+  - (b) des conditions plus favorables que celles offertes au même moment par l'établissement à des débiteurs ayant un profil de risque similaire ;
+  - (c) une exposition qui était, ou aurait été, classée non performante sans la modification ;
+  - (e) l'approbation par l'établissement de l'exercice d'une clause permettant au débiteur de modifier le contrat, lorsque l'exposition serait non performante sans cet exercice.
+  
+  Une Q&A ou des orientations ne peuvent pas poser de présomption contraire à ce texte.
 
 **Mécanisme.**
 1. **Critère de qualité** (P1, Q2) : covenant de trésorerie minimale et reporting mensuel.
 2. **Valorisation dans la grille** (RTS, P3). Sont valorisés les covenants de **contrôle** : trésorerie minimale ou runway, contrôle des comptes, reporting mensuel, tirages conditionnés à des jalons. Les clauses à « détente brusque » (*investor abandonment*, MAC) sont **neutres** : elles ne rapportent aucun point dans la grille, pour ne pas inciter à leur multiplication.
-3. **Règles de migration** (RTS) :
-   - **Hystérésis symétrique.** Une migration fondée sur les facteurs qualitatifs, dégradation **comme** amélioration, n'intervient qu'après deux évaluations trimestrielles consécutives dans le même sens (`micro-analysis.md` §8.3(1)).
-   - **Dérogations dures, immédiates et à la baisse.** Classement automatique en catégorie 4 si le runway est inférieur à 6 mois sans *term sheet* signé, en cas de défaut de paiement, ou si la juste valeur du warrant est ramenée à zéro, signal prédictif de faillite (`micro-analysis.md` §8.3(3), §2.4).
-   - **Indicateurs agrégés.** Aucune dégradation ne peut être fondée sur les **seuls** indicateurs agrégés du marché VC, en l'absence de détérioration propre à l'emprunteur. Les conditions de marché restent prises en compte à travers la situation de l'emprunteur : runway comparé au délai probable du prochain tour dans les conditions de marché observées, sous-facteur « conditions de marché » de la solidité financière. Ce choix de calibrage « à travers le cycle » respecte le principe IRB d'utilisation de toute l'information pertinente (art. 171(2) CRR [non re-vérifié]) et le garde-fou n° 5. Le facteur systémique est traité par le pilier 2 (stress « gel VC », P9).
+3. **Règles de migration** :
+   - **Hystérésis symétrique** (RTS). Une migration fondée sur les facteurs qualitatifs, dégradation **comme** amélioration, n'intervient qu'après deux évaluations trimestrielles consécutives dans le même sens (`micro-analysis.md` §8.3(1)).
+   - **Dérogations dures, immédiates et à la baisse, inscrites au niveau 1** (révisé au round 3, réserve R-4 ; P3, point 4(c)). Classement automatique en catégorie 4 si le runway est inférieur à 6 mois sans *term sheet* signé, en cas d'impayé, ou si la juste valeur du warrant est ramenée à zéro, signal prédictif de faillite (`micro-analysis.md` §8.3(3), §2.4). Elles s'appliquent dès la période transitoire, aux deux paliers, et le RTS ne peut pas les assouplir.
+   - **Indicateurs agrégés** (RTS). Aucune dégradation ne peut être fondée sur les **seuls** indicateurs agrégés du marché VC, en l'absence de détérioration propre à l'emprunteur. Les conditions de marché restent prises en compte à travers la situation de l'emprunteur : runway comparé au délai probable du prochain tour dans les conditions de marché observées, sous-facteur « conditions de marché » de la solidité financière. Ce choix de calibrage « à travers le cycle » respecte le principe IRB d'utilisation de toute l'information pertinente (art. 171(2) CRR [non re-vérifié]) et le garde-fou n° 5. Le facteur systémique est traité par le pilier 2 (stress « gel VC », P9).
    - **Articulation avec le provisionnement.** Le provisionnement IFRS 9 (P8(g)) intègre une correction prospective liée au cycle VC. Il n'y a pas de contradiction : le classement *slotting*, qui détermine le capital, est calibré à travers le cycle, tandis que les provisions IFRS 9 sont par construction prospectives et « à un instant donné ».
 4. **Défaut et *forbearance*, dans les limites de l'art. 47b.** Instrument : une Q&A d'interprétation de l'EBA, puis une intégration dans EBA/GL/2018/06 lors de sa prochaine révision. Cohérence avec EBA/GL/2016/07.
    - **Appréciation de la condition de difficulté, au cas par cas et sans présomption.** Trois conditions doivent être réunies et documentées :
-     - (a) une injection d'equity **effectivement reçue** (et pas seulement engagée) avant la renonciation au covenant ou en même temps, qui restaure au moins 12 mois de runway ;
-     - (b) une renonciation accordée à des conditions qui l'auraient été à un débiteur sain de profil comparable (test de l'art. 47b(2)(b)) ;
+     - (a) une injection d'equity **effectivement reçue** (et pas seulement engagée) avant la renonciation au covenant ou en même temps, qui restaure au moins 12 mois de runway. Ce seuil est un **plancher**, pas une zone de sécurité : la difficulté s'apprécie aussi au regard du délai probable du prochain tour dans les conditions de marché observées (point 3) ;
+     - (b) une renonciation à des conditions qui ne sont pas plus favorables que celles que l'établissement offre au même moment à des débiteurs ayant un profil de risque similaire (lettre de l'art. 47b(2)(b)) ;
      - (c) une exposition qui n'aurait pas été classée non performante sans la mesure (art. 47b(2)(c)).
      
-     Si elles le sont, l'établissement peut conclure qu'il n'y a pas de **concession à un débiteur en difficulté**. L'appréciation reste soumise au contrôle du superviseur.
+     Si elles le sont, l'établissement peut conclure qu'il n'y a pas de **concession à un débiteur en difficulté**, au sens de l'art. 47b(1) et des points (a) et (b) de son paragraphe 2, qui supposent tous deux cette difficulté. L'appréciation reste soumise au contrôle du superviseur.
+   - **Clauses d'*equity cure* (art. 47b(2)(e)).** Une clause d'*equity cure* permet au débiteur de remédier à un bris de covenant, donc de modifier les effets du contrat. Si l'établissement en approuve l'exercice alors que l'exposition serait non performante sans cet exercice, il s'agit d'une *forbearance* au sens du point (e), quelles que soient les conditions (a) à (c) ci-dessus.
    - **Indicateurs forts de *forbearance*, conservés.** Une extension de maturité, une capitalisation d'intérêts (PIK) ou un rééchelonnement **sans** *equity cure* est présumé constituer une *forbearance*. Cette présomption va dans le sens de l'art. 47b.
    - **Conséquences.** Une exposition restructurée non performante suit le calendrier de couverture minimale de l'art. 47c [non re-vérifié]. Une renonciation non qualifiée de *forbearance* reste soumise à l'appréciation d'une hausse significative du risque de crédit (IFRS 9, P8(g)).
    
@@ -571,7 +669,7 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
 
 **Risques et limites.**
 - (i) L'hystérésis retarde d'un trimestre la reconnaissance d'une migration, dans les deux sens. Les dérogations dures bornent l'effet à la baisse.
-- (ii) L'appréciation au cas par cas pourrait servir à maquiller des renouvellements artificiels. Elle est conditionnée à de l'equity **reçue**, au test du débiteur sain et au contrôle du superviseur.
+- (ii) L'appréciation au cas par cas pourrait servir à maquiller des renouvellements artificiels. Elle est conditionnée à de l'equity **reçue**, au test du profil de risque similaire et au contrôle du superviseur.
 - (iii) L'EBA pourrait refuser une règle sectorielle dans des orientations transversales. La Q&A d'interprétation suffit.
 
 ---
@@ -612,9 +710,11 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
    - **Première borne.** L'amélioration ne joue **que** sur ce facteur. Elle ne peut jamais ouvrir l'accès à la catégorie 1, qui est de toute façon dormante.
    - **Seconde borne.** La tranche junior entre dans le **LTER calculé sur la dette totale** (P1, Q1) : elle réduit la LGD du senior, mais elle augmente le montant à refinancer au tour suivant, donc la PD.
    - L'approche standard n'est pas modifiée.
-5. **Frontière avec la titrisation : une demande de Q&A remplace l'extension législative.** Une Q&A est demandée à l'EBA, traitée le cas échéant par le **Comité mixte des AES**, puisque le règlement est transsectoriel. Elle vise à confirmer que deux facilités distinctes, chacune créant une créance directe sur l'emprunteur et liées par un accord inter-créanciers, ne constituent pas un « tranchage » au sens de l'art. 2(1).
-   - **Aucune modification** du règlement Titrisation n'est proposée dans le paquet de 2027, ni insérée dans le trilogue en cours.
-   - Si la Q&A infirmait cette lecture, la question serait portée au prochain réexamen du règlement Titrisation.
+5. **Frontière avec la titrisation : une demande de Q&A remplace l'extension législative.** Une Q&A est demandée à l'EBA, traitée le cas échéant par le **Comité mixte des AES**, puisque le règlement est transsectoriel. Elle vise deux cas :
+   - confirmer que deux facilités distinctes, chacune créant une créance directe sur l'emprunteur et liées par un accord inter-créanciers, ne constituent pas un « tranchage » au sens de l'art. 2(1) ;
+   - préciser si la tranche *first-out* d'un *unitranche* à accord entre prêteurs constitue une position de titrisation. À défaut, l'exclusion du point 3 pourrait inciter à revendiquer cette qualification, puisque l'approche SEC-SA d'une position senior peut descendre jusqu'à un plancher de 15 % hors STS [non re-vérifié] (round 2 de vérification, V.7). Ce risque est préexistant au paquet, mais l'exclusion ne doit pas l'aggraver.
+   
+   **Aucune modification** du règlement Titrisation n'est proposée dans le paquet de 2027, ni insérée dans le trilogue en cours. Si la Q&A infirmait la lecture des facilités distinctes, la question serait portée au prochain réexamen du règlement Titrisation.
 6. **Sécurité juridique proportionnée.** Un avis juridique écrit et motivé n'est exigé que pour **reconnaître dans le *slotting* une protection** apportée par une tranche junior tierce ou par un accord inter-créanciers. Il n'est pas exigé pour le simple statut senior, que le CRR n'impose pas aujourd'hui de démontrer par avis.
    - Les **avis de place par juridiction**, entretenus par les associations professionnelles sur le modèle des avis de compensation (art. 296 CRR [non re-vérifié]), sont admis. Ils portent sur l'opposabilité dans l'État d'immatriculation et dans celui du centre des intérêts principaux de l'emprunteur.
    - Le coût est encore réduit par la cartographie de P12, niveau 1.
@@ -651,10 +751,15 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
 - **7.1 Qualification (Q&A, phase 0).** Les warrants et kickers reçus en contrepartie d'une VDQ sont des **expositions actions du portefeuille bancaire** au sens de l'art. 133(1). Ce ne sont pas des expositions de contrepartie traitées en SA-CCR. La Q&A est posée à l'EBA et transmise à la Commission au titre de l'art. 16b(2) du règlement EBA si elle appelle une interprétation du droit de l'Union. Un considérant ou article de niveau 1 n'intervient que si la Q&A est insuffisante.
 - **7.2 Pondération (Q&A, phase 0 ; niveau 1 seulement pour codifier).** La Q&A confirme trois points :
   - (i) un warrant reçu en contrepartie d'un prêt, avec une **intention de détention d'au moins trois ans approuvée par la direction générale**, est un investissement de long terme au sens du second alinéa de l'art. 133(4). Il est pondéré à **250 %** ;
-  - (ii) une cession **antérieure à trois ans causée par un événement de liquidité de l'emprunteur** que la banque ne contrôle pas ne remet pas rétroactivement en cause l'intention documentée : acquisition, introduction en bourse à l'expiration de la période de blocage, clause de sortie conjointe ou forcée ;
+  - (ii) une cession antérieure à trois ans **imposée** à la banque ne remet pas rétroactivement en cause l'intention documentée (révisé au round 3, réserve R-7). Sont seules visées les cessions réellement subies :
+    - la sortie forcée (*drag-along*) ;
+    - l'exercice ou le rachat obligatoire des warrants lors d'un changement de contrôle de l'emprunteur ;
+    - le rachat imposé par l'émetteur selon les termes du warrant.
+    
+    La sortie conjointe (*tag-along*) est un droit que la banque choisit d'exercer. La vente de titres cotés après la période de blocage d'une introduction en bourse est une décision de marché de la banque. Ce sont des cessions **volontaires** ;
   - (iii) un *put* vers l'émetteur à la juste valeur, exercé **après** trois ans, ne requalifie pas l'exposition (la BEI monétise à 5-7 ans).
 
-  Le seul cas résiduel à **400 %** est la **cession secondaire volontaire avant trois ans**. C'est le cas spéculatif que Bâle vise, et il est assumé. La formule « quelles que soient la durée de détention et la voie de monétisation » de la version initiale est **retirée** : elle aurait exigé une modification explicite du second alinéa de l'art. 133(4) et constitué un écart bâlois pour un gain d'environ 3 pb. Si la voie de la Q&A échoue, une modification de niveau 1 **codifie uniquement les points (i) à (iii)**, ce qui reste dans la lettre de Bâle. Les dispositions transitoires de l'art. 495a restent applicables.
+  **Reste à 400 % toute cession volontaire avant trois ans**, y compris la sortie conjointe et la vente après la période de blocage. C'est le cas spéculatif que Bâle vise, et il est assumé. La formule « quelles que soient la durée de détention et la voie de monétisation » de la version initiale est **retirée** : elle aurait exigé une modification explicite du second alinéa de l'art. 133(4) et constitué un écart bâlois pour un gain d'environ 3 pb. Si la voie de la Q&A échoue, une modification de niveau 1 **codifie uniquement les points (i) à (iii)**, sans écart **supplémentaire** par rapport à l'art. 133(4) en vigueur. La conformité à Bâle de l'exception de long terme du texte de l'Union n'est pas réexaminée ici. Les dispositions transitoires de l'art. 495a restent applicables.
 - **7.3 Programmes publics : retiré.** L'art. 133(5)(a) exige des subventions ou garanties significatives « pour l'investissement » [vérifié-auditeur], c'est-à-dire pour l'exposition en actions. La garantie de P11 couvre le **prêt**, et le partage de l'*upside* avec le FEI est l'inverse d'une subvention. Une reconception par une garantie publique portant sur le warrant lui-même n'est pas proposée : elle ferait subventionner par le budget l'*upside* de la banque, ce qui contredit la logique de P11.
 - **7.4 Interdiction d'imputation.** La valeur ou le rendement attendu des warrants ne peut être reconnu ni comme atténuation du risque, ni en réduction de la LGD ou de l'EL, ni dans le classement *slotting* (disposition expresse du RTS, P3).
 - **7.5 Emprunteurs fintechs (Q&A, phase 0).** Une Q&A de l'EBA doit préciser si les warrants sur des instruments CET1 d'entités du secteur financier constituent des « détentions synthétiques » au sens de l'art. 36(1)(h). La recommandation est de les traiter **dans le seuil de 10 % du CET1 de l'art. 46**, comme les autres détentions non significatives, sans régime particulier. L'enjeu est la clarté, pas l'allègement.
@@ -663,12 +768,16 @@ La falaise de 50 M€ concerne toutes les entreprises. Elle relève d'un réexam
   - **Pourquoi elle peut ne pas suffire.** Des titres conservés plusieurs années, le temps d'un redressement, peuvent être comptabilisés comme immobilisations financières.
   - **Complément de niveau 1, seulement dans ce cas.** L'art. 91 est complété : les titres reçus dans ces procédures européennes harmonisées sont exclus des limites de l'art. 89 **pendant 5 ans**.
 - **7.7 IFRS 9.** Aucune modification prudentielle. Les normes IFRS sont adoptées par l'Union via le règlement (CE) n° 1606/2002 et ne se modifient pas unilatéralement. Le critère de qualité Q4 (*kicker* détachable) incite à la comptabilisation au coût amorti. Un *kicker* incorporé fait passer le prêt en juste valeur par résultat, avec ajustements de valorisation prudente (art. 34 et 105), et le rend « non conforme » (P1(4)). Les amendements de l'IASB de 2024 sur la classification ne semblent pas couvrir les rémunérations indexées sur la valeur des titres [à vérifier].
+- **7.8 Calendrier des Q&A et des codifications conditionnelles (round 3, observation V.5(c)).**
+  - Les Q&A 7.1, 7.2, 7.5 et 7.6 sont déposées **dès le T4 2026**.
+  - Les Q&A qui appellent une interprétation du niveau 1 passent par la Commission (art. 16b(2) du règlement EBA [non re-vérifié]), avec des délais longs. Leur réponse ne sera donc vraisemblablement pas connue lors de la proposition du T1 2027.
+  - Les codifications de l'art. 133(4) et de l'art. 91 figurent donc comme **options** dans l'analyse d'impact. Les colégislateurs les insèrent si la Q&A a échoué au moment du trilogue ; sinon, elles sont renvoyées au réexamen suivant du CRR.
 
 **Cadres connectés.** Art. 133, 495a, 36(1)(h), 44-46, 89-91, 34 et 105 CRR ; règlement EBA, art. 16b ; directive 86/635/CEE ; règlement (CE) n° 1606/2002 ; directives 2019/1023 et 2026/799.
 
 **Bénéfices attendus.**
 - **Micro :** l'effet en capital est minime, environ 3 pb/an en passant de 400 à 250 % sur des warrants valant environ 2 % du principal. En revanche, la **sécurité juridique** supprime l'incitation à conserver les warrants au-delà de ce qu'exige l'intention documentée. La conversion dette-actions dans une restructuration n'est plus bloquée par l'art. 89.
-- **Macro :** effet neutre, **sans écart bâlois**.
+- **Macro :** effet neutre, **sans écart supplémentaire** par rapport à l'art. 133(4) en vigueur.
 
 **Risques et limites.**
 - (i) La Q&A peut ne pas lever toute l'ambiguïté. Le niveau 1 prend alors le relais pour codifier.
@@ -744,8 +853,8 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
 
 **Mécanisme.**
 1. **Plafond (niveau 1, sur le modèle de l'art. 133(5)).**
-   - **Éléments visés.** Les éléments préférentiels sont la catégorie 2 VDQ-C du *slotting* (à compter de l'application du RTS) et les éléments dormants **une fois activés** (P4). Le facteur PME préexistant n'y est pas compté.
-   - **Imputation au prorata.** Si la valeur exposée agrégée des expositions bénéficiant d'un élément préférentiel dépasse 10 % des fonds propres, l'élément s'applique à chacune d'elles pour une fraction égale à 10 % des fonds propres rapportés à cette valeur agrégée. Le reste reçoit le traitement non préférentiel : catégorie 3 en *slotting*, 100 % en approche standard. La règle est simple et ne se manipule pas par le choix des expositions.
+   - **Éléments visés.** Les éléments préférentiels sont les éléments dormants **une fois activés** (P4), y compris la catégorie 2 VDQ-C du *slotting*. Le facteur PME préexistant n'y est pas compté.
+   - **Imputation au prorata.** Si la valeur exposée agrégée des expositions bénéficiant d'un élément préférentiel dépasse 10 % des fonds propres, l'élément s'applique à chacune d'elles pour une fraction égale à 10 % des fonds propres rapportés à cette valeur agrégée. Le reste reçoit le traitement **non préférentiel** : en *slotting*, la catégorie 3 ; en approche standard, le traitement de la VDQ conforme, soit 100 % cumulable avec l'art. 501 pour une PME (révisé au round 3). Dans les deux cas, le facteur PME s'applique à la part excédentaire comme à toute exposition non préférentielle. La règle de non-cumul (P3, point 3 ; P4, point 1) ne vise que la part qui bénéficie de l'élément préférentiel. La règle est simple et ne se manipule pas par le choix des expositions.
    - **Ce n'est pas une interdiction** : une banque peut prêter au-delà, sans préférence.
    - **Distinction des plafonds.** Ce plafond est distinct de celui de l'art. 133(5), qui porte sur les expositions en actions des programmes législatifs. Ils ne se partagent pas.
 2. **Présomption de revue de pilier 2.** Une revue renforcée dans le cadre du SREP est présumée si les VDQ dépassent **5 % des fonds propres**, **ou** si les dépôts de l'écosystème VC dépassent un seuil de l'ordre de **15 % des dépôts** [paramètre indicatif]. La revue porte sur :
@@ -776,8 +885,8 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
 
 **Résumé exécutif.** Faire du compartiment un **instrument de connaissance** avant tout paramètre de pilier 1. P10 est le **préalable séquentiel** du paquet, au sens suivant :
 - (i) la collecte commence en **phase 0**, avant toute modification du niveau 1, sur la base de la définition de reporting de P1 ;
-- (ii) **aucun paramètre de pilier 1 s'écartant de la neutralité ne s'applique avant le rapport de l'EBA à 3 ans**. La seule exception est la catégorie 2 VDQ-C, qui ne s'applique de toute façon qu'avec le RTS, vers 2031, après calibrage sur ces données ;
-- (iii) les critères d'activation et de désactivation de P4 reposent sur les données de P10.
+- (ii) **aucun paramètre de pilier 1 s'écartant de la neutralité ne s'applique sans que ces données en établissent le fondement**, qu'il s'agisse d'un durcissement ou d'un allègement. La catégorie 2 VDQ-C n'est plus une exception (round 3) : son activation accélérée repose elle aussi sur ces données (P4, point 2 bis) ;
+- (iii) les critères d'activation, de désactivation et de reconduction de P4 reposent sur les données de P10.
 
 **Problème et ancrage factuel.**
 - **Aucune série européenne de défaut ou de LGD n'existe.** C'est « le principal risque de mauvais calibrage » (`micro-analysis.md` §8.3(7) ; `macro-analysis.md` §8.4 ; `benchmarking.md` §6).
@@ -788,8 +897,8 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
 - **Le reporting n'a pas besoin d'une sous-catégorie de pilier 1.** Les ITS pris au titre de l'art. 430 peuvent exiger des ventilations par caractéristique, comme pour les expositions restructurées ou les secteurs NACE (round 1, P10).
 
 **Mécanisme.**
-1. **Phase 0 : collecte au titre de l'art. 35 du règlement EBA**, lancée en 2027. Elle porte sur les expositions répondant aux critères de caractérisation de P1, **rétrospectivement depuis 2019**, afin de couvrir la phase basse de 2022-2024. Elle est adossée aux exercices de suivi de l'EBA.
-2. **Phase 0 : ITS de reporting (art. 430).** Ils introduisent une ventilation « VDQ » (palier, conforme ou non conforme) dans les modèles de risque de crédit, et un **modèle complémentaire** : stade, type de sponsor, LTER sur la dette totale, runway, catégorie de *slotting* le cas échéant, valeur des warrants, montant d'equity levé par l'emprunteur. Calendrier indicatif : adoption en 2028, première date de référence en 2029. Le groupe ALMM « écosystème VC » (P9) y est intégré.
+1. **Phase 0 : collecte au titre de l'art. 35 du règlement EBA**, lancée en 2027. Elle porte sur les expositions répondant aux critères de caractérisation de P1, **rétrospectivement depuis 2019**, afin de couvrir la phase basse de 2022-2024. Elle est adossée aux exercices de suivi de l'EBA. Son coût et sa faisabilité sont soumis à consultation en phase 0 (H.6).
+2. **Phase 0 : ITS de reporting (art. 430).** Ils introduisent une ventilation « VDQ » (palier, conforme ou non conforme) dans les modèles de risque de crédit, **quelle que soit la classe d'exposition**, y compris la clientèle de détail. Ils ajoutent un **modèle complémentaire** : stade, type de sponsor, LTER sur la dette totale, runway, catégorie de *slotting* le cas échéant, valeur des warrants, montant d'equity levé par l'emprunteur. Calendrier indicatif : adoption en 2028, première date de référence en 2029. Le groupe ALMM « écosystème VC » (P9) y est intégré.
 3. **AnaCredit / IReF.** Ajout d'un attribut « venture debt » au règlement de la BCE sur AnaCredit, qui doit être modifié à cette fin, puis intégration dans l'IReF, dont le calendrier est incertain.
 4. **Groupe BEI.** Un protocole d'accord EBA–groupe BEI organise la transmission de données anonymisées au niveau du prêt (défauts, recouvrements, stades, sponsors), y compris sur les portefeuilles garantis par le FEI. La BEI n'est pas soumise au CRR : l'accord est volontaire.
 5. **Règles de calibrage :**
@@ -797,18 +906,25 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
    - l'exclusion de la famille (c) ;
    - la correction du biais de survie ;
    - aucune valeur des warrants dans les pertes ;
-   - des tests de couverture selon §0.6(b), sans jamais comparer une perte totale à un capital.
+   - le test de parité avec la formule IRB à 99,9 % et le *backtesting* de §0.6(b), sans jamais comparer une perte totale à un capital (révisé au round 3, réserve R-2) ;
+   - les **mêmes exigences de données pour un durcissement que pour un allègement** (critères (a) et (b) de P4).
 6. **Clause de revoyure (niveau 1).**
+   - **Conclusions sur la catégorie 2 VDQ-C**, transmises avec le projet de RTS, vers 2029-2030 : critères du régime accéléré (P4, point 2 bis).
    - **Rapport de l'EBA 3 ans après l'entrée en vigueur**, vers 2031. Il s'appuie sur les données rétrospectives de la phase 0 et sur les premières données réglementaires, et porte sur :
      - (a) la qualité des données ;
      - (b) l'hypothèse de 130 % et le cumul du facteur PME pour VDQ-P (protocole de P2, point 5) ;
      - (c) les hypothèses VDQ-P de l'approche PD : corrélation HVCRE, ajustement de taille, LGD de 50 % (P3, point 6) ;
      - (d) l'EL de la catégorie 4 VDQ-P ;
-     - (e) la performance de la catégorie 2 VDQ-C ;
-     - (f) les seuils des critères de qualité (LTER de 40 %) et du palier (5 M€).
+     - (e) un ***backtesting ex ante*** de la catégorie 2 VDQ-C sur les données de la phase 0 et, si elle a été activée, ses premières données d'application (révisé au round 3, réserve R-3 : sa performance ne sera pas encore observable) ;
+     - (f) les seuils des critères de qualité (LTER de 40 %) et du palier (5 M€) ;
+     - (g) la **primauté complète** sur la clientèle de détail pour les VDQ conformes de moins de 1 M€ (P1(8)) ;
+     - (h) les poids HVCRE de la grille de *slotting* VDQ-P (P3), dont l'analogie n'est pas vérifiée sur données de l'Union ;
+     - (i) la part et la performance des VDQ non conformes, ventilées entre PME et non PME (P2) ;
+     - (j) l'articulation avec les plafonds de levier des FIA de prêt (AIFMD II), au regard d'une activation éventuelle des catégories dormantes. L'asymétrie banques-fonds, neutralisée tant qu'aucun avantage de capital n'est actif, pourrait sinon réapparaître après 2031 (`feasibility-debate.md` §1.4).
      
      Le rapport conclut, le cas échéant, à une proposition législative de la Commission.
-   - **Réexamen à 5 ans** : conditions d'activation et de désactivation de P4, effet d'offre (P4, point 6).
+   - **Rapport à 5 ans après l'entrée en vigueur** : conditions d'activation et de désactivation de P4.
+   - **Rapports de reconduction** : avant chaque échéance de la durée d'application d'un élément activé, sur les critères complets (a) à (e) (P4, point 4 bis). Ils accompagnent le rapport de la Commission sur l'effet d'offre (P4, point 6).
 7. **Indicateurs officiels désignés au niveau 1 :**
    - encours VDQ issus du reporting COREP ou d'AnaCredit ;
    - pertes réalisées issues du même reporting ;
@@ -816,7 +932,7 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
    
    Les données commerciales aux définitions hétérogènes sont exclues (`macro-analysis.md` §0(a)).
 
-**Cadres connectés.** Art. 430 CRR ; règlement EBA, art. 35 ; AnaCredit ; IReF ; statut de la BEI ; `macro-analysis.md` §6.6.
+**Cadres connectés.** Art. 430 CRR ; règlement EBA, art. 35 ; AnaCredit ; IReF ; statut de la BEI ; art. 153(1) CRR (formule du test de parité) ; AIFMD II (point 6(j)) ; `macro-analysis.md` §6.6.
 
 **Bénéfices attendus.**
 - **Micro :** un coût de reporting modéré (voir H.6).
@@ -824,8 +940,8 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
 
 **Risques et limites.**
 - (i) La coopération de la BEI est volontaire.
-- (ii) Les données peuvent **confirmer** que l'allègement n'est pas justifié, ou justifier un durcissement. C'est l'objet même du dispositif.
-- (iii) Les données rétrospectives sont de moindre qualité ; P4 exige donc au moins 2 ans de données réglementaires avant toute activation.
+- (ii) Les données peuvent **confirmer** que l'allègement n'est pas justifié, ou justifier un durcissement. C'est l'objet même du dispositif. Avec le test de parité (R-2), un durcissement du palier P est une issue plausible (P2, point 5).
+- (iii) Les données rétrospectives sont de moindre qualité. P4 exige donc au moins 2 ans de données réglementaires avant toute activation, sauf pour le régime accéléré de la catégorie 2 VDQ-C. Dans ce cas, l'entrée provisoire est compensée par une reconduction sur critères complets.
 - (iv) La transition d'AnaCredit vers l'IReF peut retarder l'ajout de l'attribut.
 
 ---
@@ -862,9 +978,10 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
      - **plafonnée** : certitude budgétaire. Les fonds AIFMD, pour lesquels l'enjeu n'est pas le capital, peuvent la préférer.
      
      Aucun type de prêteur n'est privilégié.
+   - **Borne de l'exposition budgétaire (round 3).** « Non plafonnée » signifie sans plafond de pertes **du portefeuille**. L'exposition budgétaire reste bornée par l'engagement de garantie (0,75 à 1 Md€, point 5), conformément au garde-fou n° 7.
 3. **Effet prudentiel (variante non plafonnée seulement).** Le FEI est une banque multilatérale de développement pondérée à 0 % (art. 117(2)), avec une contre-garantie de l'Union. La part garantie est donc substituée (art. 213-215) :
    - VDQ-C, emprunteur non PME : 100 % → **50 %**, soit **−52 pb** ;
-   - VDQ-C, PME (ticket de 8,25 à 25 M€, facteur PME combiné d'environ 0,83-0,84) : ≈ 85 % → ≈ **42,5 %**, soit **−44 pb** ;
+   - VDQ-C, PME (ticket de 8,25 à 25 M€, facteur PME combiné d'environ 0,82-0,84) : ≈ 82-84 % → ≈ **41-42 %**, soit **−43 à −44 pb** ;
    - la variante plafonnée **ne produit pas** cet effet, sauf à structurer une titrisation synthétique avec transfert significatif de risque, ce qui est lourd pour une petite banque.
    
    Aucune nouvelle règle prudentielle n'est nécessaire.
@@ -872,6 +989,7 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
 5. **Coût budgétaire, en ordre de grandeur** [calcul propre, hypothèses explicites] :
    - **Enveloppe indicative de la fenêtre** : 1,5 à 2 Md€ de prêts garantis sur 2028-2034, soit 0,75 à 1 Md€ d'engagement de garantie à 50 %.
    - **Pertes attendues du garant.** Hypothèses : pertes annuelles du *growth stage* de 1,3 à 1,5 % en année de stress (First Citizens, 2023-2024) et plus faibles en phase haute ; durée de vie moyenne de 2 à 3 ans (demi-vie d'environ 2 ans). La perte cumulée par millésime serait d'environ 1 à 2 % en phase haute et de 2 à 4 % en phase basse. La part du garant atteindrait ainsi 0,5 à 2 % du volume, soit **environ 8 à 40 M€** sur l'enveloppe. Dans un scénario sévère où les pertes doublent, jusqu'à environ 80 M€.
+   - **Sensibilité à produire (round 3).** Ce chiffrage repose sur une source de prêteur survivant, que le paquet disqualifie lui-même pour le calibrage (`micro-analysis.md` §8.4). Il doit être refait sur les données des BDC (`micro-analysis.md` §0 point 2 et §3). Il doit aussi tenir compte de la granularité : 1,5 à 2 Md€ en tickets de 8,25 à 25 M€ représentent 60 à 240 prêts, donc des pertes irrégulières.
    - **Recettes.** Commission de garantie et partage de l'*upside*. La juste valeur des warrants représente 1,4 à 3 % du principal ; un partage de 25 à 50 % représente 0,35 à 1,5 % du volume à long terme, perçu surtout en phase haute.
    - **Ordre de grandeur net** : **quelques dizaines de M€ au plus** sur la période, et non des centaines.
    - **Pour mémoire**, le produit I&D existant appliqué à l'*early stage* expose déjà le budget à 80 % × 6-9,7 %, soit **4,8 à 7,8 % du volume garanti par an en phase basse**. C'est une raison de suivre son usage par l'attribut de P10.
@@ -884,14 +1002,15 @@ Le compartiment ne doit pas recréer la double exposition corrélée actif-passi
 **Cadres connectés.** Règlement (UE) 2021/523 ; FEC (2028-2034) ; produit FEI I&D non plafonné ; art. 117(2), 213-215 et 234 CRR ; GBER art. 21 ; TechEU ; COM(2026) 615 ; EFS-VD (Singapour).
 
 **Bénéfices attendus.**
-- **Micro :** un allègement en capital de −44 à −52 pb/an sur les tickets de croissance que le produit existant ne couvre pas ; le maintien du produit existant pour le palier P, soit 16 pb pour une VDQ-P conforme.
+- **Micro :** un allègement en capital de −43 à −52 pb/an sur les tickets de croissance que le produit existant ne couvre pas ; le maintien du produit existant pour le palier P, soit 16 pb pour une VDQ-P conforme.
 - **Macro :** budgété, conditionnel et ciblé sur une lacune documentée (garde-fou n° 7). C'est la **mesure la plus faisable politiquement** et elle ne dépend d'aucune modification du CRR.
 
 **Risques et limites.**
-- (i) **Coût budgétaire**, dans un contexte de négociation du cadre financier pluriannuel. Il reste modéré en ordre de grandeur.
+- (i) **Coût budgétaire**, dans un contexte de négociation du cadre financier pluriannuel. Il reste modéré en ordre de grandeur, et borné par l'engagement de garantie.
 - (ii) **Aléa moral.** La rétention de 50 % et la tarification y répondent.
 - (iii) **Garantir ne crée pas d'equity.** Le plafond du marché fixé par le flux d'equity demeure (`macro-analysis.md` §1.5).
 - (iv) **Aucune garantie juridique** que la fenêtre existera sous le FEC. Le découplage rend ce risque sans conséquence pour le volet prudentiel.
+- (v) **Additionnalité par rapport au prêt direct de la BEI** (tickets de 10 à 40 M€, `micro-analysis.md` §2.1). Elle n'est pas démontrée à ce stade. L'évaluation *ex ante* du produit du FEC doit écarter l'éviction.
 
 ---
 
@@ -943,7 +1062,11 @@ C'est une reprise ciblée du volet « transparence » de COM(2022) 702. Véhicul
 
 **Définition autonome de l'instrument**, dans le texte d'insolvabilité et sans renvoi au CRR. Elle est vérifiable par un juge à partir du contrat et de registres publics :
 - (i) un prêt à terme d'une durée initiale d'au moins un an ;
-- (ii) un débiteur dont le capital a fait l'objet, dans les 18 mois précédant la conclusion du prêt, d'une augmentation souscrite, pour au moins 25 % du tour ou pour la part la plus élevée, par un investisseur relevant des statuts AIFMD, EuVECA, ELTIF, groupe BEI ou banque nationale de développement, ou d'un statut équivalent de pays tiers. C'est le noyau C1 de P1, **transposé** ;
+- (ii) un débiteur dont le capital a fait l'objet, dans les 18 mois précédant la conclusion du prêt, d'une augmentation souscrite, pour au moins 25 % du tour ou pour la part la plus élevée, par l'un des investisseurs suivants : un investisseur relevant des statuts AIFMD, EuVECA, ELTIF, groupe BEI ou banque nationale de développement ; ou un fonds de pays tiers dont le gestionnaire remplit les **deux conditions objectives** du critère C1(v) de P1 :
+  - agrément, enregistrement ou déclarations réglementaires périodiques auprès d'une autorité de pays tiers partie à un accord de coopération conclu au titre de l'art. 42 AIFMD avec au moins une autorité compétente de l'Union ;
+  - encours gérés d'au moins 100 M€.
+  
+  C'est le noyau C1 de P1, transposé **tel quel** (révisé au round 3, réserve R-6). Un « statut équivalent de pays tiers », formule de la version du round 2, ne serait pas vérifiable par un juge sur pièces et registres, et défaisait l'objectivation de C1(v) pour le cas le plus fréquent ;
 - (iii) le cas échéant, un instrument de capital accordé au prêteur, **détachable** et donnant droit à 10 % au plus du capital ;
 - (iv) un accord inter-créanciers écrit ou une clause contractuelle explicite de rang ;
 - (v) **quelle que soit la nature du prêteur** : établissement de crédit, FIA, ELTIF, groupe BEI ou banque nationale de développement.
@@ -978,7 +1101,7 @@ Pour la plupart des États membres, elle serait confirmative : le § 39(5) InsO 
 - (iii) cela toucherait aux privilèges fiscaux et salariaux ;
 - (iv) le prêteur de venture debt est déjà senior et sécurisé : son problème est la **reconnaissance** de son rang, pas l'obtention d'un rang supérieur.
 
-**Cadres connectés.** Directive 2019/1023 (art. 9, 11, 33) ; directive 2026/799 ; directive 2017/2399 (art. 108 BRRD) ; règlement (UE) 2015/848 (insolvabilité, refonte) ; AIFMD, EuVECA, ELTIF (statuts repris dans la définition autonome) ; art. 89 et 194 CRR.
+**Cadres connectés.** Directive 2019/1023 (art. 9, 11, 33) ; directive 2026/799 ; directive 2017/2399 (art. 108 BRRD) ; règlement (UE) 2015/848 (insolvabilité, refonte) ; AIFMD (art. 42, pour le critère de pays tiers), EuVECA, ELTIF (statuts repris dans la définition autonome) ; art. 89 et 194 CRR.
 
 **Bénéfices attendus.**
 - **Micro :** des coûts d'avis juridiques réduits grâce à la cartographie ; une LGD senior plus prévisible si le niveau 2(a) est justifié.
@@ -989,6 +1112,7 @@ Pour la plupart des États membres, elle serait confirmative : le § 39(5) InsO 
 - (ii) Le découplage du volet prudentiel est **indispensable**.
 - (iii) La cartographie peut conclure à l'absence de problème. Le niveau 2 n'est alors pas proposé ; c'est l'objet du conditionnement.
 - (iv) La publication du rapport au titre de l'art. 33 reste à confirmer.
+- (v) **Résistance procédurale possible** : un État membre peut limiter sa coopération à la cartographie pour que le déclencheur du niveau 2(a) ne soit jamais atteint (`feasibility-debate.md` §1.9, §2.3). Le recours à l'EBA et au portail e-Justice, qui ne dépendent pas des seules réponses nationales, en atténue l'effet.
 
 ---
 
@@ -999,7 +1123,7 @@ Pour la plupart des États membres, elle serait confirmative : le § 39(5) InsO 
 **Résumé exécutif.** La proposition repose sur quatre choix :
 - **Séquençage en trois phases.** Une phase 0 élargie, cœur du paquet et solution de repli autonome ; un socle de niveau 1 réduit ; des paramètres de pilier 1 fixés **après** les données.
 - **Véhicule.** Un chapitre **distinct et séparable** du paquet législatif du T1 2027 issu de COM(2026) 615, articulé avec le réexamen du *specialised lending*.
-- **Stratégie bâloise.** Un **recensement honnête** des écarts favorables, une matérialité appréciée **par composante et en cumul**, et une trajectoire **sans facteur de soutien**.
+- **Stratégie bâloise.** Un **recensement honnête** des écarts favorables, une matérialité appréciée **par composante et en cumul**, et une trajectoire **sans facteur de soutien**, dont chaque allègement est réversible.
 - **Charge de l'EBA** hiérarchisée.
 
 **Problème et ancrage factuel.**
@@ -1010,15 +1134,16 @@ Pour la plupart des États membres, elle serait confirmative : le § 39(5) InsO 
 - **Positionnement de COM(2026) 615** : start-up et scale-up citées ; partage des risques et évaluation de la PI privilégiés ; *specialised lending* réservé aux investissements stratégiques (`macro-analysis.md` §4.5).
 - **Aucun précédent dans le monde** : l'UE serait pionnière (`benchmarking.md` §6).
 - **Bande passante et RSB.** Un chapitre de pilier 1 étendu, fondé sur une base de preuves mince, recevrait probablement un avis réservé du Regulatory Scrutiny Board. Un socle réduit, neutre en capital, a plus de chances de passer (round 1, P13).
+- **Risque de découverte d'un défaut en trilogue** (`feasibility-debate.md` §4, point 4). Un défaut de mécanique juridique révélé en cours de négociation coûterait plus en crédibilité que sa portée technique. D'où l'intégration, avant tout dépôt, des réserves R-1 à R-4 (round 3).
 
 **Mécanisme.**
 1. **Séquençage (reséquencement C.6 du round 1, adopté avec trois ajustements).**
 
    | Phase | Période indicative | Contenu | Instruments |
    |---|---|---|---|
-   | **0 : cœur du paquet et solution de repli** | Fin 2026 à 2028 | P10 : collecte au titre de l'art. 35 (rétrospective depuis 2019), ITS de reporting fondés sur la définition de caractérisation de P1, protocole avec la BEI ; P8 : section d'EBA/GL/2020/06 et recommandation à la BCE ; P9 : pilier 2, liquidité, Q&A sur les dépôts opérationnels, sSyRB ; P5(3)-(4) : Q&A sur la *forbearance* et orientations ; P6 : Q&A sur la frontière titrisation ; P7.1, P7.2, P7.5 et P7.6 : Q&A ; P11 : programmation InvestEU/FEC ; P12 : cartographie | Sans niveau 1 |
-   | **1 : socle de niveau 1 réduit** | Proposition au T1 2027 ; adoption vers 2028 ; application vers 2029-2030 ; RTS applicable vers 2031 | P1 (corrigée) ; P2 (pondérations neutres ; art. 501 non applicable aux VDQ non conformes) ; P3 (*slotting* optionnel, règle transitoire, EL au niveau 1, catégorie 2 VDQ-C à compter du RTS) ; P4 (catégories dormantes, habilitation conforme à l'art. 290) ; P9 (plafond) ; P10 (clause de revoyure, indicateurs) ; art. 133(4) et 91 **seulement si les Q&A sont insuffisantes** | Niveau 1, puis RTS |
-   | **2 : paramètres de pilier 1 sur données** | À partir de 2031 | Rapport de l'EBA à 3 ans après l'entrée en vigueur (hypothèses de P2 et P3, EL, seuils) ; recalibrage par voie législative ; activation ou désactivation des catégories dormantes par acte délégué (P4) ; réexamen à 5 ans | Rapport ; proposition législative ; acte délégué |
+   | **0 : cœur du paquet et solution de repli** | Fin 2026 à 2028 | P10 : collecte au titre de l'art. 35 (rétrospective depuis 2019), ITS de reporting fondés sur la définition de caractérisation de P1, protocole avec la BEI ; P8 : section d'EBA/GL/2020/06 et recommandation à la BCE ; P9 : pilier 2, liquidité, Q&A sur les dépôts opérationnels, sSyRB ; P5(3)-(4) : Q&A sur la *forbearance* et orientations ; P6 : Q&A sur la frontière titrisation, *unitranche* compris ; P7.1, P7.2, P7.5 et P7.6 : Q&A déposées dès le T4 2026 ; P11 : programmation InvestEU/FEC ; P12 : cartographie | Sans niveau 1 |
+   | **1 : socle de niveau 1 réduit** | Proposition au T1 2027 ; adoption vers 2028 ; application vers 2029-2030 ; RTS applicable vers 2031 | P1 (corrigée ; exclusion des seules VDQ non conformes de la clientèle de détail) ; P2 (pondérations neutres ; art. 501 non applicable aux VDQ non conformes) ; P3 (*slotting* optionnel ; règle transitoire encadrée : autorisation, catégories par défaut, dérogations dures au niveau 1 ; EL au niveau 1) ; P4 (catégories dormantes, dont la catégorie 2 VDQ-C à activation accélérée ; habilitation d'activation de 8 ans ; habilitation de désactivation et de reconduction à durée indéterminée ; durée d'application de 5 ans) ; P9 (plafond) ; P10 (clause de revoyure, indicateurs) ; art. 133(4) et 91 **seulement si les Q&A sont insuffisantes**, comme options de l'analyse d'impact (P7.8) | Niveau 1, puis RTS |
+   | **2 : paramètres de pilier 1 sur données** | À partir de 2031 (catégorie 2 VDQ-C : dès le RTS si les données de la phase 0 le permettent) | Conclusions de l'EBA sur la catégorie 2 VDQ-C avec le projet de RTS ; rapport de l'EBA à 3 ans après l'entrée en vigueur (hypothèses de P2 et P3, primauté complète, EL, seuils) ; recalibrage par voie législative ; activation, désactivation annuelle ou reconduction des catégories dormantes par acte délégué (P4) ; rapport à 5 ans | Rapports ; proposition législative ; actes délégués |
    | **Insolvabilité** | En parallèle, découplée | Niveau 2(a) seulement si la cartographie l'établit ; élément (b) à part | Réexamen de la directive 2019/1023 |
 
    **Les trois ajustements :**
@@ -1030,54 +1155,57 @@ Pour la plupart des États membres, elle serait confirmative : le § 39(5) InsO 
 
    | Texte | Modifications |
    |---|---|
-   | CRR, socle | Art. 147 (nouveau paragraphe : définition) ; nouvel art. 122b ; art. 123 et 147(5) (primauté) ; art. 501(2) (VDQ non conformes) ; art. 153 (nouveaux 5a et 9a) ; art. 158 (nouveau 6a) ; habilitation (art. 290 TFUE) ; plafond ; clause de revoyure et indicateurs |
+   | CRR, socle | Art. 147 (nouveau paragraphe : définition) ; nouvel art. 122b ; art. 123 et 147(5) (exclusion des VDQ non conformes de la clientèle de détail) ; art. 501(2) (VDQ non conformes) ; art. 153 (nouveaux 5a et 9a ; règle transitoire : autorisation, catégories par défaut, dérogations dures) ; art. 158 (nouveau 6a) ; deux habilitations (art. 290 TFUE) : activation, 8 ans ; désactivation et reconduction, durée indéterminée ; durée d'application des éléments activés ; plafond ; clause de revoyure et indicateurs |
    | CRR, conditionnel | Art. 133(4) (codification) et art. 91, seulement si les Q&A sont insuffisantes |
-   | Retiré par rapport à la version initiale | Art. 2(1)(c) du règlement Titrisation ; nouvel art. 501b (facteur 0,85) ; hypothèses VDQ-P de l'approche PD (art. 153(4) et 161) ; montée en charge |
-   | EBA | Phase 0 : une section d'orientations ; un ITS de reporting, qui intègre le groupe ALMM ; une collecte au titre de l'art. 35 ; environ cinq Q&A (warrants, fintechs, *forbearance*, dépôts opérationnels, titrisation) ; la contribution à la cartographie. Phase 1 : un RTS, qui intègre la frontière. Phase 2 : deux rapports. **Environ 10 livrables, contre 12 à 15 dans la version initiale.** |
+   | Retiré par rapport à la version initiale | Art. 2(1)(c) du règlement Titrisation ; nouvel art. 501b (facteur 0,85) ; hypothèses VDQ-P de l'approche PD (art. 153(4) et 161) ; montée en charge ; primauté complète sur la clientèle de détail (round 3) |
+   | EBA | Phase 0 : une section d'orientations ; un ITS de reporting, qui intègre le groupe ALMM ; une collecte au titre de l'art. 35 ; environ cinq Q&A (warrants, fintechs, *forbearance*, dépôts opérationnels, titrisation) ; la contribution à la cartographie. Phase 1 : un RTS, qui intègre la frontière, accompagné des conclusions sur la catégorie 2 VDQ-C. Phase 2 : deux rapports, puis les publications annuelles de désactivation et les rapports de reconduction, seulement si un élément est activé. **Environ 10 livrables principaux, contre 12 à 15 dans la version initiale.** |
 
 3. **Stratégie bâloise : recensement honnête des écarts.**
 
    | Élément | Version initiale | Version révisée | Statut au lancement |
    |---|---|---|---|
-   | *Slotting* hors *specialised lending* | Écart de **méthode** favorable | Maintenu ; pondérations égales aux valeurs bâloises SL et HVCRE ; optionnel | Écart de méthode **déclaré** |
-   | Catégorie 2 VDQ-C à 90 % | Écart de **paramètre** favorable, présenté à tort comme conforme au principe de dormance | Maintenue comme exception motivée, à compter du RTS (vers 2031), sous plafond, désactivable | Écart de paramètre **déclaré**, immatériel |
-   | Warrants à 250 % « quelle que soit la voie de monétisation » (P7.2) | Écart favorable, présenté à tort comme « dans la lettre de Bâle » | **Retiré** : Q&A dans la lettre de l'art. 133(4) ; 400 % maintenu pour la cession volontaire avant 3 ans | **Aucun écart** |
+   | *Slotting* hors *specialised lending* | Écart de **méthode** favorable | Maintenu ; pondérations égales aux valeurs bâloises SL et HVCRE ; optionnel ; transition encadrée | Écart de méthode **déclaré** |
+   | Catégorie 2 VDQ-C à 90 % | Écart de **paramètre** favorable, présenté à tort comme conforme au principe de dormance | Élément **dormant** à activation accélérée sur données de phase 0 (round 3), au plus tôt avec le RTS, vers 2031 ; non cumulable avec l'art. 501 ; sous plafond ; 5 ans reconductibles sur critères complets ; désactivable chaque année | Écart de paramètre **potentiel**, conditionné aux données, immatériel |
+   | Warrants à 250 % « quelle que soit la voie de monétisation » (P7.2) | Écart favorable, présenté à tort comme « dans la lettre de Bâle » | **Retiré** : Q&A dans la lettre de l'art. 133(4) ; 400 % maintenu pour toute cession volontaire avant 3 ans | **Aucun écart supplémentaire** par rapport à l'art. 133(4) en vigueur |
    | Facteur 0,85 (trajectoire) | Nouveau facteur de soutien potentiel | **Retiré** | — |
-   | Catégories dormantes (trajectoire) | Analogues bâlois | Maintenues, activation sur critères objectifs, désactivation symétrique | Écart de méthode **potentiel**, conditionné |
+   | Catégories dormantes (trajectoire) | Analogues bâlois | Maintenues ; activation sur critères objectifs, dont la parité avec la formule IRB ; durée d'application de 5 ans ; reconduction et désactivation sur pertes | Écart de méthode **potentiel**, conditionné |
 
    **Éléments plus stricts que Bâle :**
    - la grille VDQ-P aux poids HVCRE ;
    - l'absence de pondération préférentielle pour maturité courte ;
    - la catégorie 4 par défaut ;
-   - la primauté sur la clientèle de détail ;
-   - le **retrait du facteur PME** pour les VDQ non conformes, qui **réduit** un écart préexistant.
+   - l'exclusion des VDQ non conformes de la clientèle de détail ;
+   - le **retrait du facteur PME** pour les VDQ non conformes. Pour une PME, il remplace un écart favorable par une **super-équivalence** : 100 %, contre la référence bâloise de 85 % pour une PME non notée (CRE20 [vérifié-auditeur]).
 
 4. **Matérialité appréciée par composante, en cumul.** Le RCAP apprécie la matérialité **par composante**, en agrégeant les écarts.
    - **Le stock existant.** La composante « risque de crédit » de l'Union porte déjà plusieurs écarts : facteur PME (art. 501), facteur infrastructures (art. 501a), mesure transitoire à 65 % pour les entreprises non notées de PD ≤ 0,5 % (jusqu'en 2032), traitement des programmes législatifs à 100 % (art. 133(5)), notamment.
-   - **La contribution du paquet révisé.** Au lancement, elle se limite à **un écart de paramètre** (catégorie 2 VDQ-C, effective vers 2031) et à **un écart de méthode** (*slotting* hors SL). Le segment pèse au plus 0,06 à 0,09 % des actifs bancaires, selon qu'on retient 19,2 ou 28,9 Md€ (`macro-analysis.md` §2.1 ; `micro-analysis.md` §1.2). Le paquet retire aussi le facteur PME sur les structures non conformes.
-   - **Conclusion.** Cet ajout, **immatériel seul**, s'ajoute à un stock qui a déjà produit le constat de 2014. La configuration de lancement ne devrait **probablement** pas faire basculer la note de la composante. Le risque réel tient à la **trajectoire** (activations) et à l'**effet de précédent** : d'autres secteurs pourraient demander un *slotting* hors SL. Ces risques sont traités par des critères d'activation publics et fondés sur les pertes, et par une contribution au Comité de Bâle.
+   - **La contribution du paquet révisé.** Au lancement, elle se limite à **un écart de méthode** (*slotting* hors SL). La catégorie 2 VDQ-C n'est plus qu'un écart de paramètre **potentiel**, qui ne s'applique que si les données de l'Union l'établissent (round 3). Le segment pèse au plus 0,06 à 0,09 % des actifs bancaires, selon qu'on retient 19,2 ou 28,9 Md€ (`macro-analysis.md` §2.1 ; `micro-analysis.md` §1.2). Le paquet retire aussi le facteur PME sur les structures non conformes.
+   - **Conclusion.** Cet ajout, **immatériel seul**, s'ajoute à un stock qui a déjà produit le constat de 2014. La configuration de lancement ne devrait **probablement** pas faire basculer la note de la composante. Le risque réel tient à la **trajectoire** (activations) et à l'**effet de précédent** : d'autres secteurs pourraient demander un *slotting* hors SL. Ces risques sont traités par des critères d'activation publics et fondés sur les pertes, par une durée d'application limitée et par une contribution au Comité de Bâle.
 5. **Contribution au Comité de Bâle.** Une fois les données de P10 disponibles, l'Union proposerait un travail sur le « prêt aux entreprises innovantes adossé au capital-risque ». Elle y jouerait le rôle de **premier fournisseur de preuves** plutôt que de dérogataire.
 6. **Véhicule.** Le paquet du T1 2027 comporterait un chapitre « financement bancaire des entreprises innovantes » regroupant le socle de phase 1. Ce chapitre est **distinct** du réexamen du SL, mais s'y **articule** : la famille (c) (GPU, data centres, gigafactories, flottes) est renvoyée à l'OF et au PF, et le réexamen du SL « pour investissements stratégiques » devrait couvrir ces financements d'actifs d'entreprises financées par VC (`macro-analysis.md` §3 point 2).
 7. **Positionnement vis-à-vis de COM(2026) 615 :**
    - **convergences** : partage des risques (P11), évaluation de la PI (P3, sous-facteur et rapport), renforcement des capacités (P8), mention des start-up et scale-up ;
    - **écart assumé** : la Commission **n'annonce pas** de sous-catégorie de pilier 1 pour la venture debt. Le socle réduit en ajoute une, **neutre en capital**, justifiée par la **lisibilité, les données et l'obstacle IRB**, et non par l'allègement ;
    - **point de vigilance** : si la mesure transitoire de 65 % devient permanente, elle favorisera les grandes entreprises bien notées, pas les scale-ups (`macro-analysis.md` §4.5). Le compartiment n'en dépend pas.
-8. **Coalition probable (corrigée)** :
-   - **superviseurs (EBA, BCE)** : favorables à la phase 0 (données, pilier 2). Ils sont **réservés sur tout niveau 1** : l'option 0+ peut leur paraître suffisante. La neutralité en capital et les critères d'activation publics sont les arguments ;
+8. **Coalition probable (corrigée au round 2, mise à jour au round 3)** :
+   - **superviseurs (EBA, BCE)** : favorables à la phase 0 (données, pilier 2). Ils sont **réservés sur tout niveau 1** : l'option 0+ peut leur paraître suffisante. Les arguments sont la neutralité en capital, des critères d'activation publics et, depuis le round 3, une **réversibilité effective** de tout allègement (P4, points 4 et 4 bis) ;
    - **Commission** : partage des risques, alignement sur COM(2026) 615, charge du dossier d'impact réduite par le socle neutre ;
-   - **commission ECON du Parlement** : la version initiale, qui retirait le facteur PME aux start-up, allait **contre** sa demande documentée de « flexibilité » (`stakeholder-map.md` §6), et l'ECON y était plus probablement opposée. La version révisée ne la heurte plus. Mais elle n'apporte pas non plus la « flexibilité » demandée : on peut s'attendre à des **pressions pour activer plus tôt** les catégories dormantes pendant la codécision. Des valeurs et critères fixés au niveau 1 les canalisent ;
-   - **fonds de dette** : neutralité par P6 (facilités distinctes) et P11 (ouvert à tous, deux variantes) ;
-   - **écosystème start-up** : plus aucun durcissement à redouter. La hausse de 20 pb sur les tickets de moins de 1 M€ reste un point d'attention ;
-   - **banques** : peu d'allègement de pilier 1 au lancement, mais une sécurité juridique (warrants, *forbearance*, guidance BCE) et la catégorie 2 VDQ-C pour les banques IRB spécialisées.
+   - **commission ECON du Parlement** : la version initiale, qui retirait le facteur PME aux start-up, allait **contre** sa demande documentée de « flexibilité » (`stakeholder-map.md` §6), et l'ECON y était plus probablement opposée. La version révisée ne la heurte plus. Elle ne lui oppose plus non plus de durcissement sur les petits tickets conformes (round 3). Mais elle n'apporte pas la « flexibilité » demandée : on peut s'attendre à des **pressions pour activer plus tôt** les catégories dormantes. Des valeurs et critères fixés au niveau 1 les canalisent, et le régime accéléré de la catégorie 2 VDQ-C y répond sur preuve ;
+   - **fonds de dette** : neutralité par P6 (facilités distinctes) et P11 (ouvert à tous, deux variantes). Leur point de vigilance sur la trajectoire est inscrit au mandat du rapport à 3 ans (P10, point 6(j)) ;
+   - **écosystème start-up** : aucun durcissement pour une exposition conforme. La primauté complète sur la clientèle de détail est retirée du lancement (P1(8)) ;
+   - **banques** : aucun allègement de pilier 1 acquis au lancement ; une sécurité juridique (warrants, *forbearance*, guidance BCE) ; la levée de l'obstacle IRB ; et, **si les données le permettent**, la catégorie 2 VDQ-C pour les banques IRB spécialisées. Elle n'est plus acquise au RTS.
    
    **Bilan** : une coalition **large mais peu engagée**. Aucun opposant fort, aucun champion fort : le principal risque est que le chapitre soit abandonné faute de bande passante. D'où la séparabilité : la phase 0 tient seule.
 
-**Bénéfices attendus.** Un chemin législatif réaliste ; une crédibilité prudentielle ; une défense internationale fondée sur un recensement exact ; aucune dépendance du volet prudentiel envers le budget ou l'insolvabilité.
+   **Registre de communication (round 3, `feasibility-debate.md` §4, recommandation n° 5).** Le dossier est porté sur le registre de la **lisibilité, de la sécurité juridique et des données, avec un chemin crédible vers un allègement futur fondé sur la preuve**. Il ne l'est pas comme une facilitation immédiate, qu'il n'apporte pas (H.4). L'absence de bénéfice en capital immédiat est assumée d'emblée, pour ne pas laisser se former une attente dont la déception coûterait plus, à terme, qu'un enthousiasme mesuré. Il faut aussi dire que les données peuvent conduire à un durcissement du palier P (P2, point 5).
+
+**Bénéfices attendus.** Un chemin législatif réaliste ; une crédibilité prudentielle ; une défense internationale fondée sur un recensement exact ; aucune dépendance du volet prudentiel envers le budget ou l'insolvabilité ; aucun défaut de mécanique juridique connu laissé à découvrir en trilogue.
 
 **Risques et limites.**
 - (i) La bande passante du paquet de 2027 est limitée : la séparabilité y répond.
 - (ii) Le dossier d'impact du chapitre de phase 1 reste à produire. Les ordres de grandeur de H.6 en sont l'amorce.
 - (iii) Les pressions pour une activation anticipée sont probables. Les critères du niveau 1 les canalisent.
+- (iv) Les corrections du round 3 retirent des prises aux opposants ; elles n'ajoutent pas de champion. Le risque dominant identifié par le round de faisabilité, l'abandon faute de portage (`feasibility-debate.md` §3.3), reste entier. Il ne se corrige pas en réintroduisant un allègement non fondé, qui recréerait les défauts corrigés.
 
 ---
 
@@ -1088,22 +1216,23 @@ Pour la plupart des États membres, elle serait confirmative : le § 39(5) InsO 
 | Configuration | Aujourd'hui | Lancement (phase 1) | Après activation éventuelle (phase 2) | Avec garantie non plafonnée |
 |---|---|---|---|---|
 | VDQ-C conforme, SA, emprunteur non PME (CA > 50 M€) | 100 % (104 pb) | 100 % (104 pb) : neutre | « haute qualité » 80 % (83 pb) : −21 pb | Fenêtre P11 (8,25-25 M€) à 50 % : 50 % (52 pb) : −52 pb |
-| VDQ-C conforme, SA, PME, ticket > 2,5 M€ | ≈ 85 % (88 pb) | ≈ 85 % (88 pb) : neutre | 80 % (83 pb) si « haute qualité », non cumulable : −5 pb | ≤ 8,25 M€ : produit I&D existant à 80 % : ≈ 17 % (18 pb) ; 8,25-25 M€ : P11 à 50 % : ≈ 42,5 % (44 pb) |
+| VDQ-C conforme, SA, PME, ticket > 2,5 M€ | ≈ 78-84 % selon le ticket (facteur combiné ; 81-87 pb) | Idem : neutre | 80 % (83 pb) si « haute qualité », non cumulable : sans effet sous ≈ 4,4 M€ ; au plus −4 pb (ticket de 25 M€) | ≤ 8,25 M€ : produit I&D existant à 80 % : ≈ 16-17 % (16-17 pb) ; 8,25-25 M€ : P11 à 50 % : ≈ 41-42 % (43-44 pb) |
 | VDQ-P conforme, SA, ticket ≤ 2,5 M€ | 76 % (79 pb) | 76 % (79 pb) : neutre | Aucune catégorie dormante en SA pour le palier P | Produit I&D existant à 80 % : ≈ 15 % (16 pb), inchangé |
-| VDQ-P conforme, ticket < 1 M€ (aujourd'hui classable en détail) | 57 % (59 pb) | 76 % (79 pb) : **+20 pb** (primauté, P1(8)) | Idem | I&D : 12 → 16 pb : +4 pb |
+| VDQ-P conforme, ticket < 1 M€, en clientèle de détail | 57 % (59 pb) | 57 % (59 pb) : **neutre** (classement en détail maintenu si l'art. 123 est rempli ; P1(8), round 3) | Idem, sauf si le rapport à 3 ans justifie la primauté complète (ligne des hypothèses) | I&D : 12 pb, inchangé |
 | VDQ non conforme, SA, ticket ≤ 2,5 M€ | 76 % (79 pb) ; 57 % (59 pb) si classée en détail | 100 % (104 pb) : **+25 pb** (+45 pb depuis le détail) | — | I&D : 20 % (21 pb) |
-| *Hypothèse non inscrite, soumise au rapport à 3 ans* : VDQ-P à 130 % sans cumul | — | — | 130 % (135 pb) : +56 pb, seulement si le rapport la confirme et par voie législative | I&D : 26 % (27 pb) |
-| VDQ-C, IRB non contraint, non PME, PD ≈ 2-3 % | ≈ 100-130 % (104-135 pb) | Avant RTS : approche PD inchangée, ou *slotting* catégorie 3 par défaut, 115 % (120 pb). Après RTS (vers 2031) : catégorie 2 à 90 % (94 pb) pour le meilleur quart, **jusqu'à −42 pb** ; catégorie 3 à 115 % | Catégorie 1 : 70 % (73 pb) | Substitution sur la part garantie |
+| *Hypothèse non inscrite, soumise au rapport à 3 ans* : VDQ-P à 130 % sans cumul | — | — | 130 % (135 pb) : +56 pb, seulement si le test de parité la justifie et par voie législative ; une valeur supérieure est possible si le test l'implique (P2, point 5) | I&D : 26 % (27 pb) |
+| *Hypothèse non inscrite, soumise au rapport à 3 ans* : primauté complète (VDQ conforme < 1 M€) | — | — | 76 % (79 pb) : +20 pb, seulement si le test de parité la justifie et par voie législative | I&D : 16 pb |
+| VDQ-C, IRB non contraint, non PME, PD ≈ 2-3 % | ≈ 100-130 % (104-135 pb) | Avant RTS : approche PD inchangée ; *slotting* seulement sur autorisation (P3, point 4), catégorie 3 par défaut, 115 % (120 pb), catégorie 4 en cas de non-conformité ou de dérogation dure. Après RTS (vers 2031) : grille, catégories 3 (115 %) et 4 (250 %) | Catégorie 2 à 90 % (94 pb), **si activée** sur données de phase 0 (au plus tôt avec le RTS) : jusqu'à −42 pb face à un modèle PD conservateur, +8 à −12 pb face à un modèle validé. Catégorie 1 : 70 % (73 pb) | Substitution sur la part garantie |
 | VDQ-C, IRB contraint par le plancher, non PME | 72,5 % (75 pb) | 72,5 % (75 pb) | 58 % (60 pb) si « haute qualité » SA activée | Substitution sur la part garantie |
-| VDQ-P, IRB, PD ≈ 10 % | ≈ 170 % (177 pb) sans ajustement de taille ; ≈ 99 % (103 pb) avec ajustement de taille et facteur PME | Approche PD inchangée. *Slotting* optionnel : catégorie 3 à 140 % (146 pb), catégorie 4 à 250 % (260 pb) ; avant RTS, catégorie 4 par défaut | Catégorie 2 : 120 % (125 pb) ; catégorie 1 : 95 % (99 pb) | Substitution sur la part garantie |
-| Warrants (juste valeur ≈ 2 % du principal) | 250-400 %, qualification incertaine | 250 % confirmé par Q&A pour une intention de détention ≥ 3 ans, y compris en cas de cession forcée par un événement de liquidité ; 400 % pour la seule cession volontaire avant 3 ans | — | (P7.3 retiré) |
+| VDQ-P, IRB, PD ≈ 10 % | ≈ 170 % (177 pb) sans ajustement de taille ; ≈ 99 % (103 pb) avec ajustement de taille et facteur PME | Approche PD inchangée. *Slotting* optionnel : catégorie 3 à 140 % (146 pb), catégorie 4 à 250 % (260 pb) ; avant RTS, sur autorisation, catégorie 4 par défaut | Catégorie 2 : 120 % (125 pb) ; catégorie 1 : 95 % (99 pb) | Substitution sur la part garantie |
+| Warrants (juste valeur ≈ 2 % du principal) | 250-400 %, qualification incertaine | 250 % confirmé par Q&A pour une intention de détention ≥ 3 ans, y compris en cas de cession imposée (sortie forcée, exercice ou rachat obligatoire lors d'un changement de contrôle, rachat imposé par l'émetteur) ; 400 % pour toute cession volontaire avant 3 ans, y compris sortie conjointe et vente après la période de blocage | — | (P7.3 retiré) |
 
 **Lecture.**
-- **Palier C :** au lancement, le compartiment est **neutre** en capital pour toutes les expositions conformes en approche standard. Il est modérément favorable, à partir du RTS, pour les banques IRB spécialisées sur le meilleur quart du palier C.
-- **Coûts ciblés :** la hausse de 20 pb vise les plus petits tickets, classés hors détail. La hausse de 25 pb vise les structures non conformes, et elle est évitable.
-- **Garantie :** le produit I&D existant reste inchangé pour le palier P. La fenêtre P11 apporte −44 à −52 pb sur les tickets de croissance qu'il ne couvre pas.
-- **Suite :** tout recalibrage de pilier 1, à la hausse comme à la baisse, est **différé et conditionné aux données** (P4, P10).
-- **Où est la valeur ajoutée :** la **lisibilité**, les **données dès la phase 0**, la levée de **frictions non capitalistiques** (warrants, guidance BCE, *forbearance*, obstacle IRB) et les **garde-fous**.
+- **Palier C :** au lancement, le compartiment est **neutre** en capital pour toutes les expositions conformes en approche standard. Il ne devient modérément favorable pour les banques IRB spécialisées, sur le meilleur quart du palier C, que si les données de la phase 0 permettent d'activer la catégorie 2. Ce ne sera pas avant le RTS, vers 2031.
+- **Coûts ciblés :** la seule hausse au lancement vise les **structures non conformes** (+25 pb, +45 pb depuis le détail), et elle est évitable. **Aucune exposition conforme ne voit sa pondération augmenter** (round 3).
+- **Garantie :** le produit I&D existant reste inchangé pour le palier P. La fenêtre P11 apporte −43 à −52 pb sur les tickets de croissance qu'il ne couvre pas.
+- **Suite :** tout recalibrage de pilier 1, à la hausse comme à la baisse, est **différé et conditionné aux données** (P4, P10), selon un test de parité à 99,9 % qui peut conduire à un durcissement du palier P.
+- **Où est la valeur ajoutée :** la **lisibilité**, les **données dès la phase 0**, la levée de **frictions non capitalistiques** (warrants, guidance BCE, *forbearance*, obstacle IRB) et les **garde-fous**, désormais réversibles par construction.
 
 C'est cohérent avec `macro-analysis.md` §4.4 et §5 : le capital n'est pas la ressource rare, et un compartiment n'est « ni nécessaire ni suffisant ».
 
@@ -1113,14 +1242,14 @@ C'est cohérent avec `macro-analysis.md` §4.4 et §5 : le capital n'est pas la 
 |---|---|
 | 1. Définition du SL (binaire) | P1 |
 | 2. Facteur PME (2,5 M€ ; 50 M€) | P2 : facteur maintenu pour les VDQ conformes, retiré pour les non conformes. **Falaise de 50 M€ : hors champ**, à traiter dans un réexamen général de l'art. 501 |
-| 3. Portefeuille « clientèle de détail » (1 M€) | P1(8) (primauté de la VDQ, +20 pb affichés) |
+| 3. Portefeuille « clientèle de détail » (1 M€) | P1(8) : classement en détail maintenu pour les VDQ conformes, exclu pour les non conformes ; primauté complète soumise au rapport à 3 ans (round 3) |
 | 4. Subordination (100 à 150 % ; 40 à 75 %) | P6 (pas d'allègement du junior ; facilités distinctes) |
 | 5. Warrants (400 % ou 250 %) | P7.2 (Q&A) |
 | 6. SPPI (IFRS 9) | P1 (Q4), P7.7 |
 | 7. Art. 89 | P7.6 (Q&A, puis niveau 1 conditionnel) |
 | 8. Guidance BCE sur l'effet de levier | P8 (recommandation, plan B) |
 | 9. Covenants de levée et d'abandon | P5 |
-| 10. Falaise du *slotting* | P5 (hystérésis symétrique, dérogations), P3 (paliers) |
+| 10. Falaise du *slotting* | P5 (hystérésis symétrique, dérogations dures au niveau 1), P3 (paliers, transition encadrée) |
 | 11. Pondérations préférentielles pour maturité inférieure à 2,5 ans | P3 (supprimées) |
 | 12. Frontière avec la famille (c) | P1(2)-(5), P3 (RTS), P13(6) |
 
@@ -1129,38 +1258,46 @@ C'est cohérent avec `macro-analysis.md` §4.4 et §5 : le capital n'est pas la 
 | Cadre | Renvoi ou synergie précise | Proposition |
 |---|---|---|
 | AIFMD (art. 6, 42) / EuVECA / ELTIF | Définition de l'investisseur qualifié (C1) | P1, P11, P12 |
-| AIFMD, art. 3(2)(a) | Seuil de 100 M€ réutilisé pour objectiver le critère « pays tiers » | P1 |
-| AIFMD II (fonds de prêt) / ELTIF 2.0 | Porteurs de la tranche junior distincte ; éligibilité à la garantie | P6, P11 |
-| Règlement Titrisation, art. 2(1) | **Interprétation par Q&A** (facilités distinctes), **sans modification** | P6 |
+| AIFMD, art. 3(2)(a) | Seuil de 100 M€ réutilisé pour objectiver le critère « pays tiers », repris tel quel dans le volet insolvabilité | P1, P12 |
+| AIFMD II (fonds de prêt) / ELTIF 2.0 | Porteurs de la tranche junior distincte ; éligibilité à la garantie ; articulation des plafonds de levier au rapport à 3 ans | P6, P10, P11 |
+| Règlement Titrisation, art. 2(1) | **Interprétation par Q&A** (facilités distinctes et *unitranche*), **sans modification** | P6 |
 | Art. 122a CRR | Gabarit de l'article standard ; analogue PF 80 % (dormant) | P2, P4 |
-| Art. 123(1)(c) CRR | Fondement de la primauté sur la clientèle de détail | P1 |
+| Art. 123 et 147(5) CRR | Exclusion des seules VDQ non conformes de la clientèle de détail (anti-arbitrage) ; l'art. 123(1)(c) n'est plus invoqué | P1 |
+| Art. 143(3)(a) CRR | Modèle de l'autorisation préalable de l'option transitoire pour le *slotting* | P3 |
 | Art. 150 CRR | Utilisation partielle permanente : cible le *slotting* sur les banques IRB spécialisées | P3 |
-| Art. 153(4) CRR | Seuil de 5 M€ (borne basse de l'ajustement de taille) | P1 |
-| Art. 47b et 47c CRR | Limites de la clarification sur la *forbearance* | P5 |
-| Art. 501 CRR | Maintenu pour les VDQ conformes ; retiré pour les non conformes ; non cumulable avec les catégories activées | P2, P4 |
+| Art. 153(1) CRR (formule IRB, 99,9 %) | Référence unique du test de parité pour tout recalibrage, à la hausse comme à la baisse | §0.6, P2, P4, P10 |
+| Art. 153(4) CRR | Seuil de 5 M€ (borne basse de l'ajustement de taille) ; ajustement de corrélation dans le test de parité | P1, §0.6 |
+| Art. 153(5) CRR | *Slotting* comme méthode de repli : fondement de l'autorisation transitoire et du choix par portefeuille | P3 |
+| Art. 47b et 47c CRR | Limites de la clarification sur la *forbearance* (art. 47b(2)(a), (b), (c), (e)) | P5 |
+| Art. 501 CRR | Maintenu pour les VDQ conformes ; retiré pour les non conformes ; non cumulable avec les éléments activés, dont la catégorie 2 VDQ-C | P2, P3, P4 |
 | Art. 133(4) et 91(2) CRR | Q&A dans la lettre du texte ; codification conditionnelle | P7 |
 | Art. 133(5) CRR | Modèle du plafond (distinct) | P9 |
 | Art. 117(2), 213-215 et 234 CRR | Substitution par garantie non plafonnée ; protection par tranches si plafonnée | P11 |
+| Art. 462(2) et (3) CRR | Précédent d'habilitation à durée indéterminée, révocable (désactivation et reconduction) | P4 |
+| Art. 85(2) EMIR ; règlement délégué (UE) 2022/1855 | Précédent de régime temporaire prolongeable par acte délégué, caduc à défaut | P4 |
 | Règlement délégué 2021/598 / EBA/CP/2026/09 | Structure du nouveau RTS ; sous-facteur « cascade » ; catégorie 4 par défaut | P3, P6 |
 | EBA/GL/2020/06 ; EBA/GL/2022/03 | Véhicule du pilier 2 | P8 |
 | EBA/GL/2016/07 ; EBA/GL/2018/06 | *Forbearance* (Q&A, puis orientations) | P5 |
 | Règlement délégué (UE) 2015/61 ; ALMM ; art. 105 CRD | Volet liquidité, avec seuils | P9 |
+| CRD art. 97 et 104 | Signal de SREP en cas de *backtesting* défaillant sur données partielles | §0.6, P2 |
 | CRD art. 133 ; EBA/GL/2020/13 | Sous-ensemble sSyRB préidentifié | P9 |
 | BRRD art. 10 ; CMDI | Planification de la résolution | P9 |
-| Art. 430 CRR ; règlement EBA art. 35 ; AnaCredit | Définition de reporting dès la phase 0 | P10 |
+| Art. 430 CRR ; règlement EBA art. 35 ; AnaCredit | Définition de reporting dès la phase 0, indépendante de la classe d'exposition | P10 |
 | InvestEU (règlement 2021/523) ; produit I&D non plafonné ; FEC ; TechEU ; GBER art. 21 | Partage des risques autonome ; éligibilité par critères de caractérisation | P11 |
 | Directive 2019/1023 (art. 9, 11, 33) | Cartographie ; véhicule conditionnel du niveau 2(a) | P12 |
 | Directive 2026/799 | *Pre-pack* dans le facteur juridique ; conversion dette-actions | P3, P7, P12 |
 | Directive 2017/2399 (art. 108 BRRD) | Modèle d'une harmonisation étroite par instrument | P12 |
-| Art. 290 TFUE | Habilitation à dater l'application, sans marge sur les niveaux | P4 |
+| Art. 290 TFUE | Deux habilitations : activation (8 ans) ; désactivation et reconduction (durée indéterminée), sans marge sur les niveaux | P4 |
 | COM(2026) 615 | Véhicule législatif ; évaluation de la PI ; partage des risques | P3, P11, P13 |
 | OCC 2025-45 ; EFS-VD (Singapour) | Adaptations explicites (test de capacité assumé comme moins exigeant ; pas de condition de détention locale) | P8, P11 |
 
 ### H.4 Ce que ce jeu de propositions ne fait pas, délibérément
 
-- Il ne modifie **aucune pondération standard** des expositions conformes au lancement. La seule exception est la primauté sur la clientèle de détail, qui coûte 20 pb aux tickets de moins de 1 M€.
+- Il ne modifie **aucune pondération des expositions conformes** au lancement, **sans exception** : la primauté complète sur la clientèle de détail est renvoyée au rapport à 3 ans (round 3).
 - Il ne crée **aucun facteur de soutien**, ni actif ni dormant.
-- Il n'impose **aucun durcissement de pilier 1 fondé sur une inférence** : le 130 % et les hypothèses VDQ-P de l'approche PD sont renvoyés au rapport sur données.
+- Il n'impose **aucun durcissement de pilier 1 fondé sur une inférence** : le 130 %, la primauté complète et les hypothèses VDQ-P de l'approche PD sont renvoyés au rapport sur données.
+- Il n'active **aucun allègement de pilier 1 sans données de l'Union** : la catégorie 2 VDQ-C elle-même est dormante jusqu'à ce que les données de la phase 0 l'établissent (round 3).
+- Il ne rend **aucun allègement irréversible** : tout élément activé s'éteint de plein droit après 5 ans, sauf reconduction sur preuve, et peut être désactivé chaque année (round 3).
 - Il ne modifie pas le **règlement Titrisation**.
 - Il ne porte pas l'étiquette « *specialised lending* » et ne réécrit pas le triple test de l'art. 147(8).
 - Il n'étend pas le compartiment prudentiel aux fonds AIFMD. L'asymétrie est traitée par la complémentarité (P6), par l'ouverture de la garantie (P11) et par une définition d'insolvabilité indépendante du type de prêteur (P12).
@@ -1171,7 +1308,7 @@ C'est cohérent avec `macro-analysis.md` §4.4 et §5 : le capital n'est pas la 
 ### H.5 Points ouverts à vérifier par les agents suivants
 
 1. Le texte consolidé de l'art. 122a, de l'art. 153(5) et de l'art. 158(6), et le statut historique de la HVCRE dans le droit de l'Union (`current-regulation.md` §2.3 et limite n° 1 ; `micro-analysis.md` §7).
-2. L'application de l'art. 501 aux expositions traitées en *slotting* et sa prise en compte dans le calcul standard qui sert de base à l'output floor.
+2. L'application de l'art. 501 aux expositions traitées en *slotting* et sa prise en compte dans le calcul standard qui sert de base à l'output floor. Avec la règle de non-cumul de la catégorie 2 VDQ-C (P3, point 3), l'enjeu est réduit : la pondération retenue est d'environ 90 % dans les deux lectures.
 3. La qualification des fonds VC comme « sponsors financiers » au sens de la guidance BCE de 2017 (`macro-analysis.md` §8.7).
 4. La qualification des warrants (art. 133(1) ou SA-CCR) et l'application des art. 36(1)(h) et 44-46 aux fintechs (`micro-analysis.md` §5.3, §10).
 5. La portée de l'art. 91(2) (notion d'« immobilisations financières » de la directive 86/635/CEE) pour des titres issus d'une conversion.
@@ -1179,14 +1316,16 @@ C'est cohérent avec `macro-analysis.md` §4.4 et §5 : le capital n'est pas la 
 7. La publication du rapport au titre de l'art. 33 de la directive 2019/1023 : échéance au 17 juillet 2026 confirmée, publication non identifiée au 22 septembre 2026.
 8. L'état de la négociation d'EU Inc (pour mémoire : il n'est plus proposé comme véhicule).
 9. Les régimes de requalification des prêts d'associés en Espagne, en Autriche et en Italie ; les suites de l'arrêt BGH IX ZR 85/21.
-10. La présence de la SEC parmi les autorités signataires des accords de coopération AIFMD (art. 42), pour le critère C1(v).
-11. La réponse à la demande de Q&A sur la frontière avec la titrisation (phase 0).
-12. La compatibilité de l'habilitation de P4 avec l'art. 290 TFUE, selon les conditions de conception retenues (jurisprudence C-355/10 et C-286/14 [non re-vérifiée]).
+10. *Résolu au round 2 de vérification* : la SEC a conclu en juillet 2013 des protocoles d'accord AIFMD avec 25 autorités de l'UE et 3 de l'EEE [vérifié-auditeur]. Le critère C1(v) couvre donc les gestionnaires américains.
+11. La réponse à la demande de Q&A sur la frontière avec la titrisation (phase 0), y compris pour l'*unitranche*.
+12. La compatibilité des deux habilitations de P4 avec l'art. 290 TFUE : activation de 8 ans ; désactivation et reconduction à durée indéterminée, à objet borné (jurisprudence C-355/10 et C-286/14 [non re-vérifiée]).
 13. La programmation de l'instrument InvestEU du FEC pour 2028-2034, y compris le maintien d'un produit d'innovation non plafonné.
 14. La portée des amendements IFRS 9 de 2024 sur les rémunérations indexées sur la valeur des titres.
-15. Les orientations de l'EBA sur les méthodes de diversification au titre de l'art. 123 (mandat de CRR3) et leur articulation avec la primauté VDQ.
+15. Les orientations de l'EBA sur les méthodes de diversification au titre de l'art. 123 (mandat de CRR3), et leur articulation avec le maintien en clientèle de détail des VDQ conformes (P1(8)).
 16. Le texte de l'art. 47c (couverture minimale des expositions non performantes) et de l'art. 27 du règlement délégué (UE) 2015/61.
 17. Dans le fact-base, la confusion entre les variantes plafonnée et non plafonnée du produit I&D (`macro-analysis.md` §5.2(6)) et l'écart entre 19,2 et 20,1 Md€ pour le marché européen de 2025 (`macro-analysis.md` §1.3 ; `micro-analysis.md` §1.2), à corriger par les auteurs concernés.
+18. **(Round 3)** Le texte exact de l'art. 153(5) CRR après CRR3 (conditions du recours au *slotting*), sur lequel repose l'autorisation transitoire de P3, point 4(a). La page consultée ne l'a pas restitué : [non vérifié verbatim].
+19. **(Round 3)** L'articulation de l'autorisation transitoire avec le régime des changements importants des systèmes de notation IRB (art. 143(3) et (5) CRR, et le règlement délégué qui en précise la matérialité) [à vérifier].
 
 ### H.6 Ordres de grandeur des coûts (réponse à A.1 du round 1)
 
@@ -1195,14 +1334,16 @@ Il s'agit d'**estimations propres, sur hypothèses explicites, non sourcées**. 
 | Poste | Hypothèses | Ordre de grandeur |
 |---|---|---|
 | Reporting (ventilation et modèle complémentaire, P10) | Coût ponctuel de 50 à 150 k€ par banque (systèmes, données de table de capitalisation et de LTER) ; coût récurrent faible | 2 à 20 M€ au total, une fois |
+| **Collecte rétrospective au titre de l'art. 35, 2019-2026 (P10), ajoutée au round 3** | Reconstitution, à partir des dossiers de crédit, de la part de l'investisseur qualifié dans chaque tour (C1), du runway et du LTER : 20 à 80 k€ par banque, pour 30 à 150 banques ; protocole BEI en sus. C'est la seule source couvrant 2022-2024 avant 2031 : elle conditionne l'utilité du rapport à 3 ans et le régime accéléré de la catégorie 2 VDQ-C | 1 à 12 M€, une fois ; faisabilité à soumettre à consultation en phase 0 |
 | Classement et critères de qualité (P1) | Intégré au processus d'octroi existant (le reporting mensuel et la table de capitalisation sont standards en venture debt) | Marginal |
 | Mise en œuvre du *slotting* (P3), optionnelle | 150 à 300 k€ par banque IRB qui l'adopte, pour moins de 20 banques | 1 à 6 M€, une fois, à partir de 2031 |
+| Autorisations transitoires (P3, point 4(a)), ajoutées au round 3 | Moins de 20 banques IRB spécialisées ; instruction par les autorités compétentes, sur une fenêtre d'un à deux ans | Faible |
 | Avis juridiques (P6) | Avis de place : 27 juridictions × 30 à 60 k€, mis à jour tous les 3 ans environ ; avis individuels seulement pour reconnaître une protection junior ou inter-créanciers | Environ 1 à 1,6 M€ par cycle pour la place ; quelques dizaines d'avis individuels par an |
 | Pilier 2 et liquidité (P8, P9) | Revues renforcées seulement au-delà des seuils : probablement moins de 5 banques dans l'Union [I] | Faible |
-| EBA | Environ 10 livrables sur 2027-2033 (C.5 du round 1) | Environ 10 à 15 équivalents temps plein-années, dont 40 % sur les données [estimation propre, à valider avec l'EBA] |
-| Budget de l'Union (P11) | Fenêtre de 1,5 à 2 Md€ de prêts garantis sur 2028-2034 ; voir P11(5) | Environ 8 à 40 M€ de pertes attendues du garant, jusqu'à environ 80 M€ en scénario sévère, avant commissions et partage de l'*upside* |
+| EBA | Environ 10 livrables principaux sur 2027-2033 (C.5 du round 1), plus les publications annuelles de désactivation si un élément est activé | Environ 10 à 15 équivalents temps plein-années, dont 40 % sur les données [estimation propre, à valider avec l'EBA] |
+| Budget de l'Union (P11) | Fenêtre de 1,5 à 2 Md€ de prêts garantis sur 2028-2034 ; voir P11(5) | Environ 8 à 40 M€ de pertes attendues du garant, jusqu'à environ 80 M€ en scénario sévère, avant commissions et partage de l'*upside* ; sensibilité à refaire sur données BDC ; exposition bornée par l'engagement de garantie |
 
-**Mise en regard.** Les bénéfices sont surtout non monétaires : sécurité juridique, données, obstacle IRB levé, garde-fous. Les effets en capital du socle sont neutres au lancement (H.1). Les coûts de conformité, de l'ordre de 5 à 30 M€ au total une fois, sont concentrés sur le reporting. Ce dernier est justifié indépendamment du compartiment, puisqu'il comble l'angle mort statistique documenté.
+**Mise en regard.** Les bénéfices sont surtout non monétaires : sécurité juridique, données, obstacle IRB levé, garde-fous. Les effets en capital du socle sont neutres au lancement (H.1). Les coûts de conformité sont de l'ordre de 5 à 40 M€ au total, une fois, collecte rétrospective comprise. Ils sont concentrés sur le reporting et la collecte, qui se justifient indépendamment du compartiment, puisqu'ils comblent l'angle mort statistique documenté.
 
 ---
 
@@ -1225,3 +1366,11 @@ Il s'agit d'**estimations propres, sur hypothèses explicites, non sourcées**. 
 - [Directive (UE) 2019/1023 — EUR-Lex (échéance de l'art. 33 ; aucune publication du rapport identifiée)](https://eur-lex.europa.eu/eli/dir/2019/1023/oj/eng) ; [synthèse EUR-Lex](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=LEGISSUM%3A4406088)
 - [William Fry — ESMA Publishes Signed AIFMD Co-operation Agreements](https://www.williamfry.com/knowledge/esma-publishes-signed-aifmd-co-operation-agreements/) ; [ESMA — International Cooperation](https://www.esma.europa.eu/about-esma/international-cooperation)
 - Sources vérifiées par l'auditeur au round 1 et reprises ici (art. 133, 234 et 91 CRR ; règlement 2017/2402 ; Q&A EBA 2014_786 et 2018_3806 ; trilogue titrisation ; règlement délégué 2025/1496 ; produit FEI I&D non plafonné ; FEC) : voir `impact-debate.md`, fin du round 1.
+
+**Révision (round 3)**
+- [Art. 462 CRR (texte consolidé) — judict.eu](https://judict.eu/en/hla/32013R0575-X/article-462) : habilitation conférée « pour une durée indéterminée » pour les art. 244(6), 245(6), 456, 457, 459, 460 et 461a (par. 2) ; révocable à tout moment par le Parlement ou le Conseil, sans effet sur les actes en vigueur (par. 3).
+- [Art. 143 CRR (texte consolidé) — judict.eu](https://judict.eu/en/hla/32013R0575-X/article-143) : autorisation préalable pour les changements importants du champ d'application d'un système de notation (par. 3(a)).
+- [Art. 47b CRR (texte consolidé) — judict.eu](https://judict.eu/en/hla/32013R0575-X/article-47B) : paragraphe 2, points (a) à (g).
+- [Règlement délégué (UE) 2022/1855 — EUR-Lex](https://eur-lex.europa.eu/eli/reg_del/2022/1855/oj/eng) ; [Macfarlanes — Pension scheme arrangements clearing exemption extended to 2022](https://blog.macfarlanes.com/post/102h2j3/pension-scheme-arrangements-clearing-exemption-extended-to-2022) ; [Global Regulation Tomorrow — Clearing obligation for pension scheme arrangements: the 18 June 2023 deadline](https://www.regulationtomorrow.com/eu/clearing-obligation-for-pension-scheme-arrangements-differing-eu-and-uk-approaches-to-the-18-june-2023-deadline/) : art. 85(2) EMIR, prorogations par acte délégué, fin de plein droit de l'exemption le 19 juin 2023.
+- Vérifications de l'auditeur au round 2, reprises ici (art. 150(1) et 462(2) CRR ; CRE20, 85 % pour les PME ; protocoles SEC de 2013) : voir `impact-debate.md`, fin du round 2 de vérification.
+- *Non vérifié au round 3* : texte verbatim de l'art. 153(5) CRR après CRR3 (page non restituée) ; art. 16b(2) du règlement EBA ; plancher SEC-SA des positions senior.
